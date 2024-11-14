@@ -1,0 +1,5 @@
+@use './is-pc/nav.scss' as nav;
+
+body:not(.is-mobile) {
+  @include nav.pc-styles(); // Include specific mobile styles
+}

@@ -1,0 +1,5 @@
+@use './is-mobile/nav.scss' as nav;
+
+.is-mobile {
+  @include nav.mobile-styles(); // Include specific mobile styles
+}

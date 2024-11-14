@@ -7,3 +7,17 @@
   --secondary-color: #2ecc71;
   --font-size-base: 16px;
 }
+
+body:not(.is-mobile) {
+  border-radius: 20px;
+}
+body:not(.is-mobile) .nav {
+  color: green;
+}
+
+.is-mobile {
+  border-radius: 5px;
+}
+.is-mobile .nav {
+  color: green;
+}

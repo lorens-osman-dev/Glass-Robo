@@ -1,2 +1,6 @@
 @use './partials/_fonts.scss';
 @use './partials/_variables.scss';
+
+
+@use './partials/is-pc';
+@use './partials/is-mobile';

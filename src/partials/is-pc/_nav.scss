@@ -1,0 +1,9 @@
+@mixin pc-styles {
+
+  // Your pc-specific nav styles here
+  border-radius: 20px;
+
+  .nav {
+    color: green // pc styles
+  }
+}
