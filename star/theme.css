@@ -24,16 +24,25 @@
 }
 
 :root {
-  --primary-color: #3498db;
+  --primary-color: #6d8696;
   --secondary-color: #2ecc71;
   --font-size-base: 16px;
 }
 
+.theme-dark {
+  --primary-color: red;
+  --background-primary: rgb(37, 72, 32);
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
 /*
-▗▄▄▖  ▗▄▄▖
-▐▌ ▐▌▐▌   
-▐▛▀▘ ▐▌   
-▐▌   ▝▚▄▄▖
+ ▗▄▄▖▗▄▄▄▖▗▖  ▗▖▗▄▄▄▖▗▄▄▖  ▗▄▖ ▗▖   
+▐▌   ▐▌   ▐▛▚▖▐▌▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌   
+▐▌▝▜▌▐▛▀▀▘▐▌ ▝▜▌▐▛▀▀▘▐▛▀▚▖▐▛▀▜▌▐▌   
+▝▚▄▞▘▐▙▄▄▖▐▌  ▐▌▐▙▄▄▖▐▌ ▐▌▐▌ ▐▌▐▙▄▄▖
 
 */
 a {

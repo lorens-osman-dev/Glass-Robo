@@ -1,9 +1,9 @@
 # did
 
-[*] add general section
+[*] make dark theme section
+[*] add manifest.json file
+[*] make symlink to obsidian
 
 # todo
 
-[ ] add manifest.json file
 [ ] make github
-[ ] make symlink to obsidian
