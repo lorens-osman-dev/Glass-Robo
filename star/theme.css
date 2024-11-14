@@ -28,13 +28,15 @@
   --secondary-color: #2ecc71;
   --font-size-base: 16px;
   --s-bg-color: #141414;
-  --s-primary-color: #a1f98f;
+  --s-primary-green-color: #a1f98f;
+  --s-secondary-green-color: #36a372;
   --hover-bg-color: #a1f98f24;
 }
 
 .theme-dark {
-  --primary-color: var(--s-primary-color);
+  --primary-color: var(--s-primary-green-color);
   --background-primary: var(--s-bg-color);
+  --text-faint: var(--s-secondary-green-color) !important;
 }
 
 body {
@@ -49,7 +51,9 @@ body {
 
 */
 a {
-  color: red;
+  padding: 5px;
+  background-color: rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
 }
 
 /*

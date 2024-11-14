@@ -1,3 +1,7 @@
+@use "../variables.scss" as ff;
+
 a {
-  color: red;
+  padding: 5px;
+  @include ff.glass();
+
 }
