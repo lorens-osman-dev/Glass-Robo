@@ -1,6 +1,6 @@
 # did
 
-[*] separate pc logic from mobile
+[*] add general section
 
 # todo
 

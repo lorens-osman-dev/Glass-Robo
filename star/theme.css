@@ -36,6 +36,17 @@
 ▐▌   ▝▚▄▄▖
 
 */
+a {
+  color: red;
+}
+
+/*
+▗▄▄▖  ▗▄▄▖
+▐▌ ▐▌▐▌   
+▐▛▀▘ ▐▌   
+▐▌   ▝▚▄▄▖
+
+*/
 body:not(.is-mobile) {
   border-radius: 20px;
 }
