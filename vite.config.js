@@ -1,9 +1,8 @@
-// vite.config.js
 import { defineConfig } from "vite";
 import path from "node:path";
-import { SourceMap } from "node:module";
 
 export default defineConfig({
+	publicDir: "public", // Vite will copy all files from this directory to the output including manifest.json
 	build: {
 		rollupOptions: {
 			input: path.resolve(__dirname, "src/theme.scss"),
