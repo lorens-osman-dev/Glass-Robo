@@ -1,0 +1,9 @@
+.ff {
+  background-color: orange;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size-base: 16px;
+}

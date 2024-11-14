@@ -1,0 +1,15 @@
+{
+  "name": "star",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.80.7",
+    "vite": "^5.4.10"
+  }
+}
