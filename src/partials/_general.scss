@@ -28,6 +28,18 @@
 
 }
 
+//---------- PAGE TITLE
+.inline-title {
+  /** Text Gradient Example */
+
+  color: #CA4246;
+  background-image: linear-gradient(45deg, #CA4246 2%, #E16541 10%, #F18F43 28%, #8B9862 40%, #476098 81%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
 //---------- HEADING underline
 h2,
 h3,
