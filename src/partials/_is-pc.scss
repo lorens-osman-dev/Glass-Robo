@@ -8,13 +8,15 @@
 @use './is-pc/nav.scss' as nav;
 @use './is-pc/prompt' as prompt;
 @use './is-pc/settings_modal' as settings_modal;
-@use './is-pc/inputes' as inputs;
+@use './is-pc/inputs' as inputs;
+@use './is-pc/vault_switcher' as vault_switcher;
 
 body:not(.is-mobile) {
   @include nav.pc-styles();
   @include prompt.pc-styles();
   @include settings_modal.pc-styles();
   @include inputs.pc-styles();
+  @include vault_switcher.pc-styles();
 }
 
 body:not(.is-mobile) {

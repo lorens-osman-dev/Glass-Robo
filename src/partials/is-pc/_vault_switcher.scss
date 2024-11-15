@@ -1,0 +1,31 @@
+@mixin pc-styles {
+
+  .workspace-sidedock-vault-profile {
+    // background-color: #ff000000 !important;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    // border-radius: 20px;
+
+
+    &::before {
+      content: "";
+      /* Necessary for pseudo-elements */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #a1f98f03;
+      /* Your desired color */
+      backdrop-filter: blur(16.5px);
+      /* Apply blur here */
+      z-index: -1;
+      /* Place it behind other content */
+      pointer-events: none;
+      /* Ensure it doesn’t interfere with interactions */
+      // border-radius: 20px;
+
+    }
+  }
+}
