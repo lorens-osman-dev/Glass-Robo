@@ -106,13 +106,9 @@ a {
 h2,
 h3,
 h4,
-h5,
-h6,
 .markdown-rendered h2,
 .markdown-rendered h3,
-.markdown-rendered h4,
-.markdown-rendered h5,
-.markdown-rendered h6 {
+.markdown-rendered h4 {
   position: relative;
 }
 
