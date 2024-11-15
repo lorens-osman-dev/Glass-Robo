@@ -211,6 +211,9 @@ body:not(.is-mobile) .prompt .prompt-input {
 body:not(.is-mobile) .prompt .search-input-clear-button:hover::after {
   color: var(--level-1);
 }
+body:not(.is-mobile) .prompt:has(.inputMsgCon) .prompt-input {
+  background-image: none;
+}
 body:not(.is-mobile) .modal-content.vertical-tabs-container {
   background-color: rgba(255, 0, 0, 0);
   backdrop-filter: blur(20px);

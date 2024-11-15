@@ -13,5 +13,10 @@
     .search-input-clear-button:hover::after {
       color: var(--level-1);
     }
+
+    // Exclude Cluster prompts
+    &:has(.inputMsgCon) .prompt-input {
+      background-image: none
+    }
   }
 }
