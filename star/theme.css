@@ -24,23 +24,55 @@
 }
 
 :root {
-  --primary-color: #6d8696;
-  --secondary-color: #2ecc71;
-  --font-size-base: 16px;
-  --s-bg-color: #141414;
-  --s-primary-green-color: #a1f98f;
-  --s-secondary-green-color: #36a372;
-  --hover-bg-color: #a1f98f24;
+  --s-bg-transparent: transparent;
+  --s-bg-svg: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuZGV2L3N2Z2pzIiB2aWV3Qm94PSIwIDAgNzAwIDcwMCIgd2lkdGg9IjcwMCIgaGVpZ2h0PSI3MDAiPjxkZWZzPjxmaWx0ZXIgaWQ9Im5ubm9pc2UtZmlsdGVyIiB4PSItMjAlIiB5PSItMjAlIiB3aWR0aD0iMTQwJSIgaGVpZ2h0PSIxNDAlIiBmaWx0ZXJVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHByaW1pdGl2ZVVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJsaW5lYXJSR0IiPgoJPGZlVHVyYnVsZW5jZSB0eXBlPSJ0dXJidWxlbmNlIiBiYXNlRnJlcXVlbmN5PSIwLjIiIG51bU9jdGF2ZXM9IjQiIHNlZWQ9IjE1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIiB4PSIwJSIgeT0iMCUiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHJlc3VsdD0idHVyYnVsZW5jZSI+PC9mZVR1cmJ1bGVuY2U+Cgk8ZmVTcGVjdWxhckxpZ2h0aW5nIHN1cmZhY2VTY2FsZT0iNDAiIHNwZWN1bGFyQ29uc3RhbnQ9IjAuNzUiIHNwZWN1bGFyRXhwb25lbnQ9IjIwIiBsaWdodGluZy1jb2xvcj0iI2JlYjdkZiIgeD0iMCUiIHk9IjAlIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBpbj0idHVyYnVsZW5jZSIgcmVzdWx0PSJzcGVjdWxhckxpZ2h0aW5nIj4KICAgIAkJPGZlRGlzdGFudExpZ2h0IGF6aW11dGg9IjMiIGVsZXZhdGlvbj0iMTAwIj48L2ZlRGlzdGFudExpZ2h0PgogIAk8L2ZlU3BlY3VsYXJMaWdodGluZz4KICAKPC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNzAwIiBmaWxsPSJ0cmFuc3BhcmVudCI+PC9yZWN0PjxyZWN0IHdpZHRoPSI3MDAiIGhlaWdodD0iNzAwIiBmaWxsPSIjYmViN2RmIiBmaWx0ZXI9InVybCgjbm5ub2lzZS1maWx0ZXIpIj48L3JlY3Q+PC9zdmc+");
+  --s-bg-primary-color: #141414;
+  --s-bg-secondary-color: #1c1c1c;
+  --s-green-primary-color: #a1f98f;
+  --s-green-secondary-color: #36a372;
+  --s-hover-bg-color-green: #a1f98f24;
+  --s-hover-bg-color-gray: #676767;
+  --yellow-faint: #ffe699;
+  --platinum: #c7c7c7;
+  --platinum-faint: #b2b2b8;
+  --level-1: rgb(191, 96, 107);
+  --level-2: rgb(207, 134, 110);
+  --level-3: rgb(235, 203, 140);
+  --level-4: rgb(153, 190, 141);
+  --level-5: rgb(179, 138, 163);
+  --level-6: rgb(155, 180, 196);
 }
 
 .theme-dark {
-  --primary-color: var(--s-primary-green-color);
-  --background-primary: var(--s-bg-color);
-  --text-faint: var(--s-secondary-green-color) !important;
+  --background-primary: var(--s-bg-transparent);
+  --background-primary-alt: var(--s-bg-transparent);
+  --background-secondary: var(--s-bg-transparent);
+  --background-secondary-alt: var(--s-bg-transparent);
+  --interactive-before: var(--s-bg-transparent);
+  --background-modifier-border: var(--s-bg-transparent);
+  --text-normal: var(--platinum);
+  --text-faint: var(--platinum-faint);
+  --text-highlight-bg: #5b5721;
+  --interactive-accent: var(--s-green-primary-color);
+  --text-accent: var(--s-green-secondary-color);
+  --text-accent-hover: var(--s-green-primary-color);
+  --text-on-accent: var(--s-bg-primary-color);
+  --interactive-accent-hover: var(--yellow-faint);
+  --text-selection: var(--s-hover-bg-color-green);
+  --background-modifier-hover: var(--s-hover-bg-color-green);
+  --nav-collapse-icon-color: var(--s-green-primary-color);
+  --inline-title-color: white;
+  --h1-color: var(--level-1);
+  --h2-color: var(--level-2);
+  --h3-color: var(--level-3);
+  --h4-color: var(--level-4);
+  --h5-color: var(--level-5);
+  --h6-color: var(--level-6);
 }
 
 body {
-  background-color: var(--primary-color);
+  background: var(--s-bg-svg);
+  background-color: var(--s-bg-primary-color);
 }
 
 /*
@@ -52,8 +84,11 @@ body {
 */
 a {
   padding: 5px;
-  background-color: rgba(255, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
+}
+
+.workspace-leaf-resize-handle {
+  border-inline-end-style: none !important;
+  border-inline-start-style: none !important;
 }
 
 /*

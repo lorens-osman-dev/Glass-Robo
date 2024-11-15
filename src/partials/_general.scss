@@ -6,3 +6,9 @@
                                                               
 */
 @use './general/links';
+
+// hide spacer between side and center 
+.workspace-leaf-resize-handle {
+  border-inline-end-style: none !important;
+  border-inline-start-style: none !important;
+}
