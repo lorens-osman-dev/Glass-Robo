@@ -120,6 +120,7 @@ a {
 .markdown-rendered :not(pre) > code,
 .cm-s-obsidian span.cm-inline-code {
   color: inherit;
+  font-family: inherit;
 }
 
 .theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
@@ -127,6 +128,7 @@ a {
 .theme-dark :not(pre) > code {
   background-color: #494a4e !important;
   border-radius: 3px;
+  padding: 0 0.25em;
 }
 
 .inline-title {
