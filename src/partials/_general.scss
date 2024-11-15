@@ -83,3 +83,8 @@ h4,
   transform: translateY(3px);
   background-color: var(--h4-color);
 }
+
+// dashed border for file tree
+.tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) dashed var(--nav-indentation-guide-color);
+}
