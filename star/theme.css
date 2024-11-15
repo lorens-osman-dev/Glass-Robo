@@ -68,6 +68,7 @@
   --h4-color: var(--level-4);
   --h5-color: var(--level-5);
   --h6-color: var(--level-6);
+  --background-modifier-border-focus: var(--s-green-primary-color);
 }
 
 body {
@@ -233,6 +234,17 @@ body:not(.is-mobile) .modal-content.vertical-tabs-container::before {
   background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
   animation: rotate 60s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+body:not(.is-mobile) textarea,
+body:not(.is-mobile) input.metadata-input-text,
+body:not(.is-mobile) input[type=date],
+body:not(.is-mobile) input[type=datetime-local],
+body:not(.is-mobile) input[type=text],
+body:not(.is-mobile) input[type=search],
+body:not(.is-mobile) input[type=email],
+body:not(.is-mobile) input[type=password],
+body:not(.is-mobile) input[type=number] {
+  background-color: var(--s-bg-primary-color);
 }
 
 body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
