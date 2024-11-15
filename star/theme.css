@@ -172,6 +172,10 @@ body:not(.is-mobile) .nav {
   color: green;
 }
 
+body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
+  flex-direction: row;
+}
+
 /*
 ▗▖  ▗▖ ▗▄▖ ▗▄▄▖ ▗▄▄▄▖▗▖   ▗▄▄▄▖
 ▐▛▚▞▜▌▐▌ ▐▌▐▌ ▐▌  █  ▐▌   ▐▌   

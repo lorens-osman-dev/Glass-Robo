@@ -10,3 +10,11 @@
 body:not(.is-mobile) {
   @include nav.pc-styles(); // Include specific mobile styles
 }
+
+body:not(.is-mobile) {
+
+  // center the ribbon icons
+  .workspace-ribbon.side-dock-ribbon {
+    flex-direction: row;
+  }
+}
