@@ -1,0 +1,17 @@
+@mixin pc-styles {
+
+  .prompt {
+    background-color: rgb(54 163 114 / 1%);
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+    border: none;
+
+    .prompt-input {
+      background-image: linear-gradient(to right, rgba(60, 165, 92, 0.7) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.4) 100%);
+    }
+
+    .search-input-clear-button:hover::after {
+      color: var(--level-1);
+    }
+  }
+}

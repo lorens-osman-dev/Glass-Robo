@@ -6,9 +6,11 @@
 
 */
 @use './is-pc/nav.scss' as nav;
+@use './is-pc/prompt' as prompt;
 
 body:not(.is-mobile) {
-  @include nav.pc-styles(); // Include specific mobile styles
+  @include nav.pc-styles();
+  @include prompt.pc-styles();
 }
 
 body:not(.is-mobile) {

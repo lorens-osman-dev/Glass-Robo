@@ -181,7 +181,19 @@ body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-heade
   color: #fff;
 }
 body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-close-button:hover {
-  background-color: rgba(247, 70, 0, 0.6509803922);
+  background-color: var(--level-1);
+}
+body:not(.is-mobile) .prompt {
+  background-color: rgba(54, 163, 114, 0.01);
+  backdrop-filter: blur(4px);
+  box-shadow: none;
+  border: none;
+}
+body:not(.is-mobile) .prompt .prompt-input {
+  background-image: linear-gradient(to right, rgba(60, 165, 92, 0.7) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.4) 100%);
+}
+body:not(.is-mobile) .prompt .search-input-clear-button:hover::after {
+  color: var(--level-1);
 }
 
 body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
