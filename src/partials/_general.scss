@@ -7,13 +7,13 @@
 */
 @use './general/links';
 
-// hide spacer between side and center 
+//---------- hide spacer between side and center 
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;
 }
 
-// one backtick code
+//---------- one backtick code
 .markdown-rendered :not(pre)>code,
 .cm-s-obsidian span.cm-inline-code {
   //FIX add font family
@@ -28,7 +28,7 @@
 
 }
 
-// HEADING underline
+//---------- HEADING underline
 h2,
 h3,
 h4,
@@ -84,7 +84,12 @@ h4,
   background-color: var(--h4-color);
 }
 
-// dashed border for file tree
+//---------- dashed border for file tree
 .tree-item-children {
   border-inline-start: var(--nav-indentation-guide-width) dashed var(--nav-indentation-guide-color);
+}
+
+//---------- Menu
+.menu {
+  background-color: var(--s-bg-primary-color);
 }
