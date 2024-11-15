@@ -103,6 +103,61 @@ a {
   border-radius: 3px;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  position: relative;
+}
+
+.is-live-preview .HyperMD-header-2::before,
+.markdown-rendered h2::before {
+  margin-inline-start: 0;
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  bottom: 3px;
+  border-radius: 5px;
+  background-color: var(--h2-color);
+  transform: translateY(4px);
+}
+
+.is-live-preview .HyperMD-header-3::before,
+.markdown-rendered h3::before {
+  margin-inline-start: 0;
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  bottom: 3px;
+  border-radius: 5px;
+  transform: translateY(4px);
+  background-color: var(--h3-color);
+}
+
+.is-live-preview .HyperMD-header-4::before,
+.markdown-rendered h4::before {
+  margin-inline-start: 0;
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  width: 3px;
+  height: 2px;
+  bottom: 3px;
+  border-radius: 5px;
+  transform: translateY(3px);
+  background-color: var(--h4-color);
+}
+
 /*
 ▗▄▄▖  ▗▄▄▖
 ▐▌ ▐▌▐▌   
