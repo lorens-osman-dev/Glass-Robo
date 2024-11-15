@@ -69,6 +69,7 @@
   --h5-color: var(--level-5);
   --h6-color: var(--level-6);
   --background-modifier-border-focus: var(--s-green-primary-color);
+  --modal-background: var(--s-bg-primary-color) ;
 }
 
 body {
@@ -224,11 +225,17 @@ body:not(.is-mobile) .prompt .search-input-clear-button:hover::after {
 body:not(.is-mobile) .prompt:has(.inputMsgCon) .prompt-input {
   background-image: none;
 }
-body:not(.is-mobile) .modal-content.vertical-tabs-container {
+body:not(.is-mobile) .modal {
+  border: none;
+}
+body:not(.is-mobile) .modal.modal.mod-settings.mod-sidebar-layout {
+  background: transparent;
+}
+body:not(.is-mobile) .modal .modal-content.vertical-tabs-container {
   background-color: rgba(255, 0, 0, 0);
   backdrop-filter: blur(20px);
 }
-body:not(.is-mobile) .modal-content.vertical-tabs-container::before {
+body:not(.is-mobile) .modal .modal-content.vertical-tabs-container::before {
   content: " ";
   position: absolute;
   width: 70%;
