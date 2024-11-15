@@ -3,10 +3,11 @@
   .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active>.workspace-tab-header-inner {
     border-radius: 0.3em;
     padding: 0 0.3em;
-    background-image: linear-gradient(to right, #3CA55C 0%, #B5AC49 51%, #3CA55C 100%);
+    // background-image: linear-gradient(to right, #3CA55C 0%, #B5AC49 51%, #3CA55C 100%);
+    background-image: linear-gradient(to right, rgba(60, 165, 92, 0.6) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.6) 100%);
     transition: background-position 0.5s ease;
     background-size: 200% auto;
-    box-shadow: 0 0 3px #eee;
+    box-shadow: 0 0 2px #eee;
 
     &:hover {
       background-position: right center;
