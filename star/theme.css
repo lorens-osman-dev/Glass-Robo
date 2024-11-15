@@ -184,6 +184,13 @@ h4,
 ▐▌   ▝▚▄▄▖
 
 */
+body:not(.native-scrollbars) .modal-close-button {
+  z-index: 10;
+}
+body:not(.native-scrollbars) .modal-close-button:hover {
+  background-color: var(--level-1);
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
