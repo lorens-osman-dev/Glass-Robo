@@ -91,6 +91,18 @@ a {
   border-inline-start-style: none !important;
 }
 
+.markdown-rendered :not(pre) > code,
+.cm-s-obsidian span.cm-inline-code {
+  color: inherit;
+}
+
+.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark :not(pre) > code {
+  background-color: #494a4e !important;
+  border-radius: 3px;
+}
+
 /*
 ▗▄▄▖  ▗▄▄▖
 ▐▌ ▐▌▐▌   
