@@ -394,3 +394,15 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 .is-mobile .mobile-tab-switcher .mobile-tab-preview-empty {
   box-shadow: 0 0 0 2px var(--yellow-faint);
 }
+.is-mobile .modal-bg {
+  backdrop-filter: blur(5px);
+}
+.is-mobile .suggestion-item.is-selected {
+  background-color: var(--s-hover-bg-color-green);
+}
+.is-mobile .prompt .prompt-input {
+  background-image: linear-gradient(to right, rgba(60, 165, 92, 0.7) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.4) 100%);
+}
+.is-mobile .prompt:has(.inputMsgCon) .prompt-input {
+  background-image: none;
+}

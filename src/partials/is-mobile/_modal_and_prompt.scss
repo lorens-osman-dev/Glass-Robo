@@ -1,0 +1,24 @@
+@mixin mobile-styles {
+
+  .modal-bg {
+    backdrop-filter: blur(5px);
+  }
+
+  .suggestion-item.is-selected {
+    background-color: var(--s-hover-bg-color-green);
+  }
+
+  .prompt {
+
+    // border-top: 1px solid var(--s-green-primary-color);
+    .prompt-input {
+      background-image: linear-gradient(to right, rgba(60, 165, 92, 0.7) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.4) 100%);
+
+    }
+
+    // Exclude Cluster prompts
+    &:has(.inputMsgCon) .prompt-input {
+      background-image: none
+    }
+  }
+}
