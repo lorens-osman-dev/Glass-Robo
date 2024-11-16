@@ -7,7 +7,8 @@
 */
 
 @use './is-mobile/nav.scss' as nav;
+@use './is-mobile/nav-files-container' as nav-files-container;
 
 .is-mobile {
-  @include nav.mobile-styles(); // Include specific mobile styles
+  @include nav-files-container.mobile-styles();
 }

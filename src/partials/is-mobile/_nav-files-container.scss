@@ -1,0 +1,38 @@
+@mixin mobile-styles {
+
+  .nav-files-container.node-insert-event {
+    background-color: var(--s-bg-primary-color);
+  }
+
+  //vault switcher
+  .workspace-drawer .nav-header {
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .workspace-drawer .nav-header::before {
+    content: "";
+    /* Necessary for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a1f98f03;
+    /* Your desired color */
+    backdrop-filter: blur(16.5px);
+    /* Apply blur here */
+    z-index: -1;
+    /* Place it behind other content */
+    pointer-events: none;
+    /* Ensure it doesn’t interfere with interactions */
+  }
+
+  ///
+  .workspace-drawer-active-tab-header {
+    background-color: var(--s-hover-bg-color-green);
+  }
+}
