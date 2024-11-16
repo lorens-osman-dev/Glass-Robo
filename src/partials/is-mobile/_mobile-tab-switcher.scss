@@ -1,0 +1,39 @@
+@mixin mobile-styles {
+
+  .mobile-tab-switcher {
+    backdrop-filter: blur(5px);
+
+    .mobile-tab-switcher-menubar {
+      .mobile-tab-switcher-menu-spacer {
+        height: 100%;
+
+
+        //done button
+        .clickable-icon {
+          background-color: var(--s-green-primary-color);
+          color: var(--s-bg-primary-color);
+        }
+      }
+
+      .mobile-tab-switcher-menu-button {
+        background-color: var(--s-green-primary-color);
+        height: 100%;
+        padding: 0 5px;
+        border-radius: 4px;
+        color: var(--s-bg-primary-color);
+        width: 35vw;
+        justify-content: space-evenly;
+
+        .mobile-tab-switcher-menu-button-chevron {
+          color: var(--s-bg-primary-color);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .mobile-tab-preview-empty {
+      box-shadow: 0 0 0 2px var(--yellow-faint);
+      ;
+    }
+  }
+}

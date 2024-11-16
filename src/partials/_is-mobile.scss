@@ -8,8 +8,12 @@
 
 @use './is-mobile/menu' as menu;
 @use './is-mobile/nav-files-container' as nav-files-container;
+@use './is-mobile/mobile-tab-switcher' as mobile-tab-switcher;
 
 .is-mobile {
   @include menu.mobile-styles();
   @include nav-files-container.mobile-styles();
+  @include mobile-tab-switcher.mobile-styles();
 }
+
+.is-mobile {}

@@ -368,3 +368,29 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 .is-mobile .workspace-drawer-active-tab-header {
   background-color: var(--s-hover-bg-color-green);
 }
+.is-mobile .mobile-tab-switcher {
+  backdrop-filter: blur(5px);
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-switcher-menubar .mobile-tab-switcher-menu-spacer {
+  height: 100%;
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-switcher-menubar .mobile-tab-switcher-menu-spacer .clickable-icon {
+  background-color: var(--s-green-primary-color);
+  color: var(--s-bg-primary-color);
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-switcher-menubar .mobile-tab-switcher-menu-button {
+  background-color: var(--s-green-primary-color);
+  height: 100%;
+  padding: 0 5px;
+  border-radius: 4px;
+  color: var(--s-bg-primary-color);
+  width: 35vw;
+  justify-content: space-evenly;
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-switcher-menubar .mobile-tab-switcher-menu-button .mobile-tab-switcher-menu-button-chevron {
+  color: var(--s-bg-primary-color);
+  border-radius: 50%;
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-preview-empty {
+  box-shadow: 0 0 0 2px var(--yellow-faint);
+}
