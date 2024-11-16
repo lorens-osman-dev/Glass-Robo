@@ -329,6 +329,15 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 ▐▌  ▐▌▝▚▄▞▘▐▙▄▞▘▗▄█▄▖▐▙▄▄▖▐▙▄▄▖
 
 */
+.is-mobile .suggestion-bg {
+  backdrop-filter: blur(5px);
+}
+.is-mobile .menu {
+  background-color: var(--s-bg-primary-color);
+}
+.is-mobile .menu .menu-grabber {
+  background-color: var(--s-green-primary-color);
+}
 .is-mobile .nav-files-container.node-insert-event {
   background-color: var(--s-bg-primary-color);
 }

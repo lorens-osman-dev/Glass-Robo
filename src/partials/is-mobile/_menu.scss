@@ -1,0 +1,15 @@
+@mixin mobile-styles {
+
+  //overlay behind menu
+  .suggestion-bg {
+    backdrop-filter: blur(5px);
+  }
+
+  .menu {
+    background-color: var(--s-bg-primary-color);
+
+    .menu-grabber {
+      background-color: var(--s-green-primary-color);
+    }
+  }
+}

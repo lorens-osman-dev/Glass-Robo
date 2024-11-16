@@ -6,9 +6,10 @@
                                
 */
 
-@use './is-mobile/nav.scss' as nav;
+@use './is-mobile/menu' as menu;
 @use './is-mobile/nav-files-container' as nav-files-container;
 
 .is-mobile {
+  @include menu.mobile-styles();
   @include nav-files-container.mobile-styles();
 }
