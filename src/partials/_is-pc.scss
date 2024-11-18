@@ -7,16 +7,16 @@
 */
 @use './is-pc/nav.scss' as nav;
 @use './is-pc/prompt' as prompt;
-@use './is-pc/settings_modal' as settings_modal;
+@use './is-pc/settings-modal' as settings-modal;
 @use './is-pc/inputs' as inputs;
-@use './is-pc/vault_switcher' as vault_switcher;
+@use './is-pc/vault-switcher' as vault-switcher;
 
 body:not(.is-mobile) {
   @include nav.pc-styles();
   @include prompt.pc-styles();
-  @include settings_modal.pc-styles();
+  @include settings-modal.pc-styles();
   @include inputs.pc-styles();
-  @include vault_switcher.pc-styles();
+  @include vault-switcher.pc-styles();
 }
 
 body:not(.is-mobile) {

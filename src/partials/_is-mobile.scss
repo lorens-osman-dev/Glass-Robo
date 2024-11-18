@@ -9,13 +9,13 @@
 @use './is-mobile/menu' as menu;
 @use './is-mobile/nav-files-container' as nav-files-container;
 @use './is-mobile/mobile-tab-switcher' as mobile-tab-switcher;
-@use './is-mobile/modal_and_prompt' as modal_and_prompt;
+@use './is-mobile/modal-and-prompt' as modal-and-prompt;
 
 .is-mobile {
   @include menu.mobile-styles();
   @include nav-files-container.mobile-styles();
   @include mobile-tab-switcher.mobile-styles();
-  @include modal_and_prompt.mobile-styles();
+  @include modal-and-prompt.mobile-styles();
 }
 
 // remove the stars background svg because it is heavy at mobile 
