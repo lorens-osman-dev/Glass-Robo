@@ -15,22 +15,6 @@
   border-inline-start-style: none !important;
 }
 
-//---------- one backtick code
-.markdown-rendered :not(pre)>code,
-.cm-s-obsidian span.cm-inline-code {
-  color: inherit;
-  font-family: inherit;
-}
-
-.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
-.theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark :not(pre)>code {
-  background-color: #494a4e !important;
-  border-radius: 3px;
-  padding: 0 0.25em;
-
-}
-
 //---------- PAGE TITLE
 .inline-title {
   font-weight: bold;
@@ -42,72 +26,11 @@
 
 }
 
-h1,
-.markdown-rendered h1,
-.is-live-preview .HyperMD-header-1 {
-  font-weight: normal;
-}
-
+//---------- strong
 strong,
 .cm-strong {
   font-weight: bold;
   color: var(--level-1);
-}
-
-//---------- HEADING underline
-h2,
-h3,
-h4,
-.markdown-rendered h2,
-.markdown-rendered h3,
-.markdown-rendered h4 {
-  position: relative;
-}
-
-//h2
-.is-live-preview .HyperMD-header-2::before,
-.markdown-rendered h2::before {
-  margin-inline-start: 0;
-  position: absolute;
-  content: " ";
-  display: inline-block;
-  width: 18px;
-  height: 2px;
-  bottom: 3px;
-  border-radius: 5px;
-  background-color: var(--h2-color);
-  transform: translateY(4px);
-}
-
-//h3
-.is-live-preview .HyperMD-header-3::before,
-.markdown-rendered h3::before {
-  margin-inline-start: 0;
-  position: absolute;
-  content: " ";
-  display: inline-block;
-  width: 10px;
-  height: 2px;
-  bottom: 3px;
-  border-radius: 5px;
-  transform: translateY(4px);
-  background-color: var(--h3-color);
-}
-
-//h4
-.is-live-preview .HyperMD-header-4::before,
-.markdown-rendered h4::before {
-  margin-inline-start: 0;
-
-  position: absolute;
-  content: " ";
-  display: inline-block;
-  width: 3px;
-  height: 2px;
-  bottom: 3px;
-  border-radius: 5px;
-  transform: translateY(3px);
-  background-color: var(--h4-color);
 }
 
 //---------- dashed border for file tree
@@ -124,12 +47,12 @@ h4,
   background-color: var(--s-bg-primary-color) !important;
 }
 
-//make the buttons like lorens theme
+//---------- make the buttons like lorens theme
 button.mod-cta {
   background: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
 }
 
-//status-bar
+//---------- status-bar
 .status-bar {
   backdrop-filter: blur(5px);
 }
