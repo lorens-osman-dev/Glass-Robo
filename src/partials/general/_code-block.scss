@@ -21,3 +21,10 @@
   // background: #19191996;
   background: #0d161d91
 }
+
+
+///
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+  background-color: #0d161d91
+}

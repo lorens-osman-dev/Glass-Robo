@@ -166,6 +166,11 @@ a {
   background: rgba(13, 22, 29, 0.568627451);
 }
 
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background-color: rgba(13, 22, 29, 0.568627451);
+}
+
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;
