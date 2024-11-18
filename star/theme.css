@@ -105,7 +105,7 @@
   --h5-color: var(--level-5);
   --h6-color: var(--level-6);
   --background-modifier-border-focus: var(--s-green-primary-color);
-  --modal-background: var(--s-bg-primary-color) ;
+  --modal-background: var(--s-bg-primary-color);
 }
 
 body {
@@ -116,23 +116,18 @@ body {
   --font-monospace-theme: "JetBrains Mono", "azer";
   /* Code block */
   --code-white-space: pre-wrap;
-  --code-radius: var(--radius-s);
-  --code-size: var(--font-smaller);
-  --code-background-light: var(--background-alt-light);
-  --code-background-dark: var(--background-alt-dark);
-  --code-border-light: 1px dashed var(--background-modifier-border);
-  --code-border-dark: 1px dashed var(--background-modifier-border);
+  --code-size: var(--font-smallest);
+  --code-comment: #4f4e4e;
   --code-normal: var(--text-muted);
-  --code-comment: var(--text-faint);
-  --code-function: var(--color-yellow);
-  --code-important: var(--color-orange);
-  --code-keyword: var(--color-pink);
-  --code-operator: var(--color-red);
-  --code-property: var(--color-cyan);
-  --code-punctuation: var(--text-muted);
-  --code-string: var(--color-green);
+  --code-function: #8cd30c;
+  --code-important: #b62b2b;
+  --code-keyword: #b62b2b;
+  --code-operator: #7d00b6;
+  --code-property: #2bb668;
+  --code-punctuation: #b62b2b;
+  --code-string: #a7b2b;
   --code-tag: var(--color-red);
-  --code-value: var(--color-purple);
+  --code-value: #957425;
   --code-background: var(--s-bg-code-svg);
   --code-border: 1px dashed #4e4f4e42;
 }
@@ -168,7 +163,7 @@ a {
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
 .cm-s-obsidian div.HyperMD-codeblock-end-bg,
 .cm-s-obsidian div.HyperMD-codeblock-bg {
-  background: rgba(25, 25, 25, 0.5882352941);
+  background: rgba(13, 22, 29, 0.568627451);
 }
 
 .workspace-leaf-resize-handle {
