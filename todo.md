@@ -1,9 +1,9 @@
 # did
 
-[*] add bold fonts
-[*] fix title + h1 font width
+[*] fix heading colors
 
 # todo
 
 [ ] make github
-[ ] fix heading colors
+[ ] make the buttons like lorens theme
+[ ] fix vault switcher is over the files list
