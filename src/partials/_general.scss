@@ -46,6 +46,12 @@ h1,
   font-weight: normal;
 }
 
+strong,
+.cm-strong {
+  font-weight: bold;
+  color: var(--level-1);
+}
+
 //---------- HEADING underline
 h2,
 h3,
