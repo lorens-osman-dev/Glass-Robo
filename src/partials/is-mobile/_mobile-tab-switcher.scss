@@ -3,6 +3,24 @@
   .mobile-tab-switcher {
     backdrop-filter: blur(5px);
 
+    .mobile-tab-group-container {
+      .close-button {
+        color: var(--level-1);
+        background-color: var(--s-hover-bg-color-green);
+      }
+
+      //active tab
+      .mobile-tab.is-active .mobile-tab-preview-empty,
+      .mobile-tab.is-active .mobile-tab-preview-embed {
+        box-shadow: 0 0 0 1px var(--s-green-primary-color)
+      }
+
+      .mobile-tab-preview {
+        box-shadow: 0 0 0 1px var(--s-hover-bg-color-green)
+      }
+
+    }
+
     .mobile-tab-switcher-menubar {
       .mobile-tab-switcher-menu-spacer {
         height: 100%;
@@ -31,9 +49,6 @@
       }
     }
 
-    .mobile-tab-preview-empty {
-      box-shadow: 0 0 0 2px var(--yellow-faint);
-      ;
-    }
+
   }
 }

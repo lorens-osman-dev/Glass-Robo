@@ -361,6 +361,7 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 */
 .is-mobile .suggestion-bg {
   backdrop-filter: blur(5px);
+  opacity: 1 !important;
 }
 .is-mobile .menu {
   background-color: var(--s-bg-primary-color);
@@ -376,6 +377,17 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 }
 .is-mobile .mobile-tab-switcher {
   backdrop-filter: blur(5px);
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-group-container .close-button {
+  color: var(--level-1);
+  background-color: var(--s-hover-bg-color-green);
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-group-container .mobile-tab.is-active .mobile-tab-preview-empty,
+.is-mobile .mobile-tab-switcher .mobile-tab-group-container .mobile-tab.is-active .mobile-tab-preview-embed {
+  box-shadow: 0 0 0 1px var(--s-green-primary-color);
+}
+.is-mobile .mobile-tab-switcher .mobile-tab-group-container .mobile-tab-preview {
+  box-shadow: 0 0 0 1px var(--s-hover-bg-color-green);
 }
 .is-mobile .mobile-tab-switcher .mobile-tab-switcher-menubar .mobile-tab-switcher-menu-spacer {
   height: 100%;
@@ -397,11 +409,9 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   color: var(--s-bg-primary-color);
   border-radius: 50%;
 }
-.is-mobile .mobile-tab-switcher .mobile-tab-preview-empty {
-  box-shadow: 0 0 0 2px var(--yellow-faint);
-}
 .is-mobile .modal-bg {
   backdrop-filter: blur(5px);
+  opacity: 1 !important;
 }
 .is-mobile .suggestion-item.is-selected {
   background-color: var(--s-hover-bg-color-green);
