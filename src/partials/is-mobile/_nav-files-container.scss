@@ -1,6 +1,7 @@
 @mixin mobile-styles {
 
-  .workspace-drawer.mod-left {
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
     backdrop-filter: blur(5px);
   }
 
