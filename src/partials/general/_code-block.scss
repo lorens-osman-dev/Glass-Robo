@@ -1,0 +1,22 @@
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top: var(--code-border);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: var(--code-border);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-left: var(--code-border);
+  border-right: var(--code-border);
+}
+
+.markdown-rendered pre {
+  border: var(--code-border);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  background: #19191996
+}
