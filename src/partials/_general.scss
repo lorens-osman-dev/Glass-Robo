@@ -127,3 +127,8 @@ h4,
 button.mod-cta {
   background: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
 }
+
+//status-bar
+.status-bar {
+  backdrop-filter: blur(5px);
+}
