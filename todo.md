@@ -1,12 +1,12 @@
 # did
 
-[*] fix code blocks
+[*] add new icons
 
 # todo
 
 [ ] fix tables
+[ ] make properties element
 [ ] make bullets
-[ ] add new icons
 [ ] make quotes
 [ ] make README.md
 [ ] make github
