@@ -347,6 +347,10 @@ body:not(.is-mobile) .workspace-sidedock-vault-profile::before {
   pointer-events: none;
   /* Ensure it doesn’t interfere with interactions */
 }
+body:not(.is-mobile) .nav-files-container {
+  padding-bottom: 50px !important;
+  background-color: red !important;
+}
 
 body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   flex-direction: row;

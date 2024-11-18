@@ -1,5 +1,6 @@
 @mixin pc-styles {
 
+
   .workspace-sidedock-vault-profile {
     // background-color: #ff000000 !important;
     position: absolute;
@@ -28,4 +29,12 @@
 
     }
   }
+
+  // to prevent nav switcher from covering content
+  .nav-files-container {
+    padding-bottom: 50px !important;
+    background-color: red !important;
+  }
+
+
 }
