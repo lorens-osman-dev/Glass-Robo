@@ -1,9 +1,9 @@
 # did
 
-[*] make dark theme section
-[*] add manifest.json file
-[*] make symlink to obsidian
+[*] add bold fonts
+[*] fix title + h1 font width
 
 # todo
 
 [ ] make github
+[ ] fix heading colors
