@@ -18,4 +18,8 @@
   @include modal_and_prompt.mobile-styles();
 }
 
-.is-mobile {}
+// remove the stars background svg because it is heavy at mobile 
+body.is-mobile {
+  background: none;
+  background-color: var(--s-bg-primary-color);
+}

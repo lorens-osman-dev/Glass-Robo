@@ -1,10 +1,14 @@
 @mixin mobile-styles {
 
-  .nav-files-container.node-insert-event {
-    background-color: var(--s-bg-primary-color);
+  // .nav-files-container.node-insert-event {
+  //   background-color: var(--s-bg-primary-color);
+  // }
+
+  .workspace-drawer.mod-left {
+    backdrop-filter: blur(5px);
   }
 
-  //vault switcher
+  // vault switcher
   .workspace-drawer .nav-header {
     background: transparent;
     position: absolute;
@@ -21,7 +25,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #a1f98f03;
+    background: rgb(54 163 114 / 10%);
     /* Your desired color */
     backdrop-filter: blur(16.5px);
     /* Apply blur here */

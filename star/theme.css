@@ -338,8 +338,8 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 .is-mobile .menu .menu-grabber {
   background-color: var(--s-green-primary-color);
 }
-.is-mobile .nav-files-container.node-insert-event {
-  background-color: var(--s-bg-primary-color);
+.is-mobile .workspace-drawer.mod-left {
+  backdrop-filter: blur(5px);
 }
 .is-mobile .workspace-drawer .nav-header {
   background: transparent;
@@ -356,7 +356,7 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(161, 249, 143, 0.0117647059);
+  background: rgba(54, 163, 114, 0.1);
   /* Your desired color */
   backdrop-filter: blur(16.5px);
   /* Apply blur here */
@@ -405,4 +405,9 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 }
 .is-mobile .prompt:has(.inputMsgCon) .prompt-input {
   background-image: none;
+}
+
+body.is-mobile {
+  background: none;
+  background-color: var(--s-bg-primary-color);
 }
