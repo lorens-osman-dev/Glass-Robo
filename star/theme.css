@@ -348,8 +348,7 @@ body:not(.is-mobile) .workspace-sidedock-vault-profile::before {
   /* Ensure it doesn’t interfere with interactions */
 }
 body:not(.is-mobile) .nav-files-container {
-  padding-bottom: 50px !important;
-  background-color: red !important;
+  padding-bottom: 50px;
 }
 
 body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
