@@ -121,3 +121,8 @@ h4,
 .suggestion-container {
   background-color: var(--s-bg-primary-color) !important;
 }
+
+// fix vault switcher is over the files list
+.nav-files-container.node-insert-event {
+  padding-bottom: 100px !important;
+}

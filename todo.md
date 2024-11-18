@@ -1,9 +1,9 @@
 # did
 
-[*] fix heading colors
+[*] fix vault switcher is over the files list
 
 # todo
 
 [ ] make github
 [ ] make the buttons like lorens theme
-[ ] fix vault switcher is over the files list
+[ ] fix mobile actions in file explorer
