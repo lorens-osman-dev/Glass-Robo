@@ -1,10 +1,9 @@
 # did
 
-[*] add new icons
+[*] fix tables
 
 # todo
 
-[ ] fix tables
 [ ] make properties element
 [ ] make bullets
 [ ] make quotes

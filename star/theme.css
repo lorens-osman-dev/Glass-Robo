@@ -130,6 +130,7 @@ body {
   --code-value: #957425;
   --code-background: var(--s-bg-code-svg);
   --code-border: 1px dashed #4e4f4e42;
+  --table-border-color: #4e4f4e42 ;
 }
 
 /*
@@ -390,6 +391,72 @@ pre[class*=language-] {
 
 .metadata-property[data-property-key=youtube] .metadata-property-icon::before {
   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.4001 9.50006L13.9001 11.0001C14.8001 11.6001 14.8001 12.5001 13.9001 13.1001L11.4001 14.6001C10.4001 15.2001 9.6001 14.7001 9.6001 13.6001V10.6001C9.6001 9.30006 10.4001 8.90006 11.4001 9.50006Z" stroke="%23D8D8D8" stroke-width="1.7" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+h1,
+.markdown-rendered h1,
+.is-live-preview .HyperMD-header-1 {
+  font-weight: normal;
+}
+
+h2,
+h3,
+h4,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4 {
+  position: relative;
+}
+
+.is-live-preview .HyperMD-header-2::before,
+.markdown-rendered h2::before {
+  margin-inline-start: 0;
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  bottom: 3px;
+  border-radius: 5px;
+  background-color: var(--h2-color);
+  transform: translateY(4px);
+}
+
+.is-live-preview .HyperMD-header-3::before,
+.markdown-rendered h3::before {
+  margin-inline-start: 0;
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 2px;
+  bottom: 3px;
+  border-radius: 5px;
+  transform: translateY(4px);
+  background-color: var(--h3-color);
+}
+
+.is-live-preview .HyperMD-header-4::before,
+.markdown-rendered h4::before {
+  margin-inline-start: 0;
+  position: absolute;
+  content: " ";
+  display: inline-block;
+  width: 3px;
+  height: 2px;
+  bottom: 3px;
+  border-radius: 5px;
+  transform: translateY(3px);
+  background-color: var(--h4-color);
+}
+
+table,
+.table-wrapper {
+  background-color: #141414;
+}
+
+.markdown-rendered thead tr {
+  background: var(--s-bg-code-svg);
 }
 
 .workspace-leaf-resize-handle {
