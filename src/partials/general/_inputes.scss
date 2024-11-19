@@ -12,4 +12,16 @@
   input[type='number'] {
     background-color: var(--s-bg-primary-color);
   }
+
+  //slider
+  input[type='range'] {
+    background-color: rgb(24, 24, 37);
+  }
+
+
+}
+
+.tooltip {
+  background-color: rgb(24, 24, 37) !important;
+  width: auto !important;
 }

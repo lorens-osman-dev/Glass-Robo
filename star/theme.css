@@ -496,6 +496,14 @@ button:not(.clickable-icon) {
 .modal.mod-settings.mod-sidebar-layout input[type=number] {
   background-color: var(--s-bg-primary-color);
 }
+.modal.mod-settings.mod-sidebar-layout input[type=range] {
+  background-color: rgb(24, 24, 37);
+}
+
+.tooltip {
+  background-color: rgb(24, 24, 37) !important;
+  width: auto !important;
+}
 
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
