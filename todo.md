@@ -1,6 +1,6 @@
 # did
 
-[*] buttons
+[*] file tree icons
 
 # todo
 
