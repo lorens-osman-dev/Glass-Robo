@@ -1,0 +1,20 @@
+@mixin pc-styles {
+
+  .empty-state-container {
+
+    &::before {
+      top: -100px;
+    }
+
+    .empty-state-action.tappable {
+      border-radius: 3px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .horizontal-main-container .workspace-tab-container .view-content {
+    .empty-state {
+      background-color: transparent;
+    }
+  }
+}

@@ -9,12 +9,16 @@
 @use './is-pc/prompt' as prompt;
 @use './is-pc/settings-modal' as settings-modal;
 @use './is-pc/vault-switcher' as vault-switcher;
+@use './is-pc/robot-img-pc' as robot-img-pc;
+
 
 body:not(.is-mobile) {
   @include nav.pc-styles();
   @include prompt.pc-styles();
   @include settings-modal.pc-styles();
   @include vault-switcher.pc-styles();
+  @include robot-img-pc.pc-styles();
+
 }
 
 body:not(.is-mobile) {

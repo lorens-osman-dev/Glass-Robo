@@ -1,6 +1,6 @@
 # did
 
-[*] file tree icons
+[*] robot image
 
 # todo
 
