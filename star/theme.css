@@ -693,7 +693,7 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   background-image: none;
 }
 .is-mobile .modal.mod-settings.mod-sidebar-layout {
-  background: var(--s-bg-svg);
+  background: transparent;
 }
 .is-mobile .modal.mod-settings.mod-sidebar-layout .modal-content.vertical-tabs-container .vertical-tab-header-group {
   margin: 20px 10px;

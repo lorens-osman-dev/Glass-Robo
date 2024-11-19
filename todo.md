@@ -1,6 +1,6 @@
 # did
 
-[*] graph view stars background
+[*] fix setting modal on mobile
 
 # todo
 
