@@ -11,6 +11,8 @@
 @use './general/headers';
 @use './general/tables';
 @use './general/checkBox';
+@use './general/buttons';
+@use './general/inputes';
 
 
 //---------- hide spacer between side and center 
@@ -49,11 +51,6 @@ strong,
 
 .suggestion-container {
   background-color: var(--s-bg-primary-color) !important;
-}
-
-//---------- make the buttons like lorens theme
-button.mod-cta {
-  background: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
 }
 
 //---------- status-bar

@@ -1,0 +1,10 @@
+//---------- make the buttons like lorens theme
+button.mod-cta {
+  background: rgb(166, 227, 161) !important;
+  box-shadow: 0 0 2px inset rgb(30, 30, 46);
+}
+
+button:not(.clickable-icon) {
+  box-shadow: 0 0 2px inset rgb(30, 30, 46);
+  background-color: rgb(24, 24, 37)
+}

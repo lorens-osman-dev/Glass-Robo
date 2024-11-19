@@ -1,6 +1,6 @@
 # did
 
-[*] checkbox
+[*] buttons
 
 # todo
 

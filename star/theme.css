@@ -474,6 +474,26 @@ table,
   box-shadow: 0 0 4px rgb(30, 30, 46);
 }
 
+button.mod-cta {
+  background: rgb(166, 227, 161) !important;
+  box-shadow: 0 0 2px inset rgb(30, 30, 46);
+}
+
+button:not(.clickable-icon) {
+  box-shadow: 0 0 2px inset rgb(30, 30, 46);
+  background-color: rgb(24, 24, 37);
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=text],
+input[type=search],
+input[type=email],
+input[type=password],
+input[type=number] {
+  background-color: var(--s-bg-primary-color);
+}
+
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;
@@ -504,10 +524,6 @@ strong,
 
 .suggestion-container {
   background-color: var(--s-bg-primary-color) !important;
-}
-
-button.mod-cta {
-  background: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
 }
 
 .status-bar {
