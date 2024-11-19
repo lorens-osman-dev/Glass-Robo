@@ -1,0 +1,17 @@
+.checkbox-container {
+  background-color: rgb(243, 139, 168);
+  box-shadow: 0 0 2px inset rgb(30, 30, 46);
+
+  &.is-enabled {
+    background-color: rgb(166, 227, 161);
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &::after {
+    --toggle-thumb-color: rgb(24, 24, 37);
+    box-shadow: 0 0 4px rgb(30, 30, 46);
+  }
+}

@@ -1,6 +1,6 @@
 # did
 
-[*] fix setting modal on mobile
+[*] checkbox
 
 # todo
 
