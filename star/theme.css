@@ -604,6 +604,67 @@ button:not(.clickable-icon) {
   background-color: #0f2039;
 }
 
+.callout {
+  position: relative;
+  margin-top: 10px !important;
+  overflow: visible;
+  border: 1px solid var(--s-hover-bg-color-gray);
+}
+.callout .callout-title {
+  position: absolute;
+  top: -10px;
+  left: 15px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  color: var(--text-normal);
+  padding: 0 5px;
+  background-color: var(--s-bg-secondary-color);
+  box-shadow: 0px 2px 3px -1px rgb(42, 40, 34), 0px -0.5rem 0.3rem -0.5rem rgb(53, 48, 38) inset;
+}
+.callout .callout-title .callout-icon {
+  display: none;
+}
+.callout .callout-title .callout-title-inner {
+  font-weight: bold !important;
+}
+.callout[data-callout=note] {
+  border-color: #027aff;
+}
+.callout[data-callout=note] .callout-title {
+  background-color: #027aff;
+}
+.callout[data-callout=bug] {
+  border-color: #fb464c;
+}
+.callout[data-callout=bug] .callout-title {
+  background-color: #fb464c;
+}
+.callout[data-callout=important] {
+  border-color: #fb464c;
+  background-color: rgba(2, 122, 255, 0.1);
+}
+.callout[data-callout=important] .callout-title {
+  background-color: #fb464c;
+}
+.callout[data-callout=warning] {
+  border-color: #e9973f;
+}
+.callout[data-callout=warning] .callout-title {
+  background-color: #e9973f;
+}
+.callout[data-callout=tip] {
+  border-color: #53dfdd;
+}
+.callout[data-callout=tip] .callout-title {
+  background-color: #53dfdd;
+  color: var(--s-bg-primary-color);
+}
+
+.edit-block-button {
+  display: none !important;
+}
+
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;
