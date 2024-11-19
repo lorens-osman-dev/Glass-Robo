@@ -1,6 +1,6 @@
 # did
 
-[*] fix tables
+[*] graph view stars background
 
 # todo
 
@@ -8,4 +8,5 @@
 [ ] make bullets
 [ ] make quotes
 [ ] make README.md
+[ ] rearrange variables file
 [ ] make github

@@ -742,3 +742,7 @@ body.is-mobile {
   background: none;
   background-color: var(--s-bg-primary-color);
 }
+
+.is-mobile .view-content:has(canvas) {
+  background: var(--s-bg-svg);
+}
