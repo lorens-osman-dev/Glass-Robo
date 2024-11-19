@@ -484,13 +484,16 @@ button:not(.clickable-icon) {
   background-color: rgb(24, 24, 37);
 }
 
-input[type=date],
-input[type=datetime-local],
-input[type=text],
-input[type=search],
-input[type=email],
-input[type=password],
-input[type=number] {
+.modal.mod-settings.mod-sidebar-layout select,
+.modal.mod-settings.mod-sidebar-layout textarea,
+.modal.mod-settings.mod-sidebar-layout input.metadata-input-text,
+.modal.mod-settings.mod-sidebar-layout input[type=date],
+.modal.mod-settings.mod-sidebar-layout input[type=datetime-local],
+.modal.mod-settings.mod-sidebar-layout input[type=text],
+.modal.mod-settings.mod-sidebar-layout input[type=search],
+.modal.mod-settings.mod-sidebar-layout input[type=email],
+.modal.mod-settings.mod-sidebar-layout input[type=password],
+.modal.mod-settings.mod-sidebar-layout input[type=number] {
   background-color: var(--s-bg-primary-color);
 }
 
@@ -610,17 +613,6 @@ body:not(.is-mobile) .modal .modal-content.vertical-tabs-container::before {
   background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
   animation: rotate 60s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-}
-body:not(.is-mobile) textarea,
-body:not(.is-mobile) input.metadata-input-text,
-body:not(.is-mobile) input[type=date],
-body:not(.is-mobile) input[type=datetime-local],
-body:not(.is-mobile) input[type=text],
-body:not(.is-mobile) input[type=search],
-body:not(.is-mobile) input[type=email],
-body:not(.is-mobile) input[type=password],
-body:not(.is-mobile) input[type=number] {
-  background-color: var(--s-bg-primary-color);
 }
 body:not(.is-mobile) .workspace-sidedock-vault-profile {
   position: absolute;

@@ -1,9 +1,15 @@
-input[type='date'],
-input[type='datetime-local'],
-input[type='text'],
-input[type='search'],
-input[type='email'],
-input[type='password'],
-input[type='number'] {
-  background-color: var(--s-bg-primary-color);
+.modal.mod-settings.mod-sidebar-layout {
+
+  select,
+  textarea,
+  input.metadata-input-text,
+  input[type='date'],
+  input[type='datetime-local'],
+  input[type='text'],
+  input[type='search'],
+  input[type='email'],
+  input[type='password'],
+  input[type='number'] {
+    background-color: var(--s-bg-primary-color);
+  }
 }
