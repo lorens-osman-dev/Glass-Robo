@@ -46,9 +46,10 @@
   }
 }
 
-// nav bar 
-// .app-container:has(.horizontal-main-container .workspace-tab-container .view-content .empty-state) .mobile-navbar {
+// nav bar color if empty 
 
-//   background-color: #0f2039;
+.app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
 
-// }
+  background-color: #0f2039 !important;
+
+}
