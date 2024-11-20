@@ -1,10 +1,8 @@
 # did
 
-[*] make headers colors
+[*] rearrange variables file
 
 # todo
 
-[ ] make links colors
 [ ] make README.md
-[ ] rearrange variables file
 [ ] make github
