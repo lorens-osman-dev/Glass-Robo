@@ -69,14 +69,7 @@
   --background-modifier-border-focus: var(--s-green-primary-color); // foucused inputs border color
   --modal-background: var(--s-bg-primary-color);
   --caret-color: #ff0000;
-}
 
-body {
-  background: var(--s-bg-svg);
-  background-color: var(--s-bg-primary-color);
-  --font-interface-theme: "Figtree", "azer";
-  --font-text-theme: "Figtree", "azer";
-  --font-monospace-theme: "JetBrains Mono", "azer";
 
   /* Code block */
   --code-white-space: pre-wrap;
@@ -98,4 +91,13 @@ body {
   --code-border: 1px dashed #4e4f4e42;
 
   --table-border-color: #4e4f4e42
+}
+
+body {
+  background: var(--s-bg-svg);
+  background-color: var(--s-bg-primary-color);
+  --font-interface-theme: "Figtree", "azer";
+  --font-text-theme: "Figtree", "azer";
+  --font-monospace-theme: "JetBrains Mono", "azer";
+
 }

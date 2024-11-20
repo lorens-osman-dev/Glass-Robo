@@ -1,8 +1,8 @@
-table,
-.table-wrapper {
+.theme-dark table,
+.theme-dark .table-wrapper {
   background-color: #141414;
 }
 
-.markdown-rendered thead tr {
+.theme-dark .markdown-rendered thead tr {
   background: var(--s-bg-code-svg);
 }

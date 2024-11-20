@@ -110,14 +110,6 @@
   --background-modifier-border-focus: var(--s-green-primary-color);
   --modal-background: var(--s-bg-primary-color);
   --caret-color: #ff0000;
-}
-
-body {
-  background: var(--s-bg-svg);
-  background-color: var(--s-bg-primary-color);
-  --font-interface-theme: "Figtree", "azer";
-  --font-text-theme: "Figtree", "azer";
-  --font-monospace-theme: "JetBrains Mono", "azer";
   /* Code block */
   --code-white-space: pre-wrap;
   --code-size: var(--font-smallest);
@@ -135,6 +127,14 @@ body {
   --code-background: var(--s-bg-code-svg);
   --code-border: 1px dashed #4e4f4e42;
   --table-border-color: #4e4f4e42 ;
+}
+
+body {
+  background: var(--s-bg-svg);
+  background-color: var(--s-bg-primary-color);
+  --font-interface-theme: "Figtree", "azer";
+  --font-text-theme: "Figtree", "azer";
+  --font-monospace-theme: "JetBrains Mono", "azer";
 }
 
 /*
@@ -179,9 +179,9 @@ a {
   border: var(--code-border);
 }
 
-.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
-.cm-s-obsidian div.HyperMD-codeblock-end-bg,
-.cm-s-obsidian div.HyperMD-codeblock-bg {
+.theme-dark .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.theme-dark .cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.theme-dark .cm-s-obsidian div.HyperMD-codeblock-bg {
   background: rgba(13, 22, 29, 0.568627451);
 }
 
@@ -454,12 +454,12 @@ h4,
   background-color: var(--h4-color);
 }
 
-table,
-.table-wrapper {
+.theme-dark table,
+.theme-dark .table-wrapper {
   background-color: #141414;
 }
 
-.markdown-rendered thead tr {
+.theme-dark .markdown-rendered thead tr {
   background: var(--s-bg-code-svg);
 }
 
@@ -483,7 +483,7 @@ button.mod-cta {
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
 }
 
-button:not(.clickable-icon) {
+.theme-dark button:not(.clickable-icon) {
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
   background-color: rgb(24, 24, 37);
 }
@@ -499,6 +499,7 @@ button:not(.clickable-icon) {
 .modal.mod-settings.mod-sidebar-layout input[type=password],
 .modal.mod-settings.mod-sidebar-layout input[type=number] {
   background-color: var(--s-bg-primary-color);
+  color: var(--platinum);
 }
 .modal.mod-settings.mod-sidebar-layout input[type=range] {
   background-color: rgb(24, 24, 37);
@@ -1095,7 +1096,7 @@ body:not(.native-scrollbars) .modal-close-button:hover {
     transform: rotate(360deg);
   }
 }
-body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner {
+body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner {
   border-radius: 0.3em;
   padding: 0 0.3em;
   background-image: linear-gradient(to right, rgba(60, 165, 92, 0.6) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.6) 100%);
@@ -1103,14 +1104,14 @@ body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-heade
   background-size: 200% auto;
   box-shadow: 0 0 2px #eee;
 }
-body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner:hover {
+body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner:hover {
   background-position: right center;
   text-decoration: none;
 }
-body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-title {
+body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-title {
   color: #fff;
 }
-body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-close-button:hover {
+body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-close-button:hover {
   background-color: var(--level-1);
 }
 body:not(.is-mobile) .prompt {

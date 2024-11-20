@@ -4,7 +4,7 @@ button.mod-cta {
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
 }
 
-button:not(.clickable-icon) {
+.theme-dark button:not(.clickable-icon) {
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
   background-color: rgb(24, 24, 37)
 }
