@@ -1,10 +1,9 @@
 # did
 
-[*] make meta data container properties element
+[*] make bullets
 
 # todo
 
-[ ] make bullets
 [ ] make accent color
 [ ] make headers colors
 [ ] make links colors
