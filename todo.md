@@ -1,6 +1,6 @@
 # did
 
-[*] make bullets
+[*] add more icons to file tree icons
 
 # todo
 
