@@ -55,9 +55,6 @@
   --h1-color: var(--level-1);
   --h2-color: var(--level-2);
   --h3-color: var(--level-3);
-  // --h1-color: #d9d617;
-  // --h2-color: #0dc8f2;
-  // --h3-color: #72d5a5;
   --h4-color: var(--level-4);
   --h5-color: var(--level-5);
   --h6-color: var(--level-6);
@@ -96,4 +93,10 @@ body {
   --font-interface-theme: "Figtree", "azer";
   --font-text-theme: "Figtree", "azer";
   --font-monospace-theme: "JetBrains Mono", "azer";
+}
+
+body.lorens_headers {
+  --h1-color: #d9d617;
+  --h2-color: #0dc8f2;
+  --h3-color: #72d5a5;
 }

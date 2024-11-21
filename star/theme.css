@@ -19,6 +19,18 @@
 
 
 */
+/* @settings
+
+name: Glass theme settings
+id: a-unique-id
+settings:
+    -
+        id: lorens_headers
+        title: Lorens color scheme for headers
+        description: enable Lorens color scheme for more focus 
+        type: class-toggle
+
+*/
 /* figtree */
 @font-face {
   font-family: "Figtree";
@@ -135,6 +147,12 @@ body {
   --font-interface-theme: "Figtree", "azer";
   --font-text-theme: "Figtree", "azer";
   --font-monospace-theme: "JetBrains Mono", "azer";
+}
+
+body.lorens_headers {
+  --h1-color: #d9d617;
+  --h2-color: #0dc8f2;
+  --h3-color: #72d5a5;
 }
 
 /*

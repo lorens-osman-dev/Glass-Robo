@@ -19,6 +19,19 @@
 
 */
 
+/* @settings
+
+name: Glass theme settings
+id: a-unique-id
+settings:
+    -
+        id: lorens_headers
+        title: Lorens color scheme for headers
+        description: enable Lorens color scheme for more focus 
+        type: class-toggle
+
+*/
+
 @use './partials/_fonts.scss';
 @use './partials/_variables.scss';
 
