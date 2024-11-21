@@ -23,7 +23,7 @@ settings:
         allowEmpty: true
         format: hex
         opacity: false
-        default-light: '#'
+        default-light: '#fafafa'
         default-dark: '#141414'
   # Credits
 
@@ -68,7 +68,12 @@ body.disable_fonts_settings {
   --font-monospace-theme: "";
 }
 
-body.theme-dark.css-settings-manager {
+body.theme-dark {
 
-  background-color: var(--glass-background-color-settings) !important
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important
+}
+
+body.theme-light {
+
+  background-color: var(--glass-background-color-settings, #fafafa) !important
 }
