@@ -12,7 +12,7 @@
   --s-hover-bg-color-green: #a1f98f24;
   --s-hover-bg-color-gray: #676767;
 
-
+  --color-accent: var(--s-green-primary-color);
   --yellow-faint: #ffe699;
   --platinum: #c7c7c7; //for normal texts
   --platinum-faint: #b2b2b8;
@@ -93,10 +93,4 @@ body {
   --font-interface-theme: "Figtree", "azer";
   --font-text-theme: "Figtree", "azer";
   --font-monospace-theme: "JetBrains Mono", "azer";
-}
-
-body.lorens_headers {
-  --h1-color: #d9d617;
-  --h2-color: #0dc8f2;
-  --h3-color: #72d5a5;
 }
