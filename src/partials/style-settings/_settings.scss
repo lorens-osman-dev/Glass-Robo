@@ -1,0 +1,32 @@
+/* @settings
+
+name: Glass theme settings
+id: glass-theme-settings
+collapsed: false
+settings:
+    -
+        id: lorens_headers_settings
+        title: Lorens color scheme for headers
+        description: enable Lorens color scheme for more focus 
+        type: class-toggle
+    -
+        id: disable_fonts_settings
+        title: Glass theme fonts
+        description: Disable Glass theme fonts
+        type: class-toggle
+     
+
+*/
+
+
+body.lorens_headers_settings {
+  --h1-color: #d9d617;
+  --h2-color: #0dc8f2;
+  --h3-color: #72d5a5;
+}
+
+body.disable_fonts_settings {
+  --font-interface-theme: "";
+  --font-text-theme: "";
+  --font-monospace-theme: "";
+}

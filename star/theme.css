@@ -22,15 +22,93 @@
 /* @settings
 
 name: Glass theme settings
-id: a-unique-id
+id: glass-theme-settings
+collapsed: false
 settings:
     -
-        id: lorens_headers
+        id: lorens_headers_settings
         title: Lorens color scheme for headers
         description: enable Lorens color scheme for more focus 
         type: class-toggle
+    -
+        id: disable_fonts_settings
+        title: Glass theme fonts
+        description: Disable Glass theme fonts
+        type: class-toggle
+
 
 */
+body.lorens_headers_settings {
+  --h1-color: #d9d617;
+  --h2-color: #0dc8f2;
+  --h3-color: #72d5a5;
+}
+
+body.disable_fonts_settings {
+  --font-interface-theme: "";
+  --font-text-theme: "";
+  --font-monospace-theme: "";
+}
+
+.setting-item:is([data-id$=settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
+  display: none;
+}
+
+.setting-item:is([data-id$=settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  background-color: var(--color-accent);
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+
+.setting-item:is([data-id=glass-theme-settings],
+[data-id=anp-custom-rainbow-colors]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  transform: rotate(90deg);
+  transition: transform 0.1s;
+}
+
+.setting-item:is([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.setting-item:is([data-id$=settings]):not([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name {
+  position: relative;
+}
+.setting-item:is([data-id$=settings]):not([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name::before {
+  position: absolute;
+  left: calc((var(--font-ui-medium) + 3px) * -1);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  content: " ";
+  display: inline-flex;
+  flex-shrink: 0;
+  height: calc(var(--font-ui-medium) + 3px);
+  width: calc(var(--font-ui-medium) + 3px);
+  margin-left: calc(-0.5 * var(--size-4-1));
+  margin-right: calc(var(--size-4-2) - 3px);
+  transition: transform 0.1s;
+  vertical-align: text-top;
+  margin-right: 0;
+}
+
+.setting-item:is([data-id=lorens_headers_settings]) > .setting-item-info > .setting-item-name::before {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgLTAgLTEgMCAxNikiPgogICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiAvPgogICAgPHBhdGggaWQ9IlBhdGgiIGQ9Ik0wIDAuNjY2NjY3QzAgMC4yOTg0OCAwLjI5ODQ4IDAgMC42NjY2NjcgMEMwLjY2NjY2NyAwIDcuMzMzMzMgMCA3LjMzMzMzIDBDNy43MDE1MyAwIDggMC4yOTg0OCA4IDAuNjY2NjY3QzggMS4wMzQ4NiA3LjcwMTUzIDEuMzMzMzMgNy4zMzMzMyAxLjMzMzMzQzcuMzMzMzMgMS4zMzMzMyAwLjY2NjY2NyAxLjMzMzMzIDAuNjY2NjY3IDEuMzMzMzNDMC4yOTg0OCAxLjMzMzMzIDAgMS4wMzQ4NSAwIDAuNjY2NjY3QzAgMC42NjY2NjcgMCAwLjY2NjY2NyAwIDAuNjY2NjY3WiIgZmlsbD0iIzcyRDVBNSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyIDIuNjY3KSIgLz4KICAgIDxwYXRoIGlkPSJQYXRoIiBkPSJNMCAwLjY2NjY2N0MwIDAuMjk4NDY2IDAuMjQ4NzMzIDAgMC41NTU1NTYgMEMwLjU1NTU1NiAwIDkuNDQ0NDQgMCA5LjQ0NDQ0IDBDOS43NTEyOCAwIDEwIDAuMjk4NDY2IDEwIDAuNjY2NjY3QzEwIDEuMDM0ODcgOS43NTEyOCAxLjMzMzMzIDkuNDQ0NDQgMS4zMzMzM0M5LjQ0NDQ0IDEuMzMzMzMgMC41NTU1NTYgMS4zMzMzMyAwLjU1NTU1NiAxLjMzMzMzQzAuMjQ4NzMzIDEuMzMzMzMgMCAxLjAzNDg3IDAgMC42NjY2NjdDMCAwLjY2NjY2NyAwIDAuNjY2NjY3IDAgMC42NjY2NjdaIiBmaWxsPSIjMERDOEYyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgNy4zMzMpIiAvPgogICAgPHBhdGggaWQ9IlBhdGgiIGQ9Ik0wIDAuNjY2NjY2QzAgMC4yOTg0NjcgMC4yOTg0OCAwIDAuNjY2NjY3IDBDMC42NjY2NjcgMCAxMS4zMzMzIDAgMTEuMzMzMyAwQzExLjcwMTUgMCAxMiAwLjI5ODQ2NyAxMiAwLjY2NjY2NkMxMiAxLjAzNDg3IDExLjcwMTUgMS4zMzMzMyAxMS4zMzMzIDEuMzMzMzNDMTEuMzMzMyAxLjMzMzMzIDAuNjY2NjY3IDEuMzMzMzMgMC42NjY2NjcgMS4zMzMzM0MwLjI5ODQ4IDEuMzMzMzMgMCAxLjAzNDg3IDAgMC42NjY2NjZDMCAwLjY2NjY2NiAwIDAuNjY2NjY2IDAgMC42NjY2NjZaIiBmaWxsPSIjRDlENjE3IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgMTIpIiAvPgogIDwvZz4KPC9zdmc+");
+}
+
+.setting-item:is([data-id=disable_fonts_settings]) > .setting-item-info > .setting-item-name::before {
+  content: "𝒜" !important;
+  color: var(--color-accent);
+}
+
 /* figtree */
 @font-face {
   font-family: "Figtree";
@@ -101,6 +179,7 @@ settings:
   --background-secondary-alt: var(--s-bg-transparent);
   --interactive-before: var(--s-bg-transparent);
   --background-modifier-border: var(--s-bg-transparent);
+  --color-accent: var(--s-green-primary-color);
   --text-normal: var(--platinum);
   --text-faint: var(--platinum-faint);
   --text-highlight-bg: #5b5721;
@@ -147,12 +226,6 @@ body {
   --font-interface-theme: "Figtree", "azer";
   --font-text-theme: "Figtree", "azer";
   --font-monospace-theme: "JetBrains Mono", "azer";
-}
-
-body.lorens_headers {
-  --h1-color: #d9d617;
-  --h2-color: #0dc8f2;
-  --h3-color: #72d5a5;
 }
 
 /*

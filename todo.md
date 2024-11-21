@@ -1,6 +1,6 @@
 # did
 
-[*] rearrange variables file
+[*] make style settings
 
 # todo
 
