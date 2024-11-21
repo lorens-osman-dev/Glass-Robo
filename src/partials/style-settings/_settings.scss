@@ -4,6 +4,7 @@ name: Glass theme settings
 id: glass-theme-settings
 collapsed: false
 settings:
+  # General
     -
         id: lorens_headers_settings
         title: Lorens color scheme for headers
@@ -14,7 +15,43 @@ settings:
         title: Glass theme fonts
         description: Disable Glass theme fonts
         type: class-toggle
-     
+    -
+        id: glass-background-color-settings
+        title: App background color
+        type: variable-themed-color
+        description: Set app background color
+        allowEmpty: true
+        format: hex
+        opacity: false
+        default-light: '#'
+        default-dark: '#141414'
+  # Credits
+
+    -
+      id: glass-support-settings
+      title: Support Glass theme
+      description: If you like the theme, here are some ways to support development
+      type: heading
+      level: 1
+      collapsed: true
+    -
+      id: glass-url-donate
+      title: Buy Me a Coffee
+      description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
+      type: info-text
+      markdown: true
+    -
+      id: glass-url-star-repo
+      title: Star the Theme on GitHub
+      description: "[https://github.com/anubisnekhet/glass](https://github.com/anubisnekhet/glass)"
+      type: info-text
+      markdown: true
+    -
+      id: glass-url-submit-issue
+      title: Submit an Issue on GitHub
+      description: "[https://github.com/anubisnekhet/glass/issues](https://github.com/anubisnekhet/glass/issues)"
+      type: info-text
+      markdown: true
 
 */
 
@@ -29,4 +66,9 @@ body.disable_fonts_settings {
   --font-interface-theme: "";
   --font-text-theme: "";
   --font-monospace-theme: "";
+}
+
+body.theme-dark.css-settings-manager {
+
+  background-color: var(--glass-background-color-settings) !important
 }

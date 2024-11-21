@@ -25,6 +25,7 @@ name: Glass theme settings
 id: glass-theme-settings
 collapsed: false
 settings:
+  # General
     -
         id: lorens_headers_settings
         title: Lorens color scheme for headers
@@ -35,7 +36,43 @@ settings:
         title: Glass theme fonts
         description: Disable Glass theme fonts
         type: class-toggle
+    -
+        id: glass-background-color-settings
+        title: App background color
+        type: variable-themed-color
+        description: Set app background color
+        allowEmpty: true
+        format: hex
+        opacity: false
+        default-light: '#'
+        default-dark: '#141414'
+  # Credits
 
+    -
+      id: glass-support-settings
+      title: Support Glass theme
+      description: If you like the theme, here are some ways to support development
+      type: heading
+      level: 1
+      collapsed: true
+    -
+      id: glass-url-donate
+      title: Buy Me a Coffee
+      description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
+      type: info-text
+      markdown: true
+    -
+      id: glass-url-star-repo
+      title: Star the Theme on GitHub
+      description: "[https://github.com/anubisnekhet/glass](https://github.com/anubisnekhet/glass)"
+      type: info-text
+      markdown: true
+    -
+      id: glass-url-submit-issue
+      title: Submit an Issue on GitHub
+      description: "[https://github.com/anubisnekhet/glass/issues](https://github.com/anubisnekhet/glass/issues)"
+      type: info-text
+      markdown: true
 
 */
 body.lorens_headers_settings {
@@ -50,11 +87,15 @@ body.disable_fonts_settings {
   --font-monospace-theme: "";
 }
 
+body.theme-dark.css-settings-manager {
+  background-color: var(--glass-background-color-settings) !important;
+}
+
 .setting-item:is([data-id$=settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator > svg {
   display: none;
 }
 
-.setting-item:is([data-id$=settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::before {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
   background-color: var(--color-accent);
@@ -71,12 +112,12 @@ body.disable_fonts_settings {
 }
 
 .setting-item:is([data-id=glass-theme-settings],
-[data-id=anp-custom-rainbow-colors]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+[data-id=anp-custom-rainbow-colors]):not(.is-collapsed) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::before {
   transform: rotate(90deg);
   transition: transform 0.1s;
 }
 
-.setting-item:is([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::after {
+.setting-item:is([data-id=glass-theme-settings]) > .setting-item-info > .setting-item-name > .style-settings-collapse-indicator::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' data-darkreader-inline-stroke='' style='--darkreader-inline-stroke:currentColor;'%3E%3Ccircle cx='13.5' cy='6.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='17.5' cy='10.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='8.5' cy='7.5' r='.5'%3E%3C/circle%3E%3Ccircle cx='6.5' cy='12.5' r='.5'%3E%3C/circle%3E%3Cpath d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z'%3E%3C/path%3E%3C/svg%3E");
 }
 
@@ -107,6 +148,53 @@ body.disable_fonts_settings {
 .setting-item:is([data-id=disable_fonts_settings]) > .setting-item-info > .setting-item-name::before {
   content: "𝒜" !important;
   color: var(--color-accent);
+}
+
+.setting-item:is([data-id=glass-support-settings]) > .setting-item-info > .setting-item-name::before {
+  content: "❤" !important;
+  color: var(--level-1);
+  left: calc((var(--font-ui-medium) + 10px) * -1) !important;
+}
+
+.setting-item:is([data-id=glass-support-settings]) > .setting-item-control {
+  display: none;
+}
+
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-info > .setting-item-name::before {
+  content: "BG" !important;
+  color: var(--level-5);
+  left: calc((var(--font-ui-medium) + 10px) * -1) !important;
+}
+
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control button {
+  background-color: unset !important;
+  box-shadow: none;
+  display: flex;
+}
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control button:hover {
+  background-color: var(--s-hover-bg-color-green) !important;
+}
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control .theme-light {
+  background-color: white;
+}
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control .theme-light button {
+  color: black;
+}
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control .theme-dark {
+  background-color: black;
+}
+.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control .theme-dark button {
+  color: white;
+}
+
+.is-mobile .setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control > .themed-color-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.is-mobile .setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control > .themed-color-wrapper .theme-dark {
+  margin-top: 0;
 }
 
 /* figtree */
