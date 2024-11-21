@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => {
 
 			minify: isProduction, // Enable minification in production
 			cssMinify: isProduction, // Minify CSS only in production
-			outDir: "star", // Sets the output directory for the CSS file
+			outDir: "Glass", // Sets the output directory for the CSS file
 			emptyOutDir: true,
 
 			cssTarget: "esnext",
