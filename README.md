@@ -14,7 +14,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 ## Features
 
-6. Custom checkboxes.
 7. Stars background.
 8. Tow sets of colors for headers.
 9. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme.
@@ -155,6 +154,53 @@ I've made this theme primarily for my own purposes and it's completely free, but
         <p>
             <ul>
               <p align="center"> <img src="assets/pics/callouts/calloutsot-01.png"</p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
+<details>
+   <summary>6. Custom checkboxes.</summary>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Screenshot</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/general/checkboxs.png"</p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Available checkboxes</summary>
+        <p>
+            <ul>
+                <p> - [>] send</p>
+                <p> - [<] date</p>
+                <p> - [!] warning</p>
+                <p> - [-] deleted</p>
+                <p> - [/] chart</p>
+                <p> - [?] question</p>
+                <p> - [*] star</p>
+                <p> - [n] note</p>
+                <p> - [l] location</p>
+                <p> - [i] info</p>
+                <p> - [I] idea</p>
+                <p> - [S] dollar</p>
+                <p> - [p] like</p>
+                <p> - [c] dislike</p>
+                <p> - [b] bookmark</p>
+                <p> - ["] quote</p>
+                <p> - [u] up</p>
+                <p> - [d] down</p>
             </ul>
         </p>
       </details>
