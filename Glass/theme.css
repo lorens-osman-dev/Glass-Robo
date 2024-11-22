@@ -1282,7 +1282,7 @@ body:not(.native-scrollbars) .modal-close-button:hover {
     transform: rotate(360deg);
   }
 }
-body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner {
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner {
   border-radius: 0.3em;
   padding: 0 0.3em;
   background-image: linear-gradient(to right, rgba(60, 165, 92, 0.6) 0%, rgba(181, 172, 73, 0.6) 51%, rgba(60, 165, 92, 0.6) 100%);
@@ -1290,14 +1290,14 @@ body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspa
   background-size: 200% auto;
   box-shadow: 0 0 2px #eee;
 }
-body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner:hover {
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner:hover {
   background-position: right center;
   text-decoration: none;
 }
-body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-title {
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-title {
   color: #fff;
 }
-body:not(.is-mobile) .theme-dark .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-close-button:hover {
+body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-tab-header.is-active.mod-active > .workspace-tab-header-inner .workspace-tab-header-inner-close-button:hover {
   background-color: var(--level-1);
 }
 body:not(.is-mobile) .prompt {
