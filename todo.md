@@ -1,9 +1,8 @@
 # did
 
-[*] make cover
+[*] make github
+[*] after making github add that to style settings Credits section
 
 # todo
 
-[ ] make github
-[ ] after making github add that to style settings Credits section
 [ ] publish
