@@ -64,8 +64,8 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>3. New icons for meta data properties.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/general/meta-data.png"></p>
-    <p> All thanks to <a href="https://github.com/Avesend/obsidian-lumines">lumines theme</a>.</p>
+    <p align="center"> <img src="assets/pics/general/meta-data.jpg" style="height: 288px !important;width: 512px !important;"></p>
+    <p align="center"> All thanks to <a href="https://github.com/Avesend/obsidian-lumines">lumines theme</a>.</p>
       <ul>
         <li>
           <details>
