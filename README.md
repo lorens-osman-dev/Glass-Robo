@@ -163,7 +163,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/general/checkboxs.jpg"></p>
+              <p align="center"> <img src="assets/pics/general/checkboxs.jpg" style="height: 550px !important;width: 220px !important;"></p>
             </ul>
         </p>
       </details>
