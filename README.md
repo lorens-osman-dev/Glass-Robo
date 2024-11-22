@@ -24,10 +24,10 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>PC Screenshots</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/PC/img-pc-02.png"</p>
-              <p align="center"> <img src="assets/pics/PC/img-pc-04.png"</p>
-              <p align="center"> <img src="assets/pics/PC/img-pc-01.png"</p>
-              <p align="center"> <img src="assets/pics/PC/img-pc-03.png"</p>
+              <p align="center"> <img src="assets/pics/PC/img-pc-02.png"></p>
+              <p align="center"> <img src="assets/pics/PC/img-pc-04.png"></p>
+              <p align="center"> <img src="assets/pics/PC/img-pc-01.png"></p>
+              <p align="center"> <img src="assets/pics/PC/img-pc-03.png"></p>
             </ul>
         </p>
       </details>
@@ -40,13 +40,13 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Phone Screenshots</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/phone/img-phone-02.jpg" style="height: 420px !important;width: 220px !important;"</p>
-              <p align="center"> <img src="assets/pics/phone/img-phone-03.jpg" style="height: 420px !important;width: 220px !important;"</p>
-              <p align="center"> <img src="assets/pics/phone/img-phone-07.jpg" style="height: 420px !important;width: 220px !important;"</p>
-              <p align="center"> <img src="assets/pics/phone/img-phone-01.jpg" style="height: 420px !important;width: 220px !important;"</p>
-              <p align="center"> <img src="assets/pics/phone/img-phone-04.jpg" style="height: 420px !important;width: 220px !important;"</p>
-              <p align="center"> <img src="assets/pics/phone/img-phone-05.jpg" style="height: 420px !important;width: 220px !important;"</p>
-              <p align="center"> <img src="assets/pics/phone/img-phone-06.jpg" style="height: 420px !important;width: 220px !important;"</p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-02.jpg" style="height: 420px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-03.jpg" style="height: 420px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-07.jpg" style="height: 420px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-01.jpg" style="height: 420px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-04.jpg" style="height: 420px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-05.jpg" style="height: 420px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/phone/img-phone-06.jpg" style="height: 420px !important;width: 220px !important;"></p>
             </ul>
         </p>
       </details>
@@ -57,13 +57,14 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>2. Custom fonts.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/fonts/fonts.png"</p>
+    <p align="center"> <img src="assets/pics/fonts/IMG_20241122_133229.jpg"></p>
+    <p align="center"> <img src="assets/pics/fonts/IMG_20241122_132951.jpg"></p>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can enable/disable custom fonts.</p>
 </details>
 <details>
    <summary>3. New icons for meta data properties.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/general/meta-data.png"</p>
+    <p align="center"> <img src="assets/pics/general/meta-data.png"></p>
     <p> All thanks to <a href="https://github.com/Avesend/obsidian-lumines">lumines theme</a>.</p>
       <ul>
         <li>
@@ -121,7 +122,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>4. Neat icons for files and folders.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 449px !important;width: 400px !important;"</p>
+    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 449px !important;width: 400px !important;"></p>
 </details>
 <details>
    <summary>5. Updated styles for callouts.</summary>
@@ -132,7 +133,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>English Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/callouts/calloutsot-02.png"</p>
+              <p align="center"> <img src="assets/pics/callouts/calloutsot-02.png"></p>
             </ul>
         </p>
       </details>
@@ -145,7 +146,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Arabic Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/callouts/calloutsot-01.png"</p> 
+              <p align="center"> <img src="assets/pics/callouts/calloutsot-01.png"></p> 
             </ul>
         </p>
       </details>
@@ -162,7 +163,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/general/checkboxs.png"</p>
+              <p align="center"> <img src="assets/pics/general/checkboxs.png"></p>
             </ul>
         </p>
       </details>
@@ -209,7 +210,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Set 1 Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/headers/headers-01.png"</p>
+              <p align="center"> <img src="assets/pics/headers/headers-01.png"></p>
             </ul>
         </p>
       </details>
@@ -222,7 +223,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Set 2 Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/headers/headers-02.png"</p> 
+              <p align="center"> <img src="assets/pics/headers/headers-02.png"></p> 
             </ul>
         </p>
       </details>
