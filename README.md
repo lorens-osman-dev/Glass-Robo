@@ -12,17 +12,9 @@ Please do note that I've made this theme for myself, and it may not fit your use
 I've made this theme primarily for my own purposes and it's completely free, but if you do like it enough to consider throwing a few coins in my hat, here's a link.<br><br>
 <a href="https://www.buymeacoffee.com/lorens" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-## Features
+## Main Features
 
-7. Stars background.
-
-8. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme.
-9. One backtick code block dynamic background color.
-10. Gradenet color for note title.
-11. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
-
-<br><br>
-
+<br>
 <details>
    <summary>1. Glassy Design: A modern and sleek interface that enhances your Obsidian experience.</summary>
 
@@ -238,3 +230,14 @@ I've made this theme primarily for my own purposes and it's completely free, but
   </ul>
 
 </details>
+
+## Additional Features
+
+1. Stars background that gives the sensation of diving into space.
+2. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme.
+   - You can set background color.
+   - You can select headers color scheme.
+   - You can enable/disable custom fonts.
+3. One backtick code block dynamic background color.
+4. Gradenet color for note title.
+5. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
