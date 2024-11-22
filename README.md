@@ -14,7 +14,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 ## Features
 
-4. Neat icons for files and folders.
 5. Updated styles for callouts.
 6. Custom checkboxes.
 7. Stars background.
@@ -128,4 +127,10 @@ I've made this theme primarily for my own purposes and it's completely free, but
            </details>
         </li>
      </ul>
+</details>
+<details>
+   <summary>4. Neat icons for files and folders.</summary>
+   </br>
+    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg"</p>
+    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can enable/disable custom fonts.</p>
 </details>
