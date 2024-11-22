@@ -1,9 +1,11 @@
 # did
 
-[*] make style settings
+[*] finish README.md
+[*] add license
 
 # todo
 
-[ ] make README.md
+[ ] make cover
 [ ] make github
 [ ] after making github add that to style settings Credits section
+[ ] publish
