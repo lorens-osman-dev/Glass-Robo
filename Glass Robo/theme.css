@@ -1,12 +1,44 @@
 @charset "UTF-8";
 /* 
 
+                            .',:cccooc,.                    
+                     .,:oxO00OOkxlld;ood0x;                 
+                 ,lx00OOkxxxddddddoooc:ckOOOd,              
+              :kK0Okxxxdddddddoolllooc::xOOOOOk.            
+           .dKOkxxxxdddddl:;'........,;cdOOkxxOx.           
+          .dkxxxxdddo:,...';:cllc:, ...;:c;,odcolc:         
+          xxxdolc:,...;clollllc::::. .  ...'l;;l:dOdc'      
+         .:'....... 'dkxoollc::::::' . ..  ':,c';ocoo:;     
+      ...,;cloll,   .lolllc::::::::' . .'. ',...,:,:: ..    
+     .'looooooll:    'lllc:::::::;;' '.',. ...''.'..: .,    
+    . :ooooooolc:   ..'lc:::::::::,..;'',' .........,c:.    
+      .looooolc:;   ',..,;;;;,'...   ..',;. .........,      
+       'oooll:::'  .;:;,..     .......,,,:c. ....',,;       
+        ,lll:;'.  .'::::;,'''''''''',,,,,;ol;.....          
+          '..  ...';:::::;;,,;;,,,,,,,,,,;dxddc:co          
+            ..'',;;;,,,,,,,;;;;;;;;,,...',lxxxddkc          
+            .;;;;::;;:;;;;;;;,,,,''''.....;cldddk.          
+             ,:::;;;;,,,,'''..............',;:cc            
+              .;,,,,''....                .                 
+                  ',..            .                         
+                           .      ..    ..,;::,             
+                          ...     ...,,;:c:lllod,           
+                    ........'',,;::ccc;;::;'.  .:c,;:'      
+                 ,xolcclllcllcc:lllcc;;,;.   .':clxkkxdc.   
+                dkxdoolccccc:::cccc::,,,.   ..::clllccO0Ol  
+              ;ddlc::;;;:c:;,.;:::;:,,,'.    ';:::::,ccodkc 
+            .lllc:'odko;:c::'.''''';,'''.    ',;;;;,.,,lx:d.
+            l:l;:c'cll;,:::;'',,;;;;,'...    .'''','.''cd:l;
+           .;'l::c:ccc::::.,.,,,;;;,,....     ..'.''...,ddd,
 
- ██████  ██       █████  ███████ ███████     ████████ ██   ██ ███████ ███    ███ ███████ 
-██       ██      ██   ██ ██      ██             ██    ██   ██ ██      ████  ████ ██      
-██   ███ ██      ███████ ███████ ███████        ██    ███████ █████   ██ ████ ██ █████   
-██    ██ ██      ██   ██      ██      ██        ██    ██   ██ ██      ██  ██  ██ ██      
- ██████  ███████ ██   ██ ███████ ███████        ██    ██   ██ ███████ ██      ██ ███████ 
+
+
+ ██████  ██       █████  ███████ ███████     ██████   ██████  ██████   ██████  
+██       ██      ██   ██ ██      ██          ██   ██ ██    ██ ██   ██ ██    ██ 
+██   ███ ██      ███████ ███████ ███████     ██████  ██    ██ ██████  ██    ██ 
+██    ██ ██      ██   ██      ██      ██     ██   ██ ██    ██ ██   ██ ██    ██ 
+ ██████  ███████ ██   ██ ███████ ███████     ██   ██  ██████  ██████   ██████  
+
 
 
 ▗▖    ▗▄▖ ▗▄▄▖ ▗▄▄▄▖▗▖  ▗▖ ▗▄▄▖     ▗▄▖  ▗▄▄▖▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖
@@ -20,7 +52,7 @@
 */
 /* @settings
 
-name: Glass theme settings
+name: Glass Robo theme settings
 id: glass-theme-settings
 collapsed: false
 settings:
@@ -32,8 +64,8 @@ settings:
         type: class-toggle
     -
         id: disable_fonts_settings
-        title: Glass theme fonts
-        description: Disable Glass theme fonts
+        title: Glass Robo theme fonts
+        description: Disable Glass Robo theme fonts
         type: class-toggle
     -
         id: glass-background-color-settings
@@ -49,7 +81,7 @@ settings:
 
     -
       id: glass-support-settings
-      title: Support Glass theme
+      title: Support Glass Robo theme
       description: If you like the theme, here are some ways to support development
       type: heading
       level: 1
