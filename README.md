@@ -14,7 +14,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 ## Features
 
-5. Updated styles for callouts.
 6. Custom checkboxes.
 7. Stars background.
 8. Tow sets of colors for headers.
@@ -131,6 +130,35 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>4. Neat icons for files and folders.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg"</p>
-    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can enable/disable custom fonts.</p>
+    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 449px !important;width: 400px !important;"</p>
+</details>
+<details>
+   <summary>5. Updated styles for callouts.</summary>
+
+  <ul>
+    <li>
+     <details>
+      <summary>English Screenshot</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/calloutsot-02.png"</p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Arabic Screenshot</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/calloutsot-01.png"</p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
 </details>
