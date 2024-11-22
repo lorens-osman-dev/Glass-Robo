@@ -15,11 +15,11 @@ I've made this theme primarily for my own purposes and it's completely free, but
 ## Features
 
 7. Stars background.
-8. Tow sets of colors for headers.
-9. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme.
-10. One backtick code block dynamic background color.
-11. Gradenet color for note title.
-12. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
+
+8. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme.
+9. One backtick code block dynamic background color.
+10. Gradenet color for note title.
+11. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
 
 <br><br>
 
@@ -201,6 +201,36 @@ I've made this theme primarily for my own purposes and it's completely free, but
                 <p> - ["] quote</p>
                 <p> - [u] up</p>
                 <p> - [d] down</p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
+<details>
+   <summary>7. Tow sets of colors for headers.</summary>
+    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what set you want.</p>
+  <ul>
+    <li>
+     <details>
+      <summary>Set 1 Screenshot</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/headers-01.png"</p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Set 2 Screenshot</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/headers-02.png"</p> 
             </ul>
         </p>
       </details>
