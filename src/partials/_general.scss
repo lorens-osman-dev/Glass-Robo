@@ -65,3 +65,10 @@ strong,
 .status-bar {
   backdrop-filter: blur(5px);
 }
+
+// separator
+.view-content hr {
+  height: 1px;
+  background-image: linear-gradient(45deg, #CA4246 10%, #E16541 20%, #F18F43 30%, #8B9862 40%, #476098 50%, #476098 60%, #8B9862 70%, #F18F43 80%, #E16541 90%, #CA4246 100%);
+  border: none;
+}
