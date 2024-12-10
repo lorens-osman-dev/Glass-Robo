@@ -1,4 +1,5 @@
-.callout {
+//- glass-robo callouts
+.glass-robo-callouts .callout {
   //-------------General
   position: relative;
   margin-top: 10px !important;
@@ -77,4 +78,212 @@
 
 .edit-block-button {
   display: none !important;
+}
+
+//- Glow style
+
+.glow-callouts .callout::after {
+  content: '';
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  z-index: -1;
+}
+
+.glow-callouts .callout {
+  /* background: rgba(var(--callout-color), 0.05); */
+  background: transparent;
+  position: relative;
+  /* border: 1px solid rgba(var(--callout-color), 0.1); */
+  /* border-left: 3px solid rgba(var(--callout-color), 0.4); */
+  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+
+.glow-callouts .callout::before {
+  content: '';
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+  border-left: 3px solid rgb(var(--callout-color));
+  box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+
+.glow-callouts .callout:hover,
+.glow-callouts .markdown-source-view.mod-cm6 .cm-embed-block:hover {
+  border-radius: 0px;
+}
+
+.glow-callouts .callout-title-inner {
+  font-weight: bold;
+  /* font-family: var(--font-title); */
+  font-variation-settings: 'WGHT' 900;
+}
+
+.glow-callouts .callout::after {
+  content: '';
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  z-index: -1;
+}
+
+//- Wall style
+
+
+
+.wall-callouts.theme-dark {
+  --color-callout-red: #502626;
+  --color-callout-blue: #263850;
+  --color-callout-green: #265029;
+  --color-callout-yellow: #4c5026;
+  --color-callout-orange: #504126;
+  --color-callout-teal: #264e50;
+  --color-callout-grey: #3b3b3b;
+  --color-callout-purple: #392650;
+
+  --color-callout-border-red1: #715050;
+  --color-callout-border-blue1: #516073;
+  --color-callout-border-green1: #507153;
+  --color-callout-border-yellow1: #6e7150;
+  --color-callout-border-orange1: #716550;
+  --color-callout-border-teal1: #507171;
+  --color-callout-border-grey1: #616161;
+  --color-callout-border-purple1: #472650;
+  --color-callout-text: var(--text-on-accent);
+}
+
+.wall-callouts.theme-light {
+  --color-callout-red: #ffe0e0;
+  --color-callout-blue: #def1ff;
+  --color-callout-green: #e0ffe3;
+  --color-callout-yellow: #ffffe0;
+  --color-callout-orange: #fff2e0;
+  --color-callout-teal: #e0feff;
+  --color-callout-grey: #ededed;
+  --color-callout-purple: #ede0ff;
+
+  --color-callout-border-red: #e5c7c7;
+  --color-callout-border-blue: #c7d8e5;
+  --color-callout-border-green: #cce5c7;
+  --color-callout-border-yellow: #e3e5c7;
+  --color-callout-border-orange: #e5dbc7;
+  --color-callout-border-teal: #c7e5e5;
+  --color-callout-border-grey: #dbdbdb;
+  --color-callout-border-purple: #d8c7e5;
+  --color-callout-text: var(--text-normal);
+}
+
+.wall-callouts .callout[data-callout="info"],
+.wall-callouts .callout[data-callout="todo"] {
+  border: 1px solid var(--color-callout-border-blue) !important;
+  ;
+  background: var(--color-callout-blue) !important;
+}
+
+.wall-callouts .callout[data-callout="abstract"],
+.wall-callouts .callout[data-callout="summary"],
+.wall-callouts .callout[data-callout="tldr"] {
+  border: 1px solid var(--color-callout-border-teal);
+  background: var(--color-callout-teal);
+}
+
+.wall-callouts .callout[data-callout="warning"],
+.wall-callouts .callout[data-callout="caution"],
+.wall-callouts .callout[data-callout="danger"] {
+  border: 1px solid var(--color-callout-border-orange);
+  background: var(--color-callout-orange);
+}
+
+.wall-callouts .callout[data-callout="example"] {
+  border: 1px solid var(--color-callout-border-purple);
+  background: var(--color-callout-purple);
+}
+
+.wall-callouts .callout[data-callout="note"] {
+  border: 1px solid var(--color-callout-border-blue);
+  background: var(--color-callout-blue);
+}
+
+.wall-callouts .callout[data-callout="tip"],
+.wall-callouts .callout[data-callout="hint"],
+.wall-callouts .callout[data-callout="important"] {
+  border: 1px solid var(--color-callout-border-teal);
+  background: var(--color-callout-teal);
+}
+
+.wall-callouts .callout[data-callout="question"],
+.wall-callouts .callout[data-callout="help"],
+.wall-callouts .callout[data-callout="faq"] {
+  border: 1px solid var(--color-callout-border-yellow);
+  background: var(--color-callout-yellow);
+}
+
+.wall-callouts .callout[data-callout="danger"],
+.wall-callouts .callout[data-callout="error"] {
+  border: 1px solid var(--color-callout-border-red);
+  background: var(--color-callout-red);
+}
+
+.wall-callouts .callout[data-callout="failure"],
+.wall-callouts .callout[data-callout="fail"],
+.wall-callouts .callout[data-callout="missing"] {
+  border: 1px solid var(--color-callout-border-red);
+  background: var(--color-callout-red);
+}
+
+.wall-callouts .callout[data-callout="bug"] {
+  border: 1px solid var(--color-callout-border-red);
+  background: var(--color-callout-red);
+}
+
+.wall-callouts .callout[data-callout="quote"],
+.wall-callouts .callout[data-callout="cite"] {
+  border: 1px solid var(--color-callout-border-grey);
+  background: var(--color-callout-grey);
+}
+
+.wall-callouts .callout[data-callout="success"],
+.wall-callouts .callout[data-callout="check"],
+.wall-callouts .callout[data-callout="done"] {
+  border: 1px solid var(--color-callout-border-green);
+  background: var(--color-callout-green);
+}
+
+//- gummy style
+
+.gummy-callouts .callout {
+  /* background: rgba(var(--callout-color), 0.05); */
+  background: linear-gradient(135deg, rgba(var(--callout-color), 0.05), var(--background-primary));
+  position: relative;
+  /* border: 1px solid rgba(var(--callout-color), 0.1); */
+  border: 1px solid rgba(var(--callout-color), 0.4);
+  box-shadow: none;
+  border-radius: 12px;
+}
+
+
+.gummy-callouts .callout-title-inner {
+  font-weight: bold;
+  /* font-family: var(--font-title); */
+  font-variation-settings: 'WGHT' 900;
+  font-size: 1.2em;
+}
+
+.gummy-callouts .markdown-source-view.mod-cm6 .cm-embed-block:hover {
+  box-shadow: var(--embed-block-shadow-hover);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: text;
 }

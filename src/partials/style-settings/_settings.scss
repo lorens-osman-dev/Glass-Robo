@@ -25,6 +25,28 @@ settings:
         opacity: false
         default-light: '#fafafa'
         default-dark: '#141414'
+    -   
+        id: callouts-settings
+        title: Callout styling
+        type: class-select
+        allowEmpty: false
+        default: 'glass-robo-callouts'
+        options:
+          -
+              label: Obsidian default
+              value: obsidian-callouts
+          -
+              label: Glass Robo
+              value: glass-robo-callouts
+          -
+              label: Wall
+              value: wall-callouts
+          -
+              label: Gummy
+              value: gummy-callouts
+          -
+              label: Glow
+              value: glow-callouts
   # Credits
 
     -
