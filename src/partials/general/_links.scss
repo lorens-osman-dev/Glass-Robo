@@ -1,7 +1,13 @@
 @use "../variables.scss" as ff;
 
 a {
-  padding: 5px;
+  // padding: 5px;
   // @include ff.glass();
 
+}
+
+.external-link {
+  color: var(--text-accent);
+  background-position: 0;
+  background-position-x: 2px;
 }
