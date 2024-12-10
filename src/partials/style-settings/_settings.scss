@@ -25,8 +25,14 @@ settings:
         opacity: false
         default-light: '#fafafa'
         default-dark: '#141414'
-    -   
+    -
         id: callouts-settings
+        title: Callouts
+        type: heading
+        level: 1
+        collapsed: true
+    -   
+        id: callouts-settin
         title: Callout styling
         type: class-select
         allowEmpty: false
@@ -47,6 +53,11 @@ settings:
           -
               label: Glow
               value: glow-callouts
+    -
+        id: callout_center_settings
+        title: Centering callouts titles 
+        description: works only if the callouts style is "Glass Robo"
+        type: class-toggle
   # Credits
 
     -
