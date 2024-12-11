@@ -5,43 +5,292 @@
   font-family: inherit;
 }
 
-.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
-.theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark :not(pre)>code {
-  background-color: #464343de !important;
-  border-radius: 3px;
-  padding: 0 0.25em;
+
+
+//---------- colors
+body.theme-dark {
+  /* Dracula */
+  --color-dracula-background: #19212d;
+  --color-dracula-foreground: #f8f8f2;
+  --color-dracula-comment: #6272a4;
+  --color-dracula-cyan: #8be9fd;
+  --color-dracula-green: #50fa7b;
+  --color-dracula-orange: #ffb86c;
+  --color-dracula-pink: #ff79c6;
+  --color-dracula-purple: #bd93f9;
+  --color-dracula-red: #ff5555;
+  --color-dracula-yellow: #f1fa8c;
+
+  /* One Dark */
+  --color-dark-one-dark-background: #282c34;
+  --color-dark-one-dark-gray-1: #5c6370;
+  --color-dark-one-dark-gray-2: #abb2bf;
+  --color-dark-one-dark-red: #e06c75;
+  --color-dark-one-dark-orange: #d19a66;
+  --color-dark-one-dark-green: #98c379;
+  --color-dark-one-dark-aqua: #56b6c2;
+  --color-dark-one-dark-purple: #c678dd;
+  --color-dark-one-dark-blue: #61afef;
+  --color-dark-one-dark-yellow: #e5c07b;
+
+  /* Catppuccin Frappé */
+  --color-ctp-frappe-background: #303446;
+  --color-ctp-frappe-foreground: #c6d0f5;
+  --color-ctp-frappe-faint: #949cbb;
+  --color-ctp-frappe-muted: #838ba7;
+  --color-ctp-frappe-yellow: #e5c890;
+  --color-ctp-frappe-orange: #ef9f76;
+  --color-ctp-frappe-pink: #f4b8e4;
+  --color-ctp-frappe-cyan: #81c8be;
+  --color-ctp-frappe-green: #a6d189;
+  --color-ctp-frappe-red: #e78284;
+  --color-ctp-frappe-purple: #ca9ee6;
+
+  /* Catppuccin Macchiato */
+  --color-ctp-macchiato-background: #24273a;
+  --color-ctp-macchiato-foreground: #cad3f5;
+  --color-ctp-macchiato-faint: #8087a2;
+  --color-ctp-macchiato-muted: #939ab7;
+  --color-ctp-macchiato-yellow: #eed49f;
+  --color-ctp-macchiato-orange: #f5a97f;
+  --color-ctp-macchiato-pink: #f5bde6;
+  --color-ctp-macchiato-cyan: #8bd5ca;
+  --color-ctp-macchiato-green: #a6da95;
+  --color-ctp-macchiato-red: #ed8796;
+  --color-ctp-macchiato-purple: #c6a0f6;
+
+  /* Catppuccin Mocha */
+  --color-ctp-mocha-background: #1e1e2e;
+  --color-ctp-mocha-foreground: #cdd6f4;
+  --color-ctp-mocha-faint: #7f849c;
+  --color-ctp-mocha-muted: #9399b2;
+  --color-ctp-mocha-yellow: #f9e2af;
+  --color-ctp-mocha-orange: #fab387;
+  --color-ctp-mocha-pink: #f5c2e7;
+  --color-ctp-mocha-cyan: #94e2d5;
+  --color-ctp-mocha-green: #a6e3a1;
+  --color-ctp-mocha-red: #f38ba8;
+  --color-ctp-mocha-purple: #cba6f7;
+
+  /* Halcyon */
+  --color-halcyon-background: #171c28;
+  --color-halcyon-cyan: #5ccfe6;
+  --color-halcyon-yellow: #ffd580;
+  --color-halcyon-red: #ef6b73;
+  --color-halcyon-purple: #c3a6ff;
+  --color-halcyon-orange: #ffae57;
+  --color-halcyon-green: #bae67e;
+  --color-halcyon-grey-dark: #6679a4;
+
+  /* GitHub Dark */
+  --color-github-dark-background: #161b22;
+  --color-github-dark-red: #f47067;
+  --color-github-dark-green: #7ee787;
+  --color-github-dark-orange: #ffa657;
+  --color-github-dark-yellow: #d29922;
+  --color-github-dark-cyan: #a5d6ff;
+  --color-github-dark-blue: #6cb6ff;
+  --color-github-dark-purple: #d2a8ff;
+  --color-github-dark-pink: #f778ba;
+
+  /* Tokyo Night */
+  --color-tokyo-night-background: #1a1b26;
+  --color-tokyo-night-foreground: #a9b1d6;
+  --color-tokyo-night-faint: #51597d;
+  --color-tokyo-night-yellow: #e0af68;
+  --color-tokyo-night-orange: #ff9e64;
+  --color-tokyo-night-red: #f7768e;
+  --color-tokyo-night-cyan: #7dcfff;
+  --color-tokyo-night-green: #9ece6a;
+  --color-tokyo-night-purple: #9d7cd8;
+
 
 }
 
-//---------- code block
-.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-  border-top: var(--code-border);
+
+body.theme-dark.glassRobo {
+  /* Code block */
+  --code-white-space: pre-wrap;
+  --code-size: var(--font-smallest);
+
+  --code-comment: #4f4e4e;
+  --code-normal: var(--text-muted);
+  --code-function: #8cd30c;
+  --code-important: #b62b2b;
+  --code-keyword: #b62b2b;
+  --code-operator: #7d00b6;
+  --code-property: #2bb668;
+  --code-punctuation: #b62b2b;
+  --code-string: #a7b2b;
+  --code-tag: var(--color-red);
+  --code-value: #957425;
+
+  --code-background: var(--s-bg-code-svg);
+  --code-border: 1px dashed #4e4f4e42;
+
+  .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+  .cm-s-obsidian span.cm-inline-code,
+  :not(pre)>code {
+    background-color: #464343de !important;
+    border-radius: 3px;
+    padding: 0 0.25em;
+
+  }
+
+  .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+  .cm-s-obsidian div.HyperMD-codeblock-end-bg,
+  .cm-s-obsidian div.HyperMD-codeblock-bg {
+    // background: #19191996;
+    background: #0d161d91
+  }
+
+
+
+
+  .markdown-rendered pre {
+    border: var(--code-border);
+  }
+
+  :not(pre)>code[class*="language-"],
+  pre[class*="language-"] {
+    background-color: #0d161d91
+  }
+
+
+
+  //border
+  .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+    border-top: var(--code-border);
+  }
+
+  .cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    border-bottom: var(--code-border);
+  }
+
+  .cm-s-obsidian div.HyperMD-codeblock-bg {
+    border-left: var(--code-border);
+    border-right: var(--code-border);
+  }
 }
 
-.cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  border-bottom: var(--code-border);
+/* Syntax highlighting from https://github.com/clbn/dracula-gemini/blob/master/theme.css */
+body.theme-dark.dracula {
+  --code-background: var(--color-dracula-background);
+  --code-normal: var(--color-dracula-foreground);
+  --code-comment: var(--color-dracula-comment);
+  --code-function: var(--color-dracula-green);
+  --code-important: var(--color-dracula-red);
+  --code-keyword: var(--color-dracula-pink);
+  --code-operator: var(--color-dracula-foreground);
+  --code-property: var(--color-dracula-orange);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-dracula-yellow);
+  --code-tag: var(--color-dracula-red);
+  --code-value: var(--color-dracula-purple);
 }
 
-.cm-s-obsidian div.HyperMD-codeblock-bg {
-  border-left: var(--code-border);
-  border-right: var(--code-border);
+/* Syntax highlighting from https://github.com/colineckert/obsidian-things/blob/main/theme.css */
+body.theme-dark.one-dark-dark {
+  --code-background: var(--color-dark-one-dark-background);
+  --code-comment: var(--color-dark-one-dark-gray-1);
+  --code-function: var(--color-dark-one-dark-blue);
+  --code-important: var(--color-dark-one-dark-red);
+  --code-keyword: var(--color-dark-one-dark-purple);
+  --code-operator: var(--color-dark-one-dark-aqua);
+  --code-property: var(--color-dark-one-dark-orange);
+  --code-punctuation: var(--color-dark-one-dark-gray-2);
+  --code-string: var(--color-dark-one-dark-green);
+  --code-tag: var(--color-dark-one-dark-yellow);
+  --code-value: var(--color-dark-one-dark-blue);
 }
 
-.markdown-rendered pre {
-  border: var(--code-border);
+/* Syntax highlighting for Catppuccin themes from https://github.com/catppuccin/obsidian */
+body.theme-dark.catppuccin-frappe-for-dark,
+body.theme-light.catppuccin-frappe-for-light {
+  --code-background: var(--color-ctp-frappe-background);
+  --code-normal: var(--color-ctp-frappe-foreground);
+  --code-comment: var(--color-ctp-frappe-faint);
+  --code-function: var(--color-ctp-frappe-yellow);
+  --code-important: var(--color-ctp-frappe-orange);
+  --code-keyword: var(--color-ctp-frappe-pink);
+  --code-property: var(--color-ctp-frappe-cyan);
+  --code-punctuation: var(--color-ctp-frappe-muted);
+  --code-string: var(--color-ctp-frappe-green);
+  --code-tag: var(--color-ctp-frappe-red);
+  --code-value: var(--color-ctp-frappe-purple);
 }
 
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-end-bg,
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-bg {
-  // background: #19191996;
-  background: #0d161d91
+body.theme-dark.catppuccin-macchiato {
+  --code-background: var(--color-ctp-macchiato-background);
+  --code-normal: var(--color-ctp-macchiato-foreground);
+  --code-comment: var(--color-ctp-macchiato-faint);
+  --code-function: var(--color-ctp-macchiato-yellow);
+  --code-important: var(--color-ctp-macchiato-orange);
+  --code-keyword: var(--color-ctp-macchiato-pink);
+  --code-property: var(--color-ctp-macchiato-cyan);
+  --code-punctuation: var(--color-ctp-macchiato-muted);
+  --code-string: var(--color-ctp-macchiato-green);
+  --code-tag: var(--color-ctp-macchiato-red);
+  --code-value: var(--color-ctp-macchiato-purple);
 }
 
+body.theme-dark.catppuccin-mocha {
+  --code-background: var(--color-ctp-mocha-background);
+  --code-normal: var(--color-ctp-mocha-foreground);
+  --code-comment: var(--color-ctp-mocha-faint);
+  --code-function: var(--color-ctp-mocha-yellow);
+  --code-important: var(--color-ctp-mocha-orange);
+  --code-keyword: var(--color-ctp-mocha-pink);
+  --code-property: var(--color-ctp-mocha-cyan);
+  --code-punctuation: var(--color-ctp-mocha-muted);
+  --code-string: var(--color-ctp-mocha-green);
+  --code-tag: var(--color-ctp-mocha-red);
+  --code-value: var(--color-ctp-mocha-purple);
+}
 
-///
-:not(pre)>code[class*="language-"],
-pre[class*="language-"] {
-  background-color: #0d161d91
+/* Syntax highlighting from https://github.com/dbarenholz/halcyon-obsidian/blob/master/theme.css */
+body.theme-dark.halcyon {
+  --code-background: var(--color-halcyon-background);
+  --code-normal: var(--color-halcyon-cyan);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-halcyon-yellow);
+  --code-important: var(--color-halcyon-red);
+  --code-keyword: var(--color-halcyon-purple);
+  --code-operator: var(--color-halcyon-orange);
+  --code-property: var(--text-muted);
+  --code-punctuation: var(--color-halcyon-purple);
+  --code-string: var(--color-halcyon-green);
+  --code-tag: var(--color-halcyon-grey-dark);
+  --code-value: var(--color-halcyon-grey-dark);
+}
+
+/* Syntax highlighting for GitHub themes from https://github.com/krios2146/obsidian-theme-github/blob/master/theme.css */
+body.theme-dark.github-dark {
+  --code-background: var(--color-github-dark-background);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-github-dark-orange);
+  --code-important: var(--color-github-dark-orange);
+  --code-keyword: var(--color-github-dark-red);
+  --code-property: var(--color-github-dark-blue);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-github-dark-cyan);
+  --code-tag: var(--color-github-dark-red);
+  --code-value: var(--color-github-dark-purple);
+}
+
+/* Syntax highlighting for Tokyo Night themes from https://github.com/tcmmichaelb139/obsidian-tokyonight */
+body.theme-dark.tokyo-night {
+  --code-background: var(--color-tokyo-night-background);
+  --code-normal: var(--color-tokyo-night-foreground);
+  --code-comment: var(--color-tokyo-night-faint);
+  --code-function: var(--color-tokyo-night-yellow);
+  --code-important: var(--color-tokyo-night-orange);
+  --code-keyword: var(--color-tokyo-night-purple);
+  --code-operator: var(--color-tokyo-night-red);
+  --code-property: var(--color-tokyo-night-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-tokyo-night-green);
+  --code-tag: var(--color-tokyo-night-red);
+  --code-value: var(--color-tokyo-night-purple);
 }

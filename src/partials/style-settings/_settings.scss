@@ -58,6 +58,48 @@ settings:
         title: Centering callouts titles 
         description: works only if the callouts style is "Glass Robo"
         type: class-toggle
+    
+    -
+        id: codeBlocks-settings
+        title: Code blocks
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: syntax-highlight-theme-dark
+        title: Code blocks styling
+        description: Select syntax highlighting for dark theme
+        type: class-select
+        allowEmpty: false
+        default: glassRobo
+        options:
+            - 
+                label: Glass Robo
+                value: glassRobo
+            - 
+                label: Dracula
+                value: dracula
+            - 
+                label: One Dark
+                value: one-dark-dark
+            - 
+                label: Catppuccin Frappé
+                value: catppuccin-frappe-for-dark
+            - 
+                label: Catppuccin Macchiato
+                value: catppuccin-macchiato
+            - 
+                label: Catppuccin Mocha
+                value: catppuccin-mocha
+            - 
+                label: Halcyon
+                value: halcyon
+            - 
+                label: GitHub Dark
+                value: github-dark
+            - 
+                label: Tokyo Night
+                value: tokyo-night
   # Credits
 
     -
