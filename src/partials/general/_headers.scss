@@ -1,16 +1,22 @@
 h1,
 .markdown-rendered h1,
-.is-live-preview .HyperMD-header-1 {
-  font-weight: normal;
-}
-
-//---------- HEADING underline
+.is-live-preview .HyperMD-header-1,
 h2,
-h3,
-h4,
 .markdown-rendered h2,
+.is-live-preview .HyperMD-header-2,
+h3,
 .markdown-rendered h3,
-.markdown-rendered h4 {
+.is-live-preview .HyperMD-header-3,
+h4,
+.markdown-rendered h4,
+.is-live-preview .HyperMD-header-4,
+h5,
+.markdown-rendered h5,
+.is-live-preview .HyperMD-header-5,
+h6,
+.markdown-rendered h6,
+.is-live-preview .HyperMD-header-6 {
+  font-weight: bold;
   position: relative;
 }
 
@@ -27,6 +33,13 @@ h4,
   border-radius: 5px;
   background-color: var(--h2-color);
   transform: translateY(4px);
+
+
+}
+
+.is-live-preview .HyperMD-header-2[dir="rtl"]::before,
+.markdown-rendered[dir="rtl"] h2::before {
+  bottom: 0px !important;
 }
 
 //h3
@@ -44,6 +57,11 @@ h4,
   background-color: var(--h3-color);
 }
 
+.is-live-preview .HyperMD-header-3[dir="rtl"]::before,
+.markdown-rendered[dir="rtl"] h3::before {
+  bottom: 0px !important;
+}
+
 //h4
 .is-live-preview .HyperMD-header-4::before,
 .markdown-rendered h4::before {
@@ -58,4 +76,9 @@ h4,
   border-radius: 5px;
   transform: translateY(3px);
   background-color: var(--h4-color);
+}
+
+.is-live-preview .HyperMD-header-4[dir="rtl"]::before,
+.markdown-rendered[dir="rtl"] h4::before {
+  bottom: 0px !important;
 }
