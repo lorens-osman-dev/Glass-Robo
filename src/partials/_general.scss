@@ -44,7 +44,10 @@
 strong,
 .cm-strong {
   font-weight: bold;
-  color: var(--level-1);
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 //---------- dashed border for file tree
