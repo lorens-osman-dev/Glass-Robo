@@ -110,6 +110,48 @@ settings:
         title: Centering callouts titles 
         description: works only if the callouts style is "Glass Robo"
         type: class-toggle
+
+    -
+        id: codeBlocks-settings
+        title: Code blocks
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: syntax-highlight-theme-dark
+        title: Code blocks styling
+        description: Select syntax highlighting for dark theme
+        type: class-select
+        allowEmpty: false
+        default: glassRobo
+        options:
+            - 
+                label: Glass Robo
+                value: glassRobo
+            - 
+                label: Dracula
+                value: dracula
+            - 
+                label: One Dark
+                value: one-dark-dark
+            - 
+                label: Catppuccin Frappé
+                value: catppuccin-frappe-for-dark
+            - 
+                label: Catppuccin Macchiato
+                value: catppuccin-macchiato
+            - 
+                label: Catppuccin Mocha
+                value: catppuccin-mocha
+            - 
+                label: Halcyon
+                value: halcyon
+            - 
+                label: GitHub Dark
+                value: github-dark
+            - 
+                label: Tokyo Night
+                value: tokyo-night
   # Credits
 
     -
@@ -224,6 +266,11 @@ body.theme-light {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Zz4KICAgIDxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgLz4KICAgIDxwYXRoIGlkPSJTaGFwZSIgZD0iTTYuODcxNDcgMTMuNjY2N0w2Ljc5NTIgMTMuNjY2N0M2Ljc5NTIgMTMuNjY2NyA2Ljc5NTEzIDEzLjY2NjcgNi43OTUxMyAxMy42NjY3QzUuMzM0NzEgMTMuNjY2NyA0LjE4NzYxIDEzLjY2NjcgMy4yOTIwMSAxMy41NDYzQzIuMzc0MjUgMTMuNDIyOSAxLjY0NjA3IDEzLjE2NDkgMS4wNzM5NCAxMi41OTI3QzAuNTAxODA3IDEyLjAyMDYgMC4yNDM3ODcgMTEuMjkyNCAwLjEyMDM5MyAxMC4zNzQ3Qy0xLjMyMzIyZS0wNSA5LjQ3OTA3IC02LjU1NjUxZS0wNiA4LjMzMTkzIDEuMTkyMDllLTA3IDYuODcxNDdDMS4xOTIwOWUtMDcgNi44NzE0NyAxLjE5MjA5ZS0wNyA2Ljc5NTIgMS4xOTIwOWUtMDcgNi43OTUyQy02LjU1NjUxZS0wNiA1LjMzNDczIC0xLjMyMzIyZS0wNSA0LjE4NzYyIDAuMTIwNCAzLjI5MjAxQzAuMjQzNzg3IDIuMzc0MjQgMC41MDE4MTQgMS42NDYwNyAxLjA3Mzk0IDEuMDczOTRDMS42NDYwNyAwLjUwMTgwNyAyLjM3NDI1IDAuMjQzNzg3IDMuMjkyMDIgMC4xMjAzOTNDNC4xODc2MyAtMS4zMjMyMmUtMDUgNS4zMzQ3NiAtNi41NTY1MWUtMDYgNi43OTUyIDEuMTkyMDllLTA3QzYuNzk1MiAxLjE5MjA5ZS0wNyA2Ljg3MTQ3IDEuMTkyMDllLTA3IDYuODcxNDcgMS4xOTIwOWUtMDdDOC4zMzE5MyAtNi41NTY1MWUtMDYgOS40NzkwNyAtMS4zMjMyMmUtMDUgMTAuMzc0NyAwLjEyMDM5M0MxMS4yOTI0IDAuMjQzNzg3IDEyLjAyMDYgMC41MDE4MDcgMTIuNTkyNyAxLjA3Mzk0QzEzLjE2NDkgMS42NDYwNyAxMy40MjI5IDIuMzc0MjUgMTMuNTQ2MyAzLjI5MjAxQzEzLjY2NjcgNC4xODc2MiAxMy42NjY3IDUuMzM0NzMgMTMuNjY2NyA2Ljc5NTJDMTMuNjY2NyA2Ljc5NTIgMTMuNjY2NyA2Ljc5NTIgMTMuNjY2NyA2Ljc5NTJMMTMuNjY2NyA2Ljg3MTQ3QzEzLjY2NjcgNi44NzE0NyAxMy42NjY3IDYuODcxNDcgMTMuNjY2NyA2Ljg3MTQ3QzEzLjY2NjcgOC4zMzE5MyAxMy42NjY3IDkuNDc5MDcgMTMuNTQ2MyAxMC4zNzQ3QzEzLjQyMjkgMTEuMjkyNCAxMy4xNjQ5IDEyLjAyMDYgMTIuNTkyNyAxMi41OTI3QzEyLjAyMDYgMTMuMTY0OSAxMS4yOTI0IDEzLjQyMjkgMTAuMzc0NyAxMy41NDYzQzkuNDc5MDcgMTMuNjY2NyA4LjMzMTkzIDEzLjY2NjcgNi44NzE0NyAxMy42NjY3QzYuODcxNDcgMTMuNjY2NyA2Ljg3MTQ3IDEzLjY2NjcgNi44NzE0NyAxMy42NjY3Wk03Ljg5NzQ3IDkuNjQwNzNDNy44MTk2NyA5LjM3NTggNy45NzE0IDkuMDk3OTMgOC4yMzYzMyA5LjAyMDEzQzkuMTM3MDcgOC43NTU2NyA5Ljc4MjMzIDguMDg3NjcgOS45NTQzMyA3LjMwMDhDOS45NTQzMyA3LjMwMDggOS4zNjQyIDcuMzMzMiA5LjA1NTY3IDcuMzMzMkM5LjA1NTY3IDcuMzMzMiA4LjQ2OTkzIDcuMzMzMjcgOC4yNDU1MyA3LjMwNDhDOC4wMDI2IDcuMjc0MDcgNy43NDY4NyA3LjIwMjQ3IDcuNTM0IDcuMDAxODdDNy4zMTY4NyA2Ljc5NzMzIDcuMjM1MTMgNi41NDQ2NyA3LjIwMDUzIDYuMzAyQzcuMTY5NTMgNi4wODQ4IDcuMTY5NiA1LjQ2ODc5IDcuMTY5NiA1LjQ2ODc5QzcuMTY5NTMgNS4xODEzNiA3LjE2OTUzIDQuOTE0OTYgNy4yMDA1MyA0LjY5NzcyQzcuMjM1MTMgNC40NTUwOSA3LjMxNjg3IDQuMjAyNDMgNy41MzQgMy45OTc4N0M3Ljc0Njg3IDMuNzk3MjkgOC4wMDI2IDMuNzI1NjggOC4yNDU1MyAzLjY5NDkxQzguNDY5OTMgMy42NjY0OCA5LjExMzkzIDMuNjY2NTMgOS4xMTM5MyAzLjY2NjUzQzkuMTEzOTMgMy42NjY1MyA5LjExMzkzIDMuNjY2NTMgOS4xMTM5MyAzLjY2NjUzQzkuNDIyNDcgMy42NjY1MSA5LjY5OTY3IDMuNjY2NDggOS45MjQwNyAzLjY5NDkxQzEwLjE2NyAzLjcyNTY4IDEwLjQyMjcgMy43OTcyOSAxMC42MzU2IDMuOTk3ODdDMTAuODUyNyA0LjIwMjQzIDEwLjkzNDUgNC40NTUwOSAxMC45NjkxIDQuNjk3NzJDMTEuMDAwMSA0LjkxNDk2IDExLjAwMDEgNS4xODEzNyAxMSA1LjQ2ODhDMTEgNS40Njg4IDExIDUuNDY4ODEgMTEgNS40Njg4MUMxMSA1LjQ2ODgxIDExIDYuODc5IDExIDYuODc5QzExIDguMzYwNjcgOS45MjU0NyA5LjU2NjQgOC41MTgwNyA5Ljk3OTZDOC4yNTMwNyAxMC4wNTc0IDcuOTc1MiA5LjkwNTY3IDcuODk3NDcgOS42NDA3M0M3Ljg5NzQ3IDkuNjQwNzMgNy44OTc0NyA5LjY0MDczIDcuODk3NDcgOS42NDA3M1pNMy4zOTQ1MSA5LjY0MDczQzMuMzE2NzIgOS4zNzU4IDMuNDY4NDUgOS4wOTc5MyAzLjczMzQxIDkuMDIwMTNDNC42MzQxMyA4Ljc1NTY3IDUuMjc5NCA4LjA4NzY3IDUuNDUxNDEgNy4zMDA4QzUuNDUxNDEgNy4zMDA4IDQuODYxMzEgNy4zMzMyIDQuNTUyNzUgNy4zMzMyQzQuNTUyNzUgNy4zMzMyIDMuOTY3MDEgNy4zMzMyNyAzLjc0MjYgNy4zMDQ4QzMuNDk5NjkgNy4yNzQwNyAzLjI0Mzk1IDcuMjAyNDcgMy4wMzEwNSA3LjAwMTg3QzIuODEzOTMgNi43OTczMyAyLjczMjIxIDYuNTQ0NjcgMi42OTc1OCA2LjMwMkMyLjY2NjU4IDYuMDg0OCAyLjY2NjY2IDUuNDY4ODEgMi42NjY2NiA1LjQ2ODgxQzIuNjY2NjIgNS4xODEzNyAyLjY2NjU4IDQuOTE0OTYgMi42OTc1OCA0LjY5NzcyQzIuNzMyMjEgNC40NTUwOSAyLjgxMzkzIDQuMjAyNDMgMy4wMzEwNSAzLjk5Nzg3QzMuMjQzOTUgMy43OTcyOSAzLjQ5OTY5IDMuNzI1NjggMy43NDI2IDMuNjk0OTFDMy45NjcgMy42NjY0OCA0LjYxMDk5IDMuNjY2NTMgNC42MTA5OSAzLjY2NjUzQzQuNjEwOTkgMy42NjY1MyA0LjYxMSAzLjY2NjUzIDQuNjExIDMuNjY2NTNDNC45MTk1NSAzLjY2NjUxIDUuMTk2NzMgMy42NjY0OCA1LjQyMTEzIDMuNjk0OTFDNS42NjQwNyAzLjcyNTY4IDUuOTE5OCAzLjc5NzI5IDYuMTMyNjcgMy45OTc4N0M2LjM0OTggNC4yMDI0MyA2LjQzMTUzIDQuNDU1MDkgNi40NjYxMyA0LjY5NzcyQzYuNDk3MTMgNC45MTQ5NiA2LjQ5NzEzIDUuMTgxMzcgNi40OTcwNyA1LjQ2ODgxQzYuNDk3MDcgNS40Njg4MSA2LjQ5NzA3IDYuODc5IDYuNDk3MDcgNi44NzlDNi40OTcwNyA4LjM2MDY3IDUuNDIyNTIgOS41NjY0IDQuMDE1MTIgOS45Nzk2QzMuNzUwMTcgMTAuMDU3NCAzLjQ3MjMxIDkuOTA1NjcgMy4zOTQ1MSA5LjY0MDczQzMuMzk0NTEgOS42NDA3MyAzLjM5NDUxIDkuNjQwNzMgMy4zOTQ1MSA5LjY0MDczWiIgZmlsbD0iI0YyOEFBNyIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjE2NyAxLjE2NykiIC8+CiAgPC9nPgo8L3N2Zz4=");
 }
 
+.setting-item:is([data-id=codeBlocks-settings]) > .setting-item-info > .setting-item-name::before {
+  left: calc((var(--font-ui-medium) + 11px) * -1) !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBjbGFzcz0iaW5qZWN0ZWQtc3ZnIiBkYXRhLXNyYz0iaHR0cHM6Ly9jZG4uaHVnZWljb25zLmNvbS9pY29ucy9jb2RlLWNpcmNsZS1zb2xpZC1zdGFuZGFyZC5zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiByb2xlPSJpbWciIGNvbG9yPSIjYjllYjhmIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiAxLjI1QzYuMDYyOTQgMS4yNSAxLjI1IDYuMDYyOTQgMS4yNSAxMkMxLjI1IDE3LjkzNzEgNi4wNjI5NCAyMi43NSAxMiAyMi43NUMxNy45MzcxIDIyLjc1IDIyLjc1IDE3LjkzNzEgMjIuNzUgMTJDMjIuNzUgNi4wNjI5NCAxNy45MzcxIDEuMjUgMTIgMS4yNVpNNy41IDcuMjVDNi44MDk2NCA3LjI1IDYuMjUgNy44MDk2NCA2LjI1IDguNVYxMC4yNzI5TDUuMzc1OTYgMTEuNTg0QzUuMjA4MDEgMTEuODM1OSA1LjIwODAxIDEyLjE2NDEgNS4zNzU5NiAxMi40MTZMNi4yNSAxMy43MjcxVjE1LjVDNi4yNSAxNi4xOTA0IDYuODA5NjQgMTYuNzUgNy41IDE2Ljc1SDguNUM4LjkxNDIxIDE2Ljc1IDkuMjUgMTYuNDE0MiA5LjI1IDE2QzkuMjUgMTUuNTg1OCA4LjkxNDIxIDE1LjI1IDguNSAxNS4yNUg3Ljc1VjEzLjY1MTRDNy43NSAxMy40MDQ2IDcuNjc2OTUgMTMuMTYzMyA3LjU0MDA2IDEyLjk1OEw2LjkwMTM5IDEyTDcuNTQwMDYgMTEuMDQyQzcuNjc2OTUgMTAuODM2NyA3Ljc1IDEwLjU5NTQgNy43NSAxMC4zNDg2VjguNzVIOC41QzguOTE0MjEgOC43NSA5LjI1IDguNDE0MjEgOS4yNSA4QzkuMjUgNy41ODU3OSA4LjkxNDIxIDcuMjUgOC41IDcuMjVINy41Wk0xNC43NSA4QzE0Ljc1IDcuNTg1NzkgMTUuMDg1OCA3LjI1IDE1LjUgNy4yNUgxNi41QzE3LjE5MDQgNy4yNSAxNy43NSA3LjgwOTY0IDE3Ljc1IDguNVYxMC4yNzI5TDE4LjYyNCAxMS41ODRDMTguNzkyIDExLjgzNTkgMTguNzkyIDEyLjE2NDEgMTguNjI0IDEyLjQxNkwxNy43NSAxMy43MjcxVjE1LjVDMTcuNzUgMTYuMTkwNCAxNy4xOTA0IDE2Ljc1IDE2LjUgMTYuNzVIMTUuNUMxNS4wODU4IDE2Ljc1IDE0Ljc1IDE2LjQxNDIgMTQuNzUgMTZDMTQuNzUgMTUuNTg1OCAxNS4wODU4IDE1LjI1IDE1LjUgMTUuMjVIMTYuMjVWMTMuNjUxNEMxNi4yNSAxMy40MDQ2IDE2LjMyMyAxMy4xNjMzIDE2LjQ1OTkgMTIuOTU4TDE3LjA5ODYgMTJMMTYuNDU5OSAxMS4wNDJDMTYuMzIzIDEwLjgzNjcgMTYuMjUgMTAuNTk1NCAxNi4yNSAxMC4zNDg2VjguNzVIMTUuNUMxNS4wODU4IDguNzUgMTQuNzUgOC40MTQyMSAxNC43NSA4Wk0xMCAxMUM5LjQ0NzcxIDExIDkgMTEuNDQ3NyA5IDEyQzkgMTIuNTUyMyA5LjQ0NzcxIDEzIDEwIDEzSDEwLjAwOUMxMC41NjEyIDEzIDExLjAwOSAxMi41NTIzIDExLjAwOSAxMkMxMS4wMDkgMTEuNDQ3NyAxMC41NjEyIDExIDEwLjAwOSAxMUgxMFpNMTMuOTkxIDExQzEzLjQzODggMTEgMTIuOTkxIDExLjQ0NzcgMTIuOTkxIDEyQzEyLjk5MSAxMi41NTIzIDEzLjQzODggMTMgMTMuOTkxIDEzSDE0QzE0LjU1MjMgMTMgMTUgMTIuNTUyMyAxNSAxMkMxNSAxMS40NDc3IDE0LjU1MjMgMTEgMTQgMTFIMTMuOTkxWiIgZmlsbD0iI2I5ZWI4ZiI+PC9wYXRoPgo8L3N2Zz4=");
+}
+
 .setting-item:is([data-id=glass-support-settings]) > .setting-item-info > .setting-item-name::before {
   content: "❤" !important;
   color: var(--level-1);
@@ -231,7 +278,8 @@ body.theme-light {
 }
 
 .setting-item:is([data-id=glass-support-settings]) > .setting-item-control,
-.setting-item:is([data-id=callouts-settings]) > .setting-item-control {
+.setting-item:is([data-id=callouts-settings]) > .setting-item-control,
+.setting-item:is([data-id=codeBlocks-settings]) > .setting-item-control {
   content: "";
   display: none;
 }
@@ -365,22 +413,6 @@ body.theme-light {
   --background-modifier-border-focus: var(--s-green-primary-color);
   --modal-background: var(--s-bg-primary-color);
   --caret-color: #ff0000;
-  /* Code block */
-  --code-white-space: pre-wrap;
-  --code-size: var(--font-smallest);
-  --code-comment: #4f4e4e;
-  --code-normal: var(--text-muted);
-  --code-function: #8cd30c;
-  --code-important: #b62b2b;
-  --code-keyword: #b62b2b;
-  --code-operator: #7d00b6;
-  --code-property: #2bb668;
-  --code-punctuation: #b62b2b;
-  --code-string: #a7b2b;
-  --code-tag: var(--color-red);
-  --code-value: #957425;
-  --code-background: var(--s-bg-code-svg);
-  --code-border: 1px dashed #4e4f4e42;
   --table-border-color: #4e4f4e42 ;
 }
 
@@ -411,40 +443,264 @@ body {
   font-family: inherit;
 }
 
-.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
-.theme-dark .cm-s-obsidian span.cm-inline-code,
-.theme-dark :not(pre) > code {
+body.theme-dark {
+  /* Dracula */
+  --color-dracula-background: #19212d;
+  --color-dracula-foreground: #f8f8f2;
+  --color-dracula-comment: #6272a4;
+  --color-dracula-cyan: #8be9fd;
+  --color-dracula-green: #50fa7b;
+  --color-dracula-orange: #ffb86c;
+  --color-dracula-pink: #ff79c6;
+  --color-dracula-purple: #bd93f9;
+  --color-dracula-red: #ff5555;
+  --color-dracula-yellow: #f1fa8c;
+  /* One Dark */
+  --color-dark-one-dark-background: #282c34;
+  --color-dark-one-dark-gray-1: #5c6370;
+  --color-dark-one-dark-gray-2: #abb2bf;
+  --color-dark-one-dark-red: #e06c75;
+  --color-dark-one-dark-orange: #d19a66;
+  --color-dark-one-dark-green: #98c379;
+  --color-dark-one-dark-aqua: #56b6c2;
+  --color-dark-one-dark-purple: #c678dd;
+  --color-dark-one-dark-blue: #61afef;
+  --color-dark-one-dark-yellow: #e5c07b;
+  /* Catppuccin Frappé */
+  --color-ctp-frappe-background: #303446;
+  --color-ctp-frappe-foreground: #c6d0f5;
+  --color-ctp-frappe-faint: #949cbb;
+  --color-ctp-frappe-muted: #838ba7;
+  --color-ctp-frappe-yellow: #e5c890;
+  --color-ctp-frappe-orange: #ef9f76;
+  --color-ctp-frappe-pink: #f4b8e4;
+  --color-ctp-frappe-cyan: #81c8be;
+  --color-ctp-frappe-green: #a6d189;
+  --color-ctp-frappe-red: #e78284;
+  --color-ctp-frappe-purple: #ca9ee6;
+  /* Catppuccin Macchiato */
+  --color-ctp-macchiato-background: #24273a;
+  --color-ctp-macchiato-foreground: #cad3f5;
+  --color-ctp-macchiato-faint: #8087a2;
+  --color-ctp-macchiato-muted: #939ab7;
+  --color-ctp-macchiato-yellow: #eed49f;
+  --color-ctp-macchiato-orange: #f5a97f;
+  --color-ctp-macchiato-pink: #f5bde6;
+  --color-ctp-macchiato-cyan: #8bd5ca;
+  --color-ctp-macchiato-green: #a6da95;
+  --color-ctp-macchiato-red: #ed8796;
+  --color-ctp-macchiato-purple: #c6a0f6;
+  /* Catppuccin Mocha */
+  --color-ctp-mocha-background: #1e1e2e;
+  --color-ctp-mocha-foreground: #cdd6f4;
+  --color-ctp-mocha-faint: #7f849c;
+  --color-ctp-mocha-muted: #9399b2;
+  --color-ctp-mocha-yellow: #f9e2af;
+  --color-ctp-mocha-orange: #fab387;
+  --color-ctp-mocha-pink: #f5c2e7;
+  --color-ctp-mocha-cyan: #94e2d5;
+  --color-ctp-mocha-green: #a6e3a1;
+  --color-ctp-mocha-red: #f38ba8;
+  --color-ctp-mocha-purple: #cba6f7;
+  /* Halcyon */
+  --color-halcyon-background: #171c28;
+  --color-halcyon-cyan: #5ccfe6;
+  --color-halcyon-yellow: #ffd580;
+  --color-halcyon-red: #ef6b73;
+  --color-halcyon-purple: #c3a6ff;
+  --color-halcyon-orange: #ffae57;
+  --color-halcyon-green: #bae67e;
+  --color-halcyon-grey-dark: #6679a4;
+  /* GitHub Dark */
+  --color-github-dark-background: #161b22;
+  --color-github-dark-red: #f47067;
+  --color-github-dark-green: #7ee787;
+  --color-github-dark-orange: #ffa657;
+  --color-github-dark-yellow: #d29922;
+  --color-github-dark-cyan: #a5d6ff;
+  --color-github-dark-blue: #6cb6ff;
+  --color-github-dark-purple: #d2a8ff;
+  --color-github-dark-pink: #f778ba;
+  /* Tokyo Night */
+  --color-tokyo-night-background: #1a1b26;
+  --color-tokyo-night-foreground: #a9b1d6;
+  --color-tokyo-night-faint: #51597d;
+  --color-tokyo-night-yellow: #e0af68;
+  --color-tokyo-night-orange: #ff9e64;
+  --color-tokyo-night-red: #f7768e;
+  --color-tokyo-night-cyan: #7dcfff;
+  --color-tokyo-night-green: #9ece6a;
+  --color-tokyo-night-purple: #9d7cd8;
+}
+
+body.theme-dark.glassRobo {
+  /* Code block */
+  --code-white-space: pre-wrap;
+  --code-size: var(--font-smallest);
+  --code-comment: #4f4e4e;
+  --code-normal: var(--text-muted);
+  --code-function: #8cd30c;
+  --code-important: #b62b2b;
+  --code-keyword: #b62b2b;
+  --code-operator: #7d00b6;
+  --code-property: #2bb668;
+  --code-punctuation: #b62b2b;
+  --code-string: #a7b2b;
+  --code-tag: var(--color-red);
+  --code-value: #957425;
+  --code-background: var(--s-bg-code-svg);
+  --code-border: 1px dashed #4e4f4e42;
+}
+body.theme-dark.glassRobo .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+body.theme-dark.glassRobo .cm-s-obsidian span.cm-inline-code,
+body.theme-dark.glassRobo :not(pre) > code {
   background-color: rgba(70, 67, 67, 0.8705882353) !important;
   border-radius: 3px;
   padding: 0 0.25em;
 }
-
-.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-end-bg,
+body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-bg {
+  background: rgba(13, 22, 29, 0.568627451);
+}
+body.theme-dark.glassRobo .markdown-rendered pre {
+  border: var(--code-border);
+}
+body.theme-dark.glassRobo :not(pre) > code[class*=language-],
+body.theme-dark.glassRobo pre[class*=language-] {
+  background-color: rgba(13, 22, 29, 0.568627451);
+}
+body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   border-top: var(--code-border);
 }
-
-.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-end-bg {
   border-bottom: var(--code-border);
 }
-
-.cm-s-obsidian div.HyperMD-codeblock-bg {
+body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-bg {
   border-left: var(--code-border);
   border-right: var(--code-border);
 }
 
-.markdown-rendered pre {
-  border: var(--code-border);
+/* Syntax highlighting from https://github.com/clbn/dracula-gemini/blob/master/theme.css */
+body.theme-dark.dracula {
+  --code-background: var(--color-dracula-background);
+  --code-normal: var(--color-dracula-foreground);
+  --code-comment: var(--color-dracula-comment);
+  --code-function: var(--color-dracula-green);
+  --code-important: var(--color-dracula-red);
+  --code-keyword: var(--color-dracula-pink);
+  --code-operator: var(--color-dracula-foreground);
+  --code-property: var(--color-dracula-orange);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-dracula-yellow);
+  --code-tag: var(--color-dracula-red);
+  --code-value: var(--color-dracula-purple);
 }
 
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-end-bg,
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-bg {
-  background: rgba(13, 22, 29, 0.568627451);
+/* Syntax highlighting from https://github.com/colineckert/obsidian-things/blob/main/theme.css */
+body.theme-dark.one-dark-dark {
+  --code-background: var(--color-dark-one-dark-background);
+  --code-comment: var(--color-dark-one-dark-gray-1);
+  --code-function: var(--color-dark-one-dark-blue);
+  --code-important: var(--color-dark-one-dark-red);
+  --code-keyword: var(--color-dark-one-dark-purple);
+  --code-operator: var(--color-dark-one-dark-aqua);
+  --code-property: var(--color-dark-one-dark-orange);
+  --code-punctuation: var(--color-dark-one-dark-gray-2);
+  --code-string: var(--color-dark-one-dark-green);
+  --code-tag: var(--color-dark-one-dark-yellow);
+  --code-value: var(--color-dark-one-dark-blue);
 }
 
-:not(pre) > code[class*=language-],
-pre[class*=language-] {
-  background-color: rgba(13, 22, 29, 0.568627451);
+/* Syntax highlighting for Catppuccin themes from https://github.com/catppuccin/obsidian */
+body.theme-dark.catppuccin-frappe-for-dark,
+body.theme-light.catppuccin-frappe-for-light {
+  --code-background: var(--color-ctp-frappe-background);
+  --code-normal: var(--color-ctp-frappe-foreground);
+  --code-comment: var(--color-ctp-frappe-faint);
+  --code-function: var(--color-ctp-frappe-yellow);
+  --code-important: var(--color-ctp-frappe-orange);
+  --code-keyword: var(--color-ctp-frappe-pink);
+  --code-property: var(--color-ctp-frappe-cyan);
+  --code-punctuation: var(--color-ctp-frappe-muted);
+  --code-string: var(--color-ctp-frappe-green);
+  --code-tag: var(--color-ctp-frappe-red);
+  --code-value: var(--color-ctp-frappe-purple);
+}
+
+body.theme-dark.catppuccin-macchiato {
+  --code-background: var(--color-ctp-macchiato-background);
+  --code-normal: var(--color-ctp-macchiato-foreground);
+  --code-comment: var(--color-ctp-macchiato-faint);
+  --code-function: var(--color-ctp-macchiato-yellow);
+  --code-important: var(--color-ctp-macchiato-orange);
+  --code-keyword: var(--color-ctp-macchiato-pink);
+  --code-property: var(--color-ctp-macchiato-cyan);
+  --code-punctuation: var(--color-ctp-macchiato-muted);
+  --code-string: var(--color-ctp-macchiato-green);
+  --code-tag: var(--color-ctp-macchiato-red);
+  --code-value: var(--color-ctp-macchiato-purple);
+}
+
+body.theme-dark.catppuccin-mocha {
+  --code-background: var(--color-ctp-mocha-background);
+  --code-normal: var(--color-ctp-mocha-foreground);
+  --code-comment: var(--color-ctp-mocha-faint);
+  --code-function: var(--color-ctp-mocha-yellow);
+  --code-important: var(--color-ctp-mocha-orange);
+  --code-keyword: var(--color-ctp-mocha-pink);
+  --code-property: var(--color-ctp-mocha-cyan);
+  --code-punctuation: var(--color-ctp-mocha-muted);
+  --code-string: var(--color-ctp-mocha-green);
+  --code-tag: var(--color-ctp-mocha-red);
+  --code-value: var(--color-ctp-mocha-purple);
+}
+
+/* Syntax highlighting from https://github.com/dbarenholz/halcyon-obsidian/blob/master/theme.css */
+body.theme-dark.halcyon {
+  --code-background: var(--color-halcyon-background);
+  --code-normal: var(--color-halcyon-cyan);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-halcyon-yellow);
+  --code-important: var(--color-halcyon-red);
+  --code-keyword: var(--color-halcyon-purple);
+  --code-operator: var(--color-halcyon-orange);
+  --code-property: var(--text-muted);
+  --code-punctuation: var(--color-halcyon-purple);
+  --code-string: var(--color-halcyon-green);
+  --code-tag: var(--color-halcyon-grey-dark);
+  --code-value: var(--color-halcyon-grey-dark);
+}
+
+/* Syntax highlighting for GitHub themes from https://github.com/krios2146/obsidian-theme-github/blob/master/theme.css */
+body.theme-dark.github-dark {
+  --code-background: var(--color-github-dark-background);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: var(--color-github-dark-orange);
+  --code-important: var(--color-github-dark-orange);
+  --code-keyword: var(--color-github-dark-red);
+  --code-property: var(--color-github-dark-blue);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-github-dark-cyan);
+  --code-tag: var(--color-github-dark-red);
+  --code-value: var(--color-github-dark-purple);
+}
+
+/* Syntax highlighting for Tokyo Night themes from https://github.com/tcmmichaelb139/obsidian-tokyonight */
+body.theme-dark.tokyo-night {
+  --code-background: var(--color-tokyo-night-background);
+  --code-normal: var(--color-tokyo-night-foreground);
+  --code-comment: var(--color-tokyo-night-faint);
+  --code-function: var(--color-tokyo-night-yellow);
+  --code-important: var(--color-tokyo-night-orange);
+  --code-keyword: var(--color-tokyo-night-purple);
+  --code-operator: var(--color-tokyo-night-red);
+  --code-property: var(--color-tokyo-night-cyan);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-tokyo-night-green);
+  --code-tag: var(--color-tokyo-night-red);
+  --code-value: var(--color-tokyo-night-purple);
 }
 
 /* Element: properties
