@@ -20,6 +20,21 @@ h6,
   position: relative;
 }
 
+h1,
+.HyperMD-header.HyperMD-header-1.cm-line[dir="rtl"],
+h2,
+.HyperMD-header.HyperMD-header-2.cm-line[dir="rtl"],
+h3,
+.HyperMD-header.HyperMD-header-3.cm-line[dir="rtl"],
+h4,
+.HyperMD-header.HyperMD-header-4.cm-line[dir="rtl"],
+h5,
+.HyperMD-header.HyperMD-header-5.cm-line[dir="rtl"],
+h6,
+.HyperMD-header.HyperMD-header-6.cm-line[dir="rtl"] {
+  margin-bottom: 5px !important;
+}
+
 //h2
 .is-live-preview .HyperMD-header-2::before,
 .markdown-rendered h2::before {
@@ -29,12 +44,10 @@ h6,
   display: inline-block;
   width: 18px;
   height: 2px;
-  bottom: 3px;
+  bottom: 2px;
   border-radius: 5px;
   background-color: var(--h2-color);
   transform: translateY(4px);
-
-
 }
 
 .is-live-preview .HyperMD-header-2[dir="rtl"]::before,
@@ -72,7 +85,7 @@ h6,
   display: inline-block;
   width: 3px;
   height: 2px;
-  bottom: 3px;
+  bottom: 2px;
   border-radius: 5px;
   transform: translateY(3px);
   background-color: var(--h4-color);
