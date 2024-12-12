@@ -1,9 +1,11 @@
-<h1 align="center">Glass Robo</h1>
+<h1 align="center">Glass Robo  </h1>
 <h3 align="center">Personal theme for <a href="https://obsidian.md">Obsidian</a> :3</h3><br>
 
 <p align="center"> <img src="assets/pics/robo2.png" style="height: 200px !important;width: 200px !important;" > </p>
 
 ## Preface
+
+![Downloads](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Freleases.obsidian.md%2Fstats%2Ftheme&query=%24.Glass%20Robo.download&style=for-the-badge&logo=obsidian&label=downloads&labelColor=%23131922&color=%239ca0fa)
 
 Please do note that I've made this theme for myself, and it may not fit your use cases.
 
@@ -231,14 +233,72 @@ I've made this theme primarily for my own purposes and it's completely free, but
   </ul>
 
 </details>
+<details>
+   <summary>8. 4 different styles for callouts.</summary>
+    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
+  <ul>
+    <li>
+     <details>
+      <summary>Glass Robo style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/1.glassRobo.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Wall style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/2.wall.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Gummy style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/3.gummy.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Glow style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/4.glow.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
 
 ## Additional Features
 
 1. Stars background that gives the sensation of diving into space.
-2. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme.
-   - You can set background color.
-   - You can select headers color scheme.
-   - You can enable/disable custom fonts.
+2. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme, You can:
+   - Set background color.
+   - Select headers color scheme.
+   - Enable/disable custom fonts.
+   - Select callout style from 4 different styles.
+   - Enable/disable callout title centering.
+   - Select code block theme from 9 different styles.
 3. One backtick code block dynamic background color.
-4. Gradenet color for note title.
-5. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
+4. Gradient color for note title.
+5. Gradient color for strong text.
+6. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
+7. 9 different theme for code block.
