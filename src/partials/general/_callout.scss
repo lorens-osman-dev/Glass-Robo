@@ -362,7 +362,7 @@
 
 //- Loli style
 .loli-callouts .callout {
-  border-radius: 30px;
+  border-radius: 33px;
 
   padding: 10px;
   border: 1px solid #ffffff1a;
@@ -391,5 +391,94 @@
     border-radius: inherit;
     opacity: 0.1;
     z-index: 0;
+  }
+}
+
+//- idlib style
+.idlib-callouts .callout {
+  border-radius: 33px;
+  background-color: #f8c4b9;
+  padding: 3px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  .callout-title {
+    color: #d4978c;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .callout-title-inner {
+      font-weight: bold;
+    }
+
+    .callout-icon {
+      display: none;
+    }
+  }
+
+  .callout-content {
+    background-color: var(--s-bg-primary-color);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 10px 20px
+  }
+}
+
+.idlib-callouts .callout[data-callout="success"],
+.idlib-callouts .callout[data-callout="check"],
+.idlib-callouts .callout[data-callout="done"],
+.idlib-callouts .callout[data-callout="abstract"],
+.idlib-callouts .callout[data-callout="summary"],
+.idlib-callouts .callout[data-callout="tldr"] {
+  background-color: #3d9d55;
+
+  .callout-title {
+    color: #90e798;
+  }
+}
+
+
+.idlib-callouts .callout[data-callout="note"],
+.idlib-callouts .callout[data-callout="tip"],
+.idlib-callouts .callout[data-callout="info"],
+.idlib-callouts .callout[data-callout="todo"] {
+  background-color: #129bad;
+
+  .callout-title {
+    color: #9ed9e7;
+  }
+}
+
+
+.idlib-callouts .callout[data-callout="warning"],
+.idlib-callouts .callout[data-callout="caution"],
+.idlib-callouts .callout[data-callout="danger"] {
+  background-color: #cb9318;
+
+  .callout-title {
+    color: #f4d698;
+  }
+}
+
+
+.idlib-callouts .callout[data-callout="important"] {
+  background-color: #e54295;
+
+  .callout-title {
+    color: #efa5ca;
+  }
+}
+
+
+.idlib-callouts .callout[data-callout="bug"],
+.idlib-callouts .callout[data-callout="danger"],
+.idlib-callouts .callout[data-callout="error"] {
+  background-color: #e63f51;
+
+  .callout-title {
+    color: #f2a1a7;
   }
 }
