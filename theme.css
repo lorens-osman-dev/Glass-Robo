@@ -105,6 +105,9 @@ settings:
           -
               label: Glow
               value: glow-callouts
+          -
+              label: Gaza
+              value: gaza-callouts
     -
         id: callout_center_settings
         title: Centering callouts titles 
@@ -1435,6 +1438,108 @@ button.mod-cta {
   border-radius: 12px;
   overflow: hidden;
   cursor: text;
+}
+
+.gaza-callouts.theme-dark {
+  --color-callout-red: #502626;
+  --color-callout-blue: #263850;
+  --color-callout-green: #265029;
+  --color-callout-yellow: #4c5026;
+  --color-callout-orange: #504126;
+  --color-callout-teal: #264e50;
+  --color-callout-grey: #3b3b3b;
+  --color-callout-purple: #392650;
+  --color-callout-border-red1: #715050;
+  --color-callout-border-blue1: #516073;
+  --color-callout-border-green1: #507153;
+  --color-callout-border-yellow1: #6e7150;
+  --color-callout-border-orange1: #716550;
+  --color-callout-border-teal1: #507171;
+  --color-callout-border-grey1: #616161;
+  --color-callout-border-purple1: #472650;
+  --color-callout-text: var(--text-on-accent);
+}
+
+.gaza-callouts.theme-light {
+  --color-callout-red: #ffe0e0;
+  --color-callout-blue: #def1ff;
+  --color-callout-green: #e0ffe3;
+  --color-callout-yellow: #ffffe0;
+  --color-callout-orange: #fff2e0;
+  --color-callout-teal: #e0feff;
+  --color-callout-grey: #ededed;
+  --color-callout-purple: #ede0ff;
+  --color-callout-border-red: #e5c7c7;
+  --color-callout-border-blue: #c7d8e5;
+  --color-callout-border-green: #cce5c7;
+  --color-callout-border-yellow: #e3e5c7;
+  --color-callout-border-orange: #e5dbc7;
+  --color-callout-border-teal: #c7e5e5;
+  --color-callout-border-grey: #dbdbdb;
+  --color-callout-border-purple: #d8c7e5;
+  --color-callout-text: var(--text-normal);
+}
+
+.gaza-callouts .callout {
+  border-radius: 30px;
+  background: rgb(253, 200, 0);
+  background: radial-gradient(circle, rgb(253, 200, 0) 0%, rgb(253, 208, 46) 88%);
+  padding: 3px;
+}
+.gaza-callouts .callout .callout-title {
+  color: var(--s-bg-primary-color);
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.gaza-callouts .callout .callout-title .callout-title-inner {
+  font-weight: bold;
+}
+.gaza-callouts .callout .callout-title .callout-icon {
+  display: none;
+}
+.gaza-callouts .callout .callout-content {
+  background-color: var(--s-bg-primary-color);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.gaza-callouts .callout[data-callout=note],
+.gaza-callouts .callout[data-callout=tip],
+.gaza-callouts .callout[data-callout=info],
+.gaza-callouts .callout[data-callout=todo] {
+  background: rgb(0, 172, 255);
+  background: radial-gradient(circle, rgb(0, 172, 255) 0%, rgb(74, 192, 249) 88%);
+}
+
+.gaza-callouts .callout[data-callout=success],
+.gaza-callouts .callout[data-callout=check],
+.gaza-callouts .callout[data-callout=done],
+.gaza-callouts .callout[data-callout=abstract],
+.gaza-callouts .callout[data-callout=summary],
+.gaza-callouts .callout[data-callout=tldr] {
+  background: rgb(91, 152, 0);
+  background: radial-gradient(circle, rgb(91, 152, 0) 0%, rgb(146, 211, 49) 88%);
+}
+
+.gaza-callouts .callout[data-callout=warning],
+.gaza-callouts .callout[data-callout=caution],
+.gaza-callouts .callout[data-callout=danger] {
+  background: rgb(253, 200, 0);
+  background: radial-gradient(circle, rgb(253, 200, 0) 0%, rgb(253, 208, 46) 88%);
+}
+
+.gaza-callouts .callout[data-callout=important] {
+  background: rgb(255, 7, 48);
+  background: radial-gradient(circle, rgb(255, 7, 48) 0%, rgb(253, 48, 82) 88%);
+}
+
+.gaza-callouts .callout[data-callout=bug],
+.gaza-callouts .callout[data-callout=danger],
+.gaza-callouts .callout[data-callout=error] {
+  background: rgb(255, 0, 0);
+  background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgb(255, 31, 31) 88%);
 }
 
 .metadata-container {

@@ -53,6 +53,9 @@ settings:
           -
               label: Glow
               value: glow-callouts
+          -
+              label: Gaza
+              value: gaza-callouts
     -
         id: callout_center_settings
         title: Centering callouts titles 
@@ -132,23 +135,23 @@ settings:
 
 
 body.lorens_headers_settings {
-  --h1-color: #d9d617;
-  --h2-color: #0dc8f2;
-  --h3-color: #72d5a5;
+    --h1-color: #d9d617;
+    --h2-color: #0dc8f2;
+    --h3-color: #72d5a5;
 }
 
 body.disable_fonts_settings {
-  --font-interface-theme: "";
-  --font-text-theme: "";
-  --font-monospace-theme: "";
+    --font-interface-theme: "";
+    --font-text-theme: "";
+    --font-monospace-theme: "";
 }
 
 body.theme-dark {
 
-  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important
+    background-color: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important
 }
 
 body.theme-light {
 
-  background-color: var(--glass-background-color-settings, #fafafa) !important
+    background-color: var(--glass-background-color-settings, #fafafa) !important
 }
