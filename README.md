@@ -234,7 +234,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 </details>
 <details>
-   <summary>8. 5 different styles for callouts.</summary>
+   <summary>8. Seven different styles for callouts.</summary>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
   <ul>
     <li>
@@ -291,6 +291,30 @@ I've made this theme primarily for my own purposes and it's completely free, but
         <p>
             <ul>
               <p align="center"> <img src="assets/pics/callouts/sets/5.gaza.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Loli style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/6.loli.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Idlib style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/7.idlib.png"></p>
             </ul>
         </p>
       </details>
