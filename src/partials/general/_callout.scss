@@ -292,48 +292,6 @@
 }
 
 //- gaza style
-.gaza-callouts.theme-dark {
-  --color-callout-red: #502626;
-  --color-callout-blue: #263850;
-  --color-callout-green: #265029;
-  --color-callout-yellow: #4c5026;
-  --color-callout-orange: #504126;
-  --color-callout-teal: #264e50;
-  --color-callout-grey: #3b3b3b;
-  --color-callout-purple: #392650;
-
-  --color-callout-border-red1: #715050;
-  --color-callout-border-blue1: #516073;
-  --color-callout-border-green1: #507153;
-  --color-callout-border-yellow1: #6e7150;
-  --color-callout-border-orange1: #716550;
-  --color-callout-border-teal1: #507171;
-  --color-callout-border-grey1: #616161;
-  --color-callout-border-purple1: #472650;
-  --color-callout-text: var(--text-on-accent);
-}
-
-.gaza-callouts.theme-light {
-  --color-callout-red: #ffe0e0;
-  --color-callout-blue: #def1ff;
-  --color-callout-green: #e0ffe3;
-  --color-callout-yellow: #ffffe0;
-  --color-callout-orange: #fff2e0;
-  --color-callout-teal: #e0feff;
-  --color-callout-grey: #ededed;
-  --color-callout-purple: #ede0ff;
-
-  --color-callout-border-red: #e5c7c7;
-  --color-callout-border-blue: #c7d8e5;
-  --color-callout-border-green: #cce5c7;
-  --color-callout-border-yellow: #e3e5c7;
-  --color-callout-border-orange: #e5dbc7;
-  --color-callout-border-teal: #c7e5e5;
-  --color-callout-border-grey: #dbdbdb;
-  --color-callout-border-purple: #d8c7e5;
-  --color-callout-text: var(--text-normal);
-}
-
 .gaza-callouts .callout {
   border-radius: 30px;
   background: rgb(253, 200, 0);
@@ -400,4 +358,38 @@
 .gaza-callouts .callout[data-callout="error"] {
   background: rgb(255, 0, 0);
   background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(255, 31, 31, 1) 88%);
+}
+
+//- Loli style
+.loli-callouts .callout {
+  border-radius: 30px;
+
+  padding: 10px;
+  border: 1px solid #ffffff1a;
+  position: relative;
+
+  .callout-title {
+    display: none;
+  }
+
+  .callout-content {
+    background-color: var(--s-bg-primary-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
+    border-radius: inherit;
+    opacity: 0.1;
+    z-index: 0;
+  }
 }
