@@ -1,0 +1,23 @@
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.markdown-preview-view .heading-collapse-indicator {
+  cursor: pointer;
+}
+
+.markdown-source-view.mod-cm6 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+
+  &::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--s-green-primary-color)
+  }
+}
