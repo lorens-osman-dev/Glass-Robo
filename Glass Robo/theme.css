@@ -2294,6 +2294,9 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   position: relative;
   height: 115px;
 }
+.is-mobile .community-item:first-child {
+  border-top: 1px dashed var(--s-button-bg-color);
+}
 .is-mobile .community-item .community-item-screenshot {
   position: absolute;
   grid-row: unset;

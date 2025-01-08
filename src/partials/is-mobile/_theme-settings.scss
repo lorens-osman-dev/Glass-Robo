@@ -5,6 +5,10 @@
     position: relative;
     height: 115px;
 
+    &:first-child {
+      border-top: 1px dashed var(--s-button-bg-color);
+    }
+
     .community-item-screenshot {
       position: absolute;
       grid-row: unset;
