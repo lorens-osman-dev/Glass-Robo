@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
 	const isProduction = mode === "production";
 
 	return {
-		publicDir: "public", // Vite will copy all files from this directory to the output including manifest.json
+		publicDir: false, // Vite will copy all files from this directory to the output including manifest.json
 
 		build: {
 			rollupOptions: {
@@ -19,8 +19,8 @@ export default defineConfig(({ mode }) => {
 
 			minify: isProduction, // Enable minification in production
 			cssMinify: isProduction, // Minify CSS only in production
-			outDir: "Glass Robo", // Sets the output directory for the CSS file
-			emptyOutDir: true,
+			outDir: ".", // Output to root directory
+			emptyOutDir: false, // Important: Don't empty the root directory!
 
 			cssTarget: "esnext",
 		},

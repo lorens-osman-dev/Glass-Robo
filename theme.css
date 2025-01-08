@@ -382,6 +382,7 @@ body.theme-light {
   --s-green-secondary-color: #36a372;
   --s-hover-bg-color-green: #a1f98f24;
   --s-hover-bg-color-gray: #676767;
+  --s-button-bg-color: rgb(24, 24, 37);
   --yellow-faint: #ffe699;
   --platinum: #c7c7c7;
   --platinum-faint: #b2b2b8;
@@ -442,8 +443,7 @@ body {
 */
 .external-link {
   color: var(--text-accent);
-  background-position: 0;
-  background-position-x: 2px;
+  background-position: right;
 }
 
 .markdown-rendered :not(pre) > code,
@@ -1044,7 +1044,7 @@ button.mod-cta {
 
 .theme-dark button:not(.clickable-icon):not(.excalidraw-wrapper *) {
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
-  background-color: rgb(24, 24, 37);
+  background-color: var(--s-button-bg-color);
 }
 
 .modal.mod-settings.mod-sidebar-layout select,
@@ -1980,6 +1980,34 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.markdown-preview-view .heading-collapse-indicator {
+  cursor: pointer;
+}
+
+.is-mobile .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.is-mobile .markdown-preview-view .heading-collapse-indicator {
+  opacity: 1;
+}
+
+.markdown-source-view.mod-cm6 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+.markdown-source-view.mod-cm6 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: var(--s-green-primary-color);
+}
+
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;
@@ -2205,6 +2233,9 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   color: var(--s-bg-primary-color);
   border-radius: 50%;
 }
+.is-mobile .mobile-navbar-tabs-action {
+  border-radius: 7px;
+}
 .is-mobile .modal-bg {
   backdrop-filter: blur(5px);
   opacity: 1 !important;
@@ -2261,6 +2292,22 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 }
 .is-mobile .modal.mod-settings.mod-sidebar-layout .modal-content.vertical-tabs-container .vertical-tab-header-group .vertical-tab-header-group-items > div:nth-child(12) {
   color: var(--level-1);
+}
+.is-mobile .community-item {
+  grid-auto-flow: unset !important;
+  border-bottom: 1px dashed var(--s-button-bg-color);
+  position: relative;
+  height: 115px;
+}
+.is-mobile .community-item:first-child {
+  border-top: 1px dashed var(--s-button-bg-color);
+}
+.is-mobile .community-item .community-item-screenshot {
+  position: absolute;
+  grid-row: unset;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 body.is-mobile {
