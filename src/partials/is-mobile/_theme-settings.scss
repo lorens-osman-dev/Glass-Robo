@@ -1,0 +1,16 @@
+@mixin mobile-styles {
+  .community-item {
+    grid-auto-flow: unset !important;
+    border-bottom: 1px dashed var(--s-button-bg-color);
+    position: relative;
+    height: 115px;
+
+    .community-item-screenshot {
+      position: absolute;
+      grid-row: unset;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

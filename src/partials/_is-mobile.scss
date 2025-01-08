@@ -11,6 +11,7 @@
 @use './is-mobile/mobile-tab-switcher' as mobile-tab-switcher;
 @use './is-mobile/modal-and-prompt' as modal-and-prompt;
 @use './is-mobile/setting-modal' as setting-modal;
+@use './is-mobile/theme-settings' as theme-settings;
 
 .is-mobile {
   @include menu.mobile-styles();
@@ -18,6 +19,7 @@
   @include mobile-tab-switcher.mobile-styles();
   @include modal-and-prompt.mobile-styles();
   @include setting-modal.mobile-styles();
+  @include theme-settings.mobile-styles();
 }
 
 // remove the stars background svg because it is heavy at mobile 
