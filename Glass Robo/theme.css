@@ -442,8 +442,7 @@ body {
 */
 .external-link {
   color: var(--text-accent);
-  background-position: 0;
-  background-position-x: 2px;
+  background-position: right;
 }
 
 .markdown-rendered :not(pre) > code,
@@ -2227,6 +2226,9 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 .is-mobile .mobile-tab-switcher .mobile-tab-switcher-menubar .mobile-tab-switcher-menu-button .mobile-tab-switcher-menu-button-chevron {
   color: var(--s-bg-primary-color);
   border-radius: 50%;
+}
+.is-mobile .mobile-navbar-tabs-action {
+  border-radius: 7px;
 }
 .is-mobile .modal-bg {
   backdrop-filter: blur(5px);
