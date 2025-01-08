@@ -1,0 +1,88 @@
+// nav tree hover transition
+@media (hover: hover) {
+  body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
+    transition: 700ms;
+  }
+}
+
+// settings items hover transition
+@media (hover: hover) {
+
+  .horizontal-tab-nav-item:hover,
+  .vertical-tab-nav-item:hover {
+    transition: 700ms;
+  }
+}
+
+// modal items hover transition
+.suggestion-item.is-selected {
+  transition: 700ms;
+}
+
+//- Modals and dialogs animations
+.modal {
+  animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.popover,
+.snw-ref-title-popover,
+.workspace-split.mod-vertical.mod-root .workspace-tabs:not(.mod-stacked) {
+  animation: 0.3s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);
+}
+
+.prompt {
+  /* stylelint-disable-next-line number-max-precision */
+  animation: slide-in-bottom 0.5s cubic-bezier(0.07, 0.82, 0.17, 1.000) both;
+}
+
+//- Animations
+
+@keyframes slide-in-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
