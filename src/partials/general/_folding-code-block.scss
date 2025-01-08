@@ -3,6 +3,11 @@
   cursor: pointer;
 }
 
+.is-mobile .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.is-mobile .markdown-preview-view .heading-collapse-indicator {
+  opacity: 1;
+}
+
 .markdown-source-view.mod-cm6 .cm-foldPlaceholder {
   color: transparent;
   position: relative;
