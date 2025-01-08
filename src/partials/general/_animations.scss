@@ -19,6 +19,13 @@
   transition: 700ms;
 }
 
+.menu-item,
+.status-bar-item.mod-clickable,
+.workspace-tab-header-inner,
+.clickable-icon {
+  transition: 700ms;
+}
+
 //- Modals and dialogs animations
 .modal {
   animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

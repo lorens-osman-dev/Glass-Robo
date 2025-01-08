@@ -2159,6 +2159,13 @@ h6 .cm-foldPlaceholder::after,
   transition: 700ms;
 }
 
+.menu-item,
+.status-bar-item.mod-clickable,
+.workspace-tab-header-inner,
+.clickable-icon {
+  transition: 700ms;
+}
+
 .modal {
   animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -2233,6 +2240,10 @@ h6 .cm-foldPlaceholder::after,
   background-color: var(--s-button-bg-color);
   border: 1px solid var(--s-green-primary-color);
   border-radius: 5px;
+}
+
+.canvas-wrapper {
+  background-color: var(--s-bg-primary-color);
 }
 
 .workspace-leaf-resize-handle {
