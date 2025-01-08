@@ -2304,7 +2304,9 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
 }
 .is-mobile .community-item .community-item-screenshot {
   position: absolute;
-  grid-row: unset;
+  margin: 0;
+  border-radius: 10px;
+  grid-row: unset !important;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
