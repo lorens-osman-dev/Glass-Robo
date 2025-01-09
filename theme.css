@@ -2146,24 +2146,24 @@ h6 .cm-foldPlaceholder::after,
 
 @media (hover: hover) {
   body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
-    transition: 700ms;
+    transition: background-color 700ms;
   }
 }
 @media (hover: hover) {
   .horizontal-tab-nav-item:hover,
   .vertical-tab-nav-item:hover {
-    transition: 700ms;
+    transition: background-color 700ms;
   }
 }
 .suggestion-item.is-selected {
-  transition: 700ms;
+  transition: background-color 700ms;
 }
 
 .menu-item,
 .status-bar-item.mod-clickable,
 .workspace-tab-header-inner,
 .clickable-icon {
-  transition: 700ms;
+  transition: background-color 700ms;
 }
 
 .modal {
