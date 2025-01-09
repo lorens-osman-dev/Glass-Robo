@@ -1,3 +1,19 @@
 .canvas-wrapper {
+  // background-color: var(--s-bg-primary-color);
+  .canvas-background {
+    display: none;
+  }
+}
+.canvas-node-container {
+  background-color: black;
+}
+.canvas-submenu {
   background-color: var(--s-bg-primary-color);
+  border: 1px solid #353535;
+}
+
+.cm-editor,
+.canvas-menu,
+.canvas-controls .canvas-control-item {
+  background-color: var(--s-bg-secondary-color);
 }
