@@ -1,0 +1,15 @@
+.popover.hover-popover>.markdown-embed {
+  background-color: var(--s-bg-primary-color);
+}
+
+.popover.hover-popover {
+  background-color: var(--s-bg-primary-color);
+
+  .popover-titlebar {
+
+    .popover-header-icon.mod-pin-popover,
+    .popover-title {
+      color: var(--s-bg-primary-color);
+    }
+  }
+}

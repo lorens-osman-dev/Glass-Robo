@@ -2246,6 +2246,18 @@ h6 .cm-foldPlaceholder::after,
   background-color: var(--s-bg-primary-color);
 }
 
+.popover.hover-popover > .markdown-embed {
+  background-color: var(--s-bg-primary-color);
+}
+
+.popover.hover-popover {
+  background-color: var(--s-bg-primary-color);
+}
+.popover.hover-popover .popover-titlebar .popover-header-icon.mod-pin-popover,
+.popover.hover-popover .popover-titlebar .popover-title {
+  color: var(--s-bg-primary-color);
+}
+
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;

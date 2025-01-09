@@ -330,11 +330,17 @@ I've made this theme primarily for my own purposes and it's completely free, but
    - Set background color.
    - Select headers color scheme.
    - Enable/disable custom fonts.
-   - Select callout style from 4 different styles.
+   - Select callout style from 7 different styles.
    - Enable/disable callout title centering.
    - Select code block theme from 9 different styles.
 3. One backtick code block dynamic background color.
 4. Gradient color for note title.
 5. Gradient color for strong text.
-6. icons for <a href="https://obsidian.md/plugins?id=cluster">Cluster plugin</a>.
-7. 9 different theme for code block.
+6. 9 different theme for code block.
+7. Cool animations.
+8. New style for folding headers (H1 H2 H3 H4 H5 H6).
+
+## Supported plugins
+
+1. <a href="https://obsidian.md/plugins?id=cluster">Cluster</a>.
+2. <a href="https://obsidian.md/plugins?id=obsidian-hover-editor">Hover editor</a>.
