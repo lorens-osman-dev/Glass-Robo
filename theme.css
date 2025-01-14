@@ -1274,11 +1274,8 @@ button.mod-cta {
 }
 
 .glow-callouts .callout {
-  /* background: rgba(var(--callout-color), 0.05); */
   background: transparent;
   position: relative;
-  /* border: 1px solid rgba(var(--callout-color), 0.1); */
-  /* border-left: 3px solid rgba(var(--callout-color), 0.4); */
   box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
   border-radius: 0px;
 }
@@ -1302,7 +1299,6 @@ button.mod-cta {
 
 .glow-callouts .callout-title-inner {
   font-weight: bold;
-  /* font-family: var(--font-title); */
   font-variation-settings: "WGHT" 900;
 }
 
@@ -1434,10 +1430,8 @@ button.mod-cta {
 }
 
 .gummy-callouts .callout {
-  /* background: rgba(var(--callout-color), 0.05); */
   background: linear-gradient(135deg, rgba(var(--callout-color), 0.05), var(--background-primary));
   position: relative;
-  /* border: 1px solid rgba(var(--callout-color), 0.1); */
   border: 1px solid rgba(var(--callout-color), 0.4);
   box-shadow: none;
   border-radius: 12px;
@@ -1445,7 +1439,6 @@ button.mod-cta {
 
 .gummy-callouts .callout-title-inner {
   font-weight: bold;
-  /* font-family: var(--font-title); */
   font-variation-settings: "WGHT" 900;
   font-size: 1.2em;
 }
