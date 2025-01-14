@@ -515,6 +515,7 @@
 
 }
 
+//- Homs style
 .homs-callouts .callout {
   border-radius: 30px;
   background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
@@ -541,5 +542,37 @@
     color: rgba(var(--callout-color), 0.9);
     border-radius: 30px;
     padding: 10px 20px
+  }
+}
+
+//- sham style
+.sham-callouts .callout {
+
+  position: relative;
+  border-radius: 3px;
+  --callout-quote: var(--color-gray-rgb);
+  --callout-radius: 0;
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.25;
+  --callout-padding: 0;
+  --callout-content-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-title-padding: var(--size-4-3);
+
+  .callout-title {
+    background: rgba(var(--callout-color), 0.1);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px;
+
+    .callout-title-inner {
+      font-weight: bold;
+    }
+
+  }
+
+  .callout-content {
+    border-top: var(--callout-border-width) solid rgba(var(--callout-color), var(--callout-border-opacity));
+
   }
 }

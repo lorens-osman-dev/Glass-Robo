@@ -120,6 +120,9 @@ settings:
           -
               label: Homs
               value: homs-callouts
+          -
+              label: Sham
+              value: sham-callouts
     -
         id: callout_center_settings
         title: Centering callouts titles 
@@ -1684,6 +1687,31 @@ button.mod-cta {
   color: rgba(var(--callout-color), 0.9);
   border-radius: 30px;
   padding: 10px 20px;
+}
+
+.sham-callouts .callout {
+  position: relative;
+  border-radius: 3px;
+  --callout-quote: var(--color-gray-rgb);
+  --callout-radius: 0;
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.25;
+  --callout-padding: 0;
+  --callout-content-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-title-padding: var(--size-4-3);
+}
+.sham-callouts .callout .callout-title {
+  background: rgba(var(--callout-color), 0.1);
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 5px;
+}
+.sham-callouts .callout .callout-title .callout-title-inner {
+  font-weight: bold;
+}
+.sham-callouts .callout .callout-content {
+  border-top: var(--callout-border-width) solid rgba(var(--callout-color), var(--callout-border-opacity));
 }
 
 .metadata-container {
