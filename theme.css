@@ -56,150 +56,162 @@ name: Glass Robo theme settings
 id: glass-theme-settings
 collapsed: false
 settings:
-  # General
-    -
-        id: lorens_headers_settings
-        title: Lorens color scheme for headers
-        description: enable Lorens color scheme for more focus 
-        type: class-toggle
-    -
-        id: disable_fonts_settings
-        title: Glass Robo theme fonts
-        description: Disable Glass Robo theme fonts
-        type: class-toggle
-    -
-        id: glass-background-color-settings
-        title: App background color
-        type: variable-themed-color
-        description: Set app background color
-        allowEmpty: true
-        format: hex
-        opacity: false
-        default-light: '#fafafa'
-        default-dark: '#141414'
-    -
-        id: callouts-settings
-        title: Callouts
-        type: heading
-        level: 1
-        collapsed: true
-    -   
-        id: callouts-settin
-        title: Callout styling
-        type: class-select
-        allowEmpty: false
-        default: 'glass-robo-callouts'
-        options:
-          -
-              label: Obsidian default
-              value: obsidian-callouts
-          -
-              label: Glass Robo
-              value: glass-robo-callouts
-          -
-              label: Wall
-              value: wall-callouts
-          -
-              label: Gummy
-              value: gummy-callouts
-          -
-              label: Glow
-              value: glow-callouts
-          -
-              label: Gaza
-              value: gaza-callouts
-          -
-              label: Loli
-              value: loli-callouts
-          -
-              label: Idlib
-              value: idlib-callouts
-          -
-              label: Hama
-              value: hama-callouts
-          -
-              label: Homs
-              value: homs-callouts
-          -
-              label: Sham
-              value: sham-callouts
-          -
-              label: Halab
-              value: halab-callouts
-    -
-        id: callout_center_settings
-        title: Centering callouts titles 
-        description: works only if the callouts style is "Glass Robo"
-        type: class-toggle
+# General
+-
+    id: general-settings
+    title: General settings
+    type: heading
+    level: 1
+    collapsed: true
 
+-
+    id: lorens_headers_settings
+    title: Lorens color scheme for headers
+    description: enable Lorens color scheme for more focus 
+    type: class-toggle
+-
+    id: disable_fonts_settings
+    title: Glass Robo theme fonts
+    description: Disable Glass Robo theme fonts
+    type: class-toggle
+-
+    id: disable_stars_settings
+    title: Stars in the background
+    description: Disable Stars in the background
+    type: class-toggle
+-
+    id: glass-background-color-settings
+    title: App background color
+    type: variable-themed-color
+    description: Set app background color
+    allowEmpty: true
+    format: hex
+    opacity: false
+    default-light: '#fafafa'
+    default-dark: '#141414'
+-
+    id: callouts-settings
+    title: Callouts
+    type: heading
+    level: 1
+    collapsed: true
+-   
+    id: callouts-settin
+    title: Callout styling
+    type: class-select
+    allowEmpty: false
+    default: 'glass-robo-callouts'
+    options:
     -
-        id: codeBlocks-settings
-        title: Code blocks
-        type: heading
-        level: 1
-        collapsed: true
+        label: Obsidian default
+        value: obsidian-callouts
     -
-        id: syntax-highlight-theme-dark
-        title: Code blocks styling
-        description: Select syntax highlighting for dark theme
-        type: class-select
-        allowEmpty: false
-        default: glassRobo
-        options:
-            - 
-                label: Glass Robo
-                value: glassRobo
-            - 
-                label: Dracula
-                value: dracula
-            - 
-                label: One Dark
-                value: one-dark-dark
-            - 
-                label: Catppuccin Frappé
-                value: catppuccin-frappe-for-dark
-            - 
-                label: Catppuccin Macchiato
-                value: catppuccin-macchiato
-            - 
-                label: Catppuccin Mocha
-                value: catppuccin-mocha
-            - 
-                label: Halcyon
-                value: halcyon
-            - 
-                label: GitHub Dark
-                value: github-dark
-            - 
-                label: Tokyo Night
-                value: tokyo-night
-  # Credits
+        label: Glass Robo
+        value: glass-robo-callouts
+    -
+        label: Wall
+        value: wall-callouts
+    -
+        label: Gummy
+        value: gummy-callouts
+    -
+        label: Glow
+        value: glow-callouts
+    -
+        label: Gaza
+        value: gaza-callouts
+    -
+        label: Loli
+        value: loli-callouts
+    -
+        label: Idlib
+        value: idlib-callouts
+    -
+        label: Hama
+        value: hama-callouts
+    -
+        label: Homs
+        value: homs-callouts
+    -
+        label: Sham
+        value: sham-callouts
+    -
+        label: Halab
+        value: halab-callouts
+-
+    id: callout_center_settings
+    title: Centering callouts titles 
+    description: works only if the callouts style is "Glass Robo"
+    type: class-toggle
 
-    -
-      id: glass-support-settings
-      title: Support Glass Robo theme
-      description: If you like the theme, here are some ways to support development
-      type: heading
-      level: 1
-      collapsed: true
-    -
-      id: glass-url-donate
-      title: Buy Me a Coffee
-      description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
-      type: info-text
-      markdown: true
-    -
-      id: glass-url-star-repo
-      title: Star the Theme on GitHub
-      description: "[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)"
-      type: info-text
-      markdown: true
-    -
-      id: glass-url-submit-issue
-      title: Submit an Issue on GitHub
-      description: "[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)"
-      type: info-text
-      markdown: true
+-
+    id: codeBlocks-settings
+    title: Code blocks
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: syntax-highlight-theme-dark
+    title: Code blocks styling
+    description: Select syntax highlighting for dark theme
+    type: class-select
+    allowEmpty: false
+    default: glassRobo
+    options:
+    - 
+        label: Glass Robo
+        value: glassRobo
+    - 
+        label: Dracula
+        value: dracula
+    - 
+        label: One Dark
+        value: one-dark-dark
+    - 
+        label: Catppuccin Frappé
+        value: catppuccin-frappe-for-dark
+    - 
+        label: Catppuccin Macchiato
+        value: catppuccin-macchiato
+    - 
+        label: Catppuccin Mocha
+        value: catppuccin-mocha
+    - 
+        label: Halcyon
+        value: halcyon
+    - 
+        label: GitHub Dark
+        value: github-dark
+    - 
+        label: Tokyo Night
+        value: tokyo-night
+# Credits
+
+-
+    id: glass-support-settings
+    title: Support Glass Robo theme
+    description: If you like the theme, here are some ways to support development
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: glass-url-donate
+    title: Buy Me a Coffee
+    description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
+    type: info-text
+    markdown: true
+-
+    id: glass-url-star-repo
+    title: Star the Theme on GitHub
+    description: "[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)"
+    type: info-text
+    markdown: true
+-
+    id: glass-url-submit-issue
+    title: Submit an Issue on GitHub
+    description: "[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)"
+    type: info-text
+    markdown: true
 
 */
 body.lorens_headers_settings {
@@ -212,6 +224,10 @@ body.disable_fonts_settings {
   --font-interface-theme: "";
   --font-text-theme: "";
   --font-monospace-theme: "";
+}
+
+body.disable_stars_settings {
+  --s-bg-svg: none;
 }
 
 body.theme-dark {
@@ -273,13 +289,9 @@ body.theme-light {
   margin-right: 0;
 }
 
-.setting-item:is([data-id=lorens_headers_settings]) > .setting-item-info > .setting-item-name::before {
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgLTAgLTEgMCAxNikiPgogICAgPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiAvPgogICAgPHBhdGggaWQ9IlBhdGgiIGQ9Ik0wIDAuNjY2NjY3QzAgMC4yOTg0OCAwLjI5ODQ4IDAgMC42NjY2NjcgMEMwLjY2NjY2NyAwIDcuMzMzMzMgMCA3LjMzMzMzIDBDNy43MDE1MyAwIDggMC4yOTg0OCA4IDAuNjY2NjY3QzggMS4wMzQ4NiA3LjcwMTUzIDEuMzMzMzMgNy4zMzMzMyAxLjMzMzMzQzcuMzMzMzMgMS4zMzMzMyAwLjY2NjY2NyAxLjMzMzMzIDAuNjY2NjY3IDEuMzMzMzNDMC4yOTg0OCAxLjMzMzMzIDAgMS4wMzQ4NSAwIDAuNjY2NjY3QzAgMC42NjY2NjcgMCAwLjY2NjY2NyAwIDAuNjY2NjY3WiIgZmlsbD0iIzcyRDVBNSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyIDIuNjY3KSIgLz4KICAgIDxwYXRoIGlkPSJQYXRoIiBkPSJNMCAwLjY2NjY2N0MwIDAuMjk4NDY2IDAuMjQ4NzMzIDAgMC41NTU1NTYgMEMwLjU1NTU1NiAwIDkuNDQ0NDQgMCA5LjQ0NDQ0IDBDOS43NTEyOCAwIDEwIDAuMjk4NDY2IDEwIDAuNjY2NjY3QzEwIDEuMDM0ODcgOS43NTEyOCAxLjMzMzMzIDkuNDQ0NDQgMS4zMzMzM0M5LjQ0NDQ0IDEuMzMzMzMgMC41NTU1NTYgMS4zMzMzMyAwLjU1NTU1NiAxLjMzMzMzQzAuMjQ4NzMzIDEuMzMzMzMgMCAxLjAzNDg3IDAgMC42NjY2NjdDMCAwLjY2NjY2NyAwIDAuNjY2NjY3IDAgMC42NjY2NjdaIiBmaWxsPSIjMERDOEYyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgNy4zMzMpIiAvPgogICAgPHBhdGggaWQ9IlBhdGgiIGQ9Ik0wIDAuNjY2NjY2QzAgMC4yOTg0NjcgMC4yOTg0OCAwIDAuNjY2NjY3IDBDMC42NjY2NjcgMCAxMS4zMzMzIDAgMTEuMzMzMyAwQzExLjcwMTUgMCAxMiAwLjI5ODQ2NyAxMiAwLjY2NjY2NkMxMiAxLjAzNDg3IDExLjcwMTUgMS4zMzMzMyAxMS4zMzMzIDEuMzMzMzNDMTEuMzMzMyAxLjMzMzMzIDAuNjY2NjY3IDEuMzMzMzMgMC42NjY2NjcgMS4zMzMzM0MwLjI5ODQ4IDEuMzMzMzMgMCAxLjAzNDg3IDAgMC42NjY2NjZDMCAwLjY2NjY2NiAwIDAuNjY2NjY2IDAgMC42NjY2NjZaIiBmaWxsPSIjRDlENjE3IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgMTIpIiAvPgogIDwvZz4KPC9zdmc+");
-}
-
-.setting-item:is([data-id=disable_fonts_settings]) > .setting-item-info > .setting-item-name::before {
-  content: "𝒜" !important;
-  color: var(--color-accent);
+.setting-item:is([data-id=general-settings]) > .setting-item-info > .setting-item-name::before {
+  left: calc((var(--font-ui-medium) + 11px) * -1) !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBjbGFzcz0iaW5qZWN0ZWQtc3ZnIiBkYXRhLXNyYz0iaHR0cHM6Ly9jZG4uaHVnZWljb25zLmNvbS9pY29ucy9zdGFycy1zb2xpZC1yb3VuZGVkLnN2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHJvbGU9ImltZyIgY29sb3I9IiNlNGVjMGEiPgo8cGF0aCBkPSJNMTIgMi4yNUMxMi40MTQyIDIuMjUgMTIuNzUgMi41ODU3OSAxMi43NSAzQzEyLjc1IDUuMDA2MDggMTMuNzYwNiA3LjA3NDkzIDE1LjM0MjggOC42NTcxN0MxNi45MjUxIDEwLjIzOTQgMTguOTkzOSAxMS4yNSAyMSAxMS4yNUMyMS40MTQyIDExLjI1IDIxLjc1IDExLjU4NTggMjEuNzUgMTJDMjEuNzUgMTIuNDE0MiAyMS40MTQyIDEyLjc1IDIxIDEyLjc1QzE4Ljk5MzkgMTIuNzUgMTYuOTI1MSAxMy43NjA2IDE1LjM0MjggMTUuMzQyOEMxMy43NjA2IDE2LjkyNTEgMTIuNzUgMTguOTkzOSAxMi43NSAyMUMxMi43NSAyMS40MTQyIDEyLjQxNDIgMjEuNzUgMTIgMjEuNzVDMTEuNTg1OCAyMS43NSAxMS4yNSAyMS40MTQyIDExLjI1IDIxQzExLjI1IDE4Ljk5MzkgMTAuMjM5NCAxNi45MjUxIDguNjU3MTcgMTUuMzQyOEM3LjA3NDkzIDEzLjc2MDYgNS4wMDYwOCAxMi43NSAzIDEyLjc1QzIuNTg1NzkgMTIuNzUgMi4yNSAxMi40MTQyIDIuMjUgMTJDMi4yNSAxMS41ODU4IDIuNTg1NzkgMTEuMjUgMyAxMS4yNUM1LjAwNjA4IDExLjI1IDcuMDc0OTMgMTAuMjM5NCA4LjY1NzE3IDguNjU3MTdDMTAuMjM5NCA3LjA3NDkzIDExLjI1IDUuMDA2MDggMTEuMjUgM0MxMS4yNSAyLjU4NTc5IDExLjU4NTggMi4yNSAxMiAyLjI1WiIgZmlsbD0iI2U0ZWMwYSI+PC9wYXRoPgo8cGF0aCBkPSJNMTkuMjUgMS4yNUMxOS40NjM1IDEuMjUgMTkuNjQ4NCAxLjM5Nzk0IDE5LjY5NTQgMS42MDYyTDE5LjkyOTYgMi42NDYwMUMyMC4wODk1IDMuMzU2MDEgMjAuNjQ0IDMuOTEwNDcgMjEuMzU0IDQuMDcwNDFMMjIuMzkzOCA0LjMwNDY0QzIyLjYwMjEgNC4zNTE1NSAyMi43NSA0LjUzNjUyIDIyLjc1IDQuNzVDMjIuNzUgNC45NjM0OCAyMi42MDIxIDUuMTQ4NDUgMjIuMzkzOCA1LjE5NTM2TDIxLjM1NCA1LjQyOTU5QzIwLjY0NCA1LjU4OTUzIDIwLjA4OTUgNi4xNDM5OCAxOS45Mjk2IDYuODUzOThMMTkuNjk1NCA3Ljg5MzhDMTkuNjQ4NCA4LjEwMjA2IDE5LjQ2MzUgOC4yNSAxOS4yNSA4LjI1QzE5LjAzNjUgOC4yNSAxOC44NTE2IDguMTAyMDYgMTguODA0NiA3Ljg5MzhMMTguNTcwNCA2Ljg1Mzk4QzE4LjQxMDUgNi4xNDM5OCAxNy44NTYgNS41ODk1MyAxNy4xNDYgNS40Mjk1OUwxNi4xMDYyIDUuMTk1MzZDMTUuODk3OSA1LjE0ODQ1IDE1Ljc1IDQuOTYzNDggMTUuNzUgNC43NUMxNS43NSA0LjUzNjUyIDE1Ljg5NzkgNC4zNTE1NSAxNi4xMDYyIDQuMzA0NjRMMTcuMTQ2IDQuMDcwNDFDMTcuODU2IDMuOTEwNDcgMTguNDEwNSAzLjM1NjAyIDE4LjU3MDQgMi42NDYwMUwxOC44MDQ2IDEuNjA2MkMxOC44NTE2IDEuMzk3OTQgMTkuMDM2NSAxLjI1IDE5LjI1IDEuMjVaIiBmaWxsPSIjZTRlYzBhIj48L3BhdGg+CjxwYXRoIGQ9Ik00Ljc1IDE1Ljc1QzQuOTYzNDggMTUuNzUgNS4xNDg0NSAxNS44OTc5IDUuMTk1MzYgMTYuMTA2Mkw1LjQyOTU5IDE3LjE0NkM1LjU4OTUzIDE3Ljg1NiA2LjE0Mzk4IDE4LjQxMDUgNi44NTM5OCAxOC41NzA0TDcuODkzOCAxOC44MDQ2QzguMTAyMDYgMTguODUxNiA4LjI1IDE5LjAzNjUgOC4yNSAxOS4yNUM4LjI1IDE5LjQ2MzUgOC4xMDIwNiAxOS42NDg0IDcuODkzOCAxOS42OTU0TDYuODUzOTggMTkuOTI5NkM2LjE0Mzk4IDIwLjA4OTUgNS41ODk1MyAyMC42NDQgNS40Mjk1OSAyMS4zNTRMNS4xOTUzNiAyMi4zOTM4QzUuMTQ4NDUgMjIuNjAyMSA0Ljk2MzQ4IDIyLjc1IDQuNzUgMjIuNzVDNC41MzY1MiAyMi43NSA0LjM1MTU1IDIyLjYwMjEgNC4zMDQ2NCAyMi4zOTM4TDQuMDcwNDEgMjEuMzU0QzMuOTEwNDcgMjAuNjQ0IDMuMzU2MDIgMjAuMDg5NSAyLjY0NjAxIDE5LjkyOTZMMS42MDYyIDE5LjY5NTRDMS4zOTc5NCAxOS42NDg0IDEuMjUgMTkuNDYzNSAxLjI1IDE5LjI1QzEuMjUgMTkuMDM2NSAxLjM5Nzk0IDE4Ljg1MTYgMS42MDYyIDE4LjgwNDZMMi42NDYwMSAxOC41NzA0QzMuMzU2MDIgMTguNDEwNSAzLjkxMDQ3IDE3Ljg1NiA0LjA3MDQxIDE3LjE0Nkw0LjMwNDY0IDE2LjEwNjJDNC4zNTE1NSAxNS44OTc5IDQuNTM2NTIgMTUuNzUgNC43NSAxNS43NVoiIGZpbGw9IiNlNGVjMGEiPjwvcGF0aD4KPC9zdmc+");
 }
 
 .setting-item:is([data-id=callouts-settings]) > .setting-item-info > .setting-item-name::before {
@@ -298,17 +310,9 @@ body.theme-light {
   left: calc((var(--font-ui-medium) + 10px) * -1) !important;
 }
 
-.setting-item:is([data-id=glass-support-settings]) > .setting-item-control,
-.setting-item:is([data-id=callouts-settings]) > .setting-item-control,
-.setting-item:is([data-id=codeBlocks-settings]) > .setting-item-control {
+.setting-item[data-id$=settings]:not([data-id=glass-theme-settings]) > .setting-item-control .clickable-icon[aria-label="Export settings"] {
   content: "";
   display: none;
-}
-
-.setting-item:is([data-id=glass-background-color-settings]) > .setting-item-info > .setting-item-name::before {
-  content: "BG" !important;
-  color: var(--level-5);
-  left: calc((var(--font-ui-medium) + 10px) * -1) !important;
 }
 
 .setting-item:is([data-id=glass-background-color-settings]) > .setting-item-control button {

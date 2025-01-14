@@ -4,150 +4,162 @@ name: Glass Robo theme settings
 id: glass-theme-settings
 collapsed: false
 settings:
-  # General
-    -
-        id: lorens_headers_settings
-        title: Lorens color scheme for headers
-        description: enable Lorens color scheme for more focus 
-        type: class-toggle
-    -
-        id: disable_fonts_settings
-        title: Glass Robo theme fonts
-        description: Disable Glass Robo theme fonts
-        type: class-toggle
-    -
-        id: glass-background-color-settings
-        title: App background color
-        type: variable-themed-color
-        description: Set app background color
-        allowEmpty: true
-        format: hex
-        opacity: false
-        default-light: '#fafafa'
-        default-dark: '#141414'
-    -
-        id: callouts-settings
-        title: Callouts
-        type: heading
-        level: 1
-        collapsed: true
-    -   
-        id: callouts-settin
-        title: Callout styling
-        type: class-select
-        allowEmpty: false
-        default: 'glass-robo-callouts'
-        options:
-          -
-              label: Obsidian default
-              value: obsidian-callouts
-          -
-              label: Glass Robo
-              value: glass-robo-callouts
-          -
-              label: Wall
-              value: wall-callouts
-          -
-              label: Gummy
-              value: gummy-callouts
-          -
-              label: Glow
-              value: glow-callouts
-          -
-              label: Gaza
-              value: gaza-callouts
-          -
-              label: Loli
-              value: loli-callouts
-          -
-              label: Idlib
-              value: idlib-callouts
-          -
-              label: Hama
-              value: hama-callouts
-          -
-              label: Homs
-              value: homs-callouts
-          -
-              label: Sham
-              value: sham-callouts
-          -
-              label: Halab
-              value: halab-callouts
-    -
-        id: callout_center_settings
-        title: Centering callouts titles 
-        description: works only if the callouts style is "Glass Robo"
-        type: class-toggle
-    
-    -
-        id: codeBlocks-settings
-        title: Code blocks
-        type: heading
-        level: 1
-        collapsed: true
-    -
-        id: syntax-highlight-theme-dark
-        title: Code blocks styling
-        description: Select syntax highlighting for dark theme
-        type: class-select
-        allowEmpty: false
-        default: glassRobo
-        options:
-            - 
-                label: Glass Robo
-                value: glassRobo
-            - 
-                label: Dracula
-                value: dracula
-            - 
-                label: One Dark
-                value: one-dark-dark
-            - 
-                label: Catppuccin Frappé
-                value: catppuccin-frappe-for-dark
-            - 
-                label: Catppuccin Macchiato
-                value: catppuccin-macchiato
-            - 
-                label: Catppuccin Mocha
-                value: catppuccin-mocha
-            - 
-                label: Halcyon
-                value: halcyon
-            - 
-                label: GitHub Dark
-                value: github-dark
-            - 
-                label: Tokyo Night
-                value: tokyo-night
-  # Credits
+# General
+-
+    id: general-settings
+    title: General settings
+    type: heading
+    level: 1
+    collapsed: true
 
+-
+    id: lorens_headers_settings
+    title: Lorens color scheme for headers
+    description: enable Lorens color scheme for more focus 
+    type: class-toggle
+-
+    id: disable_fonts_settings
+    title: Glass Robo theme fonts
+    description: Disable Glass Robo theme fonts
+    type: class-toggle
+-
+    id: disable_stars_settings
+    title: Stars in the background
+    description: Disable Stars in the background
+    type: class-toggle
+-
+    id: glass-background-color-settings
+    title: App background color
+    type: variable-themed-color
+    description: Set app background color
+    allowEmpty: true
+    format: hex
+    opacity: false
+    default-light: '#fafafa'
+    default-dark: '#141414'
+-
+    id: callouts-settings
+    title: Callouts
+    type: heading
+    level: 1
+    collapsed: true
+-   
+    id: callouts-settin
+    title: Callout styling
+    type: class-select
+    allowEmpty: false
+    default: 'glass-robo-callouts'
+    options:
     -
-      id: glass-support-settings
-      title: Support Glass Robo theme
-      description: If you like the theme, here are some ways to support development
-      type: heading
-      level: 1
-      collapsed: true
+        label: Obsidian default
+        value: obsidian-callouts
     -
-      id: glass-url-donate
-      title: Buy Me a Coffee
-      description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
-      type: info-text
-      markdown: true
+        label: Glass Robo
+        value: glass-robo-callouts
     -
-      id: glass-url-star-repo
-      title: Star the Theme on GitHub
-      description: "[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)"
-      type: info-text
-      markdown: true
+        label: Wall
+        value: wall-callouts
     -
-      id: glass-url-submit-issue
-      title: Submit an Issue on GitHub
-      description: "[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)"
-      type: info-text
-      markdown: true
+        label: Gummy
+        value: gummy-callouts
+    -
+        label: Glow
+        value: glow-callouts
+    -
+        label: Gaza
+        value: gaza-callouts
+    -
+        label: Loli
+        value: loli-callouts
+    -
+        label: Idlib
+        value: idlib-callouts
+    -
+        label: Hama
+        value: hama-callouts
+    -
+        label: Homs
+        value: homs-callouts
+    -
+        label: Sham
+        value: sham-callouts
+    -
+        label: Halab
+        value: halab-callouts
+-
+    id: callout_center_settings
+    title: Centering callouts titles 
+    description: works only if the callouts style is "Glass Robo"
+    type: class-toggle
+
+-
+    id: codeBlocks-settings
+    title: Code blocks
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: syntax-highlight-theme-dark
+    title: Code blocks styling
+    description: Select syntax highlighting for dark theme
+    type: class-select
+    allowEmpty: false
+    default: glassRobo
+    options:
+    - 
+        label: Glass Robo
+        value: glassRobo
+    - 
+        label: Dracula
+        value: dracula
+    - 
+        label: One Dark
+        value: one-dark-dark
+    - 
+        label: Catppuccin Frappé
+        value: catppuccin-frappe-for-dark
+    - 
+        label: Catppuccin Macchiato
+        value: catppuccin-macchiato
+    - 
+        label: Catppuccin Mocha
+        value: catppuccin-mocha
+    - 
+        label: Halcyon
+        value: halcyon
+    - 
+        label: GitHub Dark
+        value: github-dark
+    - 
+        label: Tokyo Night
+        value: tokyo-night
+# Credits
+
+-
+    id: glass-support-settings
+    title: Support Glass Robo theme
+    description: If you like the theme, here are some ways to support development
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: glass-url-donate
+    title: Buy Me a Coffee
+    description: "[https://www.buymeacoffee.com/lorens](https://www.buymeacoffee.com/lorens)"
+    type: info-text
+    markdown: true
+-
+    id: glass-url-star-repo
+    title: Star the Theme on GitHub
+    description: "[https://github.com/lorens-osman-dev/Glass-Robo](https://github.com/lorens-osman-dev/Glass-Robo)"
+    type: info-text
+    markdown: true
+-
+    id: glass-url-submit-issue
+    title: Submit an Issue on GitHub
+    description: "[https://github.com/lorens-osman-dev/Glass-Robo/issues](https://github.com/lorens-osman-dev/Glass-Robo/issues)"
+    type: info-text
+    markdown: true
 
 */
 
@@ -162,6 +174,10 @@ body.disable_fonts_settings {
     --font-interface-theme: "";
     --font-text-theme: "";
     --font-monospace-theme: "";
+}
+
+body.disable_stars_settings {
+    --s-bg-svg: none;
 }
 
 body.theme-dark {
