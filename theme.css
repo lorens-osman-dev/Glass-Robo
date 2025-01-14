@@ -123,6 +123,9 @@ settings:
           -
               label: Sham
               value: sham-callouts
+          -
+              label: Halab
+              value: halab-callouts
     -
         id: callout_center_settings
         title: Centering callouts titles 
@@ -1303,6 +1306,51 @@ button.mod-cta {
   left: unset;
 }
 .glow-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
+  right: 0px;
+  left: unset;
+}
+
+.halab-callouts .callout {
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+.halab-callouts .callout .callout-icon {
+  display: none;
+}
+.halab-callouts .callout::after {
+  content: "";
+  background: rgba(var(--callout-color), 0) !important;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  z-index: -1;
+}
+.halab-callouts .callout::before {
+  content: "";
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+  border-left: 3px solid rgb(var(--callout-color));
+  box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+.halab-callouts .callout .callout-title-inner {
+  font-weight: bold;
+  font-variation-settings: "WGHT" 900;
+}
+
+.halab-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::after {
+  right: -3px;
+  left: unset;
+}
+.halab-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
   right: 0px;
   left: unset;
 }
