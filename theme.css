@@ -114,6 +114,9 @@ settings:
           -
               label: Idlib
               value: idlib-callouts
+          -
+              label: Hama
+              value: hama-callouts
     -
         id: callout_center_settings
         title: Centering callouts titles 
@@ -1249,6 +1252,11 @@ button.mod-cta {
   transform: translateX(-50%);
 }
 
+.hama-callouts.callout_center_settings .callout .callout-title {
+  display: grid;
+  justify-content: center;
+}
+
 .edit-block-button {
   display: none !important;
 }
@@ -1625,6 +1633,29 @@ button.mod-cta {
 .idlib-callouts .callout[data-callout=danger] .callout-title,
 .idlib-callouts .callout[data-callout=error] .callout-title {
   color: #f2a1a7;
+}
+
+.hama-callouts .callout {
+  position: relative;
+  --callout-quote: var(--color-gray-rgb);
+  --callout-radius: 0;
+  --callout-border-width: 1px;
+  --callout-border-opacity: 0.25;
+  --callout-padding: 0;
+  --callout-content-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-title-padding: var(--size-4-3);
+}
+.hama-callouts .callout .callout-title {
+  background: linear-gradient(to right, rgba(var(--callout-color), 0.1), transparent);
+}
+.hama-callouts .callout .callout-title .callout-title-inner {
+  font-weight: bold;
+}
+.hama-callouts .callout .callout-title .callout-icon {
+  display: none;
+}
+.hama-callouts .callout .callout-content {
+  border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
 }
 
 .metadata-container {
