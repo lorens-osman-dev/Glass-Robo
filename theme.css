@@ -117,6 +117,9 @@ settings:
           -
               label: Hama
               value: hama-callouts
+          -
+              label: Homs
+              value: homs-callouts
     -
         id: callout_center_settings
         title: Centering callouts titles 
@@ -1656,6 +1659,31 @@ button.mod-cta {
 }
 .hama-callouts.callout_center_settings .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
   background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+}
+
+.homs-callouts .callout {
+  border-radius: 30px;
+  background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
+  padding: 3px;
+}
+.homs-callouts .callout .callout-title {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.homs-callouts .callout .callout-title .callout-title-inner {
+  font-weight: bold;
+}
+.homs-callouts .callout .callout-title .callout-icon {
+  display: none;
+}
+.homs-callouts .callout .callout-content {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+  color: rgba(var(--callout-color), 0.9);
+  border-radius: 30px;
+  padding: 10px 20px;
 }
 
 .metadata-container {

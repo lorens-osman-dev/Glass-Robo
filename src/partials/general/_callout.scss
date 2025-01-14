@@ -514,3 +514,32 @@
   }
 
 }
+
+.homs-callouts .callout {
+  border-radius: 30px;
+  background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
+  padding: 3px;
+
+  .callout-title {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    .callout-title-inner {
+      font-weight: bold;
+    }
+
+    .callout-icon {
+      display: none;
+    }
+  }
+
+  .callout-content {
+    background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+    color: rgba(var(--callout-color), 0.9);
+    border-radius: 30px;
+    padding: 10px 20px
+  }
+}
