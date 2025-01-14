@@ -26,6 +26,7 @@
 
     }
   }
+
   &[data-callout="note"] {
     border-color: #027aff;
 
@@ -58,6 +59,7 @@
       background-color: #e9973f;
     }
   }
+
   &[data-callout="tip"] {
     border-color: #53dfdd;
 
@@ -68,18 +70,11 @@
   }
 }
 
-//- centering the title of callouts
-// glass robo 
+// centering the title of callouts
 .glass-robo-callouts.callout_center_settings .callout .callout-title {
   left: 50%;
   transform: translateX(-50%);
 }
-//hama
-.hama-callouts.callout_center_settings  .callout .callout-title {
- display: grid;
- justify-content: center;
-}
-
 
 //hide edit button
 .edit-block-button {
@@ -267,11 +262,13 @@
   box-shadow: none;
   border-radius: 12px;
 }
+
 .gummy-callouts .callout-title-inner {
   font-weight: bold;
   font-variation-settings: 'WGHT' 900;
   font-size: 1.2em;
 }
+
 .gummy-callouts .markdown-source-view.mod-cm6 .cm-embed-block:hover {
   box-shadow: var(--embed-block-shadow-hover);
   border-radius: 12px;
@@ -482,6 +479,10 @@
   --callout-content-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-title-padding: var(--size-4-3);
 
+  &:has(> .callout-title .callout-title-inner:dir(rtl))>.callout-title {
+    background: linear-gradient(to left, rgba(var(--callout-color), 0.1), transparent);
+  }
+
   .callout-title {
     background: linear-gradient(to right, rgba(var(--callout-color), 0.1), transparent);
 
@@ -498,4 +499,18 @@
     border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
 
   }
+}
+
+// centering the title  : hama
+.hama-callouts.callout_center_settings .callout {
+  .callout-title {
+    display: grid;
+    justify-content: center;
+    background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+  }
+
+  &:has(> .callout-title .callout-title-inner:dir(rtl))>.callout-title {
+    background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+  }
+
 }

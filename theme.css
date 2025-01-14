@@ -1252,11 +1252,6 @@ button.mod-cta {
   transform: translateX(-50%);
 }
 
-.hama-callouts.callout_center_settings .callout .callout-title {
-  display: grid;
-  justify-content: center;
-}
-
 .edit-block-button {
   display: none !important;
 }
@@ -1638,6 +1633,9 @@ button.mod-cta {
   --callout-content-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-title-padding: var(--size-4-3);
 }
+.hama-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
+  background: linear-gradient(to left, rgba(var(--callout-color), 0.1), transparent);
+}
 .hama-callouts .callout .callout-title {
   background: linear-gradient(to right, rgba(var(--callout-color), 0.1), transparent);
 }
@@ -1649,6 +1647,15 @@ button.mod-cta {
 }
 .hama-callouts .callout .callout-content {
   border-top: var(--callout-border-width) dashed rgba(var(--callout-color), var(--callout-border-opacity));
+}
+
+.hama-callouts.callout_center_settings .callout .callout-title {
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+}
+.hama-callouts.callout_center_settings .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
+  background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
 }
 
 .metadata-container {
