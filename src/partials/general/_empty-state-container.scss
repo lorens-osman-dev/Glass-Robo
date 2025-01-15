@@ -1,0 +1,54 @@
+.empty-state-container {
+  position: relative;
+
+  &::before {
+
+    content: " ";
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+
+    background-image: var(--s-bg-robot)
+  }
+
+  .empty-state-title {
+    visibility: hidden;
+  }
+
+  .empty-state-action-list {
+    position: relative;
+    z-index: 10;
+  }
+
+  .empty-state-action.tappable {
+    color: #0f2039;
+    width: 180px;
+    font-weight: bold;
+    background-color: #f8c273;
+    box-shadow: 0 0 3px inset rgb(30, 30, 46);
+
+    &.mod-close {
+      background-color: #fb4769;
+    }
+  }
+}
+
+
+
+.horizontal-main-container .workspace-tab-container .view-content {
+  .empty-state {
+    background-color: #0f2039;
+  }
+}
+
+// nav bar color if empty 
+
+.app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
+
+  background-color: #0f2039 !important;
+
+}

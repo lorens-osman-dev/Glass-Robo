@@ -1,0 +1,21 @@
+@mixin mobile-styles {
+  .workspace-drawer-header-icon.mod-settings {
+    position: relative;
+    padding: 0;
+
+    svg {
+      display: none;
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      height: 40px;
+      width: 40px;
+      background-size: cover;
+      background-image: var(--s-bg-robot-gear);
+
+    }
+
+  }
+}
