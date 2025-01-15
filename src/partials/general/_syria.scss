@@ -1,0 +1,19 @@
+//- SYRIA 
+.mod-settings .vertical-tab-content:has([data-id=glass-theme-settings]) {
+  position: relative;
+
+  &::after {
+    opacity: 1;
+    content: " ";
+    position: sticky;
+    display: block;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 75px;
+    background-size: cover;
+    border-radius: 3px;
+    background-image: var(--s-bg-syria);
+  }
+}

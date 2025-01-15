@@ -8,7 +8,7 @@ export default {
 		"type-enum": [
 			2,
 			"always",
-			["clean", "add", "fix", "pc", "mobile", "general", "update"],
+			["clean", "add", "fix", "pc", "mobile", "general", "update", "refactor"],
 		],
 	},
 };

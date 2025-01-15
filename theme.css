@@ -346,39 +346,6 @@ body.theme-light {
   margin-top: 0;
 }
 
-.mod-settings .vertical-tab-content:has([data-id=glass-theme-settings]) {
-  position: relative;
-}
-.mod-settings .vertical-tab-content:has([data-id=glass-theme-settings])::after {
-  opacity: 1;
-  content: " ";
-  position: sticky;
-  display: block;
-  left: 50%;
-  bottom: -50px;
-  transform: translateX(-50%);
-  height: 50px;
-  width: 75px;
-  background-size: cover;
-  border-radius: 3px;
-  background-image: var(--s-bg-syria);
-}
-
-.is-mobile .workspace-drawer-header-icon.mod-settings {
-  position: relative;
-}
-.is-mobile .workspace-drawer-header-icon.mod-settings svg {
-  display: none;
-}
-.is-mobile .workspace-drawer-header-icon.mod-settings::after {
-  content: " ";
-  display: block;
-  height: 40px;
-  width: 40px;
-  background-size: cover;
-  background-image: var(--s-bg-robot);
-}
-
 /* figtree */
 @font-face {
   font-family: "Figtree";
@@ -2432,6 +2399,24 @@ h6 .cm-foldPlaceholder::after,
   background-color: var(--s-bg-secondary-color);
 }
 
+.mod-settings .vertical-tab-content:has([data-id=glass-theme-settings]) {
+  position: relative;
+}
+.mod-settings .vertical-tab-content:has([data-id=glass-theme-settings])::after {
+  opacity: 1;
+  content: " ";
+  position: sticky;
+  display: block;
+  left: 50%;
+  bottom: -50px;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 75px;
+  background-size: cover;
+  border-radius: 3px;
+  background-image: var(--s-bg-syria);
+}
+
 .popover.hover-popover > .markdown-embed {
   background-color: var(--s-bg-primary-color);
 }
@@ -2746,6 +2731,20 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+.is-mobile .is-mobile .workspace-drawer-header-icon.mod-settings {
+  position: relative;
+}
+.is-mobile .is-mobile .workspace-drawer-header-icon.mod-settings svg {
+  display: none;
+}
+.is-mobile .is-mobile .workspace-drawer-header-icon.mod-settings::after {
+  content: " ";
+  display: block;
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  background-image: var(--s-bg-robot);
 }
 
 body.is-mobile {
