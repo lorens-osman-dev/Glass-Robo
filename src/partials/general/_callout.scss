@@ -27,6 +27,13 @@
     }
   }
 
+  //RTL
+  &:has(> .callout-title .callout-title-inner:dir(rtl))>.callout-title {
+    left: unset;
+    right: 15px;
+
+  }
+
   &[data-callout="note"] {
     border-color: #027aff;
 

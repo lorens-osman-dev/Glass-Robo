@@ -127,28 +127,88 @@ I've made this theme primarily for my own purposes and it's completely free, but
     <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 400px !important;width: 400px !important;"></p>
 </details>
 <details>
-   <summary>5. Updated styles for callouts.</summary>
+   <summary>5. New 11 style for callouts.</summary>
+    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
 
   <ul>
     <li>
      <details>
-      <summary>English Screenshot</summary>
+      <summary>Glass Robo style</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/callouts/calloutsot-02.png"></p>
+              <p align="center"> <img src="assets/pics/callouts/sets/1.glassRobo.png"></p>
             </ul>
         </p>
       </details>
     </li>
   </ul>
-
   <ul>
     <li>
      <details>
-      <summary>Arabic Screenshot</summary>
+      <summary>Wall style</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/callouts/calloutsot-01.png"></p> 
+              <p align="center"> <img src="assets/pics/callouts/sets/2.wall.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Gummy style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/3.gummy.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Glow style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/4.glow.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Gaza style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/5.gaza.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Loli style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/6.loli.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Idlib style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/7.idlib.png"></p>
             </ul>
         </p>
       </details>
@@ -235,91 +295,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 </details>
 <details>
    <summary>8. Seven different styles for callouts.</summary>
-    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
-  <ul>
-    <li>
-     <details>
-      <summary>Glass Robo style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/1.glassRobo.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
-  <ul>
-    <li>
-     <details>
-      <summary>Wall style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/2.wall.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
-  <ul>
-    <li>
-     <details>
-      <summary>Gummy style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/3.gummy.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
-  <ul>
-    <li>
-     <details>
-      <summary>Glow style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/4.glow.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
-  <ul>
-    <li>
-     <details>
-      <summary>Gaza style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/5.gaza.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
-  <ul>
-    <li>
-     <details>
-      <summary>Loli style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/6.loli.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
-  <ul>
-    <li>
-     <details>
-      <summary>Idlib style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/7.idlib.png"></p>
-            </ul>
-        </p>
-      </details>
-    </li>
-  </ul>
+
 
 </details>
 
