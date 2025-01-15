@@ -1193,6 +1193,10 @@ button.mod-cta {
 .glass-robo-callouts .callout .callout-title .callout-title-inner {
   font-weight: bold !important;
 }
+.glass-robo-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
+  left: unset;
+  right: 15px;
+}
 .glass-robo-callouts .callout[data-callout=note] {
   border-color: #027aff;
 }

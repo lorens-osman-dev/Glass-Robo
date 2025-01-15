@@ -214,6 +214,54 @@ I've made this theme primarily for my own purposes and it's completely free, but
       </details>
     </li>
   </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Hama style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/8.hama.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Homs style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/9.homs.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Sham style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/10.sham.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Halab style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/11.halab.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
 
 </details>
 <details>
@@ -293,16 +341,13 @@ I've made this theme primarily for my own purposes and it's completely free, but
   </ul>
 
 </details>
-<details>
-   <summary>8. Seven different styles for callouts.</summary>
 
-
-</details>
 
 ## Additional Features
 
 1. Stars background that gives the sensation of diving into space.
 2. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme, You can:
+   - Enable/disable Stars background.
    - Set background color.
    - Select headers color scheme.
    - Enable/disable custom fonts.
