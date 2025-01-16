@@ -492,6 +492,7 @@ body {
 .cm-s-obsidian span.cm-inline-code {
   color: inherit;
   font-family: inherit;
+  font-size: inherit;
 }
 
 body.theme-dark {
