@@ -352,6 +352,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
    - Select headers color scheme.
    - Enable/disable custom fonts.
    - Show/hide navigation tree arrow.
+   - Show/hide callouts icons.
    - Select callout style from 11 different styles.
    - Enable/disable callout title centering.
    - Select code block theme from 9 different styles.
