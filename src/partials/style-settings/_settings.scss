@@ -91,10 +91,13 @@ settings:
     -
         label: Halab
         value: halab-callouts
+    -
+        label: Raka
+        value: raka-callouts
 -
     id: callout_center_settings
     title: Centering callouts titles 
-    description: works only if the callouts style is "Glass Robo"
+    description: works on (Glass Robo, Sham, Hama) themes.
     type: class-toggle
 -
     id: hide_calloutIcon_settings
