@@ -351,10 +351,10 @@ I've made this theme primarily for my own purposes and it's completely free, but
    - Set background color.
    - Select headers color scheme.
    - Enable/disable custom fonts.
-   - Select callout style from 7 different styles.
+   - Select callout style from 11 different styles.
    - Enable/disable callout title centering.
    - Select code block theme from 9 different styles.
-3. One backtick code block dynamic background color.
+3. One backtick code block dynamic font color.
 4. Gradient color for note title.
 5. Gradient color for strong text.
 6. 9 different theme for code block.
