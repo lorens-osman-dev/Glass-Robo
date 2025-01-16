@@ -80,6 +80,11 @@ settings:
     description: Disable Stars in the background
     type: class-toggle
 -
+    id: hide_navTreeArrow_settings
+    title: Hide nav tree arrow
+    description: Hide navigation tree green arrow (>)
+    type: class-toggle
+-
     id: glass-background-color-settings
     title: App background color
     type: variable-themed-color
@@ -228,6 +233,10 @@ body.disable_fonts_settings {
 
 body.disable_stars_settings {
   --s-bg-svg: none;
+}
+
+body.hide_navTreeArrow_settings .tree-item-icon.collapse-icon {
+  display: none;
 }
 
 body.theme-dark {
