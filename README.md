@@ -127,7 +127,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
     <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 400px !important;width: 400px !important;"></p>
 </details>
 <details>
-   <summary>5. New 11 style for callouts.</summary>
+   <summary>5. New 12 style for callouts.</summary>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
 
   <ul>
@@ -262,6 +262,18 @@ I've made this theme primarily for my own purposes and it's completely free, but
       </details>
     </li>
   </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Raka style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/callouts/sets/12.raka.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
 
 </details>
 <details>
@@ -346,22 +358,28 @@ I've made this theme primarily for my own purposes and it's completely free, but
 ## Additional Features
 
 1. Stars background that gives the sensation of diving into space.
-2. Integration with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin, which controls some of the features in the theme, You can:
-   - Enable/disable Stars background.
-   - Set background color.
-   - Select headers color scheme.
-   - Enable/disable custom fonts.
-   - Show/hide navigation tree arrow.
-   - Show/hide callouts icons.
-   - Select callout style from 11 different styles.
-   - Enable/disable callout title centering.
-   - Select code block theme from 9 different styles.
-3. One backtick code block dynamic font color.
-4. Gradient color for note title.
-5. Gradient color for strong text.
-6. 9 different theme for code block.
-7. Cool animations.
-8. New style for folding headers (H1 H2 H3 H4 H5 H6).
+2. Gradient color for note title.
+3. Gradient color for strong text.
+4. 9 different theme for code block.
+5. Cool animations.
+6. New style for folding headers (H1 H2 H3 H4 H5 H6).
+
+## Customize Glass Robo with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a>
+
+  - Install <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin then enable it.
+  - Once the plugin is enabled, go to Settings, Navigate to the "Style Settings" tab.
+
+### with style settings plugin you can :
+  - Enable/disable Stars background.
+  - Set background color.
+  - Select headers color scheme.
+  - Enable/disable custom fonts.
+  - Show/hide navigation tree arrow.
+  - Show/hide callouts icons.
+  - Select callout style from 12 different styles.
+  - Enable/disable callout title centering.
+  - Select code block theme from 9 different styles.
+
 
 ## Supported plugins
 
