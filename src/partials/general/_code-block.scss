@@ -6,9 +6,24 @@
   font-size: inherit;
 }
 
+//- code flag
+.markdown-source-view.mod-cm6 .code-block-flair {
+  top: 0;
+  right: 2px;
+  padding: 0;
+  font-size: 9px;
+}
 
+.markdown-rendered button.copy-code-button {
+  background-color: var(--s-hover-bg-color-green) !important;
+  cursor: pointer;
+}
 
-//---------- colors
+.is-phone .markdown-rendered button.copy-code-button {
+  margin: 0;
+}
+
+//---------- code colors
 body.theme-dark {
   /* Dracula */
   --color-dracula-background: #19212d;
