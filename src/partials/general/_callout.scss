@@ -1,5 +1,7 @@
 //- general 
 .callout {
+  padding: var(--size-4-3);
+
   .callout-title-inner {
     font-weight: bold;
 
@@ -254,7 +256,9 @@
     border-radius: 5px;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    padding: 10px 20px
+    padding: 10px 20px;
+    width: 100%;
+
   }
 }
 
@@ -377,5 +381,35 @@
   .callout-content {
     align-self: flex-start;
     padding: var(--size-4-3) var(--size-4-6);
+  }
+}
+
+//- hasaka style
+.hasaka-callouts .callout {
+  position: relative;
+  padding: var(--size-4-3) var(--size-4-6);
+  position: relative;
+  border: 1px solid rgba(var(--callout-color), 0.4);
+  box-shadow: none;
+  border-radius: 12px;
+
+
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(var(--callout-color), 0.8);
+    box-shadow: 0px 0px 100px 50px rgba(var(--callout-color), 0.9);
+  }
+
+  //RTL
+  &:has(> .callout-title .callout-title-inner:dir(rtl))::before {
+    left: unset;
+    right: 4px;
   }
 }

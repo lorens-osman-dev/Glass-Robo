@@ -149,6 +149,9 @@ settings:
     -
         label: Dzor
         value: dzor-callouts
+    -
+        label: Hasaka
+        value: hasaka-callouts
 -
     id: callout-colorScheme-settin
     title: Callouts color scheme
@@ -1280,6 +1283,9 @@ button.mod-cta {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Zz4KICAgIDxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgLz4KICAgIDxwYXRoIGlkPSJTaGFwZSIgZD0iTTAuNjY2NjY3IDBDMS4wMzQ4NyAwIDEuMzMzMzMgMC4yOTg0OCAxLjMzMzMzIDAuNjY2NjY3QzEuMzMzMzMgMC42NjY2NjcgMS4zMzMzMyA0LjMzMzMzIDEuMzMzMzMgNC4zMzMzM0MxLjMzMzMzIDQuNzAxNTIgMS4wMzQ4NyA1IDAuNjY2NjY3IDVDMC4yOTg0NjYgNSAwIDQuNzAxNTIgMCA0LjMzMzMzQzAgNC4zMzMzMyAwIDAuNjY2NjY3IDAgMC42NjY2NjdDMCAwLjI5ODQ4IDAuMjk4NDY2IDAgMC42NjY2NjcgMEMwLjY2NjY2NyAwIDAuNjY2NjY3IDAgMC42NjY2NjcgMFpNMC42NjY2NjcgOEMxLjAzNDg3IDggMS4zMzMzMyA4LjI5ODQ3IDEuMzMzMzMgOC42NjY2N0MxLjMzMzMzIDguNjY2NjcgMS4zMzMzMyAxMi42NjY3IDEuMzMzMzMgMTIuNjY2N0MxLjMzMzMzIDEzLjAzNDkgMS4wMzQ4NyAxMy4zMzMzIDAuNjY2NjY3IDEzLjMzMzNDMC4yOTg0NjYgMTMuMzMzMyAwIDEzLjAzNDkgMCAxMi42NjY3QzAgMTIuNjY2NyAwIDguNjY2NjcgMCA4LjY2NjY3QzAgOC4yOTg0NyAwLjI5ODQ2NiA4IDAuNjY2NjY3IDhDMC42NjY2NjcgOCAwLjY2NjY2NyA4IDAuNjY2NjY3IDhaIiBmaWxsPSIjQTY1OUEyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtb3BhY2l0eT0iMC40IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjMzMyAxLjMzMykiIC8+CiAgICA8cGF0aCBpZD0iUGF0aCIgZD0iTTAgMi41QzAgMS4xMTkyOSAxLjExOTI5IDAgMi41IDBDMy44ODA3MyAwIDUgMS4xMTkyOSA1IDIuNUM1IDMuODgwNzMgMy44ODA3MyA1IDIuNSA1QzEuMTE5MjkgNSAwIDMuODgwNzMgMCAyLjVDMCAyLjUgMCAyLjUgMCAyLjVaIiBmaWxsPSIjQTY1OUEyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuNSA1LjUpIiAvPgogIDwvZz4KPC9zdmc+");
 }
 
+.callout {
+  padding: var(--size-4-3);
+}
 .callout .callout-title-inner {
   font-weight: bold;
 }
@@ -1491,6 +1497,7 @@ button.mod-cta {
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   padding: 10px 20px;
+  width: 100%;
 }
 
 .hama-callouts .callout {
@@ -1586,6 +1593,31 @@ button.mod-cta {
 .dzor-callouts .callout .callout-content {
   align-self: flex-start;
   padding: var(--size-4-3) var(--size-4-6);
+}
+
+.hasaka-callouts .callout {
+  position: relative;
+  padding: var(--size-4-3) var(--size-4-6);
+  position: relative;
+  border: 1px solid rgba(var(--callout-color), 0.4);
+  box-shadow: none;
+  border-radius: 12px;
+}
+.hasaka-callouts .callout::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(var(--callout-color), 0.8);
+  box-shadow: 0px 0px 100px 50px rgba(var(--callout-color), 0.9);
+}
+.hasaka-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
+  left: unset;
+  right: 4px;
 }
 
 .metadata-container {
