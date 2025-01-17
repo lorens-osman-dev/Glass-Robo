@@ -624,29 +624,29 @@
 
 //- swida style
 .swida-callouts .callout {
-  --s: 10px;
-  /* control the size of the wave */
 
-  --c: rgba(var(--callout-color), 1);
+  --s: 50px;
+  --c1: #e1f5c400;
+  --c2: rgba(var(--callout-color), 0.1);
 
-  padding: 12px;
-  box-sizing: border-box;
-  border-radius: calc(1.5*var(--s));
-  --R: calc(var(--s)/sqrt(2)) at;
-  --g: radial-gradient(var(--R) 50%, var(--c) calc(100% - 1px), #0000) 0 0/calc(2*var(--s)) calc(2*var(--s));
-  --_c: #0000 100%,
-    var(--c) calc(100% + 1px);
-  --_b: calc(2*var(--s)) calc(51% - var(--s)/2) repeat-x;
-  background: var(--g),
-    radial-gradient(var(--R) 50% calc(100% + var(--s)/2), var(--_c)) var(--s) calc(100% - var(--s)/2)/var(--_b),
-    radial-gradient(var(--R) 50% calc(var(--s)/-2), var(--_c)) var(--s) calc(var(--s)/2)/var(--_b);
-  --_m: var(--s)/calc(51% - var(--s)/2) calc(2*var(--s)) repeat-y;
-  mask: var(--g),
-    radial-gradient(var(--R) calc(100% + var(--s)/2) 50%, var(--_c)) calc(100% - var(--s)/2) var(--_m),
-    radial-gradient(var(--R) calc(var(--s)/-2) 50%, var(--_c)) calc(var(--s)/2) var(--_m);
+  --_g: #0000, #0004 5%,
+    var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%, var(--c1) 36% 44%,
+    var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%, var(--c1) 76% 84%,
+    var(--c2) 86% 94%, #0004 95%, #0000;
+  background:
+    radial-gradient(100% 50% at 100% 0, var(--_g)),
+    radial-gradient(100% 50% at 0 50%, var(--_g)),
+    radial-gradient(100% 50% at 100% 100%, var(--_g));
+  background-size: var(--s) calc(2*var(--s));
 
-  .callout-title-inner,
-  .callout-content p {
+  .callout-title-inner {
     color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+    background-color: rgba(var(--callout-color), 1);
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+
+  .callout-content p {
+    font-weight: bold;
   }
 }
