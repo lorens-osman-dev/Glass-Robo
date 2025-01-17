@@ -507,3 +507,119 @@
     }
   }
 }
+
+//- Ladak callouts
+.ladak-callouts .callout {
+  position: relative;
+  border-radius: 8px;
+
+  .callout-title {
+    background: rgba(var(--callout-color), 1);
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px 8px 8px 0;
+    overflow: visible;
+
+    .callout-title-inner {
+      color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+      z-index: 15;
+
+    }
+
+    //the extra corner
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      bottom: -50px;
+      left: 0;
+      height: 50px;
+      width: 25px;
+      border-top-left-radius: 8px;
+      box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+    }
+
+  }
+
+  //RTL
+  &:has(> .callout-title .callout-title-inner:dir(rtl))>.callout-title {
+    left: unset;
+    right: 0;
+    border-radius: 8px 8px 0 8px;
+
+    //the extra corner
+    &::after {
+      left: unset;
+      right: 0;
+      border-top-left-radius: unset;
+      border-top-right-radius: 8px;
+    }
+
+  }
+
+  .callout-content {
+    padding-top: 30px;
+  }
+}
+
+//- Tadmor callouts
+.tadmor-callouts .callout {
+  position: relative;
+  border-radius: 8px;
+
+  .callout-title {
+    background: rgba(var(--callout-color), 1);
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+    overflow: visible;
+
+    .callout-title-inner {
+      color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+      z-index: 15;
+
+    }
+
+    //the extra corners
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      bottom: -50px;
+      left: 0;
+      height: 50px;
+      width: 25px;
+      border-top-left-radius: 8px;
+      box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      bottom: -50px;
+      right: 0;
+      height: 50px;
+      width: 25px;
+      border-top-right-radius: 8px;
+      box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+    }
+
+  }
+
+  .callout-content {
+    padding-top: 30px;
+  }
+}
