@@ -1,0 +1,62 @@
+body {
+  //blue
+  --callout-default: var(--s-color-blue, var(--color-blue-rgb));
+  --callout-info: var(--s-color-blue, var(--color-blue-rgb));
+  --callout-todo: var(--s-color-blue, var(--color-blue-rgb));
+
+  //bright blue
+  --callout-tip: var(--s-color-bright-blue, var(--color-cyan-rgb));
+  --callout-important: var(--s-color-bright-blue, var(--color-cyan-rgb));
+  --callout-summary: var(--s-color-bright-blue, var(--color-cyan-rgb));
+
+  //red
+  --callout-bug: var(--s-color-red, var(--color-red-rgb));
+  --callout-error: var(--s-color-red, var(--color-red-rgb));
+  --callout-fail: var(--s-color-red, var(--color-red-rgb));
+
+  //gray
+  --gray: 158, 158, 158;
+  --callout-quote: var(--s-color-gray, var(--gray));
+
+  //green
+  --callout-success: var(--s-color-green, var(--color-green-rgb));
+
+  //yellow
+  --callout-question: var(--s-color-orange, var(--color-orange-rgb));
+  --callout-warning: var(--s-color-orange, var(--color-orange-rgb));
+
+  //purple
+  --callout-example: var(--s-color-purple, var(--color-purple-rgb));
+}
+
+body.test {
+  --s-color-blue: 158, 218, 229;
+  --s-color-bright-blue: 239, 165, 202;
+  --s-color-red: 243, 161, 165;
+  --s-color-gray: 225, 198, 181;
+  --s-color-green: 143, 230, 151;
+  --s-color-purple: 239, 165, 202;
+  --s-color-orange: 144, 231, 152;
+}
+
+body.gruvbox {
+  background-color: var(--glass-background-color-settings, #282828) !important;
+  --s-color-red: 204, 36, 29;
+  --s-color-green: 152, 151, 26;
+  --s-color-orange: 215, 153, 33;
+  --s-color-blue: 69, 133, 136;
+  --s-color-purple: 177, 98, 134;
+  --s-color-bright-blue: 104, 157, 106;
+  --s-color-gray: 168, 153, 132;
+}
+
+body.catppuccin {
+  background-color: var(--glass-background-color-settings, #232634) !important;
+  --s-color-red: 231, 130, 132;
+  --s-color-orange: 239, 159, 118;
+  --s-color-green: 166, 209, 137;
+  --s-color-blue: 140, 170, 238;
+  --s-color-purple: 186, 187, 241;
+  --s-color-bright-blue: 153, 209, 219;
+  --s-color-gray: 98, 104, 128;
+}

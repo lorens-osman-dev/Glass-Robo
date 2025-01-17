@@ -95,6 +95,26 @@ settings:
         label: Raka
         value: raka-callouts
 -
+    id: callout-colorScheme-settin
+    title: Callouts color scheme
+    description: Select color schema for callouts.
+    type: class-select
+    allowEmpty: false
+    default: glassRobo
+    options:
+    - 
+        label: Glass Robo
+        value: glassRobo
+    - 
+        label: test
+        value: test
+    - 
+        label: gruvbox
+        value: gruvbox
+    - 
+        label: catppuccin
+        value: catppuccin
+-
     id: callout_center_settings
     title: Centering callouts titles 
     description: works on (Glass Robo, Sham, Hama) themes.
