@@ -536,6 +536,7 @@ body.test {
 
 body.gruvbox {
   background-color: var(--glass-background-color-settings, #282828) !important;
+  --text-normal: #ebdbb2;
   --s-color-red: 204, 36, 29;
   --s-color-green: 152, 151, 26;
   --s-color-orange: 215, 153, 33;
@@ -1543,7 +1544,7 @@ button.mod-cta {
   padding: 5px;
 }
 .sham-callouts .callout .callout-content {
-  padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  padding: var(--size-4-3);
 }
 
 .sham-callouts.callout_center_settings .callout .callout-title {
@@ -1553,6 +1554,7 @@ button.mod-cta {
 
 .raka-callouts .callout {
   border-radius: 3px;
+  padding: var(--size-4-3) var(--size-4-6);
 }
 .raka-callouts .callout .callout-title {
   background: rgba(var(--callout-color), 0.1);
@@ -1575,16 +1577,15 @@ button.mod-cta {
 .dzor-callouts .callout .callout-title {
   background: rgba(var(--callout-color), 0.1);
   padding: 5px;
-}
-.dzor-callouts .callout .callout-content {
-  padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-}
-.dzor-callouts .callout .callout-title {
   width: 90%;
   display: grid;
   justify-content: center;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+.dzor-callouts .callout .callout-content {
+  align-self: flex-start;
+  padding: var(--size-4-3) var(--size-4-6);
 }
 
 .metadata-container {

@@ -325,7 +325,7 @@
   }
 
   .callout-content {
-    padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+    padding: var(--size-4-3);
   }
 }
 
@@ -340,6 +340,7 @@
 //- raka style 
 .raka-callouts .callout {
   border-radius: 3px;
+  padding: var(--size-4-3) var(--size-4-6);
 
   .callout-title {
     background: rgba(var(--callout-color), 0.1);
@@ -366,17 +367,15 @@
   .callout-title {
     background: rgba(var(--callout-color), 0.1);
     padding: 5px;
-  }
-
-  .callout-content {
-    padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  }
-
-  .callout-title {
     width: 90%;
     display: grid;
     justify-content: center;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+  }
+
+  .callout-content {
+    align-self: flex-start;
+    padding: var(--size-4-3) var(--size-4-6);
   }
 }
