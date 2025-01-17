@@ -29,16 +29,6 @@ body {
   --callout-example: var(--s-color-purple, var(--color-purple-rgb));
 }
 
-body.test {
-  --s-color-blue: 158, 218, 229;
-  --s-color-bright-blue: 239, 165, 202;
-  --s-color-red: 243, 161, 165;
-  --s-color-gray: 225, 198, 181;
-  --s-color-green: 143, 230, 151;
-  --s-color-purple: 239, 165, 202;
-  --s-color-orange: 144, 231, 152;
-}
-
 body.gruvbox {
   background-color: var(--glass-background-color-settings, #282828) !important;
   --text-normal: #ebdbb2;
@@ -60,4 +50,40 @@ body.catppuccin {
   --s-color-purple: 186, 187, 241;
   --s-color-bright-blue: 153, 209, 219;
   --s-color-gray: 98, 104, 128;
+}
+
+body.dracula {
+  background-color: var(--glass-background-color-settings, #282A36) !important;
+  --text-normal: #F8F8F2;
+  --s-color-red: 255, 85, 85;
+  --s-color-orange: 255, 184, 108;
+  --s-color-green: 80, 250, 123;
+  --s-color-blue: 98, 114, 164;
+  --s-color-purple: 189, 147, 249;
+  --s-color-bright-blue: 139, 233, 253;
+  --s-color-gray: 98, 104, 128;
+}
+
+body.oneDark {
+  background-color: var(--glass-background-color-settings, #282d33) !important;
+  --text-normal: #F8F8F2;
+  --s-color-red: 224, 107, 116;
+  --s-color-orange: 229, 192, 122;
+  --s-color-green: 153, 195, 121;
+  --s-color-blue: 99, 174, 239;
+  --s-color-purple: 198, 120, 221;
+  --s-color-bright-blue: 85, 181, 193;
+  --s-color-gray: 170, 178, 191;
+}
+
+body.lorens {
+  background-color: var(--glass-background-color-settings, #0d161d) !important;
+  --text-normal: #F8F8F2;
+  --s-color-orange: 253, 252, 179;
+  --s-color-blue: 118, 133, 245;
+  --s-color-red: 254, 97, 62;
+  --s-color-green: 129, 225, 164;
+  --s-color-purple: 122, 91, 166;
+  --s-color-bright-blue: 202, 252, 191;
+  --s-color-gray: 178, 166, 189;
 }
