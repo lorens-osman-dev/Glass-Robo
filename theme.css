@@ -167,6 +167,9 @@ settings:
     -
         label: Swida
         value: swida-callouts
+    -
+        label: Lorens
+        value: lorens-callouts
 -
     id: callout-colorScheme-settin
     title: Callouts color scheme
@@ -1848,12 +1851,29 @@ button.mod-cta {
   background-size: var(--s) calc(2 * var(--s));
 }
 .swida-callouts .callout .callout-title-inner {
-  color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-  background-color: rgba(var(--callout-color), 1);
+  background-color: rgba(var(--callout-color), 0.5);
   padding: 2px 8px;
   border-radius: 3px;
 }
 .swida-callouts .callout .callout-content p {
+  font-weight: bold;
+}
+
+.lorens-callouts .callout {
+  --s: 10px;
+  /* control the size*/
+  --c1: rgba(var(--callout-color), 0.1);
+  --c2: #cd8b5200;
+  --c: #0000 71%, var(--c1) 0 79%, #0000 0;
+  --_s: calc(var(--s)/2)/calc(2*var(--s)) calc(2*var(--s));
+  background: linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s), linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s), radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0/var(--s) var(--s);
+}
+.lorens-callouts .callout .callout-title-inner {
+  background-color: rgba(var(--callout-color), 0.3);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.lorens-callouts .callout .callout-content p {
   font-weight: bold;
 }
 
