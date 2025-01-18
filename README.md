@@ -57,14 +57,97 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 </details>
 <details>
-   <summary>2. Custom fonts.</summary>
+   <summary>2. New 6 themes and color schemes.</summary>
+    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Glass Robo theme</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/themes/1.glassRobo.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Gruvbox theme</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/themes/2.gruvbox.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Catppuccin theme</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/themes/3.catppuccin.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Lorens theme</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/themes/4.lorens.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Dracula theme</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/themes/5.dracula.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>One Dark theme</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/themes/6.oneDark.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
+<details>
+   <summary>3. Neat icons for files and folders.</summary>
+   </br>
+    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 400px !important;width: 400px !important;"></p>
+</details>
+<details>
+   <summary>4. Custom fonts.</summary>
    </br>
     <p align="center"> <img src="assets/pics/fonts/IMG_20241122_133229.jpg"></p>
     <p align="center"> <img src="assets/pics/fonts/IMG_20241122_132951.jpg"></p>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can enable/disable custom fonts.</p>
 </details>
 <details>
-   <summary>3. New icons for meta data properties.</summary>
+   <summary>5. New icons for meta data properties.</summary>
    </br>
     <p align="center"> <img src="assets/pics/general/meta-data.jpg" style="height: 250px !important;width: 512px !important;"></p>
     <p align="center"> All thanks to <a href="https://github.com/Avesend/obsidian-lumines">lumines theme</a>.</p>
@@ -121,13 +204,9 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </li>
      </ul>
 </details>
+
 <details>
-   <summary>4. Neat icons for files and folders.</summary>
-   </br>
-    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 400px !important;width: 400px !important;"></p>
-</details>
-<details>
-   <summary>5. New 12 style for callouts.</summary>
+   <summary>6. New 12 style for callouts.</summary>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
 
   <ul>
@@ -277,7 +356,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 </details>
 <details>
-   <summary>6. Custom checkboxes.</summary>
+   <summary>7. Custom checkboxes.</summary>
 
   <ul>
     <li>
@@ -324,7 +403,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 </details>
 <details>
-   <summary>7. Tow sets of colors for headers.</summary>
+   <summary>8. Tow sets of colors for headers.</summary>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what set you want.</p>
   <ul>
     <li>
