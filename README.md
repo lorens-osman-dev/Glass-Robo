@@ -206,153 +206,212 @@ I've made this theme primarily for my own purposes and it's completely free, but
 </details>
 
 <details>
-   <summary>6. New 12 style for callouts.</summary>
+   <summary>6. New 20 style for callouts.</summary>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
 
-  <ul>
+<ul>
     <li>
-     <details>
-      <summary>Glass Robo style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/1.glassRobo.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Glass Robo style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/1.glassRobo.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Wall style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/2.wall.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Lorens style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/2.lorens.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Gummy style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/3.gummy.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Glow style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/3.glow.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Glow style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/4.glow.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Idlib style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/4.idlib.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Gaza style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/5.gaza.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Draa style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/5.draa.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Loli style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/6.loli.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Raka style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/6.raka.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Idlib style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/7.idlib.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Ladak style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/7.ladak.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Hama style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/8.hama.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Sham style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/8.sham.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Homs style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/9.homs.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Hama style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/9.hama.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Sham style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/10.sham.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Gaza style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/10.gaza.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Halab style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/11.halab.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Halab style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/11.halab.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
-  <ul>
     <li>
-     <details>
-      <summary>Raka style</summary>
-        <p>
-            <ul>
-              <p align="center"> <img src="assets/pics/callouts/sets/12.raka.png"></p>
-            </ul>
-        </p>
-      </details>
+        <details>
+            <summary>Dzor style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/12.dzor.png"></p>
+                </ul>
+            </p>
+        </details>
     </li>
-  </ul>
+    <li>
+        <details>
+            <summary>Hasaka style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/13.hasaka.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Tadmor style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/14.tadmor.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Homs style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/15.homs.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Gummy style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/16.gummy.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Wall style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/17.wall.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Loli style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/18.loli.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Swida style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/19.swida.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Tartus style</summary>
+            <p>
+                <ul>
+                    <p align="center"><img src="assets/pics/callouts/sets/20.tartus.png"></p>
+                </ul>
+            </p>
+        </details>
+    </li>
+</ul>
+ 
 
 </details>
 <details>
