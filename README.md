@@ -491,22 +491,30 @@ I've made this theme primarily for my own purposes and it's completely free, but
 4. 9 different theme for code block.
 5. Cool animations.
 6. New style for folding headers (H1 H2 H3 H4 H5 H6).
-
-## Customize Glass Robo with <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a>
+---
+<details>
+   <summary>How to use style settings plugin</summary>
 
   - Install <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin then enable it.
   - Once the plugin is enabled, go to Settings, Navigate to the "Style Settings" tab.
 
-### with style settings plugin you can :
+#### with style settings plugin you can :
   - Enable/disable Stars background.
   - Set background color.
   - Select headers color scheme.
   - Enable/disable custom fonts.
   - Show/hide navigation tree arrow.
   - Show/hide callouts icons.
-  - Select callout style from 12 different styles.
+  - Select callout style from 20 different styles.
+  - Select App theme from 6 different styles.
   - Enable/disable callout title centering.
   - Select code block theme from 9 different styles.
+
+</details>
+
+---
+
+
 
 
 ## Supported plugins
