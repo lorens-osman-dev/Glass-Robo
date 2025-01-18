@@ -71,8 +71,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </p>
       </details>
     </li>
-  </ul>
-  <ul>
     <li>
      <details>
       <summary>Gruvbox theme</summary>
@@ -83,8 +81,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </p>
       </details>
     </li>
-  </ul>
-  <ul>
     <li>
      <details>
       <summary>Catppuccin theme</summary>
@@ -95,8 +91,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </p>
       </details>
     </li>
-  </ul>
-  <ul>
     <li>
      <details>
       <summary>Lorens theme</summary>
@@ -107,8 +101,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </p>
       </details>
     </li>
-  </ul>
-  <ul>
     <li>
      <details>
       <summary>Dracula theme</summary>
@@ -119,8 +111,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </p>
       </details>
     </li>
-  </ul>
-  <ul>
     <li>
      <details>
       <summary>One Dark theme</summary>
@@ -149,7 +139,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>5. New icons for meta data properties.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/general/meta-data.jpg" style="height: 250px !important;width: 512px !important;"></p>
+    <p align="center"> <img src="assets/pics/general/meta-data.jpg" style="width: 512px !important;"></p>
     <p align="center"> All thanks to <a href="https://github.com/Avesend/obsidian-lumines">lumines theme</a>.</p>
       <ul>
         <li>
@@ -423,7 +413,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
       <summary>Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/general/checkboxs.jpg" style="height: 600px !important;width: 220px !important;"></p>
+              <p align="center"> <img src="assets/pics/general/checkboxs.jpg" style="width: 220px !important;"></p>
             </ul>
         </p>
       </details>
