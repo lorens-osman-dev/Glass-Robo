@@ -95,6 +95,38 @@ settings:
     default-light: '#fafafa'
     default-dark: '#141414'
 -
+    id: theme-settings
+    title: Themes
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: themes-setting
+    title: Themes and colors
+    description: Select color schema
+    type: class-select
+    allowEmpty: false
+    default: glassRobo
+    options:
+    - 
+        label: Glass Robo
+        value: glassRobo
+    - 
+        label: Gruvbox
+        value: gruvbox
+    - 
+        label: Catppuccin
+        value: catppuccin
+    - 
+        label: Lorens
+        value: lorens
+    - 
+        label: Dracula
+        value: dracula
+    - 
+        label: One Dark
+        value: oneDark 
+-
     id: callouts-settings
     title: Callouts
     type: heading
@@ -170,32 +202,6 @@ settings:
     -
         label: Lorens
         value: lorens-callouts
--
-    id: callout-colorScheme-settin
-    title: Callouts color scheme
-    description: Select color schema for callouts.
-    type: class-select
-    allowEmpty: false
-    default: glassRobo
-    options:
-    - 
-        label: Glass Robo
-        value: glassRobo
-    - 
-        label: Gruvbox
-        value: gruvbox
-    - 
-        label: Catppuccin
-        value: catppuccin
-    - 
-        label: Lorens
-        value: lorens
-    - 
-        label: Dracula
-        value: dracula
-    - 
-        label: One Dark
-        value: oneDark
 -
     id: callout_center_settings
     title: Centering callouts titles 
@@ -353,6 +359,11 @@ body.theme-light {
 .setting-item:is([data-id=general-settings]) > .setting-item-info > .setting-item-name::before {
   left: calc((var(--font-ui-medium) + 11px) * -1) !important;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBjbGFzcz0iaW5qZWN0ZWQtc3ZnIiBkYXRhLXNyYz0iaHR0cHM6Ly9jZG4uaHVnZWljb25zLmNvbS9pY29ucy9zdGFycy1zb2xpZC1yb3VuZGVkLnN2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHJvbGU9ImltZyIgY29sb3I9IiNlNGVjMGEiPgo8cGF0aCBkPSJNMTIgMi4yNUMxMi40MTQyIDIuMjUgMTIuNzUgMi41ODU3OSAxMi43NSAzQzEyLjc1IDUuMDA2MDggMTMuNzYwNiA3LjA3NDkzIDE1LjM0MjggOC42NTcxN0MxNi45MjUxIDEwLjIzOTQgMTguOTkzOSAxMS4yNSAyMSAxMS4yNUMyMS40MTQyIDExLjI1IDIxLjc1IDExLjU4NTggMjEuNzUgMTJDMjEuNzUgMTIuNDE0MiAyMS40MTQyIDEyLjc1IDIxIDEyLjc1QzE4Ljk5MzkgMTIuNzUgMTYuOTI1MSAxMy43NjA2IDE1LjM0MjggMTUuMzQyOEMxMy43NjA2IDE2LjkyNTEgMTIuNzUgMTguOTkzOSAxMi43NSAyMUMxMi43NSAyMS40MTQyIDEyLjQxNDIgMjEuNzUgMTIgMjEuNzVDMTEuNTg1OCAyMS43NSAxMS4yNSAyMS40MTQyIDExLjI1IDIxQzExLjI1IDE4Ljk5MzkgMTAuMjM5NCAxNi45MjUxIDguNjU3MTcgMTUuMzQyOEM3LjA3NDkzIDEzLjc2MDYgNS4wMDYwOCAxMi43NSAzIDEyLjc1QzIuNTg1NzkgMTIuNzUgMi4yNSAxMi40MTQyIDIuMjUgMTJDMi4yNSAxMS41ODU4IDIuNTg1NzkgMTEuMjUgMyAxMS4yNUM1LjAwNjA4IDExLjI1IDcuMDc0OTMgMTAuMjM5NCA4LjY1NzE3IDguNjU3MTdDMTAuMjM5NCA3LjA3NDkzIDExLjI1IDUuMDA2MDggMTEuMjUgM0MxMS4yNSAyLjU4NTc5IDExLjU4NTggMi4yNSAxMiAyLjI1WiIgZmlsbD0iI2U0ZWMwYSI+PC9wYXRoPgo8cGF0aCBkPSJNMTkuMjUgMS4yNUMxOS40NjM1IDEuMjUgMTkuNjQ4NCAxLjM5Nzk0IDE5LjY5NTQgMS42MDYyTDE5LjkyOTYgMi42NDYwMUMyMC4wODk1IDMuMzU2MDEgMjAuNjQ0IDMuOTEwNDcgMjEuMzU0IDQuMDcwNDFMMjIuMzkzOCA0LjMwNDY0QzIyLjYwMjEgNC4zNTE1NSAyMi43NSA0LjUzNjUyIDIyLjc1IDQuNzVDMjIuNzUgNC45NjM0OCAyMi42MDIxIDUuMTQ4NDUgMjIuMzkzOCA1LjE5NTM2TDIxLjM1NCA1LjQyOTU5QzIwLjY0NCA1LjU4OTUzIDIwLjA4OTUgNi4xNDM5OCAxOS45Mjk2IDYuODUzOThMMTkuNjk1NCA3Ljg5MzhDMTkuNjQ4NCA4LjEwMjA2IDE5LjQ2MzUgOC4yNSAxOS4yNSA4LjI1QzE5LjAzNjUgOC4yNSAxOC44NTE2IDguMTAyMDYgMTguODA0NiA3Ljg5MzhMMTguNTcwNCA2Ljg1Mzk4QzE4LjQxMDUgNi4xNDM5OCAxNy44NTYgNS41ODk1MyAxNy4xNDYgNS40Mjk1OUwxNi4xMDYyIDUuMTk1MzZDMTUuODk3OSA1LjE0ODQ1IDE1Ljc1IDQuOTYzNDggMTUuNzUgNC43NUMxNS43NSA0LjUzNjUyIDE1Ljg5NzkgNC4zNTE1NSAxNi4xMDYyIDQuMzA0NjRMMTcuMTQ2IDQuMDcwNDFDMTcuODU2IDMuOTEwNDcgMTguNDEwNSAzLjM1NjAyIDE4LjU3MDQgMi42NDYwMUwxOC44MDQ2IDEuNjA2MkMxOC44NTE2IDEuMzk3OTQgMTkuMDM2NSAxLjI1IDE5LjI1IDEuMjVaIiBmaWxsPSIjZTRlYzBhIj48L3BhdGg+CjxwYXRoIGQ9Ik00Ljc1IDE1Ljc1QzQuOTYzNDggMTUuNzUgNS4xNDg0NSAxNS44OTc5IDUuMTk1MzYgMTYuMTA2Mkw1LjQyOTU5IDE3LjE0NkM1LjU4OTUzIDE3Ljg1NiA2LjE0Mzk4IDE4LjQxMDUgNi44NTM5OCAxOC41NzA0TDcuODkzOCAxOC44MDQ2QzguMTAyMDYgMTguODUxNiA4LjI1IDE5LjAzNjUgOC4yNSAxOS4yNUM4LjI1IDE5LjQ2MzUgOC4xMDIwNiAxOS42NDg0IDcuODkzOCAxOS42OTU0TDYuODUzOTggMTkuOTI5NkM2LjE0Mzk4IDIwLjA4OTUgNS41ODk1MyAyMC42NDQgNS40Mjk1OSAyMS4zNTRMNS4xOTUzNiAyMi4zOTM4QzUuMTQ4NDUgMjIuNjAyMSA0Ljk2MzQ4IDIyLjc1IDQuNzUgMjIuNzVDNC41MzY1MiAyMi43NSA0LjM1MTU1IDIyLjYwMjEgNC4zMDQ2NCAyMi4zOTM4TDQuMDcwNDEgMjEuMzU0QzMuOTEwNDcgMjAuNjQ0IDMuMzU2MDIgMjAuMDg5NSAyLjY0NjAxIDE5LjkyOTZMMS42MDYyIDE5LjY5NTRDMS4zOTc5NCAxOS42NDg0IDEuMjUgMTkuNDYzNSAxLjI1IDE5LjI1QzEuMjUgMTkuMDM2NSAxLjM5Nzk0IDE4Ljg1MTYgMS42MDYyIDE4LjgwNDZMMi42NDYwMSAxOC41NzA0QzMuMzU2MDIgMTguNDEwNSAzLjkxMDQ3IDE3Ljg1NiA0LjA3MDQxIDE3LjE0Nkw0LjMwNDY0IDE2LjEwNjJDNC4zNTE1NSAxNS44OTc5IDQuNTM2NTIgMTUuNzUgNC43NSAxNS43NVoiIGZpbGw9IiNlNGVjMGEiPjwvcGF0aD4KPC9zdmc+");
+}
+
+.setting-item:is([data-id=theme-settings]) > .setting-item-info > .setting-item-name::before {
+  left: calc((var(--font-ui-medium) + 11px) * -1) !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBjbGFzcz0iaW5qZWN0ZWQtc3ZnIiBkYXRhLXNyYz0iaHR0cHM6Ly9jZG4uaHVnZWljb25zLmNvbS9pY29ucy9jb2xvcnMtYnVsay1yb3VuZGVkLnN2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHJvbGU9ImltZyIgY29sb3I9IiNkMDAyMWIiPgo8cGF0aCBkPSJNOS4yNSAxNkM5LjI1IDEyLjI3MjEgMTIuMjcyMSA5LjI1IDE2IDkuMjVDMTkuNzI3OSA5LjI1IDIyLjc1IDEyLjI3MjEgMjIuNzUgMTZDMjIuNzUgMTkuNzI3OSAxOS43Mjc5IDIyLjc1IDE2IDIyLjc1QzEyLjI3MjEgMjIuNzUgOS4yNSAxOS43Mjc5IDkuMjUgMTZaIiBmaWxsPSIjZDAwMjFiIj48L3BhdGg+CjxwYXRoIG9wYWNpdHk9IjAuNCIgZD0iTTUuMjUgOEM1LjI1IDQuMjcyMDggOC4yNzIwOCAxLjI1IDEyIDEuMjVDMTUuNzI3OSAxLjI1IDE4Ljc1IDQuMjcyMDggMTguNzUgOEMxOC43NSA4LjA2Mzg1IDE4Ljc1IDguMDk1NzggMTguNzQ0NiA4LjEyMzk0QzE4LjcxNTQgOC4yNzUxNiAxOC41NzQgOC4zODA2NiAxOC40MjA4IDguMzY1NjZDMTguMzkyMiA4LjM2Mjg3IDE4LjM1NDEgOC4zNTE1NyAxOC4yNzggOC4zMjg5OUMxNy41NTYgOC4xMTQ5MiAxNi43OTE0IDggMTYgOEMxMi42NzExIDggOS44MTcwNiAxMC4wMzMzIDguNjEyMDYgMTIuOTI1NkM4LjQ2NDAzIDEzLjI4MSA4LjM5MDAxIDEzLjQ1ODYgOC4yNDMyNyAxMy40OTQ5QzguMDk2NTQgMTMuNTMxMiA3Ljk2NDg0IDEzLjQyMjMgNy43MDE0NCAxMy4yMDQ2QzYuMjA0MTEgMTEuOTY2NSA1LjI1IDEwLjA5NDcgNS4yNSA4WiIgZmlsbD0iI2QwMDIxYiI+PC9wYXRoPgo8cGF0aCBvcGFjaXR5PSIwLjQiIGQ9Ik04IDE2LjAwMTlDOCAxNS43ODU4IDguMDA4NTcgMTUuNTcxNyA4LjAyNTM4IDE1LjM2QzguMDQwNDcgMTUuMTY5OSA4LjA0ODAyIDE1LjA3NDkgOC4wMTEzNCAxNS4wMDA3QzcuOTc0NjcgMTQuOTI2NSA3Ljg5ODcxIDE0Ljg3NzUgNy43NDY4IDE0Ljc3OTRMNy42NjUxMiAxNC43MjY2QzYuMzEyNyAxMy44NTMzIDUuMjM5MyAxMi41ODEyIDQuNjEyMTUgMTEuMDc2QzQuNDY0MTYgMTAuNzIwOCA0LjM5MDE2IDEwLjU0MzIgNC4yNDM0MyAxMC41MDY5QzQuMDk2NyAxMC40NzA2IDMuOTY1IDEwLjU3OTUgMy43MDE2MSAxMC43OTcyQzIuMjA0MTggMTIuMDM1MyAxLjI1IDEzLjkwNzIgMS4yNSAxNi4wMDE5QzEuMjUgMTkuNzI5OCA0LjI3MjA4IDIyLjc1MTkgOCAyMi43NTE5QzguNjg2MDUgMjIuNzUxOSA5LjM0ODE5IDIyLjY0OTYgOS45NzE5OSAyMi40NTkzQzEwLjM0OTggMjIuMzQ0MSAxMC41Mzg3IDIyLjI4NjUgMTAuNTgxNyAyMi4xMjU0QzEwLjYyNDYgMjEuOTY0MyAxMC40NzIgMjEuODAxOSAxMC4xNjcgMjEuNDc3QzguODIzMTMgMjAuMDQ1OCA4IDE4LjEyIDggMTYuMDAxOVoiIGZpbGw9IiNkMDAyMWIiPjwvcGF0aD4KPC9zdmc+");
 }
 
 .setting-item:is([data-id=callouts-settings]) > .setting-item-info > .setting-item-name::before {
