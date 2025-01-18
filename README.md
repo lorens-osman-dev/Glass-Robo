@@ -137,7 +137,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>3. Neat icons for files and folders.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="height: 400px !important;width: 400px !important;"></p>
+    <p align="center"> <img src="assets/pics/general/file-tree-icons.jpg" style="width: 350px !important;"></p>
 </details>
 <details>
    <summary>4. Custom fonts.</summary>
