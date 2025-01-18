@@ -132,8 +132,8 @@ I've made this theme primarily for my own purposes and it's completely free, but
 <details>
    <summary>4. Custom fonts.</summary>
    </br>
-    <p align="center"> <img src="assets/pics/fonts/IMG_20241122_133229.jpg"></p>
-    <p align="center"> <img src="assets/pics/fonts/IMG_20241122_132951.jpg"></p>
+        <p align="center"> <img src="assets/pics/fonts/english.jpg" style="width: 220px !important;"></p>
+        <p align="center"> <img src="assets/pics/fonts/arabic.jpg" style="width: 220px !important;"></p>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can enable/disable custom fonts.</p>
 </details>
 <details>
