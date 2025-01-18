@@ -146,38 +146,35 @@ settings:
         label: Glass Robo
         value: glass-robo-callouts
     -
-        label: Wall
-        value: wall-callouts
-    -
-        label: Gummy
-        value: gummy-callouts
+        label: Lorens
+        value: lorens-callouts
     -
         label: Glow
         value: glow-callouts
     -
-        label: Gaza
-        value: gaza-callouts
-    -
-        label: Loli
-        value: loli-callouts
-    -
         label: Idlib
         value: idlib-callouts
     -
-        label: Hama
-        value: hama-callouts
+        label: Draa
+        value: draa-callouts
     -
-        label: Homs
-        value: homs-callouts
+        label: Raka
+        value: raka-callouts
+    -
+        label: Ladak
+        value: ladak-callouts
     -
         label: Sham
         value: sham-callouts
     -
+        label: Hama
+        value: hama-callouts
+    -
+        label: Gaza
+        value: gaza-callouts
+    -
         label: Halab
         value: halab-callouts
-    -
-        label: Raka
-        value: raka-callouts
     -
         label: Dzor
         value: dzor-callouts
@@ -185,23 +182,27 @@ settings:
         label: Hasaka
         value: hasaka-callouts
     -
-        label: Draa
-        value: draa-callouts
-    -
-        label: Tartus
-        value: tartus-callouts
-    -
-        label: Ladak
-        value: ladak-callouts
-    -
         label: Tadmor
         value: tadmor-callouts
+    -
+        label: Homs
+        value: homs-callouts
+    -
+        label: Gummy
+        value: gummy-callouts
+    -
+        label: Wall
+        value: wall-callouts
+    -
+        label: Loli
+        value: loli-callouts
     -
         label: Swida
         value: swida-callouts
     -
-        label: Lorens
-        value: lorens-callouts
+        label: Tartus
+        value: tartus-callouts
+
 -
     id: callout_center_settings
     title: Centering callouts titles 
@@ -1535,19 +1536,19 @@ button.mod-cta {
   z-index: 0;
 }
 
-.idlib-callouts .callout {
+.dzor-callouts .callout {
   border-radius: 33px;
   background: rgba(var(--callout-color), 0.1);
   padding: 3px;
   display: flex;
   flex-direction: column-reverse;
 }
-.idlib-callouts .callout .callout-title {
+.dzor-callouts .callout .callout-title {
   align-items: center;
   justify-content: center;
   padding-top: 5px;
 }
-.idlib-callouts .callout .callout-content {
+.dzor-callouts .callout .callout-content {
   background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
   border: 1px solid rgba(var(--callout-color), 0.2);
   border-radius: 5px;
@@ -1631,14 +1632,14 @@ button.mod-cta {
   padding-top: 5px;
 }
 
-.dzor-callouts .callout {
+.idlib-callouts .callout {
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 15px;
 }
-.dzor-callouts .callout .callout-title {
+.idlib-callouts .callout .callout-title {
   background: rgba(var(--callout-color), 0.1);
   padding: 5px;
   width: 90%;
@@ -1647,7 +1648,7 @@ button.mod-cta {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.dzor-callouts .callout .callout-content {
+.idlib-callouts .callout .callout-content {
   align-self: flex-start;
   padding: var(--size-4-3) var(--size-4-6);
 }

@@ -235,8 +235,8 @@
   }
 }
 
-//- idlib style
-.idlib-callouts .callout {
+//- Dzor style
+.dzor-callouts .callout {
   border-radius: 33px;
   background: rgba(var(--callout-color), 0.1);
   padding: 3px;
@@ -360,8 +360,8 @@
   }
 }
 
-//- dzor style
-.dzor-callouts .callout {
+//- idlib style
+.idlib-callouts .callout {
   padding: 0;
   display: flex;
   flex-direction: column;
