@@ -1400,6 +1400,24 @@ button.mod-cta {
   transform: translateX(-50%);
 }
 
+.lorens-callouts .callout {
+  --s: 10px;
+  /* control the size*/
+  --c1: rgba(var(--callout-color), 0.1);
+  --c2: #cd8b5200;
+  --c: #0000 71%, var(--c1) 0 79%, #0000 0;
+  --_s: calc(var(--s)/2)/calc(2*var(--s)) calc(2*var(--s));
+  background: linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s), linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s), radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0/var(--s) var(--s);
+}
+.lorens-callouts .callout .callout-title-inner {
+  background-color: rgba(var(--callout-color), 0.3);
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+.lorens-callouts .callout .callout-content p {
+  font-weight: bold;
+}
+
 .glow-callouts .callout {
   background: transparent;
   position: relative;
@@ -1438,200 +1456,6 @@ button.mod-cta {
   left: unset;
 }
 
-.halab-callouts .callout {
-  background: transparent;
-  position: relative;
-  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
-  border-radius: 0px;
-}
-.halab-callouts .callout::after {
-  content: "";
-  background: rgba(var(--callout-color), 0) !important;
-  position: absolute;
-  left: -3px;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  border-radius: 0px;
-  z-index: -1;
-}
-.halab-callouts .callout::before {
-  content: "";
-  background: rgba(var(--callout-color), 0.3) !important;
-  position: absolute;
-  left: 0px;
-  height: 100%;
-  top: 0px;
-  border-left: 3px solid rgb(var(--callout-color));
-  box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
-  border-radius: 0px;
-}
-
-.halab-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::after {
-  right: -3px;
-  left: unset;
-}
-.halab-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
-  right: 0px;
-  left: unset;
-}
-
-.wall-callouts .callout {
-  background: rgba(var(--callout-color), 0.5);
-}
-
-.gummy-callouts .callout {
-  background: linear-gradient(to right, rgba(var(--callout-color), 0.05), var(--background-primary));
-  position: relative;
-  border: 1px solid rgba(var(--callout-color), 0.4);
-  box-shadow: none;
-  border-radius: 12px;
-}
-.gummy-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) {
-  background: linear-gradient(to left, rgba(var(--callout-color), 0.05), var(--background-primary));
-}
-
-.gaza-callouts .callout {
-  border-radius: 30px;
-  background: rgba(var(--callout-color), 0.1);
-  padding: 3px;
-}
-.gaza-callouts .callout .callout-title {
-  align-items: center;
-  justify-content: center;
-}
-.gaza-callouts .callout .callout-content {
-  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-  border: 1px solid rgba(var(--callout-color), 0.2);
-  border-radius: 30px;
-  padding: 15px 20px;
-}
-
-.loli-callouts .callout {
-  border-radius: 33px;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1019607843);
-  position: relative;
-}
-.loli-callouts .callout .callout-title {
-  display: none;
-}
-.loli-callouts .callout .callout-content {
-  background-color: var(--s-bg-primary-color);
-  border-radius: 20px;
-  padding: 10px 20px;
-  position: relative;
-  z-index: 1;
-}
-.loli-callouts .callout::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
-  border-radius: inherit;
-  opacity: 0.1;
-  z-index: 0;
-}
-
-.dzor-callouts .callout {
-  border-radius: 33px;
-  background: rgba(var(--callout-color), 0.1);
-  padding: 3px;
-  display: flex;
-  flex-direction: column-reverse;
-}
-.dzor-callouts .callout .callout-title {
-  align-items: center;
-  justify-content: center;
-  padding-top: 5px;
-}
-.dzor-callouts .callout .callout-content {
-  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-  border: 1px solid rgba(var(--callout-color), 0.2);
-  border-radius: 5px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  padding: 10px 20px;
-  width: 100%;
-}
-
-.hama-callouts .callout {
-  border-radius: 0;
-  padding: 0;
-  border: 1px solid rgba(var(--callout-color), 0.25);
-}
-.hama-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
-  background: linear-gradient(to left, rgba(var(--callout-color), 0.1), transparent);
-}
-.hama-callouts .callout .callout-title {
-  background: linear-gradient(to right, rgba(var(--callout-color), 0.1), transparent);
-  padding: 5px 8px;
-}
-.hama-callouts .callout .callout-content {
-  border-top: 1px dashed rgba(var(--callout-color), 0.25);
-  padding: 8px;
-}
-
-.hama-callouts.callout_center_settings .callout .callout-title {
-  display: grid;
-  justify-content: center;
-  background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
-}
-.hama-callouts.callout_center_settings .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
-  background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
-}
-
-.homs-callouts .callout {
-  border-radius: 30px;
-  background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
-  padding: 3px;
-}
-.homs-callouts .callout .callout-title {
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2px;
-}
-.homs-callouts .callout .callout-content {
-  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-  color: rgba(var(--callout-color), 0.9);
-  border-radius: 30px;
-  padding: 10px 20px;
-}
-
-.sham-callouts .callout {
-  padding: 0;
-}
-.sham-callouts .callout .callout-title {
-  background: rgba(var(--callout-color), 0.1);
-  padding: 5px;
-}
-.sham-callouts .callout .callout-content {
-  padding: var(--size-4-3);
-}
-
-.sham-callouts.callout_center_settings .callout .callout-title {
-  display: grid;
-  justify-content: center;
-}
-
-.raka-callouts .callout {
-  border-radius: 3px;
-  padding: var(--size-4-3) var(--size-4-6);
-}
-.raka-callouts .callout .callout-title {
-  background: rgba(var(--callout-color), 0.1);
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  padding: 5px;
-}
-.raka-callouts .callout .callout-content {
-  padding-top: 5px;
-}
-
 .idlib-callouts .callout {
   padding: 0;
   display: flex;
@@ -1651,31 +1475,6 @@ button.mod-cta {
 .idlib-callouts .callout .callout-content {
   align-self: flex-start;
   padding: var(--size-4-3) var(--size-4-6);
-}
-
-.hasaka-callouts .callout {
-  position: relative;
-  padding: var(--size-4-3) var(--size-4-6);
-  position: relative;
-  border: 1px solid rgba(var(--callout-color), 0.4);
-  box-shadow: none;
-  border-radius: 12px;
-}
-.hasaka-callouts .callout::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  border-radius: 50%;
-  top: 4px;
-  left: 4px;
-  width: 10px;
-  height: 10px;
-  background-color: rgba(var(--callout-color), 0.8);
-  box-shadow: 0px 0px 100px 50px rgba(var(--callout-color), 0.9);
-}
-.hasaka-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
-  left: unset;
-  right: 4px;
 }
 
 .draa-callouts .callout {
@@ -1720,37 +1519,19 @@ button.mod-cta {
   right: 15px;
 }
 
-.tartus-callouts .callout {
-  padding: 0;
-  display: flex;
+.raka-callouts .callout {
+  border-radius: 3px;
+  padding: var(--size-4-3) var(--size-4-6);
 }
-.tartus-callouts .callout .callout-title {
-  width: 35px;
-  position: relative;
+.raka-callouts .callout .callout-title {
+  background: rgba(var(--callout-color), 0.1);
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 5px;
 }
-.tartus-callouts .callout .callout-title .callout-title-inner {
-  display: block !important;
-  position: absolute;
-  left: 100%;
-  width: max-content;
-  padding-left: var(--size-4-3);
-  padding-top: var(--size-4-3);
-}
-.tartus-callouts .callout .callout-title .callout-icon {
-  display: block !important;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.tartus-callouts .callout .callout-content {
-  padding: var(--size-4-3);
-  padding-top: 30px;
-}
-.tartus-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title .callout-title-inner {
-  left: unset;
-  right: 100%;
-  padding-right: var(--size-4-3);
+.raka-callouts .callout .callout-content {
+  padding-top: 5px;
 }
 
 .ladak-callouts .callout {
@@ -1797,6 +1578,149 @@ button.mod-cta {
 }
 .ladak-callouts .callout .callout-content {
   padding-top: 30px;
+}
+
+.sham-callouts .callout {
+  padding: 0;
+}
+.sham-callouts .callout .callout-title {
+  background: rgba(var(--callout-color), 0.1);
+  padding: 5px;
+}
+.sham-callouts .callout .callout-content {
+  padding: var(--size-4-3);
+}
+
+.sham-callouts.callout_center_settings .callout .callout-title {
+  display: grid;
+  justify-content: center;
+}
+
+.hama-callouts .callout {
+  border-radius: 0;
+  padding: 0;
+  border: 1px solid rgba(var(--callout-color), 0.25);
+}
+.hama-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
+  background: linear-gradient(to left, rgba(var(--callout-color), 0.1), transparent);
+}
+.hama-callouts .callout .callout-title {
+  background: linear-gradient(to right, rgba(var(--callout-color), 0.1), transparent);
+  padding: 5px 8px;
+}
+.hama-callouts .callout .callout-content {
+  border-top: 1px dashed rgba(var(--callout-color), 0.25);
+  padding: 8px;
+}
+
+.hama-callouts.callout_center_settings .callout .callout-title {
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+}
+.hama-callouts.callout_center_settings .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title {
+  background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+}
+
+.gaza-callouts .callout {
+  border-radius: 30px;
+  background: rgba(var(--callout-color), 0.1);
+  padding: 3px;
+}
+.gaza-callouts .callout .callout-title {
+  align-items: center;
+  justify-content: center;
+}
+.gaza-callouts .callout .callout-content {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+  border: 1px solid rgba(var(--callout-color), 0.2);
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+
+.halab-callouts .callout {
+  background: transparent;
+  position: relative;
+  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+.halab-callouts .callout::after {
+  content: "";
+  background: rgba(var(--callout-color), 0) !important;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  border-radius: 0px;
+  z-index: -1;
+}
+.halab-callouts .callout::before {
+  content: "";
+  background: rgba(var(--callout-color), 0.3) !important;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  top: 0px;
+  border-left: 3px solid rgb(var(--callout-color));
+  box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+  border-radius: 0px;
+}
+
+.halab-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::after {
+  right: -3px;
+  left: unset;
+}
+.halab-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
+  right: 0px;
+  left: unset;
+}
+
+.dzor-callouts .callout {
+  border-radius: 33px;
+  background: rgba(var(--callout-color), 0.1);
+  padding: 3px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.dzor-callouts .callout .callout-title {
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.dzor-callouts .callout .callout-content {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+  border: 1px solid rgba(var(--callout-color), 0.2);
+  border-radius: 5px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.hasaka-callouts .callout {
+  position: relative;
+  padding: var(--size-4-3) var(--size-4-6);
+  position: relative;
+  border: 1px solid rgba(var(--callout-color), 0.4);
+  box-shadow: none;
+  border-radius: 12px;
+}
+.hasaka-callouts .callout::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(var(--callout-color), 0.8);
+  box-shadow: 0px 0px 100px 50px rgba(var(--callout-color), 0.9);
+}
+.hasaka-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl))::before {
+  left: unset;
+  right: 4px;
 }
 
 .tadmor-callouts .callout {
@@ -1847,6 +1771,67 @@ button.mod-cta {
   padding-top: 30px;
 }
 
+.homs-callouts .callout {
+  border-radius: 30px;
+  background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
+  padding: 3px;
+}
+.homs-callouts .callout .callout-title {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+.homs-callouts .callout .callout-content {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+  color: rgba(var(--callout-color), 0.9);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.gummy-callouts .callout {
+  background: linear-gradient(to right, rgba(var(--callout-color), 0.05), var(--background-primary));
+  position: relative;
+  border: 1px solid rgba(var(--callout-color), 0.4);
+  box-shadow: none;
+  border-radius: 12px;
+}
+.gummy-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) {
+  background: linear-gradient(to left, rgba(var(--callout-color), 0.05), var(--background-primary));
+}
+
+.wall-callouts .callout {
+  background: rgba(var(--callout-color), 0.5);
+}
+
+.loli-callouts .callout {
+  border-radius: 33px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  position: relative;
+}
+.loli-callouts .callout .callout-title {
+  display: none;
+}
+.loli-callouts .callout .callout-content {
+  background-color: var(--s-bg-primary-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+}
+.loli-callouts .callout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
+  border-radius: inherit;
+  opacity: 0.1;
+  z-index: 0;
+}
+
 .swida-callouts .callout {
   --s: 50px;
   --c1: #e1f5c400;
@@ -1867,22 +1852,37 @@ button.mod-cta {
   font-weight: bold;
 }
 
-.lorens-callouts .callout {
-  --s: 10px;
-  /* control the size*/
-  --c1: rgba(var(--callout-color), 0.1);
-  --c2: #cd8b5200;
-  --c: #0000 71%, var(--c1) 0 79%, #0000 0;
-  --_s: calc(var(--s)/2)/calc(2*var(--s)) calc(2*var(--s));
-  background: linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s), linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s), radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0/var(--s) var(--s);
+.tartus-callouts .callout {
+  padding: 0;
+  display: flex;
 }
-.lorens-callouts .callout .callout-title-inner {
-  background-color: rgba(var(--callout-color), 0.3);
-  padding: 2px 8px;
-  border-radius: 3px;
+.tartus-callouts .callout .callout-title {
+  width: 35px;
+  position: relative;
 }
-.lorens-callouts .callout .callout-content p {
-  font-weight: bold;
+.tartus-callouts .callout .callout-title .callout-title-inner {
+  display: block !important;
+  position: absolute;
+  left: 100%;
+  width: max-content;
+  padding-left: var(--size-4-3);
+  padding-top: var(--size-4-3);
+}
+.tartus-callouts .callout .callout-title .callout-icon {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tartus-callouts .callout .callout-content {
+  padding: var(--size-4-3);
+  padding-top: 30px;
+}
+.tartus-callouts .callout:has(> .callout-title .callout-title-inner:dir(rtl)) > .callout-title .callout-title-inner {
+  left: unset;
+  right: 100%;
+  padding-right: var(--size-4-3);
 }
 
 .metadata-container {
