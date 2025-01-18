@@ -202,11 +202,6 @@ settings:
     description: works on (Glass Robo, Sham, Hama) themes.
     type: class-toggle
 -
-    id: hide_calloutIcon_settings
-    title: Hide callouts icon
-    description: Hide the icon indicating the callout type
-    type: class-toggle
--
     id: codeBlocks-settings
     title: Code blocks
     type: heading
@@ -293,10 +288,6 @@ body.disable_stars_settings {
 }
 
 body.hide_navTreeArrow_settings .tree-item-icon.collapse-icon {
-  display: none;
-}
-
-body.hide_calloutIcon_settings .callout .callout-title .callout-icon {
   display: none;
 }
 
