@@ -41,6 +41,13 @@
 
 .horizontal-main-container .workspace-tab-container .view-content {
   .empty-state {
+    // background-color: #0f2039;
+    background-color: var(--glass-background-color-settings, #282d33);
+  }
+}
+
+body.glassRobo .horizontal-main-container .workspace-tab-container .view-content {
+  .empty-state {
     background-color: #0f2039;
   }
 }
@@ -48,6 +55,12 @@
 // nav bar color if empty 
 
 .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
+
+  background-color: var(--glass-background-color-settings, #282d33) !important;
+
+}
+
+body.glassRobo .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
 
   background-color: #0f2039 !important;
 

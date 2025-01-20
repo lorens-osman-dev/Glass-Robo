@@ -10,7 +10,8 @@
   input[type='email'],
   input[type='password'],
   input[type='number'] {
-    background-color: var(--s-bg-primary-color);
+
+    background-color: var(--glass-background-color-settings, #282d33) !important;
     color: var(--platinum);
   }
 
@@ -23,6 +24,7 @@
 }
 
 .tooltip {
-  background-color: rgb(24, 24, 37) !important;
+
+  background-color: var(--glass-background-color-settings, #282d33) !important;
   width: auto !important;
 }

@@ -168,11 +168,12 @@ settings:
     description: Select syntax highlighting for dark theme
     type: class-select
     allowEmpty: false
-    default: glassRobo
+    default: glassRoboCode
     options:
     - 
         label: Glass Robo
-        value: glassRobo
+        value: glassRoboCode
+        
     - 
         label: Dracula
         value: dracula
@@ -252,11 +253,9 @@ body.hide_navTreeArrow_settings {
 
 //background color
 body.theme-dark {
-
     background-color: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important;
 }
 
 body.theme-light {
-
-    background-color: var(--glass-background-color-settings, #fafafa) !important
+    background-color: var(--glass-background-color-settings, #fafafa) !important;
 }

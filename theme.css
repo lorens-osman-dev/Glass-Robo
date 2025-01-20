@@ -220,11 +220,12 @@ settings:
     description: Select syntax highlighting for dark theme
     type: class-select
     allowEmpty: false
-    default: glassRobo
+    default: glassRoboCode
     options:
     - 
         label: Glass Robo
-        value: glassRobo
+        value: glassRoboCode
+
     - 
         label: Dracula
         value: dracula
@@ -513,6 +514,7 @@ body.theme-light {
   --background-modifier-border-focus: var(--s-green-primary-color);
   --modal-background: var(--s-bg-primary-color);
   --caret-color: #ff0000;
+  --modal-background: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important;
   --table-border-color: #4e4f4e42 ;
 }
 
@@ -557,6 +559,7 @@ body {
 body.gruvbox {
   background-color: var(--glass-background-color-settings, #282828) !important;
   --glass-background-color-settings: #282828;
+  --s-hover-bg-color-green: rgba(var(--s-color-orange), 0.1);
   --text-normal: #ebdbb2;
   --s-color-red: 204, 36, 29;
   --s-color-green: 152, 151, 26;
@@ -570,6 +573,7 @@ body.gruvbox {
 body.catppuccin {
   background-color: var(--glass-background-color-settings, #232634) !important;
   --glass-background-color-settings: #232634;
+  --s-hover-bg-color-green: rgba(var(--s-color-blue), 0.1);
   --s-color-red: 231, 130, 132;
   --s-color-orange: 239, 159, 118;
   --s-color-green: 166, 209, 137;
@@ -582,6 +586,7 @@ body.catppuccin {
 body.dracula {
   background-color: var(--glass-background-color-settings, #282A36) !important;
   --glass-background-color-settings: #282A36;
+  --s-hover-bg-color-green: rgba(var(--s-color-blue), 0.2);
   --text-normal: #F8F8F2;
   --s-color-red: 255, 85, 85;
   --s-color-orange: 255, 184, 108;
@@ -595,6 +600,7 @@ body.dracula {
 body.oneDark {
   background-color: var(--glass-background-color-settings, #282d33) !important;
   --glass-background-color-settings: #282d33;
+  --s-hover-bg-color-green: rgba(var(--s-color-gray), 0.2);
   --text-normal: #F8F8F2;
   --s-color-red: 224, 107, 116;
   --s-color-orange: 229, 192, 122;
@@ -608,6 +614,7 @@ body.oneDark {
 body.lorens {
   background-color: var(--glass-background-color-settings, #0d161d) !important;
   --glass-background-color-settings: #0d161d;
+  --s-hover-bg-color-green: rgba(var(--s-color-purple), 0.2);
   --text-normal: #F8F8F2;
   --s-color-orange: 253, 252, 179;
   --s-color-blue: 118, 133, 245;
@@ -736,7 +743,7 @@ body.theme-dark {
   --color-tokyo-night-purple: #9d7cd8;
 }
 
-body.theme-dark.glassRobo {
+body.theme-dark.glassRoboCode {
   /* Code block */
   --code-white-space: pre-wrap;
   --code-size: var(--font-smallest);
@@ -754,32 +761,32 @@ body.theme-dark.glassRobo {
   --code-background: var(--s-bg-code-svg);
   --code-border: 1px dashed #4e4f4e42;
 }
-body.theme-dark.glassRobo .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
-body.theme-dark.glassRobo .cm-s-obsidian span.cm-inline-code,
-body.theme-dark.glassRobo :not(pre) > code {
+body.theme-dark.glassRoboCode .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+body.theme-dark.glassRoboCode .cm-s-obsidian span.cm-inline-code,
+body.theme-dark.glassRoboCode :not(pre) > code {
   background-color: rgba(70, 67, 67, 0.8705882353) !important;
   border-radius: 3px;
   padding: 0 0.25em;
 }
-body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
-body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-end-bg,
-body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-bg {
+body.theme-dark.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+body.theme-dark.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-end-bg,
+body.theme-dark.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-bg {
   background: rgba(13, 22, 29, 0.568627451);
 }
-body.theme-dark.glassRobo .markdown-rendered pre {
+body.theme-dark.glassRoboCode .markdown-rendered pre {
   border: var(--code-border);
 }
-body.theme-dark.glassRobo :not(pre) > code[class*=language-],
-body.theme-dark.glassRobo pre[class*=language-] {
+body.theme-dark.glassRoboCode :not(pre) > code[class*=language-],
+body.theme-dark.glassRoboCode pre[class*=language-] {
   background-color: rgba(13, 22, 29, 0.568627451);
 }
-body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+body.theme-dark.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   border-top: var(--code-border);
 }
-body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-end-bg {
+body.theme-dark.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-end-bg {
   border-bottom: var(--code-border);
 }
-body.theme-dark.glassRobo .cm-s-obsidian div.HyperMD-codeblock-bg {
+body.theme-dark.glassRoboCode .cm-s-obsidian div.HyperMD-codeblock-bg {
   border-left: var(--code-border);
   border-right: var(--code-border);
 }
@@ -1251,7 +1258,7 @@ button.mod-cta {
 .modal.mod-settings.mod-sidebar-layout input[type=email],
 .modal.mod-settings.mod-sidebar-layout input[type=password],
 .modal.mod-settings.mod-sidebar-layout input[type=number] {
-  background-color: var(--s-bg-primary-color);
+  background-color: var(--glass-background-color-settings, #282d33) !important;
   color: var(--platinum);
 }
 .modal.mod-settings.mod-sidebar-layout input[type=range] {
@@ -1259,12 +1266,15 @@ button.mod-cta {
 }
 
 .tooltip {
-  background-color: rgb(24, 24, 37) !important;
+  background-color: var(--glass-background-color-settings, #282d33) !important;
   width: auto !important;
 }
 
 .tree-item {
   --icon-size: 16px;
+}
+.tree-item .tree-item-self.is-active {
+  background-color: var(--s-hover-bg-color-green);
 }
 .tree-item.nav-folder .tree-item-inner.nav-folder-title-content {
   position: relative;
@@ -2572,10 +2582,18 @@ h6 .cm-foldPlaceholder::after,
 }
 
 .horizontal-main-container .workspace-tab-container .view-content .empty-state {
+  background-color: var(--glass-background-color-settings, #282d33);
+}
+
+body.glassRobo .horizontal-main-container .workspace-tab-container .view-content .empty-state {
   background-color: #0f2039;
 }
 
 .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
+  background-color: var(--glass-background-color-settings, #282d33) !important;
+}
+
+body.glassRobo .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
   background-color: #0f2039 !important;
 }
 
@@ -2794,7 +2812,7 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   opacity: 1 !important;
 }
 .is-mobile .menu {
-  background-color: var(--s-bg-primary-color);
+  background-color: var(--glass-background-color-settings, #282d33) !important;
 }
 .is-mobile .menu .menu-grabber {
   background-color: var(--s-green-primary-color);
