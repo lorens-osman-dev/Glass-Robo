@@ -1265,10 +1265,10 @@ button.mod-cta {
   background-color: rgb(24, 24, 37);
 }
 
-<<<<<<< HEAD
-.tooltip {
-  background-color: var(--glass-background-color-settings, #282d33) !important;
-  width: auto !important;
+.tree-item {
+  --icon-size: 16px;
+}
+.tree-item .tree-item-self.is-active {
   background-color: var(--s-hover-bg-color-green);
 }
 .tree-item.nav-folder .tree-item-inner.nav-folder-title-content {
@@ -2579,11 +2579,7 @@ h6 .cm-foldPlaceholder::after,
 }
 
 .horizontal-main-container .workspace-tab-container .view-content .empty-state {
-<<<<<<< HEAD
-  background-color: var(--glass-background-color-settings, #282d33);
-=======
   background-color: var(--glass-background-color-settings, #0f2039);
->>>>>>> fdc13ed (update: big updates)
 }
 
 body.glassRobo .horizontal-main-container .workspace-tab-container .view-content .empty-state {
@@ -2591,11 +2587,7 @@ body.glassRobo .horizontal-main-container .workspace-tab-container .view-content
 }
 
 .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
-<<<<<<< HEAD
-  background-color: var(--glass-background-color-settings, #282d33) !important;
-=======
   background-color: var(--glass-background-color-settings, #0f2039) !important;
->>>>>>> fdc13ed (update: big updates)
 }
 
 body.glassRobo .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
@@ -2820,11 +2812,7 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   opacity: 1 !important;
 }
 .is-mobile .menu {
-<<<<<<< HEAD
-  background-color: var(--glass-background-color-settings, #282d33) !important;
-=======
   background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
->>>>>>> fdc13ed (update: big updates)
 }
 .is-mobile .menu .menu-grabber {
   background-color: var(--s-green-primary-color);

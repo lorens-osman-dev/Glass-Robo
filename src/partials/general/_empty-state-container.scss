@@ -42,7 +42,7 @@
 .horizontal-main-container .workspace-tab-container .view-content {
   .empty-state {
     // background-color: #0f2039;
-    background-color: var(--glass-background-color-settings, #282d33);
+    background-color: var(--glass-background-color-settings, #0f2039);
   }
 }
 
@@ -56,7 +56,7 @@ body.glassRobo .horizontal-main-container .workspace-tab-container .view-content
 
 .app-container:has(.horizontal-main-container .workspace-tab-container .workspace-leaf.mod-active .view-content .empty-state) .mobile-navbar {
 
-  background-color: var(--glass-background-color-settings, #282d33) !important;
+  background-color: var(--glass-background-color-settings, #0f2039) !important;
 
 }
 
