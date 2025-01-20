@@ -7,7 +7,7 @@
   }
 
   .menu {
-    background-color: var(--glass-background-color-settings, #282d33) !important;
+    background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
 
     .menu-grabber {
       background-color: var(--s-green-primary-color);
