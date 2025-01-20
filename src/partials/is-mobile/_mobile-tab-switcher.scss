@@ -5,8 +5,14 @@
 
     .mobile-tab-group-container {
       .close-button {
-        color: var(--level-1);
-        background-color: var(--s-hover-bg-color-green);
+        width: 100%;
+        top: 0;
+        color: rgba(var(--s-color-red, var(--color-red-rgb)), 1);
+        background-color: rgba(var(--s-color-red, var(--color-red-rgb)), 0.2);
+        left: 0;
+        border-radius: 0;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
       }
 
       //active tab
@@ -29,7 +35,7 @@
         //done button
         .clickable-icon {
           background-color: var(--s-green-primary-color);
-          color: var(--s-bg-primary-color);
+          color: var(--glass-background-color-settings, var(--s-bg-primary-color));
         }
       }
 
@@ -38,12 +44,12 @@
         height: 100%;
         padding: 0 5px;
         border-radius: 4px;
-        color: var(--s-bg-primary-color);
+        color: var(--glass-background-color-settings, var(--s-bg-primary-color));
         width: 35vw;
         justify-content: space-evenly;
 
         .mobile-tab-switcher-menu-button-chevron {
-          color: var(--s-bg-primary-color);
+          color: var(--glass-background-color-settings, var(--s-bg-primary-color));
           border-radius: 50%;
         }
       }
