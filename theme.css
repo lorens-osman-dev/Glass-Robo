@@ -2800,6 +2800,9 @@ body:not(.is-mobile) .empty-state-container .empty-state-action.tappable {
 body:not(.is-mobile) .horizontal-main-container .workspace-tab-container .view-content .empty-state {
   background-color: transparent;
 }
+body:not(.is-mobile) .menu {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
 
 body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   flex-direction: row;

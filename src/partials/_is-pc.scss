@@ -10,6 +10,7 @@
 @use './is-pc/settings-modal' as settings-modal;
 @use './is-pc/vault-switcher' as vault-switcher;
 @use './is-pc/robot-img-pc' as robot-img-pc;
+@use './is-pc/menu' as menu;
 
 
 body:not(.is-mobile) {
@@ -18,6 +19,7 @@ body:not(.is-mobile) {
   @include settings-modal.pc-styles();
   @include vault-switcher.pc-styles();
   @include robot-img-pc.pc-styles();
+  @include menu.pc-styles();
 
 }
 

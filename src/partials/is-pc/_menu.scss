@@ -1,0 +1,8 @@
+@mixin pc-styles {
+
+
+  .menu {
+    background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+
+  }
+}
