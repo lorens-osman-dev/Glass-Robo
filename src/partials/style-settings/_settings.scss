@@ -249,6 +249,24 @@ body.hide_navTreeArrow_settings {
     .tree-item-icon.collapse-icon {
         display: none;
     }
+
+    .tree-item.nav-folder:not(:has(.tree-item-self[data-path^="CLUSTERS"])) .tree-item-children.nav-folder-children {
+        border-color: transparent;
+        position: relative;
+
+        // add border 
+        &::before {
+            content: " ";
+            display: block;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 18px;
+            border-left: 1px dashed #59a6866b;
+        }
+
+    }
 }
 
 //background color
