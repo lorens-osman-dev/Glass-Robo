@@ -2520,7 +2520,7 @@ h6 .cm-foldPlaceholder::after,
 
 .notice {
   background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-  border: 1px solid var(--s-green-primary-color);
+  border: 1px solid var(--s-green-primary-color) !important;
   border-radius: 5px;
 }
 
