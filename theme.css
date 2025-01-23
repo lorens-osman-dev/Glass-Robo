@@ -1216,7 +1216,7 @@ h6,
 
 .theme-dark table,
 .theme-dark .table-wrapper {
-  background-color: #141414;
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
 }
 
 .theme-dark .markdown-rendered thead tr {
