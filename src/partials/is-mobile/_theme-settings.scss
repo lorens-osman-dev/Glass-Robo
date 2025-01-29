@@ -1,13 +1,13 @@
 @mixin mobile-styles {
   .community-item {
     grid-auto-flow: unset !important;
-    border-bottom: 1px dashed var(--s-button-bg-color);
+    border-bottom: 2px double var(--s-button-bg-color);
     position: relative;
-    align-items: end;
+    align-items: center;
     height: 115px;
 
     &:first-child {
-      border-top: 1px dashed var(--s-button-bg-color);
+      border-top: 2px double var(--s-button-bg-color);
     }
 
     .community-item-screenshot {
