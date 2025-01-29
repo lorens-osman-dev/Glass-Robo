@@ -3,6 +3,7 @@
     grid-auto-flow: unset !important;
     border-bottom: 1px dashed var(--s-button-bg-color);
     position: relative;
+    align-items: end;
     height: 115px;
 
     &:first-child {
@@ -17,6 +18,8 @@
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
+      mask-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 100' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 0 50 C 0 0, 0 0, 50 0 S 100 0, 100 50 S 100 100, 50 100 S 0 100, 0 50' fill='white'/%3E%3C/svg%3E");
+      mask-size: 100% 100%;
     }
   }
 }
