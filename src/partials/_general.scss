@@ -93,3 +93,7 @@ strong,
     mask-size: 100% 100%;
   }
 }
+
+.graph-controls {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
