@@ -250,6 +250,37 @@ settings:
     - 
         label: Tokyo Night
         value: tokyo-night
+- 
+    id: autohide
+    title: Auto hide
+    type: heading
+    level: 1
+    collapsed: true
+- 
+    id: tab-autohide
+    title: Auto hide tab bar
+    description: Mac users can adjust the position of the traffic light using the 'Electron Window Tweaker' plugin
+    type: class-toggle
+- 
+    id: status-bar-autohide
+    title: Auto hide bottom status bar
+    type: class-toggle
+- 
+    id: Ribbon-autohide
+    title: Auto hide left ribbon menu
+    type: class-toggle
+- 
+    id: nav-header-autohide
+    title: Auto hide header icons in sidepane
+    type: class-toggle
+- 
+    id: tab-title-bar-autohide
+    title: Auto hide tab title bar
+    type: class-toggle
+- 
+    id: vault-profile-autohide
+    title: Auto hide vault profile
+    type: class-toggle
 # Credits
 
 -
@@ -538,6 +569,14 @@ body {
   --font-interface-theme: "Figtree", "azer";
   --font-text-theme: "Figtree", "azer";
   --font-monospace-theme: "JetBrains Mono", "azer";
+  /* Animations */
+  --anim-speed: 1;
+  --anim-duration-superfast: calc(75ms / var(--anim-speed));
+  --anim-duration-fast: calc(150ms / var(--anim-speed));
+  --anim-duration-moderate: calc(300ms / var(--anim-speed));
+  --anim-duration-slow: calc(600ms / var(--anim-speed));
+  --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
+  --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
 }
 
 /*
@@ -2818,6 +2857,19 @@ body:not(.is-mobile) .horizontal-main-container .workspace-tab-container .view-c
 }
 body:not(.is-mobile) .menu {
   background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
+body:not(.is-mobile).status-bar-autohide .status-bar {
+  opacity: 0;
+  height: 16px;
+  transition: height var(--anim-out), opacity var(--anim-out);
+}
+body:not(.is-mobile).status-bar-autohide .status-bar:hover {
+  opacity: 1;
+  height: 24px;
+  transition: height var(--anim-in), opacity var(--anim-in);
+}
+body:not(.is-mobile) .modal {
+  border: 5px solid rgb(255, 225, 0);
 }
 
 body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {

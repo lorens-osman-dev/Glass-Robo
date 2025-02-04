@@ -11,6 +11,7 @@
 @use './is-pc/vault-switcher' as vault-switcher;
 @use './is-pc/robot-img-pc' as robot-img-pc;
 @use './is-pc/menu' as menu;
+@use './is-pc/auto-hide/auto-hide' as auto-hide;
 
 
 body:not(.is-mobile) {
@@ -20,6 +21,7 @@ body:not(.is-mobile) {
   @include vault-switcher.pc-styles();
   @include robot-img-pc.pc-styles();
   @include menu.pc-styles();
+  @include auto-hide.pc-styles();
 
 }
 

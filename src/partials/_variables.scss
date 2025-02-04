@@ -25,6 +25,8 @@
   --level-4: rgb(153, 190, 141);
   --level-5: rgb(179, 138, 163);
   --level-6: rgb(155, 180, 196);
+
+
 }
 
 
@@ -80,4 +82,13 @@ body {
   --font-interface-theme: "Figtree", "azer";
   --font-text-theme: "Figtree", "azer";
   --font-monospace-theme: "JetBrains Mono", "azer";
+
+  /* Animations */
+  --anim-speed: 1;
+  --anim-duration-superfast: calc(75ms / var(--anim-speed));
+  --anim-duration-fast: calc(150ms / var(--anim-speed));
+  --anim-duration-moderate: calc(300ms / var(--anim-speed));
+  --anim-duration-slow: calc(600ms / var(--anim-speed));
+  --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
+  --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
 }

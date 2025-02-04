@@ -1,0 +1,15 @@
+@mixin auto-hide-styles {
+  &.status-bar-autohide {
+    .status-bar {
+      opacity: 0;
+      height: 16px;
+      transition: height var(--anim-out), opacity var(--anim-out);
+
+      &:hover {
+        opacity: 1;
+        height: 24px;
+        transition: height var(--anim-in), opacity var(--anim-in);
+      }
+    }
+  }
+}
