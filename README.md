@@ -58,7 +58,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 </details>
 <details>
    <summary>2. New 6 themes and color schemes.</summary>
-    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
+    <p> Using <a href="https://github.com/lorens-osman-dev/Glass-Robo#how-to-use-style-settings-plugin">style settings</a> plugin you can select what style you want.</p>
 
   <ul>
     <li>
@@ -134,7 +134,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
    </br>
         <p align="center"> <img src="assets/pics/fonts/english.jpg" style="width: 220px !important;"></p>
         <p align="center"> <img src="assets/pics/fonts/arabic.jpg" style="width: 220px !important;"></p>
-    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can enable/disable custom fonts.</p>
+    <p> Using <a href="https://github.com/lorens-osman-dev/Glass-Robo#how-to-use-style-settings-plugin">style settings</a> plugin you can enable/disable custom fonts.</p>
 </details>
 <details>
    <summary>5. New icons for meta data properties.</summary>
@@ -197,7 +197,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 <details>
    <summary>6. New 20 style for callouts.</summary>
-    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what style you want.</p>
+    <p> Using <a href="https://github.com/lorens-osman-dev/Glass-Robo#how-to-use-style-settings-plugin">style settings</a> plugin you can select what style you want.</p>
 
 <ul>
     <li>
@@ -402,11 +402,10 @@ I've made this theme primarily for my own purposes and it's completely free, but
     </li>
 </ul>
 
-
 </details>
 <details>
    <summary>7. Auto hide.</summary>
-    <p> By default auto-hide is disabled if you want to enable it use  <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin.</p>
+    <p> By default auto-hide is disabled if you want to enable it use  <a href="https://github.com/lorens-osman-dev/Glass-Robo#how-to-use-style-settings-plugin">style settings</a> plugin.</p>
   <ul>
     <li>
      <details>
@@ -471,7 +470,7 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 <details>
    <summary>9. Tow sets of colors for headers.</summary>
-    <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what set you want.</p>
+    <p> Using <a href="https://github.com/lorens-osman-dev/Glass-Robo#how-to-use-style-settings-plugin">style settings</a> plugin you can select what set you want.</p>
   <ul>
     <li>
      <details>
