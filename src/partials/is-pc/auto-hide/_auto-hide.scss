@@ -1,8 +1,10 @@
 @use './status-bar' as status-bar;
 @use './tabs' as tabs;
+@use './ribbon' as ribbon;
 
 
 @mixin pc-styles {
   @include status-bar.auto-hide-styles();
   @include tabs.auto-hide-styles();
+  @include ribbon.auto-hide-styles();
 }

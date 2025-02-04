@@ -199,7 +199,7 @@ settings:
         label: Tokyo Night
         value: tokyo-night
 - 
-    id: autohide
+    id: autohide-settings
     title: Auto hide
     type: heading
     level: 1
@@ -207,7 +207,6 @@ settings:
 - 
     id: tab-autohide
     title: Auto hide tab bar
-    description: Mac users can adjust the position of the traffic light using the 'Electron Window Tweaker' plugin
     type: class-toggle
 - 
     id: status-bar-autohide
@@ -216,18 +215,6 @@ settings:
 - 
     id: Ribbon-autohide
     title: Auto hide left ribbon menu
-    type: class-toggle
-- 
-    id: nav-header-autohide
-    title: Auto hide header icons in sidepane
-    type: class-toggle
-- 
-    id: tab-title-bar-autohide
-    title: Auto hide tab title bar
-    type: class-toggle
-- 
-    id: vault-profile-autohide
-    title: Auto hide vault profile
     type: class-toggle
 # Credits
 
