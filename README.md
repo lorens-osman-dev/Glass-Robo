@@ -401,11 +401,28 @@ I've made this theme primarily for my own purposes and it's completely free, but
         </details>
     </li>
 </ul>
- 
+
 
 </details>
 <details>
-   <summary>7. Custom checkboxes.</summary>
+   <summary>7. Auto hide.</summary>
+    <p> By default auto-hide is disabled if you want to enable it use  <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin.</p>
+  <ul>
+    <li>
+     <details>
+      <summary>Screenshot</summary>
+        <p>
+            <ul>
+            <p align="center"> <img src="assets/pics/autohide.gif"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
+<details>
+   <summary>8. Custom checkboxes.</summary>
 
   <ul>
     <li>
@@ -451,8 +468,9 @@ I've made this theme primarily for my own purposes and it's completely free, but
   </ul>
 
 </details>
+
 <details>
-   <summary>8. Tow sets of colors for headers.</summary>
+   <summary>9. Tow sets of colors for headers.</summary>
     <p> Using <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin you can select what set you want.</p>
   <ul>
     <li>
@@ -482,7 +500,6 @@ I've made this theme primarily for my own purposes and it's completely free, but
 
 </details>
 
-
 ## Additional Features
 
 1. Stars background that gives the sensation of diving into space.
@@ -491,31 +508,33 @@ I've made this theme primarily for my own purposes and it's completely free, but
 4. 9 different theme for code block.
 5. Cool animations.
 6. New style for folding headers (H1 H2 H3 H4 H5 H6).
----
-<details>
-   <summary>How to use style settings plugin</summary>
 
-  - Install <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin then enable it.
-  - Once the plugin is enabled, go to Settings, Navigate to the "Style Settings" tab.
+---
+
+#### How to use style settings plugin
+
+<details>
+   <summary>steps</summary>
+
+- Install <a href="https://github.com/mgmeyers/obsidian-style-settings">style settings</a> plugin then enable it.
+- Once the plugin is enabled, go to Settings, Navigate to the "Style Settings" tab.
 
 #### with style settings plugin you can :
-  - Enable/disable Stars background.
-  - Set background color.
-  - Select headers color scheme.
-  - Enable/disable custom fonts.
-  - Show/hide navigation tree arrow.
-  - Show/hide callouts icons.
-  - Select callout style from 20 different styles.
-  - Select App theme from 6 different styles.
-  - Enable/disable callout title centering.
-  - Select code block theme from 9 different styles.
+
+- Enable/disable Stars background.
+- Set background color.
+- Select headers color scheme.
+- Enable/disable custom fonts.
+- Show/hide navigation tree arrow.
+- Show/hide callouts icons.
+- Select callout style from 20 different styles.
+- Select App theme from 6 different styles.
+- Enable/disable callout title centering.
+- Select code block theme from 9 different styles.
 
 </details>
 
 ---
-
-
-
 
 ## Supported plugins
 
