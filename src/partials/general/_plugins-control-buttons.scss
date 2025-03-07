@@ -1,0 +1,19 @@
+.installed-plugins-container {
+  .clickable-icon.extra-setting-button {
+    &[aria-label^="Uninstall"] {
+      color: hsl(0deg 80% 55%);
+    }
+
+    &[aria-label^="Donate"] {
+      color: hsl(297deg 80% 55%);
+    }
+
+    &[aria-label^="Hotkeys"] {
+      color: hsl(106deg 80% 55%);
+    }
+
+    &[aria-label^="Options"] {
+      color: hsl(225deg 80% 55%);
+    }
+  }
+}
