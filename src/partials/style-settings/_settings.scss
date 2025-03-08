@@ -13,11 +13,6 @@ settings:
     collapsed: true
 
 -
-    id: lorens_headers_settings
-    title: Lorens color scheme for headers
-    description: enable Lorens color scheme for more focus 
-    type: class-toggle
--
     id: disable_fonts_settings
     title: Glass Robo theme fonts
     description: Disable Glass Robo theme fonts
@@ -74,6 +69,45 @@ settings:
     - 
         label: One Dark
         value: oneDark 
+-
+    id: headers-settings
+    title: headers
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: headers-settin
+    title: Styling
+    description: Select headers style
+    type: class-select
+    allowEmpty: false
+    default: glass-robo-style-headers
+    options:
+    - 
+        label: No Style
+        value: no-style-headers
+    - 
+        label: Glass Robo
+        value: glass-robo-style-headers
+-
+    id: headers-color-settin
+    title: Colors
+    description: Select color schema for headers
+    type: class-select
+    allowEmpty: false
+    default: glass-robo-color-headers
+    options:
+    - 
+        label: No Color
+        value: no-color-headers
+    - 
+        label: Glass Robo
+        value: glass-robo-color-headers
+    - 
+        label: Lorens 
+        value: lorens-color-headers
+        
+
 -
     id: callouts-settings
     title: Callouts
@@ -246,12 +280,6 @@ settings:
 
 */
 
-
-body.lorens_headers_settings {
-    --h1-color: #d9d617;
-    --h2-color: #0dc8f2;
-    --h3-color: #72d5a5;
-}
 
 body.disable_fonts_settings {
     --font-interface-theme: "";

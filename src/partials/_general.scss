@@ -10,7 +10,7 @@
 @use './general/links';
 @use './general/code-block';
 @use './general/icons';
-@use './general/headers';
+@use './general/headers/headers-all';
 @use './general/tables';
 @use './general/checkBox';
 @use './general/buttons';
@@ -19,7 +19,6 @@
 @use './general/callout';
 @use './general/meta-data-container';
 @use './general/bullets';
-@use './general/folding-headers';
 @use './general/animations';
 @use './general/tooltip-notice';
 @use './general/canvas';

@@ -1,0 +1,36 @@
+h1,
+.markdown-rendered h1,
+.is-live-preview .HyperMD-header-1,
+h2,
+.markdown-rendered h2,
+.is-live-preview .HyperMD-header-2,
+h3,
+.markdown-rendered h3,
+.is-live-preview .HyperMD-header-3,
+h4,
+.markdown-rendered h4,
+.is-live-preview .HyperMD-header-4,
+h5,
+.markdown-rendered h5,
+.is-live-preview .HyperMD-header-5,
+h6,
+.markdown-rendered h6,
+.is-live-preview .HyperMD-header-6 {
+  font-weight: bold;
+  position: relative;
+}
+
+h1,
+.HyperMD-header.HyperMD-header-1.cm-line[dir="rtl"],
+h2,
+.HyperMD-header.HyperMD-header-2.cm-line[dir="rtl"],
+h3,
+.HyperMD-header.HyperMD-header-3.cm-line[dir="rtl"],
+h4,
+.HyperMD-header.HyperMD-header-4.cm-line[dir="rtl"],
+h5,
+.HyperMD-header.HyperMD-header-5.cm-line[dir="rtl"],
+h6,
+.HyperMD-header.HyperMD-header-6.cm-line[dir="rtl"] {
+  margin-bottom: 5px !important;
+}

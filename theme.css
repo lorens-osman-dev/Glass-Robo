@@ -65,11 +65,6 @@ settings:
     collapsed: true
 
 -
-    id: lorens_headers_settings
-    title: Lorens color scheme for headers
-    description: enable Lorens color scheme for more focus 
-    type: class-toggle
--
     id: disable_fonts_settings
     title: Glass Robo theme fonts
     description: Disable Glass Robo theme fonts
@@ -126,6 +121,45 @@ settings:
     - 
         label: One Dark
         value: oneDark 
+-
+    id: headers-settings
+    title: headers
+    type: heading
+    level: 1
+    collapsed: true
+-
+    id: headers-settin
+    title: Styling
+    description: Select headers style
+    type: class-select
+    allowEmpty: false
+    default: glass-robo-style-headers
+    options:
+    - 
+        label: No Style
+        value: no-style-headers
+    - 
+        label: Glass Robo
+        value: glass-robo-style-headers
+-
+    id: headers-color-settin
+    title: Colors
+    description: Select color schema for headers
+    type: class-select
+    allowEmpty: false
+    default: glass-robo-color-headers
+    options:
+    - 
+        label: No Color
+        value: no-color-headers
+    - 
+        label: Glass Robo
+        value: glass-robo-color-headers
+    - 
+        label: Lorens 
+        value: lorens-color-headers
+
+
 -
     id: callouts-settings
     title: Callouts
@@ -297,12 +331,6 @@ settings:
     markdown: true
 
 */
-body.lorens_headers_settings {
-  --h1-color: #d9d617;
-  --h2-color: #0dc8f2;
-  --h3-color: #72d5a5;
-}
-
 body.disable_fonts_settings {
   --font-interface-theme: "";
   --font-text-theme: "";
@@ -403,6 +431,11 @@ body.theme-light {
 .setting-item:is([data-id=callouts-settings]) > .setting-item-info > .setting-item-name::before {
   left: calc((var(--font-ui-medium) + 11px) * -1) !important;
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Zz4KICAgIDxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgLz4KICAgIDxwYXRoIGlkPSJTaGFwZSIgZD0iTTYuODcxNDcgMTMuNjY2N0w2Ljc5NTIgMTMuNjY2N0M2Ljc5NTIgMTMuNjY2NyA2Ljc5NTEzIDEzLjY2NjcgNi43OTUxMyAxMy42NjY3QzUuMzM0NzEgMTMuNjY2NyA0LjE4NzYxIDEzLjY2NjcgMy4yOTIwMSAxMy41NDYzQzIuMzc0MjUgMTMuNDIyOSAxLjY0NjA3IDEzLjE2NDkgMS4wNzM5NCAxMi41OTI3QzAuNTAxODA3IDEyLjAyMDYgMC4yNDM3ODcgMTEuMjkyNCAwLjEyMDM5MyAxMC4zNzQ3Qy0xLjMyMzIyZS0wNSA5LjQ3OTA3IC02LjU1NjUxZS0wNiA4LjMzMTkzIDEuMTkyMDllLTA3IDYuODcxNDdDMS4xOTIwOWUtMDcgNi44NzE0NyAxLjE5MjA5ZS0wNyA2Ljc5NTIgMS4xOTIwOWUtMDcgNi43OTUyQy02LjU1NjUxZS0wNiA1LjMzNDczIC0xLjMyMzIyZS0wNSA0LjE4NzYyIDAuMTIwNCAzLjI5MjAxQzAuMjQzNzg3IDIuMzc0MjQgMC41MDE4MTQgMS42NDYwNyAxLjA3Mzk0IDEuMDczOTRDMS42NDYwNyAwLjUwMTgwNyAyLjM3NDI1IDAuMjQzNzg3IDMuMjkyMDIgMC4xMjAzOTNDNC4xODc2MyAtMS4zMjMyMmUtMDUgNS4zMzQ3NiAtNi41NTY1MWUtMDYgNi43OTUyIDEuMTkyMDllLTA3QzYuNzk1MiAxLjE5MjA5ZS0wNyA2Ljg3MTQ3IDEuMTkyMDllLTA3IDYuODcxNDcgMS4xOTIwOWUtMDdDOC4zMzE5MyAtNi41NTY1MWUtMDYgOS40NzkwNyAtMS4zMjMyMmUtMDUgMTAuMzc0NyAwLjEyMDM5M0MxMS4yOTI0IDAuMjQzNzg3IDEyLjAyMDYgMC41MDE4MDcgMTIuNTkyNyAxLjA3Mzk0QzEzLjE2NDkgMS42NDYwNyAxMy40MjI5IDIuMzc0MjUgMTMuNTQ2MyAzLjI5MjAxQzEzLjY2NjcgNC4xODc2MiAxMy42NjY3IDUuMzM0NzMgMTMuNjY2NyA2Ljc5NTJDMTMuNjY2NyA2Ljc5NTIgMTMuNjY2NyA2Ljc5NTIgMTMuNjY2NyA2Ljc5NTJMMTMuNjY2NyA2Ljg3MTQ3QzEzLjY2NjcgNi44NzE0NyAxMy42NjY3IDYuODcxNDcgMTMuNjY2NyA2Ljg3MTQ3QzEzLjY2NjcgOC4zMzE5MyAxMy42NjY3IDkuNDc5MDcgMTMuNTQ2MyAxMC4zNzQ3QzEzLjQyMjkgMTEuMjkyNCAxMy4xNjQ5IDEyLjAyMDYgMTIuNTkyNyAxMi41OTI3QzEyLjAyMDYgMTMuMTY0OSAxMS4yOTI0IDEzLjQyMjkgMTAuMzc0NyAxMy41NDYzQzkuNDc5MDcgMTMuNjY2NyA4LjMzMTkzIDEzLjY2NjcgNi44NzE0NyAxMy42NjY3QzYuODcxNDcgMTMuNjY2NyA2Ljg3MTQ3IDEzLjY2NjcgNi44NzE0NyAxMy42NjY3Wk03Ljg5NzQ3IDkuNjQwNzNDNy44MTk2NyA5LjM3NTggNy45NzE0IDkuMDk3OTMgOC4yMzYzMyA5LjAyMDEzQzkuMTM3MDcgOC43NTU2NyA5Ljc4MjMzIDguMDg3NjcgOS45NTQzMyA3LjMwMDhDOS45NTQzMyA3LjMwMDggOS4zNjQyIDcuMzMzMiA5LjA1NTY3IDcuMzMzMkM5LjA1NTY3IDcuMzMzMiA4LjQ2OTkzIDcuMzMzMjcgOC4yNDU1MyA3LjMwNDhDOC4wMDI2IDcuMjc0MDcgNy43NDY4NyA3LjIwMjQ3IDcuNTM0IDcuMDAxODdDNy4zMTY4NyA2Ljc5NzMzIDcuMjM1MTMgNi41NDQ2NyA3LjIwMDUzIDYuMzAyQzcuMTY5NTMgNi4wODQ4IDcuMTY5NiA1LjQ2ODc5IDcuMTY5NiA1LjQ2ODc5QzcuMTY5NTMgNS4xODEzNiA3LjE2OTUzIDQuOTE0OTYgNy4yMDA1MyA0LjY5NzcyQzcuMjM1MTMgNC40NTUwOSA3LjMxNjg3IDQuMjAyNDMgNy41MzQgMy45OTc4N0M3Ljc0Njg3IDMuNzk3MjkgOC4wMDI2IDMuNzI1NjggOC4yNDU1MyAzLjY5NDkxQzguNDY5OTMgMy42NjY0OCA5LjExMzkzIDMuNjY2NTMgOS4xMTM5MyAzLjY2NjUzQzkuMTEzOTMgMy42NjY1MyA5LjExMzkzIDMuNjY2NTMgOS4xMTM5MyAzLjY2NjUzQzkuNDIyNDcgMy42NjY1MSA5LjY5OTY3IDMuNjY2NDggOS45MjQwNyAzLjY5NDkxQzEwLjE2NyAzLjcyNTY4IDEwLjQyMjcgMy43OTcyOSAxMC42MzU2IDMuOTk3ODdDMTAuODUyNyA0LjIwMjQzIDEwLjkzNDUgNC40NTUwOSAxMC45NjkxIDQuNjk3NzJDMTEuMDAwMSA0LjkxNDk2IDExLjAwMDEgNS4xODEzNyAxMSA1LjQ2ODhDMTEgNS40Njg4IDExIDUuNDY4ODEgMTEgNS40Njg4MUMxMSA1LjQ2ODgxIDExIDYuODc5IDExIDYuODc5QzExIDguMzYwNjcgOS45MjU0NyA5LjU2NjQgOC41MTgwNyA5Ljk3OTZDOC4yNTMwNyAxMC4wNTc0IDcuOTc1MiA5LjkwNTY3IDcuODk3NDcgOS42NDA3M0M3Ljg5NzQ3IDkuNjQwNzMgNy44OTc0NyA5LjY0MDczIDcuODk3NDcgOS42NDA3M1pNMy4zOTQ1MSA5LjY0MDczQzMuMzE2NzIgOS4zNzU4IDMuNDY4NDUgOS4wOTc5MyAzLjczMzQxIDkuMDIwMTNDNC42MzQxMyA4Ljc1NTY3IDUuMjc5NCA4LjA4NzY3IDUuNDUxNDEgNy4zMDA4QzUuNDUxNDEgNy4zMDA4IDQuODYxMzEgNy4zMzMyIDQuNTUyNzUgNy4zMzMyQzQuNTUyNzUgNy4zMzMyIDMuOTY3MDEgNy4zMzMyNyAzLjc0MjYgNy4zMDQ4QzMuNDk5NjkgNy4yNzQwNyAzLjI0Mzk1IDcuMjAyNDcgMy4wMzEwNSA3LjAwMTg3QzIuODEzOTMgNi43OTczMyAyLjczMjIxIDYuNTQ0NjcgMi42OTc1OCA2LjMwMkMyLjY2NjU4IDYuMDg0OCAyLjY2NjY2IDUuNDY4ODEgMi42NjY2NiA1LjQ2ODgxQzIuNjY2NjIgNS4xODEzNyAyLjY2NjU4IDQuOTE0OTYgMi42OTc1OCA0LjY5NzcyQzIuNzMyMjEgNC40NTUwOSAyLjgxMzkzIDQuMjAyNDMgMy4wMzEwNSAzLjk5Nzg3QzMuMjQzOTUgMy43OTcyOSAzLjQ5OTY5IDMuNzI1NjggMy43NDI2IDMuNjk0OTFDMy45NjcgMy42NjY0OCA0LjYxMDk5IDMuNjY2NTMgNC42MTA5OSAzLjY2NjUzQzQuNjEwOTkgMy42NjY1MyA0LjYxMSAzLjY2NjUzIDQuNjExIDMuNjY2NTNDNC45MTk1NSAzLjY2NjUxIDUuMTk2NzMgMy42NjY0OCA1LjQyMTEzIDMuNjk0OTFDNS42NjQwNyAzLjcyNTY4IDUuOTE5OCAzLjc5NzI5IDYuMTMyNjcgMy45OTc4N0M2LjM0OTggNC4yMDI0MyA2LjQzMTUzIDQuNDU1MDkgNi40NjYxMyA0LjY5NzcyQzYuNDk3MTMgNC45MTQ5NiA2LjQ5NzEzIDUuMTgxMzcgNi40OTcwNyA1LjQ2ODgxQzYuNDk3MDcgNS40Njg4MSA2LjQ5NzA3IDYuODc5IDYuNDk3MDcgNi44NzlDNi40OTcwNyA4LjM2MDY3IDUuNDIyNTIgOS41NjY0IDQuMDE1MTIgOS45Nzk2QzMuNzUwMTcgMTAuMDU3NCAzLjQ3MjMxIDkuOTA1NjcgMy4zOTQ1MSA5LjY0MDczQzMuMzk0NTEgOS42NDA3MyAzLjM5NDUxIDkuNjQwNzMgMy4zOTQ1MSA5LjY0MDczWiIgZmlsbD0iI0YyOEFBNyIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjE2NyAxLjE2NykiIC8+CiAgPC9nPgo8L3N2Zz4=");
+}
+
+.setting-item:is([data-id=headers-settings]) > .setting-item-info > .setting-item-name::before {
+  left: calc((var(--font-ui-medium) + 11px) * -1) !important;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDE2KSI+CiAgICA8cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIC8+CiAgICA8cGF0aCBpZD0iUGF0aCIgZD0iTTAgMC42NjY2NjdDMCAwLjI5ODQ4IDAuMjk4NDggMCAwLjY2NjY2NyAwQzAuNjY2NjY3IDAgNy4zMzMzMyAwIDcuMzMzMzMgMEM3LjcwMTUzIDAgOCAwLjI5ODQ4IDggMC42NjY2NjdDOCAxLjAzNDg2IDcuNzAxNTMgMS4zMzMzMyA3LjMzMzMzIDEuMzMzMzNDNy4zMzMzMyAxLjMzMzMzIDAuNjY2NjY3IDEuMzMzMzMgMC42NjY2NjcgMS4zMzMzM0MwLjI5ODQ4IDEuMzMzMzMgMCAxLjAzNDg1IDAgMC42NjY2NjdDMCAwLjY2NjY2NyAwIDAuNjY2NjY3IDAgMC42NjY2NjdaIiBmaWxsPSIjNzJENUE1IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgMi42NjcpIiAvPgogICAgPHBhdGggaWQ9IlBhdGgiIGQ9Ik0wIDAuNjY2NjY3QzAgMC4yOTg0NjYgMC4yNDg3MzMgMCAwLjU1NTU1NiAwQzAuNTU1NTU2IDAgOS40NDQ0NCAwIDkuNDQ0NDQgMEM5Ljc1MTI4IDAgMTAgMC4yOTg0NjYgMTAgMC42NjY2NjdDMTAgMS4wMzQ4NyA5Ljc1MTI4IDEuMzMzMzMgOS40NDQ0NCAxLjMzMzMzQzkuNDQ0NDQgMS4zMzMzMyAwLjU1NTU1NiAxLjMzMzMzIDAuNTU1NTU2IDEuMzMzMzNDMC4yNDg3MzMgMS4zMzMzMyAwIDEuMDM0ODcgMCAwLjY2NjY2N0MwIDAuNjY2NjY3IDAgMC42NjY2NjcgMCAwLjY2NjY2N1oiIGZpbGw9IiMwREM4RjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMiA3LjMzMykiIC8+CiAgICA8cGF0aCBpZD0iUGF0aCIgZD0iTTAgMC42NjY2NjZDMCAwLjI5ODQ2NyAwLjI5ODQ4IDAgMC42NjY2NjcgMEMwLjY2NjY2NyAwIDExLjMzMzMgMCAxMS4zMzMzIDBDMTEuNzAxNSAwIDEyIDAuMjk4NDY3IDEyIDAuNjY2NjY2QzEyIDEuMDM0ODcgMTEuNzAxNSAxLjMzMzMzIDExLjMzMzMgMS4zMzMzM0MxMS4zMzMzIDEuMzMzMzMgMC42NjY2NjcgMS4zMzMzMyAwLjY2NjY2NyAxLjMzMzMzQzAuMjk4NDggMS4zMzMzMyAwIDEuMDM0ODcgMCAwLjY2NjY2NkMwIDAuNjY2NjY2IDAgMC42NjY2NjYgMCAwLjY2NjY2NloiIGZpbGw9IiNEOUQ2MTciIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMiAxMikiIC8+CiAgPC9nPgo8L3N2Zz4=");
 }
 
 .setting-item:is([data-id=codeBlocks-settings]) > .setting-item-info > .setting-item-name::before {
@@ -542,12 +575,6 @@ body.theme-light {
   --background-modifier-hover: var(--s-hover-bg-color-green);
   --nav-collapse-icon-color: var(--s-green-primary-color);
   --inline-title-color: white;
-  --h1-color: var(--level-1);
-  --h2-color: var(--level-2);
-  --h3-color: var(--level-3);
-  --h4-color: var(--level-4);
-  --h5-color: var(--level-5);
-  --h6-color: var(--level-6);
   --background-modifier-border-focus: var(--s-green-primary-color);
   --modal-background: var(--s-bg-primary-color);
   --caret-color: #ff0000;
@@ -1202,8 +1229,182 @@ h6,
   margin-bottom: 5px !important;
 }
 
-.is-live-preview .HyperMD-header-2::before,
-.markdown-rendered h2::before {
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
+.markdown-preview-view .heading-collapse-indicator {
+  cursor: pointer;
+}
+
+.is-mobile h1 .collapse-indicator,
+.is-mobile h2 .collapse-indicator,
+.is-mobile h3 .collapse-indicator,
+.is-mobile h4 .collapse-indicator,
+.is-mobile h5 .collapse-indicator,
+.is-mobile h6 .collapse-indicator,
+.is-mobile .HyperMD-header-1 .cm-fold-indicator .collapse-indicator,
+.is-mobile .HyperMD-header-2 .cm-fold-indicator .collapse-indicator,
+.is-mobile .HyperMD-header-3 .cm-fold-indicator .collapse-indicator,
+.is-mobile .HyperMD-header-4 .cm-fold-indicator .collapse-indicator,
+.is-mobile .HyperMD-header-5 .cm-fold-indicator .collapse-indicator,
+.is-mobile .HyperMD-header-6 .cm-fold-indicator .collapse-indicator {
+  opacity: 1;
+}
+
+h1 .collapse-indicator svg.svg-icon,
+.is-live-preview .HyperMD-header-1 .collapse-indicator svg.svg-icon {
+  color: var(--h1-color) !important;
+}
+h1 .cm-foldPlaceholder,
+.is-live-preview .HyperMD-header-1 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+h1 .cm-foldPlaceholder::after,
+.is-live-preview .HyperMD-header-1 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 6px;
+  background-color: var(--h1-color);
+}
+
+h2 .collapse-indicator svg.svg-icon,
+.is-live-preview .HyperMD-header-2 .collapse-indicator svg.svg-icon {
+  color: var(--h2-color) !important;
+  width: 9px;
+  height: 9px;
+}
+h2 .cm-foldPlaceholder,
+.is-live-preview .HyperMD-header-2 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+h2 .cm-foldPlaceholder::after,
+.is-live-preview .HyperMD-header-2 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 5px;
+  background-color: var(--h2-color);
+}
+
+h3 .collapse-indicator svg.svg-icon,
+.is-live-preview .HyperMD-header-3 .collapse-indicator svg.svg-icon {
+  color: var(--h3-color) !important;
+  width: 8px;
+  height: 8px;
+}
+h3 .cm-foldPlaceholder,
+.is-live-preview .HyperMD-header-3 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+h3 .cm-foldPlaceholder::after,
+.is-live-preview .HyperMD-header-3 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--h3-color);
+}
+
+h4 .collapse-indicator svg.svg-icon,
+.is-live-preview .HyperMD-header-4 .collapse-indicator svg.svg-icon {
+  color: var(--h4-color) !important;
+  width: 8px;
+  height: 8px;
+}
+h4 .cm-foldPlaceholder,
+.is-live-preview .HyperMD-header-4 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+h4 .cm-foldPlaceholder::after,
+.is-live-preview .HyperMD-header-4 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--h4-color);
+}
+
+h5 .collapse-indicator svg.svg-icon,
+.is-live-preview .HyperMD-header-5 .collapse-indicator svg.svg-icon {
+  color: var(--h5-color) !important;
+  width: 7px;
+  height: 7px;
+}
+h5 .cm-foldPlaceholder,
+.is-live-preview .HyperMD-header-5 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+h5 .cm-foldPlaceholder::after,
+.is-live-preview .HyperMD-header-5 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 2px;
+  background-color: var(--h5-color);
+}
+
+h6 .collapse-indicator svg.svg-icon,
+.is-live-preview .HyperMD-header-6 .collapse-indicator svg.svg-icon {
+  color: var(--h6-color) !important;
+  width: 6px;
+  height: 6px;
+}
+h6 .cm-foldPlaceholder,
+.is-live-preview .HyperMD-header-6 .cm-foldPlaceholder {
+  color: transparent;
+  position: relative;
+  width: 50px;
+  display: inline-block;
+}
+h6 .cm-foldPlaceholder::after,
+.is-live-preview .HyperMD-header-6 .cm-foldPlaceholder::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 1px;
+  background-color: var(--h6-color);
+}
+
+.glass-robo-style-headers .is-live-preview .HyperMD-header-2::before,
+.glass-robo-style-headers .markdown-rendered h2::before {
   margin-inline-start: 0;
   position: absolute;
   content: " ";
@@ -1215,14 +1416,12 @@ h6,
   background-color: var(--h2-color);
   transform: translateY(4px);
 }
-
-.is-live-preview .HyperMD-header-2[dir=rtl]::before,
-.markdown-rendered[dir=rtl] h2::before {
+.glass-robo-style-headers .is-live-preview .HyperMD-header-2[dir=rtl]::before,
+.glass-robo-style-headers .markdown-rendered[dir=rtl] h2::before {
   bottom: 0px !important;
 }
-
-.is-live-preview .HyperMD-header-3::before,
-.markdown-rendered h3::before {
+.glass-robo-style-headers .is-live-preview .HyperMD-header-3::before,
+.glass-robo-style-headers .markdown-rendered h3::before {
   margin-inline-start: 0;
   position: absolute;
   content: " ";
@@ -1234,14 +1433,12 @@ h6,
   transform: translateY(4px);
   background-color: var(--h3-color);
 }
-
-.is-live-preview .HyperMD-header-3[dir=rtl]::before,
-.markdown-rendered[dir=rtl] h3::before {
+.glass-robo-style-headers .is-live-preview .HyperMD-header-3[dir=rtl]::before,
+.glass-robo-style-headers .markdown-rendered[dir=rtl] h3::before {
   bottom: 0px !important;
 }
-
-.is-live-preview .HyperMD-header-4::before,
-.markdown-rendered h4::before {
+.glass-robo-style-headers .is-live-preview .HyperMD-header-4::before,
+.glass-robo-style-headers .markdown-rendered h4::before {
   margin-inline-start: 0;
   position: absolute;
   content: " ";
@@ -1253,10 +1450,27 @@ h6,
   transform: translateY(3px);
   background-color: var(--h4-color);
 }
-
-.is-live-preview .HyperMD-header-4[dir=rtl]::before,
-.markdown-rendered[dir=rtl] h4::before {
+.glass-robo-style-headers .is-live-preview .HyperMD-header-4[dir=rtl]::before,
+.glass-robo-style-headers .markdown-rendered[dir=rtl] h4::before {
   bottom: 0px !important;
+}
+
+.lorens-color-headers {
+  --h1-color: #d9d617;
+  --h2-color: #0dc8f2;
+  --h3-color: #72d5a5;
+  --h4-color: var(--level-4);
+  --h5-color: var(--level-5);
+  --h6-color: var(--level-6);
+}
+
+.glass-robo-color-headers {
+  --h1-color: var(--level-1);
+  --h2-color: var(--level-2);
+  --h3-color: var(--level-3);
+  --h4-color: var(--level-4);
+  --h5-color: var(--level-5);
+  --h6-color: var(--level-6);
 }
 
 .theme-dark table,
@@ -2290,180 +2504,6 @@ li[data-task="<"] > p > input:checked {
 input[type=checkbox] {
   transition: box-shadow var(--anim-duration-moderate) var(--anim-motion-swing), filter var(--anim-duration-moderate) var(--anim-motion-smooth);
   cursor: pointer;
-}
-
-.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator,
-.markdown-preview-view .heading-collapse-indicator {
-  cursor: pointer;
-}
-
-.is-mobile h1 .collapse-indicator,
-.is-mobile h2 .collapse-indicator,
-.is-mobile h3 .collapse-indicator,
-.is-mobile h4 .collapse-indicator,
-.is-mobile h5 .collapse-indicator,
-.is-mobile h6 .collapse-indicator,
-.is-mobile .HyperMD-header-1 .cm-fold-indicator .collapse-indicator,
-.is-mobile .HyperMD-header-2 .cm-fold-indicator .collapse-indicator,
-.is-mobile .HyperMD-header-3 .cm-fold-indicator .collapse-indicator,
-.is-mobile .HyperMD-header-4 .cm-fold-indicator .collapse-indicator,
-.is-mobile .HyperMD-header-5 .cm-fold-indicator .collapse-indicator,
-.is-mobile .HyperMD-header-6 .cm-fold-indicator .collapse-indicator {
-  opacity: 1;
-}
-
-h1 .collapse-indicator svg.svg-icon,
-.is-live-preview .HyperMD-header-1 .collapse-indicator svg.svg-icon {
-  color: var(--h1-color) !important;
-}
-h1 .cm-foldPlaceholder,
-.is-live-preview .HyperMD-header-1 .cm-foldPlaceholder {
-  color: transparent;
-  position: relative;
-  width: 50px;
-  display: inline-block;
-}
-h1 .cm-foldPlaceholder::after,
-.is-live-preview .HyperMD-header-1 .cm-foldPlaceholder::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 6px;
-  background-color: var(--h1-color);
-}
-
-h2 .collapse-indicator svg.svg-icon,
-.is-live-preview .HyperMD-header-2 .collapse-indicator svg.svg-icon {
-  color: var(--h2-color) !important;
-  width: 9px;
-  height: 9px;
-}
-h2 .cm-foldPlaceholder,
-.is-live-preview .HyperMD-header-2 .cm-foldPlaceholder {
-  color: transparent;
-  position: relative;
-  width: 50px;
-  display: inline-block;
-}
-h2 .cm-foldPlaceholder::after,
-.is-live-preview .HyperMD-header-2 .cm-foldPlaceholder::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 5px;
-  background-color: var(--h2-color);
-}
-
-h3 .collapse-indicator svg.svg-icon,
-.is-live-preview .HyperMD-header-3 .collapse-indicator svg.svg-icon {
-  color: var(--h3-color) !important;
-  width: 8px;
-  height: 8px;
-}
-h3 .cm-foldPlaceholder,
-.is-live-preview .HyperMD-header-3 .cm-foldPlaceholder {
-  color: transparent;
-  position: relative;
-  width: 50px;
-  display: inline-block;
-}
-h3 .cm-foldPlaceholder::after,
-.is-live-preview .HyperMD-header-3 .cm-foldPlaceholder::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 4px;
-  background-color: var(--h3-color);
-}
-
-h4 .collapse-indicator svg.svg-icon,
-.is-live-preview .HyperMD-header-4 .collapse-indicator svg.svg-icon {
-  color: var(--h4-color) !important;
-  width: 8px;
-  height: 8px;
-}
-h4 .cm-foldPlaceholder,
-.is-live-preview .HyperMD-header-4 .cm-foldPlaceholder {
-  color: transparent;
-  position: relative;
-  width: 50px;
-  display: inline-block;
-}
-h4 .cm-foldPlaceholder::after,
-.is-live-preview .HyperMD-header-4 .cm-foldPlaceholder::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 3px;
-  background-color: var(--h4-color);
-}
-
-h5 .collapse-indicator svg.svg-icon,
-.is-live-preview .HyperMD-header-5 .collapse-indicator svg.svg-icon {
-  color: var(--h5-color) !important;
-  width: 7px;
-  height: 7px;
-}
-h5 .cm-foldPlaceholder,
-.is-live-preview .HyperMD-header-5 .cm-foldPlaceholder {
-  color: transparent;
-  position: relative;
-  width: 50px;
-  display: inline-block;
-}
-h5 .cm-foldPlaceholder::after,
-.is-live-preview .HyperMD-header-5 .cm-foldPlaceholder::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 2px;
-  background-color: var(--h5-color);
-}
-
-h6 .collapse-indicator svg.svg-icon,
-.is-live-preview .HyperMD-header-6 .collapse-indicator svg.svg-icon {
-  color: var(--h6-color) !important;
-  width: 6px;
-  height: 6px;
-}
-h6 .cm-foldPlaceholder,
-.is-live-preview .HyperMD-header-6 .cm-foldPlaceholder {
-  color: transparent;
-  position: relative;
-  width: 50px;
-  display: inline-block;
-}
-h6 .cm-foldPlaceholder::after,
-.is-live-preview .HyperMD-header-6 .cm-foldPlaceholder::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 60px;
-  height: 1px;
-  background-color: var(--h6-color);
 }
 
 @media (hover: hover) {
