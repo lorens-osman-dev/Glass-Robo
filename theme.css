@@ -141,6 +141,9 @@ settings:
     - 
         label: Glass Robo
         value: glass-robo-style-headers
+    - 
+        label: test
+        value: test-style-headers
 -
     id: headers-color-settin
     title: Colors
@@ -596,6 +599,12 @@ body {
   --anim-duration-slow: calc(600ms / var(--anim-speed));
   --anim-in: var(--anim-duration-fast) var(--anim-duration-superfast) var(--anim-motion-swing);
   --anim-out: var(--anim-duration-moderate) var(--anim-duration-slow) var(--anim-motion-swing);
+  --h1-color: var(--level-1);
+  --h2-color: var(--level-2);
+  --h3-color: var(--level-3);
+  --h4-color: var(--level-4);
+  --h5-color: var(--level-5);
+  --h6-color: var(--level-6);
 }
 
 /*
@@ -1403,6 +1412,60 @@ h6 .cm-foldPlaceholder::after,
   background-color: var(--h6-color);
 }
 
+.is-live-preview .HyperMD-header-1::before,
+.markdown-rendered h1::before {
+  background-color: var(--h1-color);
+}
+.is-live-preview .HyperMD-header-1::after,
+.markdown-rendered h1::after {
+  background-color: var(--h1-color);
+}
+
+.is-live-preview .HyperMD-header-2::before,
+.markdown-rendered h2::before {
+  background-color: var(--h2-color);
+}
+.is-live-preview .HyperMD-header-2::after,
+.markdown-rendered h2::after {
+  background-color: var(--h2-color);
+}
+
+.is-live-preview .HyperMD-header-3::before,
+.markdown-rendered h3::before {
+  background-color: var(--h3-color);
+}
+.is-live-preview .HyperMD-header-3::after,
+.markdown-rendered h3::after {
+  background-color: var(--h3-color);
+}
+
+.is-live-preview .HyperMD-header-4::before,
+.markdown-rendered h4::before {
+  background-color: var(--h4-color);
+}
+.is-live-preview .HyperMD-header-4::after,
+.markdown-rendered h4::after {
+  background-color: var(--h4-color);
+}
+
+.is-live-preview .HyperMD-header-5::before,
+.markdown-rendered h5::before {
+  background-color: var(--h5-color);
+}
+.is-live-preview .HyperMD-header-5::after,
+.markdown-rendered h5::after {
+  background-color: var(--h5-color);
+}
+
+.is-live-preview .HyperMD-header-6::before,
+.markdown-rendered h6::before {
+  background-color: var(--h6-color);
+}
+.is-live-preview .HyperMD-header-6::after,
+.markdown-rendered h6::after {
+  background-color: var(--h6-color);
+}
+
 .glass-robo-style-headers .is-live-preview .HyperMD-header-2::before,
 .glass-robo-style-headers .markdown-rendered h2::before {
   margin-inline-start: 0;
@@ -1453,6 +1516,67 @@ h6 .cm-foldPlaceholder::after,
 .glass-robo-style-headers .is-live-preview .HyperMD-header-4[dir=rtl]::before,
 .glass-robo-style-headers .markdown-rendered[dir=rtl] h4::before {
   bottom: 0px !important;
+}
+
+.test-style-headers .is-live-preview .HyperMD-header-1,
+.test-style-headers .markdown-rendered h1,
+.test-style-headers .is-live-preview .HyperMD-header-2,
+.test-style-headers .markdown-rendered h2,
+.test-style-headers .is-live-preview .HyperMD-header-3,
+.test-style-headers .markdown-rendered h3,
+.test-style-headers .is-live-preview .HyperMD-header-4,
+.test-style-headers .markdown-rendered h4,
+.test-style-headers .is-live-preview .HyperMD-header-5,
+.test-style-headers .markdown-rendered h5,
+.test-style-headers .is-live-preview .HyperMD-header-6,
+.test-style-headers .markdown-rendered h6 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 1px solid;
+  text-align: center;
+}
+.test-style-headers .is-live-preview .HyperMD-header-1::before,
+.test-style-headers .markdown-rendered h1::before,
+.test-style-headers .is-live-preview .HyperMD-header-2::before,
+.test-style-headers .markdown-rendered h2::before,
+.test-style-headers .is-live-preview .HyperMD-header-3::before,
+.test-style-headers .markdown-rendered h3::before,
+.test-style-headers .is-live-preview .HyperMD-header-4::before,
+.test-style-headers .markdown-rendered h4::before,
+.test-style-headers .is-live-preview .HyperMD-header-5::before,
+.test-style-headers .markdown-rendered h5::before,
+.test-style-headers .is-live-preview .HyperMD-header-6::before,
+.test-style-headers .markdown-rendered h6::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+}
+.test-style-headers .is-live-preview .HyperMD-header-1::after,
+.test-style-headers .markdown-rendered h1::after,
+.test-style-headers .is-live-preview .HyperMD-header-2::after,
+.test-style-headers .markdown-rendered h2::after,
+.test-style-headers .is-live-preview .HyperMD-header-3::after,
+.test-style-headers .markdown-rendered h3::after,
+.test-style-headers .is-live-preview .HyperMD-header-4::after,
+.test-style-headers .markdown-rendered h4::after,
+.test-style-headers .is-live-preview .HyperMD-header-5::after,
+.test-style-headers .markdown-rendered h5::after,
+.test-style-headers .is-live-preview .HyperMD-header-6::after,
+.test-style-headers .markdown-rendered h6::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  right: -10px;
+  width: 5px;
+  height: 5px;
 }
 
 .lorens-color-headers {
