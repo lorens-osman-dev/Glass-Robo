@@ -2331,14 +2331,16 @@ h1 .cm-foldPlaceholder::after,
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 6px;
   background-color: var(--h1-color);
 }
 
 h2 .collapse-indicator svg.svg-icon,
 .is-live-preview .HyperMD-header-2 .collapse-indicator svg.svg-icon {
   color: var(--h2-color) !important;
+  width: 9px;
+  height: 9px;
 }
 h2 .cm-foldPlaceholder,
 .is-live-preview .HyperMD-header-2 .cm-foldPlaceholder {
@@ -2355,14 +2357,16 @@ h2 .cm-foldPlaceholder::after,
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 5px;
   background-color: var(--h2-color);
 }
 
 h3 .collapse-indicator svg.svg-icon,
 .is-live-preview .HyperMD-header-3 .collapse-indicator svg.svg-icon {
   color: var(--h3-color) !important;
+  width: 8px;
+  height: 8px;
 }
 h3 .cm-foldPlaceholder,
 .is-live-preview .HyperMD-header-3 .cm-foldPlaceholder {
@@ -2379,14 +2383,16 @@ h3 .cm-foldPlaceholder::after,
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 4px;
   background-color: var(--h3-color);
 }
 
 h4 .collapse-indicator svg.svg-icon,
 .is-live-preview .HyperMD-header-4 .collapse-indicator svg.svg-icon {
   color: var(--h4-color) !important;
+  width: 8px;
+  height: 8px;
 }
 h4 .cm-foldPlaceholder,
 .is-live-preview .HyperMD-header-4 .cm-foldPlaceholder {
@@ -2403,14 +2409,16 @@ h4 .cm-foldPlaceholder::after,
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 3px;
   background-color: var(--h4-color);
 }
 
 h5 .collapse-indicator svg.svg-icon,
 .is-live-preview .HyperMD-header-5 .collapse-indicator svg.svg-icon {
   color: var(--h5-color) !important;
+  width: 7px;
+  height: 7px;
 }
 h5 .cm-foldPlaceholder,
 .is-live-preview .HyperMD-header-5 .cm-foldPlaceholder {
@@ -2427,7 +2435,7 @@ h5 .cm-foldPlaceholder::after,
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
+  width: 60px;
   height: 2px;
   background-color: var(--h5-color);
 }
@@ -2435,6 +2443,8 @@ h5 .cm-foldPlaceholder::after,
 h6 .collapse-indicator svg.svg-icon,
 .is-live-preview .HyperMD-header-6 .collapse-indicator svg.svg-icon {
   color: var(--h6-color) !important;
+  width: 6px;
+  height: 6px;
 }
 h6 .cm-foldPlaceholder,
 .is-live-preview .HyperMD-header-6 .cm-foldPlaceholder {
@@ -2451,8 +2461,8 @@ h6 .cm-foldPlaceholder::after,
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 1px;
   background-color: var(--h6-color);
 }
 

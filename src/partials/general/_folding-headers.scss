@@ -24,15 +24,15 @@
 }
 
 // indicator line : when is-collapsed add a line to the end of header indicating is collapsed
-@mixin after-properties($color) {
+@mixin after-properties($color, $width , $height) {
   content: ' ';
   display: block;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 50px;
-  height: 2px;
+  width: $width;
+  height: $height;
   background-color: $color; // Use the parameter here
 }
 
@@ -55,7 +55,7 @@ h1,
     @include cm-foldPlaceholder-properties;
 
     &::after {
-      @include after-properties(var(--h1-color));
+      @include after-properties(var(--h1-color), 60px, 6px);
     }
   }
 }
@@ -65,13 +65,15 @@ h2,
 
   .collapse-indicator svg.svg-icon {
     color: var(--h2-color) !important;
+    width: 9px;
+    height: 9px;
   }
 
   .cm-foldPlaceholder {
     @include cm-foldPlaceholder-properties;
 
     &::after {
-      @include after-properties(var(--h2-color));
+      @include after-properties(var(--h2-color), 60px, 5px);
     }
   }
 
@@ -82,13 +84,15 @@ h3,
 
   .collapse-indicator svg.svg-icon {
     color: var(--h3-color) !important;
+    width: 8px;
+    height: 8px;
   }
 
   .cm-foldPlaceholder {
     @include cm-foldPlaceholder-properties;
 
     &::after {
-      @include after-properties(var(--h3-color));
+      @include after-properties(var(--h3-color), 60px, 4px);
     }
   }
 
@@ -99,13 +103,15 @@ h4,
 
   .collapse-indicator svg.svg-icon {
     color: var(--h4-color) !important;
+    width: 8px;
+    height: 8px;
   }
 
   .cm-foldPlaceholder {
     @include cm-foldPlaceholder-properties;
 
     &::after {
-      @include after-properties(var(--h4-color));
+      @include after-properties(var(--h4-color), 60px, 3px);
     }
   }
 
@@ -116,13 +122,15 @@ h5,
 
   .collapse-indicator svg.svg-icon {
     color: var(--h5-color) !important;
+    width: 7px;
+    height: 7px;
   }
 
   .cm-foldPlaceholder {
     @include cm-foldPlaceholder-properties;
 
     &::after {
-      @include after-properties(var(--h5-color));
+      @include after-properties(var(--h5-color), 60px, 2px);
     }
   }
 
@@ -133,13 +141,15 @@ h6,
 
   .collapse-indicator svg.svg-icon {
     color: var(--h6-color) !important;
+    width: 6px;
+    height: 6px;
   }
 
   .cm-foldPlaceholder {
     @include cm-foldPlaceholder-properties;
 
     &::after {
-      @include after-properties(var(--h6-color));
+      @include after-properties(var(--h6-color), 60px, 1px);
     }
   }
 
