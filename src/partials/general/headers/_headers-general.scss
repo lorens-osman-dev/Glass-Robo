@@ -1,36 +1,69 @@
-h1,
-.markdown-rendered h1,
-.is-live-preview .HyperMD-header-1,
-h2,
-.markdown-rendered h2,
-.is-live-preview .HyperMD-header-2,
-h3,
-.markdown-rendered h3,
-.is-live-preview .HyperMD-header-3,
-h4,
-.markdown-rendered h4,
-.is-live-preview .HyperMD-header-4,
-h5,
-.markdown-rendered h5,
-.is-live-preview .HyperMD-header-5,
-h6,
-.markdown-rendered h6,
-.is-live-preview .HyperMD-header-6 {
-  font-weight: bold;
-  position: relative;
+@use './headers-functions' as *;
+
+body {
+  --h1-color: var(--level-1);
+  --h2-color: var(--level-2);
+  --h3-color: var(--level-3);
+  --h4-color: var(--level-4);
+  --h5-color: var(--level-5);
+  --h6-color: var(--level-6);
+
+  --h1-new-color: 191, 96, 107;
+  --h2-new-color: 207, 134, 110;
+  --h3-new-color: 235, 203, 140;
+  --h4-new-color: 153, 190, 141;
+  --h5-new-color: 165, 127, 150;
+  --h6-new-color: 155, 180, 196;
+
 }
 
-h1,
-.HyperMD-header.HyperMD-header-1.cm-line[dir="rtl"],
-h2,
-.HyperMD-header.HyperMD-header-2.cm-line[dir="rtl"],
-h3,
-.HyperMD-header.HyperMD-header-3.cm-line[dir="rtl"],
-h4,
-.HyperMD-header.HyperMD-header-4.cm-line[dir="rtl"],
-h5,
-.HyperMD-header.HyperMD-header-5.cm-line[dir="rtl"],
-h6,
-.HyperMD-header.HyperMD-header-6.cm-line[dir="rtl"] {
-  margin-bottom: 5px !important;
+@include all-headers((font-weight:bold));
+
+h1 {
+  padding: 9px !important;
 }
+
+h2 {
+  padding: 8px !important;
+}
+
+h3 {
+  padding: 8px !important;
+}
+
+h4 {
+  padding: 7px !important;
+}
+
+h5 {
+  padding: 6px !important;
+}
+
+h6 {
+  padding: 5px !important;
+}
+
+@include h(1, null,
+  (background-color: var(--h1-color)),
+  (background-color: var(--h1-color)),
+  (padding-bottom:9px !important));
+@include h(2, null,
+  (background-color: var(--h2-color)),
+  (background-color: var(--h2-color)),
+  (padding-bottom:8px !important));
+@include h(3, null,
+  (background-color: var(--h3-color)),
+  (background-color: var(--h3-color)),
+  (padding-bottom:8px !important));
+@include h(4, null,
+  (background-color: var(--h4-color)),
+  (background-color: var(--h4-color)),
+  (padding-bottom:7px !important));
+@include h(5, null,
+  (background-color: var(--h5-color)),
+  (background-color: var(--h5-color)),
+  (padding-bottom:6px !important));
+@include h(6, null,
+  (background-color: var(--h6-color)),
+  (background-color: var(--h6-color)),
+  (padding-bottom:5px !important));

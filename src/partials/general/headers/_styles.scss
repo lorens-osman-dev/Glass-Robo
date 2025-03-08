@@ -1,111 +1,5 @@
-//: scss functions
-@mixin all-headers($properties, $beforeProps: null, $afterProps: null) {
+@use './headers-functions' as *;
 
-  .is-live-preview .HyperMD-header-1,
-  .markdown-rendered h1,
-  .is-live-preview .HyperMD-header-2,
-  .markdown-rendered h2,
-  .is-live-preview .HyperMD-header-3,
-  .markdown-rendered h3,
-  .is-live-preview .HyperMD-header-4,
-  .markdown-rendered h4,
-  .is-live-preview .HyperMD-header-5,
-  .markdown-rendered h5,
-  .is-live-preview .HyperMD-header-6,
-  .markdown-rendered h6 {
-    position: relative;
-    padding: 0;
-    margin: 0;
-
-    @each $property, $value in $properties {
-      #{$property}: $value;
-    }
-
-    // Add ::before pseudo-element styles if $beforeProps is provided
-    @if $beforeProps !=null {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-
-        @each $property, $value in $beforeProps {
-          #{$property}: $value;
-        }
-      }
-    }
-
-    // Add ::after pseudo-element styles if $beforeProps is provided
-    @if $afterProps !=null {
-      &::after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 0;
-
-        @each $property, $value in $afterProps {
-          #{$property}: $value;
-        }
-      }
-    }
-  }
-}
-
-@mixin h($headerLevel, $properties, $beforeProps: null, $afterProps: null) {
-
-  .is-live-preview .HyperMD-header-#{$headerLevel},
-  .markdown-rendered h#{$headerLevel} {
-
-    // Apply main properties to the header
-    @each $property, $value in $properties {
-      #{$property}: $value;
-    }
-
-    // Add ::before pseudo-element styles if $beforeProps is provided
-    @if $beforeProps !=null {
-      &::before {
-
-
-        @each $property, $value in $beforeProps {
-          #{$property}: $value;
-        }
-      }
-    }
-
-    // Add ::after pseudo-element styles if $afterProps is provided
-    @if $afterProps !=null {
-
-      &::after {
-        @each $property, $value in $afterProps {
-          #{$property}: $value;
-        }
-      }
-    }
-  }
-}
-
-@include h(1, null,
-  (background-color: var(--h1-color)),
-  (background-color: var(--h1-color)));
-@include h(2, null,
-  (background-color: var(--h2-color)),
-  (background-color: var(--h2-color)));
-@include h(3, null,
-  (background-color: var(--h3-color)),
-  (background-color: var(--h3-color)));
-@include h(4, null,
-  (background-color: var(--h4-color)),
-  (background-color: var(--h4-color)));
-@include h(5, null,
-  (background-color: var(--h5-color)),
-  (background-color: var(--h5-color)));
-@include h(6, null,
-  (background-color: var(--h6-color)),
-  (background-color: var(--h6-color)));
-
-//: scss styling
 .no-style-headers {}
 
 //- glass-robo headers
@@ -161,6 +55,7 @@
     display: inline-block;
     width: 3px;
     height: 2px;
+
     bottom: 2px;
     border-radius: 5px;
     transform: translateY(3px);
@@ -178,5 +73,31 @@
   @include all-headers((border: 1px solid, text-align:center),
     (left:-10px, width: 5px, height: 5px),
     (right:-10px, width: 5px, height: 5px));
+
+}
+
+.lodi-style-headers {
+  @include all-headers((text-align:center, border-radius:5px),
+    (left:0, width: 5px, height: 100%, border-top-left-radius: 5px, border-bottom-left-radius: 5px),
+    (right:0, width: 5px, height: 100%, border-top-right-radius: 5px, border-bottom-right-radius: 5px), (margin-bottom:10px));
+
+  @include h(1, (background-color:rgba(var(--h1-new-color), 0.1)),
+    (background-color: rgba(var(--h1-new-color), 0.8)),
+    (background-color: rgba(var(--h1-new-color), 0.8)));
+  @include h(2, (background-color:rgba(var(--h2-new-color), 0.1)),
+    (background-color: rgba(var(--h2-new-color), 0.8)),
+    (background-color: rgba(var(--h2-new-color), 0.8)));
+  @include h(3, (background-color:rgba(var(--h3-new-color), 0.1)),
+    (background-color: rgba(var(--h3-new-color), 0.8)),
+    (background-color: rgba(var(--h3-new-color), 0.8)));
+  @include h(4, (background-color:rgba(var(--h4-new-color), 0.1)),
+    (background-color: rgba(var(--h4-new-color), 0.8)),
+    (background-color: rgba(var(--h4-new-color), 0.8)));
+  @include h(5, (background-color:rgba(var(--h5-new-color), 0.1)),
+    (background-color: rgba(var(--h5-new-color), 0.8)),
+    (background-color: rgba(var(--h5-new-color), 0.8)));
+  @include h(6, (background-color:rgba(var(--h6-new-color), 0.1)),
+    (background-color: rgba(var(--h6-new-color), 0.8)),
+    (background-color: rgba(var(--h6-new-color), 0.8)));
 
 }

@@ -1,0 +1,114 @@
+@mixin all-headers($properties, $beforeProps: null, $afterProps: null, $rtlProps: null) {
+
+  .is-live-preview .HyperMD-header-1,
+  .markdown-rendered h1,
+  .is-live-preview .HyperMD-header-2,
+  .markdown-rendered h2,
+  .is-live-preview .HyperMD-header-3,
+  .markdown-rendered h3,
+  .is-live-preview .HyperMD-header-4,
+  .markdown-rendered h4,
+  .is-live-preview .HyperMD-header-5,
+  .markdown-rendered h5,
+  .is-live-preview .HyperMD-header-6,
+  .markdown-rendered h6 {
+    position: relative;
+    padding: 0;
+
+
+    @each $property, $value in $properties {
+      #{$property}: $value;
+    }
+
+    // Add ::before pseudo-element styles if $beforeProps is provided
+    @if $beforeProps !=null {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+        @each $property, $value in $beforeProps {
+          #{$property}: $value;
+        }
+      }
+    }
+
+    // Add ::after pseudo-element styles if $beforeProps is provided
+    @if $afterProps !=null {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+
+        @each $property, $value in $afterProps {
+          #{$property}: $value;
+        }
+      }
+    }
+  }
+
+  //RTL
+  @if $rtlProps !=null {
+
+    .HyperMD-header.HyperMD-header-1.cm-line[dir="rtl"],
+    .HyperMD-header.HyperMD-header-2.cm-line[dir="rtl"],
+    .HyperMD-header.HyperMD-header-3.cm-line[dir="rtl"],
+    .HyperMD-header.HyperMD-header-4.cm-line[dir="rtl"],
+    .HyperMD-header.HyperMD-header-5.cm-line[dir="rtl"],
+    .HyperMD-header.HyperMD-header-6.cm-line[dir="rtl"] {
+      @each $property, $value in $rtlProps {
+        #{$property}: $value;
+      }
+    }
+  }
+
+}
+
+@mixin h($headerLevel, $properties, $beforeProps: null, $afterProps: null, $rtlProps: null) {
+
+  .is-live-preview .HyperMD-header-#{$headerLevel},
+  .markdown-rendered h#{$headerLevel} {
+
+    // Apply main properties to the header
+    @each $property, $value in $properties {
+      #{$property}: $value;
+    }
+
+    // Add ::before pseudo-element styles if $beforeProps is provided
+    @if $beforeProps !=null {
+      &::before {
+
+
+        @each $property, $value in $beforeProps {
+          #{$property}: $value;
+        }
+      }
+    }
+
+    // Add ::after pseudo-element styles if $afterProps is provided
+    @if $afterProps !=null {
+
+      &::after {
+        @each $property, $value in $afterProps {
+          #{$property}: $value;
+        }
+      }
+    }
+
+
+  }
+
+  //RTL
+  @if $rtlProps !=null {
+
+    .HyperMD-header.HyperMD-header-#{$headerLevel}.cm-line[dir="rtl"] {
+      @each $property, $value in $rtlProps {
+        #{$property}: $value;
+      }
+    }
+  }
+}
