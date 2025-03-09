@@ -17,53 +17,23 @@ body {
 
 }
 
-@include all-headers((font-weight:bold));
+@include all-headers-con((font-weight:bold));
 
-h1 {
-  padding: 9px !important;
-}
-
-h2 {
-  padding: 8px !important;
-}
-
-h3 {
-  padding: 8px !important;
-}
-
-h4 {
-  padding: 7px !important;
-}
-
-h5 {
-  padding: 6px !important;
-}
-
-h6 {
-  padding: 5px !important;
-}
-
-@include h(1, null,
+@include h-con(1, null,
   (background-color: var(--h1-color)),
-  (background-color: var(--h1-color)),
-  (padding-bottom:9px !important));
-@include h(2, null,
+  (background-color: var(--h1-color)));
+@include h-con(2, null,
   (background-color: var(--h2-color)),
-  (background-color: var(--h2-color)),
-  (padding-bottom:8px !important));
-@include h(3, null,
+  (background-color: var(--h2-color)));
+@include h-con(3, null,
   (background-color: var(--h3-color)),
-  (background-color: var(--h3-color)),
-  (padding-bottom:8px !important));
-@include h(4, null,
+  (background-color: var(--h3-color)));
+@include h-con(4, null,
   (background-color: var(--h4-color)),
-  (background-color: var(--h4-color)),
-  (padding-bottom:7px !important));
-@include h(5, null,
+  (background-color: var(--h4-color)));
+@include h-con(5, null,
   (background-color: var(--h5-color)),
-  (background-color: var(--h5-color)),
-  (padding-bottom:6px !important));
-@include h(6, null,
+  (background-color: var(--h5-color)));
+@include h-con(6, null,
   (background-color: var(--h6-color)),
-  (background-color: var(--h6-color)),
-  (padding-bottom:5px !important));
+  (background-color: var(--h6-color)));

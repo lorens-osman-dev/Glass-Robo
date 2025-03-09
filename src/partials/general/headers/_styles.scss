@@ -21,7 +21,7 @@
   }
 
   .is-live-preview .HyperMD-header-2[dir="rtl"]::before,
-  .markdown-rendered[dir="rtl"] h2::before {
+  .markdown-rendered h2::before {
     bottom: 0px !important;
   }
 
@@ -41,7 +41,7 @@
   }
 
   .is-live-preview .HyperMD-header-3[dir="rtl"]::before,
-  .markdown-rendered[dir="rtl"] h3::before {
+  .markdown-rendered h3::before {
     bottom: 0px !important;
   }
 
@@ -63,41 +63,64 @@
   }
 
   .is-live-preview .HyperMD-header-4[dir="rtl"]::before,
-  .markdown-rendered[dir="rtl"] h4::before {
+  .markdown-rendered h4::before {
     bottom: 0px !important;
   }
 }
 
 
 .test-style-headers {
-  @include all-headers((border: 1px solid, text-align:center),
+  @include all-headers-con((border: 1px solid, text-align:center, padding: 5px 0),
     (left:-10px, width: 5px, height: 5px),
     (right:-10px, width: 5px, height: 5px));
 
 }
 
 .lodi-style-headers {
-  @include all-headers((text-align:center, border-radius:5px),
+  @include all-headers-con((text-align:center, border-radius:5px),
     (left:0, width: 5px, height: 100%, border-top-left-radius: 5px, border-bottom-left-radius: 5px),
     (right:0, width: 5px, height: 100%, border-top-right-radius: 5px, border-bottom-right-radius: 5px), (margin-bottom:10px));
 
-  @include h(1, (background-color:rgba(var(--h1-new-color), 0.1)),
+  @include h-con(1, (background-color:rgba(var(--h1-new-color), 0.1)),
     (background-color: rgba(var(--h1-new-color), 0.8)),
     (background-color: rgba(var(--h1-new-color), 0.8)));
-  @include h(2, (background-color:rgba(var(--h2-new-color), 0.1)),
+  @include h-con(2, (background-color:rgba(var(--h2-new-color), 0.1)),
     (background-color: rgba(var(--h2-new-color), 0.8)),
     (background-color: rgba(var(--h2-new-color), 0.8)));
-  @include h(3, (background-color:rgba(var(--h3-new-color), 0.1)),
+  @include h-con(3, (background-color:rgba(var(--h3-new-color), 0.1)),
     (background-color: rgba(var(--h3-new-color), 0.8)),
     (background-color: rgba(var(--h3-new-color), 0.8)));
-  @include h(4, (background-color:rgba(var(--h4-new-color), 0.1)),
+  @include h-con(4, (background-color:rgba(var(--h4-new-color), 0.1)),
     (background-color: rgba(var(--h4-new-color), 0.8)),
     (background-color: rgba(var(--h4-new-color), 0.8)));
-  @include h(5, (background-color:rgba(var(--h5-new-color), 0.1)),
+  @include h-con(5, (background-color:rgba(var(--h5-new-color), 0.1)),
     (background-color: rgba(var(--h5-new-color), 0.8)),
     (background-color: rgba(var(--h5-new-color), 0.8)));
-  @include h(6, (background-color:rgba(var(--h6-new-color), 0.1)),
+  @include h-con(6, (background-color:rgba(var(--h6-new-color), 0.1)),
     (background-color: rgba(var(--h6-new-color), 0.8)),
     (background-color: rgba(var(--h6-new-color), 0.8)));
 
+  h1 {
+    padding: 9px !important;
+  }
+
+  h2 {
+    padding: 8px !important;
+  }
+
+  h3 {
+    padding: 8px !important;
+  }
+
+  h4 {
+    padding: 7px !important;
+  }
+
+  h5 {
+    padding: 6px !important;
+  }
+
+  h6 {
+    padding: 5px !important;
+  }
 }
