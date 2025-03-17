@@ -1658,8 +1658,12 @@ h6 .cm-foldPlaceholder::after,
 .lodi-style-headers .markdown-rendered h6 {
   position: relative;
   padding: 0;
+  margin-top: 15px !important;
+  margin-bottom: 10px !important;
+  padding: 5px;
   text-align: center;
   border-radius: 5px;
+  line-height: unset;
 }
 .lodi-style-headers .is-live-preview .HyperMD-header-1::before,
 .lodi-style-headers .markdown-rendered h1::before,
@@ -1786,24 +1790,6 @@ h6 .cm-foldPlaceholder::after,
 .lodi-style-headers .is-live-preview .HyperMD-header-6::after,
 .lodi-style-headers .markdown-rendered h6::after {
   background-color: rgba(var(--h6-new-color), 0.8);
-}
-.lodi-style-headers h1 {
-  padding: 9px !important;
-}
-.lodi-style-headers h2 {
-  padding: 8px !important;
-}
-.lodi-style-headers h3 {
-  padding: 8px !important;
-}
-.lodi-style-headers h4 {
-  padding: 7px !important;
-}
-.lodi-style-headers h5 {
-  padding: 6px !important;
-}
-.lodi-style-headers h6 {
-  padding: 5px !important;
 }
 
 .lorens-color-headers {
