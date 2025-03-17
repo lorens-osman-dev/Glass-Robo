@@ -76,6 +76,12 @@
 
 }
 
+.cross-style-headers {
+  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, border-top: 1px solid, border-bottom: 1px solid, text-align:center, padding: 5px 0),
+    (left:10px, width: 1px, height: 150%),
+    (right:10px, width: 1px, height: 150%));
+}
+
 .lodi-style-headers {
   @include all-headers-con((text-align:center, border-radius:5px),
     (left:0, width: 5px, height: 100%, border-top-left-radius: 5px, border-bottom-left-radius: 5px),
