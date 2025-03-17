@@ -4,5 +4,6 @@
 
 # todo
 
-[ ] make READEME badges
-[ ] make READEME badges
+[ ] README : add Headers styles
+[ ] README : add plugin controls colors
+[ ] README : add support Kanban plugin
