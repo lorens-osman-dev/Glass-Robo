@@ -1,0 +1,184 @@
+.kanban-plugin {
+
+  .kanban-plugin__lane-wrapper {
+
+    --k-primary: 155, 180, 196;
+    --k-primary-background: rgba(var(--k-primary), 1);
+    --k-column-background: rgba(var(--k-primary), 0.1);
+    --k-column-header-background: rgba(var(--k-primary), 0.15);
+
+    background-color: var(--k-column-background);
+
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+    //-HEADER
+    .kanban-plugin__lane-header-wrapper {
+      color: var(--k-primary-background);
+      background-color: var(--k-column-header-background);
+      padding-inline: 0;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+
+      &>* {
+        color: var(--k-primary-background);
+        background-color: rgba(var(--k-primary), 0.15);
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .kanban-plugin__lane-grip {
+        display: flex;
+      }
+
+      .kanban-plugin__lane-title {
+        justify-content: normal;
+        padding-inline-start: 3px;
+
+
+        p {
+          font-weight: bold;
+          font-size: 13px;
+
+        }
+      }
+
+      .kanban-plugin__lane-collapse:hover {
+        cursor: pointer;
+      }
+
+      .kanban-plugin__lane-title-count {
+        border-radius: 0;
+      }
+
+      .kanban-plugin__lane-settings-button-wrapper {
+        a {
+          margin-inline-end: 0;
+          cursor: pointer;
+        }
+
+        &:has([aria-label="Close"]) {
+          background-color: var(--h1-color);
+
+          a {
+            color: #b1ff00;
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    //-items
+    .kanban-plugin__lane-items {
+      padding: 0;
+
+      .kanban-plugin__item {
+        border-radius: 0;
+
+        .kanban-plugin__item-content-wrapper {
+          position: relative;
+
+          &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            background-color: rgba(var(--k-primary), 0.15);
+            left: 0px;
+
+          }
+
+          .kanban-plugin__item-title-wrapper {
+            align-items: center;
+
+            .kanban-plugin__item-postfix-button-wrapper {
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+
+    //-the button
+    .kanban-plugin__item-button-wrapper {
+      button {
+        background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+        transition: background-color 700ms;
+
+        &:hover {
+          background-color: rgba(var(--k-primary), 0.15);
+          color: var(--k-primary-background);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+  .kanban-plugin__lane-wrapper:nth-child(2) {
+    --k-primary: 165, 127, 150;
+  }
+
+
+
+  .kanban-plugin__lane-wrapper:nth-child(3) {
+    --k-primary: 235, 203, 140;
+  }
+
+  .kanban-plugin__lane-wrapper:nth-child(4) {
+    --k-primary: 207, 134, 110;
+  }
+
+  //before last
+  .kanban-plugin__lane-wrapper:nth-last-child(3) {
+    --k-primary: 191, 96, 107;
+  }
+
+  //last
+  .kanban-plugin__lane-wrapper:nth-last-child(2) {
+    --k-primary: 153, 190, 141;
+  }
+
+
+  //-horizontal
+  .kanban-plugin__lane-wrapper.collapse-horizontal {
+    border-radius: 2px;
+
+    .kanban-plugin__lane-header-wrapper {
+
+      border-radius: 2px;
+      padding: 2px;
+
+      &>* {
+        background-color: transparent;
+        height: unset;
+      }
+
+      .kanban-plugin__lane-settings-button-wrapper {
+        transform: rotate(90deg);
+      }
+
+      .kanban-plugin__lane-collapse {
+        transform: rotate(270deg);
+      }
+
+      .kanban-plugin__lane-title {
+        background-color: rgba(var(--k-primary), 0.15);
+        padding: 10px 0;
+      }
+
+      .kanban-plugin__lane-title-count {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+}

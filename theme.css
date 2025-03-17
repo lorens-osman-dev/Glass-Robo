@@ -1943,6 +1943,18 @@ button.mod-cta {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Zz4KICAgIDxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgLz4KICAgIDxwYXRoIGlkPSJTaGFwZSIgZD0iTTAuNjY2NjY3IDBDMS4wMzQ4NyAwIDEuMzMzMzMgMC4yOTg0OCAxLjMzMzMzIDAuNjY2NjY3QzEuMzMzMzMgMC42NjY2NjcgMS4zMzMzMyA0LjMzMzMzIDEuMzMzMzMgNC4zMzMzM0MxLjMzMzMzIDQuNzAxNTIgMS4wMzQ4NyA1IDAuNjY2NjY3IDVDMC4yOTg0NjYgNSAwIDQuNzAxNTIgMCA0LjMzMzMzQzAgNC4zMzMzMyAwIDAuNjY2NjY3IDAgMC42NjY2NjdDMCAwLjI5ODQ4IDAuMjk4NDY2IDAgMC42NjY2NjcgMEMwLjY2NjY2NyAwIDAuNjY2NjY3IDAgMC42NjY2NjcgMFpNMC42NjY2NjcgOEMxLjAzNDg3IDggMS4zMzMzMyA4LjI5ODQ3IDEuMzMzMzMgOC42NjY2N0MxLjMzMzMzIDguNjY2NjcgMS4zMzMzMyAxMi42NjY3IDEuMzMzMzMgMTIuNjY2N0MxLjMzMzMzIDEzLjAzNDkgMS4wMzQ4NyAxMy4zMzMzIDAuNjY2NjY3IDEzLjMzMzNDMC4yOTg0NjYgMTMuMzMzMyAwIDEzLjAzNDkgMCAxMi42NjY3QzAgMTIuNjY2NyAwIDguNjY2NjcgMCA4LjY2NjY3QzAgOC4yOTg0NyAwLjI5ODQ2NiA4IDAuNjY2NjY3IDhDMC42NjY2NjcgOCAwLjY2NjY2NyA4IDAuNjY2NjY3IDhaIiBmaWxsPSIjQTY1OUEyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGZpbGwtb3BhY2l0eT0iMC40IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3LjMzMyAxLjMzMykiIC8+CiAgICA8cGF0aCBpZD0iUGF0aCIgZD0iTTAgMi41QzAgMS4xMTkyOSAxLjExOTI5IDAgMi41IDBDMy44ODA3MyAwIDUgMS4xMTkyOSA1IDIuNUM1IDMuODgwNzMgMy44ODA3MyA1IDIuNSA1QzEuMTE5MjkgNSAwIDMuODgwNzMgMCAyLjVDMCAyLjUgMCAyLjUgMCAyLjVaIiBmaWxsPSIjQTY1OUEyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUuNSA1LjUpIiAvPgogIDwvZz4KPC9zdmc+");
 }
 
+.tree-item-self.nav-folder-title[data-path=KANBAN] .tree-item-inner.nav-folder-title-content::before,
+.tree-item-self.nav-folder-title[data-path=Kanban] .tree-item-inner.nav-folder-title-content::before,
+.tree-item-self.nav-folder-title[data-path=kanban] .tree-item-inner.nav-folder-title-content::before {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBjbGFzcz0iaW5qZWN0ZWQtc3ZnIiBkYXRhLXNyYz0iaHR0cHM6Ly9jZG4uaHVnZWljb25zLmNvbS9pY29ucy9rYW5iYW4tc29saWQtc3RhbmRhcmQuc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgcm9sZT0iaW1nIiBjb2xvcj0iIzVlYWQ0NiI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNSAyLjI1QzMuNDgxMjIgMi4yNSAyLjI1IDMuNDgxMjIgMi4yNSA1VjE5QzIuMjUgMjAuNTE4OCAzLjQ4MTIyIDIxLjc1IDUgMjEuNzVIMTlDMjAuNTE4OCAyMS43NSAyMS43NSAyMC41MTg4IDIxLjc1IDE5VjVDMjEuNzUgMy40ODEyMiAyMC41MTg4IDIuMjUgMTkgMi4yNUg1Wk04IDdDOCA2LjQ0NzcyIDcuNTUyMjggNiA3IDZDNi40NDc3MiA2IDYgNi40NDc3MiA2IDdWMTRDNiAxNC41NTIzIDYuNDQ3NzIgMTUgNyAxNUM3LjU1MjI4IDE1IDggMTQuNTUyMyA4IDE0VjdaTTEzIDdDMTMgNi40NDc3MiAxMi41NTIzIDYgMTIgNkMxMS40NDc3IDYgMTEgNi40NDc3MiAxMSA3VjExQzExIDExLjU1MjMgMTEuNDQ3NyAxMiAxMiAxMkMxMi41NTIzIDEyIDEzIDExLjU1MjMgMTMgMTFWN1pNMTggN0MxOCA2LjQ0NzcyIDE3LjU1MjMgNiAxNyA2QzE2LjQ0NzcgNiAxNiA2LjQ0NzcyIDE2IDdWMTdDMTYgMTcuNTUyMyAxNi40NDc3IDE4IDE3IDE4QzE3LjU1MjMgMTggMTggMTcuNTUyMyAxOCAxN1Y3WiIgZmlsbD0iIzVlYWQ0NiI+PC9wYXRoPgo8L3N2Zz4=");
+}
+
+.tree-item.nav-folder:has(.tree-item-self.nav-folder-title[data-path=KANBAN]) .tree-item-self.nav-file-title[data-path$=".md"] .tree-item-inner.nav-file-title-content::before,
+.tree-item.nav-folder:has(.tree-item-self.nav-folder-title[data-path=Kanban]) .tree-item-self.nav-file-title[data-path$=".md"] .tree-item-inner.nav-file-title-content::before,
+.tree-item.nav-folder:has(.tree-item-self.nav-folder-title[data-path=kanban]) .tree-item-self.nav-file-title[data-path$=".md"] .tree-item-inner.nav-file-title-content::before {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBjbGFzcz0iaW5qZWN0ZWQtc3ZnIiBkYXRhLXNyYz0iaHR0cHM6Ly9jZG4uaHVnZWljb25zLmNvbS9pY29ucy9rYW5iYW4tYnVsay1yb3VuZGVkLnN2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHJvbGU9ImltZyIgY29sb3I9IiM0YTkwZTIiPgo8cGF0aCBvcGFjaXR5PSIwLjQiIGQ9Ik0xMi4wNDUyIDIuMjVDMTMuODgxOCAyLjI0OTk5IDE1LjMyMTQgMi4yNDk5OSAxNi40NjM1IDIuMzczNzNDMTcuNjI5MSAyLjUwMDAxIDE4LjU3MzQgMi43NjIzMiAxOS4zNzk4IDMuMzQ4MTVDMTkuODY3OSAzLjcwMjgxIDIwLjI5NzIgNC4xMzIwOSAyMC42NTE4IDQuNjIwMjRDMjEuMjM3NyA1LjQyNjU2IDIxLjUgNi4zNzA5NCAyMS42MjYzIDcuNTM2NDhDMjEuNzUgOC42Nzg2IDIxLjc1IDEwLjIwODcgMjEuNzUgMTIuMDQ1MlYxMi4wNDUzVjEyLjA0NTNDMjEuNzUgMTMuODgxOCAyMS43NSAxNS4zMjE0IDIxLjYyNjMgMTYuNDYzNUMyMS41IDE3LjYyOTEgMjEuMjM3NyAxOC41NzM0IDIwLjY1MTggMTkuMzc5OEMyMC4yOTcyIDE5Ljg2NzkgMTkuODY3OSAyMC4yOTcyIDE5LjM3OTggMjAuNjUxOEMxOC41NzM0IDIxLjIzNzcgMTcuNjI5MSAyMS41IDE2LjQ2MzUgMjEuNjI2M0MxNS4zMjE0IDIxLjc1IDEzLjc5MTMgMjEuNzUgMTEuOTU0OCAyMS43NUgxMS45NTQ3SDExLjk1NDdDMTAuMTE4MiAyMS43NSA4LjY3ODU5IDIxLjc1IDcuNTM2NDggMjEuNjI2M0M2LjM3MDk0IDIxLjUgNS40MjY1NiAyMS4yMzc3IDQuNjIwMjQgMjAuNjUxOEM0LjEzMjA5IDIwLjI5NzIgMy43MDI4MSAxOS44Njc5IDMuMzQ4MTUgMTkuMzc5OEMyLjc2MjMyIDE4LjU3MzQgMi41MDAwMSAxNy42MjkxIDIuMzczNzMgMTYuNDYzNUMyLjI0OTk5IDE1LjMyMTQgMi4yNDk5OSAxMy44ODE4IDIuMjUgMTIuMDQ1MkMyLjI0OTk5IDEwLjIwODcgMi4yNDk5OSA4LjY3ODYxIDIuMzczNzMgNy41MzY0OEMyLjUwMDAxIDYuMzcwOTQgMi43NjIzMiA1LjQyNjU2IDMuMzQ4MTUgNC42MjAyNEMzLjcwMjgxIDQuMTMyMDkgNC4xMzIwOSAzLjcwMjgxIDQuNjIwMjQgMy4zNDgxNUM1LjQyNjU2IDIuNzYyMzIgNi4zNzA5NCAyLjUwMDAxIDcuNTM2NDggMi4zNzM3M0M4LjY3ODYxIDIuMjQ5OTkgMTAuMjA4NyAyLjI0OTk5IDEyLjA0NTIgMi4yNVoiIGZpbGw9IiM0YTkwZTIiPjwvcGF0aD4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03IDZDNy41NTIyOCA2IDggNi40NDc3MiA4IDdWMTRDOCAxNC41NTIzIDcuNTUyMjggMTUgNyAxNUM2LjQ0NzcyIDE1IDYgMTQuNTUyMyA2IDE0VjdDNiA2LjQ0NzcyIDYuNDQ3NzIgNiA3IDZaTTEyIDZDMTIuNTUyMyA2IDEzIDYuNDQ3NzIgMTMgN1YxMUMxMyAxMS41NTIzIDEyLjU1MjMgMTIgMTIgMTJDMTEuNDQ3NyAxMiAxMSAxMS41NTIzIDExIDExVjdDMTEgNi40NDc3MiAxMS40NDc3IDYgMTIgNlpNMTcgNkMxNy41NTIzIDYgMTggNi40NDc3MiAxOCA3VjE3QzE4IDE3LjU1MjMgMTcuNTUyMyAxOCAxNyAxOEMxNi40NDc3IDE4IDE2IDE3LjU1MjMgMTYgMTdWN0MxNiA2LjQ0NzcyIDE2LjQ0NzcgNiAxNyA2WiIgZmlsbD0iIzRhOTBlMiI+PC9wYXRoPgo8L3N2Zz4=");
+}
+
 .callout {
   padding: var(--size-4-3);
 }
@@ -3074,6 +3086,135 @@ body:not(.setting-item-title-icon-remove) .vertical-tab-header-group:nth-last-of
 .popover.hover-popover .popover-titlebar .popover-header-icon.mod-pin-popover,
 .popover.hover-popover .popover-titlebar .popover-title {
   color: var(--s-bg-primary-color);
+}
+
+.kanban-plugin .kanban-plugin__lane-wrapper {
+  --k-primary: 155, 180, 196;
+  --k-primary-background: rgba(var(--k-primary), 1);
+  --k-column-background: rgba(var(--k-primary), 0.1);
+  --k-column-header-background: rgba(var(--k-primary), 0.15);
+  background-color: var(--k-column-background);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper {
+  color: var(--k-primary-background);
+  background-color: var(--k-column-header-background);
+  padding-inline: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper > * {
+  color: var(--k-primary-background);
+  background-color: rgba(var(--k-primary), 0.15);
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-grip {
+  display: flex;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title {
+  justify-content: normal;
+  padding-inline-start: 3px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title p {
+  font-weight: bold;
+  font-size: 13px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-collapse:hover {
+  cursor: pointer;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title-count {
+  border-radius: 0;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-settings-button-wrapper a {
+  margin-inline-end: 0;
+  cursor: pointer;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-settings-button-wrapper:has([aria-label=Close]) {
+  background-color: var(--h1-color);
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-settings-button-wrapper:has([aria-label=Close]) a {
+  color: #b1ff00;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-settings-button-wrapper:has([aria-label=Close]) a:hover {
+  background-color: transparent;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-items {
+  padding: 0;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-items .kanban-plugin__item {
+  border-radius: 0;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-items .kanban-plugin__item .kanban-plugin__item-content-wrapper {
+  position: relative;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-items .kanban-plugin__item .kanban-plugin__item-content-wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: rgba(var(--k-primary), 0.15);
+  left: 0px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-items .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper {
+  align-items: center;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__lane-items .kanban-plugin__item .kanban-plugin__item-content-wrapper .kanban-plugin__item-title-wrapper .kanban-plugin__item-postfix-button-wrapper {
+  align-self: center;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__item-button-wrapper button {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+  transition: background-color 700ms;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper .kanban-plugin__item-button-wrapper button:hover {
+  background-color: rgba(var(--k-primary), 0.15);
+  color: var(--k-primary-background);
+  cursor: pointer;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper:nth-child(2) {
+  --k-primary: 165, 127, 150;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper:nth-child(3) {
+  --k-primary: 235, 203, 140;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper:nth-child(4) {
+  --k-primary: 207, 134, 110;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper:nth-last-child(3) {
+  --k-primary: 191, 96, 107;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper:nth-last-child(2) {
+  --k-primary: 153, 190, 141;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal {
+  border-radius: 2px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper {
+  border-radius: 2px;
+  padding: 2px;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper > * {
+  background-color: transparent;
+  height: unset;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-settings-button-wrapper {
+  transform: rotate(90deg);
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-collapse {
+  transform: rotate(270deg);
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title {
+  background-color: rgba(var(--k-primary), 0.15);
+  padding: 10px 0;
+}
+.kanban-plugin .kanban-plugin__lane-wrapper.collapse-horizontal .kanban-plugin__lane-header-wrapper .kanban-plugin__lane-title-count {
+  transform: rotate(270deg);
 }
 
 .workspace-leaf-resize-handle {
