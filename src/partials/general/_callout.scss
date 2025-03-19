@@ -635,6 +635,7 @@
 .tartus-callouts .callout {
   padding: 0;
   display: flex;
+  min-height: 38px;
 
   .callout-title {
     width: 35px;

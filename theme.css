@@ -2469,6 +2469,7 @@ button.mod-cta {
 .tartus-callouts .callout {
   padding: 0;
   display: flex;
+  min-height: 38px;
 }
 .tartus-callouts .callout .callout-title {
   width: 35px;
