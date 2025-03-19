@@ -1844,6 +1844,10 @@ button.mod-cta {
   background-color: var(--s-button-bg-color);
 }
 
+.theme-dark button:not(.clickable-icon):not(.excalidraw-wrapper *).mod-warning {
+  color: var(--level-1);
+}
+
 .modal.mod-settings.mod-sidebar-layout select,
 .modal.mod-settings.mod-sidebar-layout textarea,
 .modal.mod-settings.mod-sidebar-layout input.metadata-input-text,

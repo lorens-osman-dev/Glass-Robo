@@ -8,3 +8,7 @@ button.mod-cta {
   box-shadow: 0 0 2px inset rgb(30, 30, 46);
   background-color: var(--s-button-bg-color)
 }
+
+.theme-dark button:not(.clickable-icon):not(.excalidraw-wrapper *).mod-warning {
+  color: var(--level-1)
+}
