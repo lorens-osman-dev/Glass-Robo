@@ -187,6 +187,7 @@
 
   .is-live-preview .HyperMD-header-#{$headerLevel} .cm-header-#{$headerLevel},
   .markdown-rendered h#{$headerLevel} {
+    position: relative !important;
 
     // Apply main properties to the header
     @each $property, $value in $properties {
@@ -196,7 +197,11 @@
     // Add ::before pseudo-element styles if $beforeProps is provided
     @if $beforeProps !=null {
       &::before {
-
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
 
         @each $property, $value in $beforeProps {
           #{$property}: $value;
@@ -206,8 +211,13 @@
 
     // Add ::after pseudo-element styles if $afterProps is provided
     @if $afterProps !=null {
-
       &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+
         @each $property, $value in $afterProps {
           #{$property}: $value;
         }

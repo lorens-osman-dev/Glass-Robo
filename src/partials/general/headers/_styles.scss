@@ -107,3 +107,103 @@
 
 
 }
+
+.voidraizer-style-headers {
+  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0));
+  // @include all-headers-con((text-align:center, padding: 5px 0));
+  @include h(1,
+    (background-color:rgba(var(--h1-new-color), 0.1),
+      padding: 5px 25px,
+      border-radius: 25px,
+    ),
+    (background-color:rgba(var(--h1-new-color), 0.1),
+      transform: translateX(-100%),
+      width:50px,
+      height: 2px,
+    ),
+    (background-color:rgba(var(--h1-new-color), 0.1),
+      transform: translateX(100%),
+      width:50px,
+      height: 2px,
+    ));
+
+  @include h(2,
+    (background-color:rgba(var(--h2-new-color), 0.1),
+      padding: 5px 20px,
+      border-radius: 20px,
+    ),
+    (background-color:rgba(var(--h2-new-color), 0.1),
+      transform: translateX(-100%),
+      width:40px,
+      height: 2px,
+    ),
+    (background-color:rgba(var(--h2-new-color), 0.1),
+      transform: translateX(100%),
+      width:40px,
+      height: 2px,
+    ));
+
+  @include h(3,
+    (background-color:rgba(var(--h3-new-color), 0.1),
+      padding: 5px 15px,
+      border-radius: 15px,
+    ),
+    (background-color:rgba(var(--h3-new-color), 0.1),
+      transform: translateX(-100%),
+      width:30px,
+      height: 2px,
+    ),
+    (background-color:rgba(var(--h3-new-color), 0.1),
+      transform: translateX(100%),
+      width:30px,
+      height: 2px,
+    ));
+
+  @include h(4,
+    (background-color:rgba(var(--h4-new-color), 0.1),
+      padding: 5px 10px,
+      border-radius: 10px,
+    ),
+    (background-color:rgba(var(--h4-new-color), 0.1),
+      transform: translateX(-100%),
+      width:20px,
+      height: 2px,
+    ),
+    (background-color:rgba(var(--h4-new-color), 0.1),
+      transform: translateX(100%),
+      width:20px,
+      height: 2px,
+    ));
+
+  @include h(5,
+    (background-color:rgba(var(--h5-new-color), 0.1),
+      padding: 5px 8px,
+      border-radius: 8px,
+    ),
+    (background-color:rgba(var(--h5-new-color), 0.1),
+      transform: translateX(-100%),
+      width:16px,
+      height: 2px,
+    ),
+    (background-color:rgba(var(--h5-new-color), 0.1),
+      transform: translateX(100%),
+      width:16px,
+      height: 2px,
+    ));
+
+  @include h(6,
+    (background-color:rgba(var(--h6-new-color), 0.1),
+      padding: 5px 5px,
+      border-radius: 5px,
+    ),
+    (background-color:rgba(var(--h6-new-color), 0.1),
+      transform: translateX(-100%),
+      width:10px,
+      height: 2px,
+    ),
+    (background-color:rgba(var(--h6-new-color), 0.1),
+      transform: translateX(100%),
+      width:10px,
+      height: 2px,
+    ));
+}

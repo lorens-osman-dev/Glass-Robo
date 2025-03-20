@@ -37,3 +37,22 @@ body {
 @include h-con(6, null,
   (background-color: var(--h6-color)),
   (background-color: var(--h6-color)));
+
+@include h(1, null,
+  (background-color: var(--h1-color)),
+  (background-color: var(--h1-color)));
+@include h(2, null,
+  (background-color: var(--h2-color)),
+  (background-color: var(--h2-color)));
+@include h(3, null,
+  (background-color: var(--h3-color)),
+  (background-color: var(--h3-color)));
+@include h(4, null,
+  (background-color: var(--h4-color)),
+  (background-color: var(--h4-color)));
+@include h(5, null,
+  (background-color: var(--h5-color)),
+  (background-color: var(--h5-color)));
+@include h(6, null,
+  (background-color: var(--h6-color)),
+  (background-color: var(--h6-color)));
