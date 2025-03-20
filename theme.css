@@ -75,6 +75,11 @@ settings:
     description: Disable Stars in the background
     type: class-toggle
 -
+    id: disable_bold_gradient_settings
+    title: Disable bold gradient
+    description: make bold text just bold without gradient
+    type: class-toggle
+-
     id: hide_navTreeArrow_settings
     title: Hide nav tree arrow
     description: Hide navigation tree green arrow (>)
@@ -2406,6 +2411,30 @@ button.mod-cta {
   padding: 10px 20px;
 }
 
+/* Print-specific styles */
+@media print {
+  .homs-callouts .callout {
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .homs-callouts .callout .callout-title {
+    background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
+    padding-bottom: 0px;
+  }
+  .homs-callouts .callout .callout-content {
+    background-color: white !important;
+    color: rgba(var(--callout-color), 1);
+  }
+  .homs-callouts .callout .callout-content strong,
+  .homs-callouts .callout .callout-content .cm-strong {
+    background-color: unset;
+    background-image: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    color: #292424 !important;
+  }
+}
 .gummy-callouts .callout {
   background: linear-gradient(to right, rgba(var(--callout-color), 0.05), var(--background-primary));
   position: relative;
@@ -3244,6 +3273,15 @@ strong,
   background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+body.disable_bold_gradient_settings strong,
+body.disable_bold_gradient_settings .cm-strong {
+  font-weight: bold;
+  background-color: unset;
+  background-image: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 
 .tree-item-children {

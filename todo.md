@@ -10,4 +10,5 @@
 [ ] README : add Headers styles
 [ ] README : add plugin controls colors
 [ ] README : update the pics
-[ ] Fix : github issues
+[ ] Fix : github issues lodi
+[ ] Fix : github issues mermid

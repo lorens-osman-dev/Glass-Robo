@@ -59,6 +59,18 @@ strong,
   -webkit-text-fill-color: transparent;
 }
 
+body.disable_bold_gradient_settings {
+
+  strong,
+  .cm-strong {
+    font-weight: bold;
+    background-color: unset;
+    background-image: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+  }
+}
+
 //---------- dashed border for file tree
 .tree-item-children {
   border-inline-start: var(--nav-indentation-guide-width) dashed var(--nav-indentation-guide-color);

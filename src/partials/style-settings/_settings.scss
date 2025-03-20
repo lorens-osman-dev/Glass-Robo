@@ -23,6 +23,11 @@ settings:
     description: Disable Stars in the background
     type: class-toggle
 -
+    id: disable_bold_gradient_settings
+    title: Disable bold gradient
+    description: make bold text just bold without gradient
+    type: class-toggle
+-
     id: hide_navTreeArrow_settings
     title: Hide nav tree arrow
     description: Hide navigation tree green arrow (>)
