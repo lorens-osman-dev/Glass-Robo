@@ -532,7 +532,7 @@ Note : Click on the features to see screenshots for each feature.
 - Select callout style from 20 different styles.
 - Select App theme from 6 different styles.
 - Enable/disable callout title centering.
-- Enable/disable callout title centering.
+- Enable/disable `bold` `strong` text gradient color.
 - Enable/disable auto hide.
 - Select code block theme from 9 different styles.
 
