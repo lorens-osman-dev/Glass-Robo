@@ -114,3 +114,16 @@ body.disable_bold_gradient_settings {
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
   padding-inline-start: 2px;
 }
+
+//mermaid controls
+.cm-preview-code-block.cm-embed-block:has(.mermaid) {
+
+  &:hover {
+    box-shadow: 0 0 5px var(--background-modifier-hover) !important
+  }
+
+  .edit-block-button {
+    display: flex !important;
+    background-color: var(--background-modifier-hover);
+  }
+}

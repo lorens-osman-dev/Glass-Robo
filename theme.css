@@ -3319,6 +3319,14 @@ body.disable_bold_gradient_settings .cm-strong {
   padding-inline-start: 2px;
 }
 
+.cm-preview-code-block.cm-embed-block:has(.mermaid):hover {
+  box-shadow: 0 0 5px var(--background-modifier-hover) !important;
+}
+.cm-preview-code-block.cm-embed-block:has(.mermaid) .edit-block-button {
+  display: flex !important;
+  background-color: var(--background-modifier-hover);
+}
+
 /*
 ▗▄▄▖  ▗▄▄▖
 ▐▌ ▐▌▐▌   
