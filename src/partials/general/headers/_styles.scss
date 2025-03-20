@@ -207,3 +207,51 @@
       height: 2px,
     ));
 }
+
+.outline-style-headers {
+  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0));
+  // @include all-headers-con((text-align:center, padding: 5px 0));
+  @include h(1,
+    (background-color:rgba(var(--h1-new-color), 0.1),
+      padding: 10px 20px,
+      border: 2px solid rgba(var(--h1-new-color), 0.1),
+      box-shadow: 0 0 0 5px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
+    ));
+
+  @include h(2,
+    (background-color:rgba(var(--h2-new-color), 0.1),
+      padding: 8px 18px,
+      border: 2px solid rgba(var(--h2-new-color), 0.1),
+      box-shadow: 0 0 0 4px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
+    ));
+
+  @include h(3,
+    (background-color:rgba(var(--h3-new-color), 0.1),
+      padding: 6px 16px,
+      border: 2px solid rgba(var(--h3-new-color), 0.1),
+      box-shadow: 0 0 0 3px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
+    ));
+
+  @include h(4,
+    (background-color:rgba(var(--h4-new-color), 0.1),
+      padding: 5px 14px,
+      border: 2px solid rgba(var(--h4-new-color), 0.1),
+      box-shadow: 0 0 0 2px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
+    ));
+
+  @include h(5,
+    (background-color:rgba(var(--h5-new-color), 0.1),
+      padding: 4px 12px,
+      border: 2px solid rgba(var(--h5-new-color), 0.1),
+      box-shadow: 0 0 0 1px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
+    ));
+
+  @include h(6,
+    (background-color:rgba(var(--h6-new-color), 0.1),
+      padding: 3px 10px,
+      border: 2px solid rgba(var(--h6-new-color), 0.1),
+      box-shadow: 0 0 0 1px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
+    ));
+
+
+}
