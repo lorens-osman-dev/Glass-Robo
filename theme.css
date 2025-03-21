@@ -3767,6 +3767,61 @@ body:not(.setting-item-title-icon-remove) .vertical-tab-header-group:nth-last-of
   color: hsl(225, 80%, 55%);
 }
 
+.mod-windows,
+.mod-linux {
+  --frame-left-space: 0px;
+  --frame-right-space: 90px;
+}
+
+.titlebar-button-container.mod-right {
+  margin-right: 18px;
+}
+.titlebar-button-container.mod-right .titlebar-button {
+  padding: 0px !important;
+  min-height: 13px !important;
+  min-width: 13px !important;
+  align-self: center;
+  margin-left: 10px !important;
+  border-radius: 50px;
+  transition: all 100ms;
+}
+.titlebar-button-container.mod-right .titlebar-button:hover {
+  min-height: 20px !important;
+  animation: gelatine 1s ease infinite;
+}
+.titlebar-button-container.mod-right .titlebar-button > svg {
+  visibility: collapse !important;
+}
+.titlebar-button-container.mod-right .titlebar-button > image {
+  visibility: collapse !important;
+}
+.titlebar-button-container.mod-right .titlebar-button.mod-minimize {
+  background-color: rgba(var(--callout-success), 1) !important;
+  cursor: pointer;
+}
+.titlebar-button-container.mod-right .titlebar-button.mod-maximize, .titlebar-button-container.mod-right .titlebar-button.mod-restore {
+  background-color: rgba(var(--callout-warning), 1) !important;
+  cursor: pointer;
+}
+.titlebar-button-container.mod-right .titlebar-button.mod-close {
+  background-color: rgba(var(--callout-error), 1) !important;
+  cursor: pointer;
+}
+
+@keyframes gelatine {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
 .popover.hover-popover > .markdown-embed {
   background-color: var(--s-bg-primary-color);
 }

@@ -1,6 +1,7 @@
 # did
 
 [*] Fix : github issues mermid
+[*] README : add closing buttons
 
 # todo
 

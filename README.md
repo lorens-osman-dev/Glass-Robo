@@ -500,6 +500,22 @@ Note : Click on the features to see screenshots for each feature.
   </ul>
 
 </details>
+<details>
+   <summary>7. Cool closing buttons.</summary>
+  <ul>
+    <li>
+     <details>
+      <summary>Screenshot</summary>
+        <p>
+            <ul>
+            <p align="center"> <img src="assets/pics/closing_buttons.gif"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
 
 ## Additional Features
 

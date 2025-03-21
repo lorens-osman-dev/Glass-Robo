@@ -1,0 +1,72 @@
+.mod-windows,
+.mod-linux {
+  --frame-left-space: 0px;
+  --frame-right-space: 90px;
+}
+
+.titlebar-button-container.mod-right {
+  margin-right: 18px;
+
+  .titlebar-button {
+    padding: 0px !important;
+    min-height: 13px !important;
+    min-width: 13px !important;
+    align-self: center;
+    margin-left: 10px !important;
+    border-radius: 50px;
+    transition: all 100ms;
+
+    &:hover {
+      min-height: 20px !important;
+      animation: gelatine 1s ease infinite;
+    }
+
+    &>svg {
+      visibility: collapse !important;
+    }
+
+    &>image {
+      visibility: collapse !important;
+    }
+
+    &.mod-minimize {
+      // background-color: hsl(147, 50%, 47%) !important;
+      background-color: rgba(var(--callout-success), 1) !important;
+      cursor: pointer;
+    }
+
+    &.mod-maximize,
+    &.mod-restore {
+      // background-color: hsl(39, 100%, 50%) !important;
+      background-color: rgba(var(--callout-warning), 1) !important;
+      cursor: pointer;
+    }
+
+    &.mod-close {
+      // background-color: hsl(0, 100%, 50%);
+      background-color: rgba(var(--callout-error), 1) !important;
+      cursor: pointer;
+    }
+
+  }
+}
+
+@keyframes gelatine {
+
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
