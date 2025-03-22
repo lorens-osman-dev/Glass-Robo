@@ -85,6 +85,11 @@ settings:
     description: Hide navigation tree green arrow (>)
     type: class-toggle
 -
+    id: one_row_mobile_toolbar_settings
+    title: Mobile Toolbar Single Row Layout
+    description: Displays the toolbar in a single row ( just for mobile devices) 
+    type: class-toggle
+-
     id: glass-background-color-settings
     title: App background color
     type: variable-themed-color
@@ -3774,7 +3779,7 @@ body:not(.setting-item-title-icon-remove) .vertical-tab-header-group:nth-last-of
 }
 
 .titlebar-button-container.mod-right {
-  margin-right: 18px;
+  margin-right: 18px !important;
 }
 .titlebar-button-container.mod-right .titlebar-button {
   padding: 0px !important;
@@ -4376,6 +4381,23 @@ body:not(.is-mobile) .workspace-ribbon.side-dock-ribbon {
   width: 40px;
   background-size: cover;
   background-image: var(--s-bg-robot-gear);
+}
+.is-mobile.one_row_mobile_toolbar_settings .mobile-toolbar {
+  height: auto;
+}
+.is-mobile.one_row_mobile_toolbar_settings .mobile-toolbar .mobile-toolbar-options-container .mobile-toolbar-options-list {
+  display: flex !important;
+}
+.is-mobile .mobile-toolbar .mobile-toolbar-options-container {
+  height: 100%;
+}
+.is-mobile .mobile-toolbar .mobile-toolbar-options-container .mobile-toolbar-options-list {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  display: grid !important;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: column;
+  row-gap: 4px;
 }
 
 body.is-mobile {

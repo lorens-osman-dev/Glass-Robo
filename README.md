@@ -501,7 +501,7 @@ Note : Click on the features to see screenshots for each feature.
 
 </details>
 <details>
-   <summary>7. Cool closing buttons.</summary>
+   <summary>10. Cool closing buttons.</summary>
   <ul>
     <li>
      <details>
@@ -509,6 +509,23 @@ Note : Click on the features to see screenshots for each feature.
         <p>
             <ul>
             <p align="center"> <img src="assets/pics/closing_buttons.gif"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+</details>
+<details>
+   <summary>11. Double row toolbar layout instead of single row .</summary>
+       <p>This mobile only feature, Using <a href="#how-to-use-style-settings-plugin">style settings</a> plugin you Disable/enable this feature.</p>
+  <ul>
+    <li>
+     <details>
+      <summary>Screenshot</summary>
+        <p>
+            <ul>
+            <p align="center"> <img src="assets/pics/double-toolbar.png"></p>
             </ul>
         </p>
       </details>

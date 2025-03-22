@@ -13,6 +13,7 @@
 @use './is-mobile/setting-modal' as setting-modal;
 @use './is-mobile/theme-settings' as theme-settings;
 @use './is-mobile/robot-gear' as robot-gear;
+@use './is-mobile/toolbar' as toolbar;
 
 .is-mobile {
   @include menu.mobile-styles();
@@ -22,6 +23,7 @@
   @include setting-modal.mobile-styles();
   @include theme-settings.mobile-styles();
   @include robot-gear.mobile-styles();
+  @include toolbar.mobile-styles();
 }
 
 // remove the stars background svg because it is heavy at mobile 
