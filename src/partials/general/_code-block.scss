@@ -12,6 +12,10 @@
   right: 2px;
   padding: 0;
   font-size: 9px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .markdown-rendered button.copy-code-button {

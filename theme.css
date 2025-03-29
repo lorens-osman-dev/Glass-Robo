@@ -743,6 +743,9 @@ body.lorens {
   padding: 0;
   font-size: 9px;
 }
+.markdown-source-view.mod-cm6 .code-block-flair:hover {
+  cursor: pointer;
+}
 
 .markdown-rendered button.copy-code-button {
   background-color: var(--s-hover-bg-color-green) !important;
