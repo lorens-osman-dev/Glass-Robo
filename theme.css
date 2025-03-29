@@ -1628,7 +1628,7 @@ h6 .cm-foldPlaceholder::after,
 }
 
 .glass-robo-style-headers .is-live-preview .HyperMD-header-2::before,
-.glass-robo-style-headers .markdown-rendered h2::before {
+.glass-robo-style-headers h2::before {
   margin-inline-start: 0;
   position: absolute;
   content: " ";
@@ -1636,6 +1636,7 @@ h6 .cm-foldPlaceholder::after,
   width: 18px;
   height: 2px;
   bottom: 2px;
+  top: unset;
   border-radius: 5px;
   background-color: var(--h2-color);
   transform: translateY(4px);
@@ -1643,6 +1644,7 @@ h6 .cm-foldPlaceholder::after,
 .glass-robo-style-headers .is-live-preview .HyperMD-header-2[dir=rtl]::before,
 .glass-robo-style-headers .markdown-rendered h2::before {
   bottom: 0px !important;
+  right: 0;
 }
 .glass-robo-style-headers .is-live-preview .HyperMD-header-3::before,
 .glass-robo-style-headers .markdown-rendered h3::before {
@@ -1653,6 +1655,7 @@ h6 .cm-foldPlaceholder::after,
   width: 10px;
   height: 2px;
   bottom: 3px;
+  top: unset;
   border-radius: 5px;
   transform: translateY(4px);
   background-color: var(--h3-color);
@@ -1660,6 +1663,7 @@ h6 .cm-foldPlaceholder::after,
 .glass-robo-style-headers .is-live-preview .HyperMD-header-3[dir=rtl]::before,
 .glass-robo-style-headers .markdown-rendered h3::before {
   bottom: 0px !important;
+  right: 0;
 }
 .glass-robo-style-headers .is-live-preview .HyperMD-header-4::before,
 .glass-robo-style-headers .markdown-rendered h4::before {
@@ -1670,6 +1674,7 @@ h6 .cm-foldPlaceholder::after,
   width: 3px;
   height: 2px;
   bottom: 2px;
+  top: unset;
   border-radius: 5px;
   transform: translateY(3px);
   background-color: var(--h4-color);
@@ -1677,6 +1682,7 @@ h6 .cm-foldPlaceholder::after,
 .glass-robo-style-headers .is-live-preview .HyperMD-header-4[dir=rtl]::before,
 .glass-robo-style-headers .markdown-rendered h4::before {
   bottom: 0px !important;
+  right: 0;
 }
 
 .test-style-headers .is-live-preview .HyperMD-header-1,

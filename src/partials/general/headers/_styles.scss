@@ -7,7 +7,7 @@
 
   //h2
   .is-live-preview .HyperMD-header-2::before,
-  .markdown-rendered h2::before {
+  h2::before {
     margin-inline-start: 0;
     position: absolute;
     content: " ";
@@ -15,6 +15,7 @@
     width: 18px;
     height: 2px;
     bottom: 2px;
+    top: unset;
     border-radius: 5px;
     background-color: var(--h2-color);
     transform: translateY(4px);
@@ -23,6 +24,7 @@
   .is-live-preview .HyperMD-header-2[dir="rtl"]::before,
   .markdown-rendered h2::before {
     bottom: 0px !important;
+    right: 0;
   }
 
   //h3
@@ -35,6 +37,7 @@
     width: 10px;
     height: 2px;
     bottom: 3px;
+    top: unset;
     border-radius: 5px;
     transform: translateY(4px);
     background-color: var(--h3-color);
@@ -43,6 +46,7 @@
   .is-live-preview .HyperMD-header-3[dir="rtl"]::before,
   .markdown-rendered h3::before {
     bottom: 0px !important;
+    right: 0;
   }
 
   //h4
@@ -57,6 +61,7 @@
     height: 2px;
 
     bottom: 2px;
+    top: unset;
     border-radius: 5px;
     transform: translateY(3px);
     background-color: var(--h4-color);
@@ -65,6 +70,7 @@
   .is-live-preview .HyperMD-header-4[dir="rtl"]::before,
   .markdown-rendered h4::before {
     bottom: 0px !important;
+    right: 0;
   }
 }
 
