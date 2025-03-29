@@ -215,7 +215,7 @@
 }
 
 .outline-style-headers {
-  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0));
+  @include all-headers((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0));
   // @include all-headers-con((text-align:center, padding: 5px 0));
   @include h(1,
     (background-color:rgba(var(--h1-new-color), 0.1),
@@ -223,6 +223,9 @@
       border: 2px solid rgba(var(--h1-new-color), 0.1),
       box-shadow: 0 0 0 5px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
     ));
+  @include h-con(1,
+    (padding: 14px 0px,
+    ), null, null, (padding: 14px 0px));
 
   @include h(2,
     (background-color:rgba(var(--h2-new-color), 0.1),
@@ -230,6 +233,9 @@
       border: 2px solid rgba(var(--h2-new-color), 0.1),
       box-shadow: 0 0 0 4px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
     ));
+  @include h-con(2,
+    (padding: 11px 0px,
+    ), null, null, (padding: 11px 0px));
 
   @include h(3,
     (background-color:rgba(var(--h3-new-color), 0.1),
@@ -237,6 +243,8 @@
       border: 2px solid rgba(var(--h3-new-color), 0.1),
       box-shadow: 0 0 0 3px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
     ));
+  @include h-con(3,
+    (padding: 8px 0px), null, null, (padding: 8px 0px));
 
   @include h(4,
     (background-color:rgba(var(--h4-new-color), 0.1),
@@ -244,13 +252,18 @@
       border: 2px solid rgba(var(--h4-new-color), 0.1),
       box-shadow: 0 0 0 2px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
     ));
-
+  @include h-con(4,
+    (padding: 6px 0px,
+    ), null, null, (padding: 6px 0px));
   @include h(5,
     (background-color:rgba(var(--h5-new-color), 0.1),
       padding: 4px 12px,
       border: 2px solid rgba(var(--h5-new-color), 0.1),
       box-shadow: 0 0 0 1px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
     ));
+  @include h-con(5,
+    (padding: 5px 0px,
+    ), null, null, (padding: 5px 0px));
 
   @include h(6,
     (background-color:rgba(var(--h6-new-color), 0.1),
@@ -258,6 +271,9 @@
       border: 2px solid rgba(var(--h6-new-color), 0.1),
       box-shadow: 0 0 0 1px inset var(--glass-background-color-settings, var(--s-bg-primary-color)),
     ));
+  @include h-con(6,
+    (padding: 3px 0px,
+    ), null, null, (padding: 3px 0px));
 
 
 }
