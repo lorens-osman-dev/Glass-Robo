@@ -1,0 +1,71 @@
+// editing mode
+
+.HyperMD-list-line.HyperMD-list-line-2 {
+  .cm-list-2 {
+    .list-bullet::after {
+      border-radius: 0;
+    }
+  }
+
+}
+
+.HyperMD-list-line.HyperMD-list-line-3 {
+  .cm-list-3 {
+    .list-bullet::after {
+      border: 1px solid;
+      background-color: transparent;
+      box-sizing: border-box;
+    }
+  }
+
+}
+
+.HyperMD-list-line.HyperMD-list-line-4 {
+  .cm-list-1 {
+    .list-bullet::after {
+      border-radius: 0;
+      border: 1px solid;
+      background-color: transparent;
+      box-sizing: border-box;
+    }
+  }
+
+}
+
+//reading mode
+ul.has-list-bullet {
+  li {
+
+    //2
+    ul.has-list-bullet {
+      li {
+        .list-bullet::after {
+          border-radius: 0;
+        }
+
+        //3
+        ul.has-list-bullet {
+          li {
+            .list-bullet::after {
+              border: 1px solid;
+              background-color: transparent;
+              box-sizing: border-box;
+            }
+
+            //4
+            ul.has-list-bullet {
+              li {
+                .list-bullet::after {
+                  border-radius: 0;
+                  border: 1px solid;
+                  background-color: transparent;
+                  box-sizing: border-box;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
