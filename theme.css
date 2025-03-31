@@ -725,9 +725,14 @@ body.lorens {
   --s-color-gray: 178, 166, 189;
 }
 
+.cm-link a,
 .external-link {
-  color: var(--text-accent);
+  color: #749ee8 !important;
   background-position: right;
+}
+.cm-link a:hover,
+.external-link:hover {
+  color: #bad3ff !important;
 }
 
 .markdown-rendered :not(pre) > code,

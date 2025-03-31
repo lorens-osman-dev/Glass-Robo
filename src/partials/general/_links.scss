@@ -1,13 +1,9 @@
-@use "../variables.scss" as ff;
-
-a {
-  // padding: 5px;
-  // @include ff.glass();
-
-}
-
+.cm-link a,
 .external-link {
-  color: var(--text-accent);
+  color: #749ee8 !important;
   background-position: right;
-  // background-position-x: 2px;
+
+  &:hover {
+    color: #bad3ff !important;
+  }
 }
