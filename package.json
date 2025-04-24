@@ -1,20 +1,20 @@
 {
-  "name": "Glass Robo",
-  "private": true,
-  "version": "3.0.6",
-  "type": "module",
-  "scripts": {
-    "dev": "vite build --watch --mode development",
-    "build": "vite build --mode production",
-    "preview": "vite preview",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
-    "@commitlint/types": "^19.5.0",
-    "husky": "^9.1.6",
-    "sass": "^1.80.7",
-    "vite": "^5.4.10"
-  }
+	"name": "Glass Robo",
+	"private": true,
+	"version": "3.0.7",
+	"type": "module",
+	"scripts": {
+		"dev": "vite build --watch --mode development",
+		"build": "vite build --mode production",
+		"preview": "vite preview",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.5.0",
+		"@commitlint/config-conventional": "^19.5.0",
+		"@commitlint/types": "^19.5.0",
+		"husky": "^9.1.6",
+		"sass": "^1.80.7",
+		"vite": "^5.4.10"
+	}
 }
