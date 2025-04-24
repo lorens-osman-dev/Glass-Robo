@@ -471,7 +471,110 @@ Note : Click on the features to see screenshots for each feature.
 </details>
 
 <details>
-   <summary>9. Tow sets of colors for headers.</summary>
+   <summary>9. Cool 8 styles for headers.</summary>
+    <p> Using <a href="#how-to-use-style-settings-plugin">style settings</a> plugin you can select what set you want.</p>
+  <ul>
+    <li>
+     <details>
+      <summary>Glass Robo style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/1-headers-galss.png"></p>
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Lodi style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/2-headers-lodi.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+     <details>
+      <summary>Test style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/3-headers-test.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Cross style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/4-headers-cross.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Voidraizer style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/5-headers-void.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Outline style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/6-headers-outline.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Dots style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/7-headers-dots.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+  <ul>
+    <li>
+     <details>
+      <summary>Neat style</summary>
+        <p>
+            <ul>
+              <p align="center"> <img src="assets/pics/headers/styles/8-headers-neat.png"></p> 
+            </ul>
+        </p>
+      </details>
+    </li>
+  </ul>
+</details>
+  <details>
+
+   <summary>10. Tow color schemas for headers.</summary>
     <p> Using <a href="#how-to-use-style-settings-plugin">style settings</a> plugin you can select what set you want.</p>
   <ul>
     <li>
@@ -479,7 +582,7 @@ Note : Click on the features to see screenshots for each feature.
       <summary>Set 1 Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/headers/headers-01.png"></p>
+              <p align="center"> <img src="assets/pics/headers/colors/headers-01.png"></p>
             </ul>
         </p>
       </details>
@@ -492,7 +595,7 @@ Note : Click on the features to see screenshots for each feature.
       <summary>Set 2 Screenshot</summary>
         <p>
             <ul>
-              <p align="center"> <img src="assets/pics/headers/headers-02.png"></p> 
+              <p align="center"> <img src="assets/pics/headers/colors/headers-02.png"></p> 
             </ul>
         </p>
       </details>
@@ -501,7 +604,7 @@ Note : Click on the features to see screenshots for each feature.
 
 </details>
 <details>
-   <summary>10. Cool closing buttons.</summary>
+   <summary>11. Cool closing buttons.</summary>
   <ul>
     <li>
      <details>
@@ -517,7 +620,7 @@ Note : Click on the features to see screenshots for each feature.
 
 </details>
 <details>
-   <summary>11. Double row toolbar layout instead of single row .</summary>
+   <summary>12. Double row toolbar layout instead of single row .</summary>
        <p>This mobile only feature, Using <a href="#how-to-use-style-settings-plugin">style settings</a> plugin you Disable/enable this feature.</p>
   <ul>
     <li>
@@ -558,7 +661,7 @@ Note : Click on the features to see screenshots for each feature.
 - Enable/disable Stars background.
 - Set background color.
 - Select headers color scheme.
-- Select headers color style.
+- Select headers style from 8 different styles.
 - Enable/disable custom fonts.
 - Show/hide navigation tree arrow.
 - Show/hide callouts icons.

@@ -408,3 +408,37 @@
     ));
 
 }
+
+.neat-style-headers {
+  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, padding:5px, text-align:center, line-height: unset, border-radius: 50px),
+    (left: 50%,
+      top: 0,
+      transform: translateX(-50%),
+      background-color: red,
+      width: 80%,
+      height: 100%,
+      border-bottom-left-radius: 30px,
+      border-bottom-right-radius: 30px,
+    ));
+
+  @include h-con(1, (background-color:rgba(var(--h1-new-color), 0.1)),
+    (background-color: rgba(var(--h2-new-color), 0.3)));
+
+  @include h-con(2, (background-color:rgba(var(--h2-new-color), 0.1)),
+    (background-color: rgba(var(--h2-new-color), 0.3)));
+
+  @include h-con(3, (background-color:rgba(var(--h3-new-color), 0.1)),
+    (background-color: rgba(var(--h3-new-color), 0.3)));
+
+
+  @include h-con(4, (background-color:rgba(var(--h4-new-color), 0.1)),
+    (background-color: rgba(var(--h4-new-color), 0.3)));
+
+  @include h-con(5, (background-color:rgba(var(--h5-new-color), 0.1)),
+    (background-color: rgba(var(--h5-new-color), 0.3)));
+
+  @include h-con(6, (background-color:rgba(var(--h6-new-color), 0.1)),
+    (background-color: rgba(var(--h6-new-color), 0.3)));
+
+
+}
