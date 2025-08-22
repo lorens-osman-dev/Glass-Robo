@@ -617,6 +617,16 @@ body.theme-light {
   --table-border-color: #4e4f4e42 ;
 }
 
+.theme-light {
+  --text-normal: #222222 !important;
+  --level-1: rgb(218, 1, 77);
+  --level-6: rgb(106, 57, 205);
+  --level-2: rgb(180, 218, 0);
+  --level-5: rgb(210, 2, 224);
+  --level-3: rgb(255, 116, 23);
+  --level-4: rgb(100, 93, 117);
+}
+
 body {
   background: var(--s-bg-svg);
   background-color: var(--s-bg-primary-color);
