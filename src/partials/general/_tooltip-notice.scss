@@ -27,3 +27,11 @@
   border: 1px solid var(--s-green-primary-color) !important;
   border-radius: 5px;
 }
+
+.theme-light {
+
+  .notice,
+  .tooltip {
+    color: var(--text-normal);
+  }
+}

@@ -15,3 +15,23 @@
     box-shadow: 0 0 4px rgb(30, 30, 46);
   }
 }
+
+.theme-light {
+  .checkbox-container {
+    background-color: rgb(243, 139, 168);
+    box-shadow: 0 0 2px inset rgb(255, 255, 255);
+
+    &.is-enabled {
+      background-color: rgb(166, 227, 161);
+    }
+
+    &:hover {
+      box-shadow: 0 0 2px inset rgb(30, 30, 46);
+    }
+
+    &::after {
+      --toggle-thumb-color: rgb(255 255 255);
+      box-shadow: 0 0 4px rgb(0 0 0);
+    }
+  }
+}

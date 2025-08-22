@@ -71,13 +71,22 @@
 
 .theme-light {
   --text-normal: #222222 !important;
-
+  --platinum: #777373; //for normal texts
+  --glass-background-color-settings: rgb(246, 246, 246) !important;
   --level-1: rgb(218, 1, 77);
   --level-6: rgb(106, 57, 205);
   --level-2: rgb(180, 218, 0);
   --level-5: rgb(210, 2, 224);
   --level-3: rgb(255, 116, 23);
+
   --level-4: rgb(100, 93, 117);
+
+  // navigation active tab bug fix
+  .workspace-split.mod-root .workspace-tab-header.is-active::before,
+  .workspace-split.mod-root .workspace-tab-header.is-active::after {
+    box-shadow: none !important;
+  }
+
 }
 
 body {
