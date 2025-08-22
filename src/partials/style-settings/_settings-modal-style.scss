@@ -3,6 +3,9 @@
   display: none;
 }
 
+.setting-item:is([data-id$=settings])>.setting-item-info>.setting-item-name {
+  overflow: visible;
+}
 
 .setting-item:is([data-id=glass-theme-settings])>.setting-item-info>.setting-item-name>.style-settings-collapse-indicator::before {
   -webkit-mask-repeat: no-repeat;
