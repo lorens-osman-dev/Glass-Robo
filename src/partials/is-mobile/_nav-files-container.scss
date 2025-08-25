@@ -8,4 +8,12 @@
   .workspace-drawer-active-tab-header {
     background-color: var(--s-hover-bg-color-green);
   }
+
+  &.theme-light {
+
+    .workspace-drawer.mod-left,
+    .workspace-drawer.mod-right {
+      backdrop-filter: blur(20px);
+    }
+  }
 }

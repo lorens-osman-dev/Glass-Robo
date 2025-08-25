@@ -43,7 +43,6 @@
   --text-normal: var(--platinum);
   --text-faint: var(--platinum-faint);
 
-  --text-highlight-bg: #5b5721;
   --interactive-accent: var(--s-green-primary-color); //loading bar color
 
   --text-accent: var(--s-green-secondary-color); //links
@@ -70,7 +69,17 @@
 }
 
 .theme-light {
+  --s-green-primary-color: rgb(218, 1, 77);
+  --background-primary: var(--s-bg-transparen t);
+
+  --color-accent: var(--s-green-primary-color);
+  --interactive-accent: var(--s-green-primary-color); //loading bar color
+  --text-on-accent: var(--s-bg-primary-color); //the text of big buttons
+  --interactive-accent-hover: var(--yellow-faint); //hover bg  of big buttons
+  --caret-color: #ff0000;
   --text-normal: #222222 !important;
+  --text-muted: var(--text-normal);
+  --background-modifier-border: var(--s-bg-transparent);
   --platinum: #777373; //for normal texts
   --glass-background-color-settings: rgb(246, 246, 246) !important;
   --level-1: rgb(218, 1, 77);

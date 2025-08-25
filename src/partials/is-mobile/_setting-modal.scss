@@ -64,4 +64,33 @@
     }
 
   }
+
+  &.theme-light {
+    .modal.mod-settings.mod-sidebar-layout {
+      background: transparent;
+
+      .modal-header {
+        border-bottom: var(--border-width) solid var(--s-hover-bg-color-green);
+      }
+
+
+      .modal-content.vertical-tabs-container {
+
+        .vertical-tab-header-group {
+          margin: 20px 10px;
+          border: 1px solid var(--text-normal);
+          border-radius: 10px;
+
+          .vertical-tab-header-group-items {
+            .vertical-tab-nav-item {
+              color: var(--text-normal);
+              // border-bottom: var(--border-width) solid var(--s-hover-bg-color-green);
+
+            }
+
+          }
+        }
+      }
+    }
+  }
 }
