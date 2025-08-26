@@ -1,1 +1,9 @@
 .buttonsLineContainer {}
+
+.theme-light {
+  div[aria-label="Create new cluster"] {
+    svg {
+      fill: var(--text-muted) !important;
+    }
+  }
+}

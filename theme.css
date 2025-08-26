@@ -619,6 +619,7 @@ body.theme-light {
 .theme-light {
   --s-green-primary-color: rgb(218, 1, 77);
   --background-primary: var(--s-bg-transparent);
+  --s-bg-primary-color: rgb(246, 246, 246) !important;
   --color-accent: var(--s-green-primary-color);
   --interactive-accent: var(--s-green-primary-color);
   --text-on-accent: var(--s-bg-primary-color);
@@ -4072,6 +4073,10 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
 .popover.hover-popover .popover-titlebar .popover-header-icon.mod-pin-popover,
 .popover.hover-popover .popover-titlebar .popover-title {
   color: var(--s-bg-primary-color);
+}
+
+.theme-light div[aria-label="Create new cluster"] svg {
+  fill: var(--text-muted) !important;
 }
 
 .kanban-plugin .kanban-plugin__lane-wrapper {

@@ -71,7 +71,7 @@
 .theme-light {
   --s-green-primary-color: rgb(218, 1, 77);
   --background-primary: var(--s-bg-transparent);
-
+  --s-bg-primary-color: rgb(246, 246, 246) !important;
   --color-accent: var(--s-green-primary-color);
   --interactive-accent: var(--s-green-primary-color); //loading bar color
   --text-on-accent: var(--s-bg-primary-color); //the text of big buttons
