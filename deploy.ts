@@ -1,6 +1,6 @@
 import { execSync } from "node:child_process";
 import chalk from "chalk";
-
+import { consola } from "consola";
 /**
  * Runs the version-bump command with specified options.
  */
@@ -34,14 +34,41 @@ function pushToGit(): void {
 	}
 }
 
+// Function to display menu and handle selection
+async function showMenu() {
+	// For select type prompt
+	const choice = await consola.prompt(
+		"Did you want to Push changes and tags to github ?",
+		{
+			type: "select",
+			options: [
+				{ label: "Yes", value: "1" },
+				{ label: "Exit", value: "exit" },
+			],
+			cancel: "default",
+		},
+	);
+
+	// Execute function based on choice
+	switch (choice) {
+		case "1":
+			pushToGit();
+			break;
+		case "exit":
+			consola.log(chalk.yellowBright("Goodbye!"));
+			break;
+		default:
+			console.log(chalk.red.bold("canceled!!"));
+	}
+}
 /**
  * Main deployment function.
  */
-function deploy(): void {
+async function deploy(): Promise<void> {
 	console.log(chalk.magenta.bold("🚀 Starting deployment process..."));
 
 	runBumpCommand();
-	// pushToGit();
+	await showMenu();
 
 	console.log(chalk.magenta.bold("✨ Deployment complete! ✨"));
 }
