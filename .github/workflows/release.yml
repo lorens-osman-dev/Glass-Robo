@@ -22,8 +22,9 @@ jobs:
           # This action automatically uses the tag that triggered the workflow.
           # The `files` parameter specifies which files to attach as assets.
           files: |
-            theme.ts
+            theme.css
             manifest.json
+          name: "${{ github.ref_name }}"
         env:
           # GITHUB_TOKEN is a secret token automatically provided by GitHub.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
