@@ -4,7 +4,7 @@ name: Create Release on New Version Tag
 on:
   push:
     tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+' # Matches tags like v1.0.0, v2.1.5, etc.
+      - '[0-9]+.[0-9]+.[0-9]+' # Matches tags like v1.0.0, v2.1.5, etc.
 
 jobs:
   build:
