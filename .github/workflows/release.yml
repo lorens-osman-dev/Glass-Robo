@@ -1,8 +1,12 @@
 # The name of your workflow, which will be shown in the Actions tab of your repository.
 name: Create Release
 
-# This workflow is triggered when a new tag (e.g., v1.0.0, 1.2.3) is pushed to the repository.
+# This workflow is triggered when a new tag is pushed or when a release is created.
+# The 'release' event is fired when a release is published or updated in the UI.
+# The 'push: tags' event is fired when you push a new tag from your local machine.
 on:
+  release:
+    types: [created, published]
   push:
     tags:
       - 'v*' # This pattern matches any tag that starts with 'v', like v1.0.0.
@@ -30,6 +34,6 @@ jobs:
           files: |
             theme.css
             manifest.json
-                   # The 'name' property is used to set the title of the release.
+          # The 'name' property is used to set the title of the release.
           # We use the 'github.ref_name' context variable to get the tag name (e.g., 'v1.0.0').
-          name: "${{ github.ref_name }}"
+          name: "Release ${{ github.ref_name }}"
