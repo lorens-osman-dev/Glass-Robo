@@ -1,39 +1,29 @@
-# The name of your workflow, which will be shown in the Actions tab of your repository.
-name: Create Release
+name: Create Release on New Version Tag
 
-# This workflow is triggered when a new tag is pushed or when a release is created.
-# The 'release' event is fired when a release is published or updated in the UI.
-# The 'push: tags' event is fired when you push a new tag from your local machine.
+# This workflow is triggered on every push event to a tag.
 on:
-  release:
-    types: [created, published]
   push:
     tags:
-      - 'v*' # This pattern matches any tag that starts with 'v', like v1.0.0.
+      - 'v[0-9]+.[0-9]+.[0-9]+' # Matches tags like v1.0.0, v2.1.5, etc.
 
-# A single job to handle the creation of the release and uploading of assets.
 jobs:
-  build-and-release:
-    # The runner environment where the job will execute. 'ubuntu-latest' is a standard choice.
+  build:
     runs-on: ubuntu-latest
-
-    # A list of steps to be executed within this job.
     steps:
-      # Step 1: Check out the repository's code so the workflow can access your files.
-      - name: Checkout Repository
+      # Step 1: Checks out your repository code.
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Create a new GitHub Release and attach the specified files.
-      # The 'softprops/action-gh-release' is a convenient community-supported action for this purpose.
+      # Step 2: Creates a new GitHub Release.
       - name: Create GitHub Release
+        id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          # The files property specifies which files to include as release assets.
-          # You can specify multiple files by separating them with a space.
-          # Here, we are including the two files requested by the user.
+          # This action automatically uses the tag that triggered the workflow.
+          # The `files` parameter specifies which files to attach as assets.
           files: |
-            theme.css
+            theme.ts
             manifest.json
-          # The 'name' property is used to set the title of the release.
-          # We use the 'github.ref_name' context variable to get the tag name (e.g., 'v1.0.0').
-          name: "Release ${{ github.ref_name }}"
+        env:
+          # GITHUB_TOKEN is a secret token automatically provided by GitHub.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
