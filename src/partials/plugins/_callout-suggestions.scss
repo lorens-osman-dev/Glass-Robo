@@ -1,0 +1,10 @@
+.suggestion-container {
+  &:has(.callout.calloutmanager-preview) {
+    background-color: transparent !important;
+  }
+
+  .suggestion-item .callout.calloutmanager-preview {
+    height: 75px;
+    width: 40vw;
+  }
+}

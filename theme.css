@@ -4212,6 +4212,14 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
   transform: translate(-50%, -50%) !important;
 }
 
+.suggestion-container:has(.callout.calloutmanager-preview) {
+  background-color: transparent !important;
+}
+.suggestion-container .suggestion-item .callout.calloutmanager-preview {
+  height: 75px;
+  width: 40vw;
+}
+
 .workspace-leaf-resize-handle {
   border-inline-end-style: none !important;
   border-inline-start-style: none !important;
