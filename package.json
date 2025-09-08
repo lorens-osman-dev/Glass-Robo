@@ -1,7 +1,7 @@
 {
 	"name": "glass_robo",
 	"private": true,
-	"version": "3.2.7",
+	"version": "3.2.8",
 	"type": "module",
 	"scripts": {
 		"dev": "vite build --watch --mode development",
