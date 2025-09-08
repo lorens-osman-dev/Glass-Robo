@@ -4213,7 +4213,8 @@ ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bullet li ul.has-list-bu
 }
 
 .suggestion-container:has(.callout.calloutmanager-preview) {
-  background-color: transparent !important;
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color)) !important;
+  border: var(--menu-border-width) solid var(--menu-border-color);
 }
 .suggestion-container .suggestion-item .callout.calloutmanager-preview {
   height: 75px;
