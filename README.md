@@ -681,3 +681,5 @@ Note : Click on the features to see screenshots for each feature.
 1. <a href="https://obsidian.md/plugins?id=cluster">Cluster</a>.
 2. <a href="https://obsidian.md/plugins?id=obsidian-hover-editor">Hover editor</a>.
 3. <a href="https://obsidian.md/plugins?id=obsidian-kanban">Kanban</a>.
+4. <a href="https://obsidian.md/plugins?id=callout-suggestions">callout-suggestions</a>.
+5. <a href="https://obsidian.md/plugins?id=obsidian-spaced-repetition">spaced-repetition</a>.
