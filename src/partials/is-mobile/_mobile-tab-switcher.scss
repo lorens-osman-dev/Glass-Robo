@@ -29,7 +29,7 @@
 
     .mobile-tab-switcher-menubar {
       .mobile-tab-switcher-menu-spacer {
-        height: 100%;
+        height: 34px;
 
 
         //done button
@@ -41,7 +41,7 @@
 
       .mobile-tab-switcher-menu-button {
         background-color: var(--s-green-primary-color);
-        height: 100%;
+        height: 34px;
         padding: 0 5px;
         border-radius: 4px;
         color: var(--glass-background-color-settings, var(--s-bg-primary-color));

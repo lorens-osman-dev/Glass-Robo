@@ -6,8 +6,21 @@
     position: absolute;
     bottom: 0px;
     z-index: 1;
-    // border-radius: 20px;
 
+    // border-radius: 20px;
+    .workspace-drawer-vault-switcher {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .workspace-drawer-vault-actions {
+      .clickable-icon {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
 
     &::before {
       content: "";

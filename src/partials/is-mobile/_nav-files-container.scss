@@ -5,8 +5,89 @@
     backdrop-filter: blur(5px);
   }
 
+  .workspace-drawer.mod-left,
+  .workspace-drawer.mod-right {
+    .workspace-drawer-inner {
+      // border-right: 1px solid;
+      position: relative;
+
+      // &::after {
+      //   content: '';
+      //   display: block;
+      //   height: 100%;
+      //   width: 1px;
+      //   position: absolute;
+      //   top: 50%;
+      //   inset-inline-end: 0;
+      //   transform: translate(-50%, -50%);
+      //   background-color: rgba(178, 178, 184, 0.129);
+      //   ;
+      // }
+
+      //setting container
+      .workspace-drawer-header {
+        border-right: 1px solid rgba(178, 178, 184, 0.129);
+        border-bottom: 1px solid rgba(178, 178, 184, 0.129);
+        padding: var(--size-4-3) var(--size-4-5);
+
+      }
+
+      //files section
+      .workspace-drawer-tab-container .workspace-drawer-active-tab-container {
+        border-right: 1px solid rgba(178, 178, 184, 0.129);
+        border-left: 1px solid rgba(178, 178, 184, 0.129);
+
+
+        .workspace-drawer-tab-options {
+          margin: 0;
+          border-top: 1px solid rgba(178, 178, 184, 0.129);
+          border-bottom: 1px solid rgba(178, 178, 184, 0.129);
+
+          // border-right: 1px solid rgba(178, 178, 184, 0.129);
+          .workspace-drawer-tab-options-list {
+            background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
+
+        .workspace-drawer-active-tab-content {
+
+          .workspace-leaf-content {
+            .nav-header {
+              padding-top: 0;
+
+              .nav-buttons-container {
+                // background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+                // backdrop-filter: blur(20px);
+                border-top: 1px solid rgba(178, 178, 184, 0.129);
+
+                border-bottom: 1px solid rgba(178, 178, 184, 0.129);
+                // border-right: 1px solid rgba(178, 178, 184, 0.129);
+                bottom: unset;
+
+              }
+
+              .search-input-container {
+                top: 60px;
+              }
+            }
+
+            .nav-files-container,
+            .tag-container,
+            .view-content,
+            .backlink-pane {
+              top: 60px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
   .workspace-drawer-active-tab-header {
-    background-color: var(--s-hover-bg-color-green);
+    background-color: var(--glass-background-color-settings);
   }
 
   &.theme-light {

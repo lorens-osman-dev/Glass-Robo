@@ -6,8 +6,8 @@ import { consola } from "consola";
  * Runs the version-bump command with specified options.
  */
 function runBumpCommand(): void {
-	const command =
-		'bunx bump manifest.json package.json --commit "v%s" --tag "%s"';
+	// Added the --commit flag with a valid commit type ('update')
+	const command = 'bunx bumpp package.json manifest.json --no-push --commit "update: release v%s"';
 
 	console.log(chalk.blue(`\nExecuting: ${command}`));
 	try {

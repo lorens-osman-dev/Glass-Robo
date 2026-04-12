@@ -1,8 +1,14 @@
 @mixin mobile-styles {
 
+
   .modal.mod-settings.mod-sidebar-layout {
 
     background: transparent;
+
+    .modal-header {
+      // background-color: rgb(0 0 0 / 35%);
+      backdrop-filter: blur(15px);
+    }
 
     .modal-content.vertical-tabs-container {
 
