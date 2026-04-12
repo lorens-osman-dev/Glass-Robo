@@ -7,7 +7,7 @@ import { consola } from "consola";
  */
 function runBumpCommand(): void {
 	// Added the --commit flag with a valid commit type ('update')
-	const command = 'bunx bumpp package.json manifest.json --no-push --commit "update: release v%s"';
+	const command = 'bunx bumpp package.json manifest.json --no-push --commit "update: release %s" --tag "%s"';
 
 	console.log(chalk.blue(`\nExecuting: ${command}`));
 	try {
