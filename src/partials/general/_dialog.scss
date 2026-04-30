@@ -1,0 +1,8 @@
+.theme-dark div[role="dialog"] {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
+
+div[role="presentation"],
+div[role="dialog"] {
+  background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
+}
