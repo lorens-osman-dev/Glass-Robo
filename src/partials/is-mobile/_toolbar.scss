@@ -25,7 +25,7 @@
 
       .mobile-toolbar-options-list-container {
         border-radius: 5px;
-        bottom: 25px;
+        bottom: var(--one_row_mobile_toolbar_bottom_offset, 25px);
         position: relative;
         height: 70px;
 
