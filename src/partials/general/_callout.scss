@@ -28,8 +28,8 @@
   position: relative;
   margin-top: 10px !important;
   overflow: visible;
-  border: 1px solid rgba(var(--callout-color), 0.9);
-  background: rgba(var(--callout-color), 0.1);
+  border: 1px solid color-mix(in srgb, var(--callout-color) 90%, transparent);
+  background: color-mix(in srgb, var(--callout-color) 10%, transparent);
 
   .callout-title {
     overflow: hidden;
@@ -41,7 +41,7 @@
     border-radius: 5px;
     color: var(--text-normal);
     padding: 0 5px;
-    background: rgba(var(--callout-color), 1);
+    background: color-mix(in srgb, var(--callout-color) 100%, transparent);
 
     .callout-title-inner {
       color: var(--glass-background-color-settings, var(--s-bg-primary-color));
@@ -77,7 +77,7 @@
 .lorens-callouts .callout {
   --s: 10px;
   /* control the size*/
-  --c1: rgba(var(--callout-color), 0.1);
+  --c1: color-mix(in srgb, var(--callout-color) 10%, transparent);
   --c2: #cd8b5200;
 
   --c: #0000 71%, var(--c1) 0 79%, #0000 0;
@@ -88,7 +88,7 @@
     radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0/var(--s) var(--s);
 
   .callout-title-inner {
-    background-color: rgba(var(--callout-color), 0.3);
+    background-color: color-mix(in srgb, var(--callout-color) 30%, transparent);
     padding: 2px 8px;
     border-radius: 3px;
   }
@@ -102,12 +102,12 @@
 .glow-callouts .callout {
   background: transparent;
   position: relative;
-  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  box-shadow: 0px 0px 0px 0px color-mix(in srgb, var(--callout-color) 50%, transparent);
   border-radius: 0px;
 
   &::after {
     content: '';
-    background: rgba(var(--callout-color), 0.1) !important;
+    background: color-mix(in srgb, var(--callout-color) 10%, transparent) !important;
     position: absolute;
     left: -3px;
     height: 100%;
@@ -119,13 +119,13 @@
 
   &::before {
     content: '';
-    background: rgba(var(--callout-color), 0.3) !important;
+    background: color-mix(in srgb, var(--callout-color) 30%, transparent) !important;
     position: absolute;
     left: 0px;
     height: 100%;
     top: 0px;
-    border-left: 3px solid rgb(var(--callout-color));
-    box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+    border-left: 3px solid var(--callout-color);
+    box-shadow: 0px 0px 34px 16px color-mix(in srgb, var(--callout-color) 50%, transparent);
     border-radius: 0px;
   }
 }
@@ -152,7 +152,7 @@
   border-radius: 15px;
 
   .callout-title {
-    background: rgba(var(--callout-color), 0.1);
+    background: color-mix(in srgb, var(--callout-color) 10%, transparent);
     padding: 5px;
     width: 90%;
     display: grid;
@@ -172,7 +172,7 @@
   position: relative;
   margin-top: 10px !important;
   overflow: visible;
-  background: rgba(var(--callout-color), 0.1);
+  background: color-mix(in srgb, var(--callout-color) 10%, transparent);
   border-radius: 8px;
 
   .callout-content {
@@ -205,7 +205,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(var(--callout-color), 0.4);
+      background: color-mix(in srgb, var(--callout-color) 40%, transparent);
       z-index: 10;
     }
   }
@@ -224,7 +224,7 @@
   padding: var(--size-4-3) var(--size-4-6);
 
   .callout-title {
-    background: rgba(var(--callout-color), 0.1);
+    background: color-mix(in srgb, var(--callout-color) 10%, transparent);
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -243,7 +243,7 @@
   border-radius: 8px;
 
   .callout-title {
-    background: rgba(var(--callout-color), 1);
+    background: color-mix(in srgb, var(--callout-color) 100%, transparent);
     position: absolute;
     top: 10px;
     left: 0;
@@ -270,7 +270,7 @@
       height: 50px;
       width: 25px;
       border-top-left-radius: 8px;
-      box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+      box-shadow: 0 -25px 0 0 color-mix(in srgb, var(--callout-color) 100%, transparent);
     }
 
   }
@@ -301,7 +301,7 @@
   padding: 0;
 
   .callout-title {
-    background: rgba(var(--callout-color), 0.1);
+    background: color-mix(in srgb, var(--callout-color) 10%, transparent);
     padding: 5px;
   }
 
@@ -322,20 +322,20 @@
 .hama-callouts .callout {
   border-radius: 0;
   padding: 0;
-  border: 1px solid rgba(var(--callout-color), 0.25);
+  border: 1px solid color-mix(in srgb, var(--callout-color) 25%, transparent);
 
   &:has(> .callout-title .callout-title-inner:dir(rtl))>.callout-title {
-    background: linear-gradient(to left, rgba(var(--callout-color), 0.1), transparent);
+    background: linear-gradient(to left, color-mix(in srgb, var(--callout-color) 10%, transparent), transparent);
   }
 
   .callout-title {
-    background: linear-gradient(to right, rgba(var(--callout-color), 0.1), transparent);
+    background: linear-gradient(to right, color-mix(in srgb, var(--callout-color) 10%, transparent), transparent);
     padding: 5px 8px;
 
   }
 
   .callout-content {
-    border-top: 1px dashed rgba(var(--callout-color), 0.25);
+    border-top: 1px dashed color-mix(in srgb, var(--callout-color) 25%, transparent);
     padding: 8px;
 
   }
@@ -346,18 +346,18 @@
   .callout-title {
     display: grid;
     justify-content: center;
-    background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+    background: linear-gradient(to left, transparent 0%, color-mix(in srgb, var(--callout-color) 10%, transparent) 50%, transparent 100%);
   }
 
   &:has(> .callout-title .callout-title-inner:dir(rtl))>.callout-title {
-    background: linear-gradient(to left, transparent 0%, rgba(var(--callout-color), 0.1) 50%, transparent 100%);
+    background: linear-gradient(to left, transparent 0%, color-mix(in srgb, var(--callout-color) 10%, transparent) 50%, transparent 100%);
   }
 }
 
 //- gaza style
 .gaza-callouts .callout {
   border-radius: 30px;
-  background: rgba(var(--callout-color), 0.1);
+  background: color-mix(in srgb, var(--callout-color) 10%, transparent);
   padding: 3px;
 
   .callout-title {
@@ -367,7 +367,7 @@
 
   .callout-content {
     background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-    border: 1px solid rgba(var(--callout-color), 0.2);
+    border: 1px solid color-mix(in srgb, var(--callout-color) 20%, transparent);
     border-radius: 30px;
     padding: 15px 20px;
   }
@@ -377,12 +377,12 @@
 .halab-callouts .callout {
   background: transparent;
   position: relative;
-  box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5);
+  box-shadow: 0px 0px 0px 0px color-mix(in srgb, var(--callout-color) 50%, transparent);
   border-radius: 0px;
 
   &::after {
     content: '';
-    background: rgba(var(--callout-color), 0) !important;
+    background: color-mix(in srgb, var(--callout-color) 0%, transparent) !important;
     position: absolute;
     left: -3px;
     height: 100%;
@@ -394,13 +394,13 @@
 
   &::before {
     content: '';
-    background: rgba(var(--callout-color), 0.3) !important;
+    background: color-mix(in srgb, var(--callout-color) 30%, transparent) !important;
     position: absolute;
     left: 0px;
     height: 100%;
     top: 0px;
-    border-left: 3px solid rgb(var(--callout-color));
-    box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5);
+    border-left: 3px solid var(--callout-color);
+    box-shadow: 0px 0px 34px 16px color-mix(in srgb, var(--callout-color) 50%, transparent);
     border-radius: 0px;
   }
 }
@@ -421,7 +421,7 @@
 //- Dzor style
 .dzor-callouts .callout {
   border-radius: 33px;
-  background: rgba(var(--callout-color), 0.1);
+  background: color-mix(in srgb, var(--callout-color) 10%, transparent);
   padding: 3px;
   display: flex;
   flex-direction: column-reverse;
@@ -435,7 +435,7 @@
 
   .callout-content {
     background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-    border: 1px solid rgba(var(--callout-color), 0.2);
+    border: 1px solid color-mix(in srgb, var(--callout-color) 20%, transparent);
     border-radius: 5px;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
@@ -450,7 +450,7 @@
   position: relative;
   padding: var(--size-4-3) var(--size-4-6);
   position: relative;
-  border: 1px solid rgba(var(--callout-color), 0.4);
+  border: 1px solid color-mix(in srgb, var(--callout-color) 40%, transparent);
   box-shadow: none;
   border-radius: 12px;
 
@@ -464,8 +464,8 @@
     left: 4px;
     width: 10px;
     height: 10px;
-    background-color: rgba(var(--callout-color), 0.8);
-    box-shadow: 0px 0px 100px 50px rgba(var(--callout-color), 0.9);
+    background-color: color-mix(in srgb, var(--callout-color) 80%, transparent);
+    box-shadow: 0px 0px 100px 50px color-mix(in srgb, var(--callout-color) 90%, transparent);
   }
 
   //RTL
@@ -481,7 +481,7 @@
   border-radius: 8px;
 
   .callout-title {
-    background: rgba(var(--callout-color), 1);
+    background: color-mix(in srgb, var(--callout-color) 100%, transparent);
     position: absolute;
     width: 100%;
     top: 10px;
@@ -509,7 +509,7 @@
       height: 50px;
       width: 25px;
       border-top-left-radius: 8px;
-      box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+      box-shadow: 0 -25px 0 0 color-mix(in srgb, var(--callout-color) 100%, transparent);
     }
 
     &::before {
@@ -521,7 +521,7 @@
       height: 50px;
       width: 25px;
       border-top-right-radius: 8px;
-      box-shadow: 0 -25px 0 0 rgba(var(--callout-color), 1);
+      box-shadow: 0 -25px 0 0 color-mix(in srgb, var(--callout-color) 100%, transparent);
     }
   }
 
@@ -533,7 +533,7 @@
 //- Homs style
 .homs-callouts .callout {
   border-radius: 30px;
-  background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
+  background: linear-gradient(to left, transparent, color-mix(in srgb, var(--callout-color) 10%, transparent) 10%, color-mix(in srgb, var(--callout-color) 60%, transparent) 50%, color-mix(in srgb, var(--callout-color) 10%, transparent) 90%, transparent);
   padding: 3px;
 
   .callout-title {
@@ -545,7 +545,7 @@
 
   .callout-content {
     background-color: var(--glass-background-color-settings, var(--s-bg-primary-color));
-    color: rgba(var(--callout-color), 0.9);
+    color: color-mix(in srgb, var(--callout-color) 90%, transparent);
     border-radius: 30px;
     padding: 10px 20px
   }
@@ -560,13 +560,13 @@
   }
 
   .homs-callouts .callout .callout-title {
-    background: linear-gradient(to left, transparent, rgba(var(--callout-color), 0.1) 10%, rgba(var(--callout-color), 0.6) 50%, rgba(var(--callout-color), 0.1) 90%, transparent);
+    background: linear-gradient(to left, transparent, color-mix(in srgb, var(--callout-color) 10%, transparent) 10%, color-mix(in srgb, var(--callout-color) 60%, transparent) 50%, color-mix(in srgb, var(--callout-color) 10%, transparent) 90%, transparent);
     padding-bottom: 0px;
   }
 
   .homs-callouts .callout .callout-content {
     background-color: white !important;
-    color: rgba(var(--callout-color), 1);
+    color: color-mix(in srgb, var(--callout-color) 100%, transparent);
 
     strong,
     .cm-strong {
@@ -581,21 +581,21 @@
 
 //- gummy style
 .gummy-callouts .callout {
-  background: linear-gradient(to right, rgba(var(--callout-color), 0.05), var(--background-primary));
+  background: linear-gradient(to right, color-mix(in srgb, var(--callout-color) 5%, transparent), var(--background-primary));
   position: relative;
-  border: 1px solid rgba(var(--callout-color), 0.4);
+  border: 1px solid color-mix(in srgb, var(--callout-color) 40%, transparent);
   box-shadow: none;
   border-radius: 12px;
 
   //RTL
   &:has(> .callout-title .callout-title-inner:dir(rtl)) {
-    background: linear-gradient(to left, rgba(var(--callout-color), 0.05), var(--background-primary));
+    background: linear-gradient(to left, color-mix(in srgb, var(--callout-color) 5%, transparent), var(--background-primary));
   }
 }
 
 //- Wall style
 .wall-callouts .callout {
-  background: rgba(var(--callout-color), 0.5);
+  background: color-mix(in srgb, var(--callout-color) 50%, transparent);
 }
 
 //- Loli style
@@ -636,7 +636,7 @@
 
   --s: 50px;
   --c1: #e1f5c400;
-  --c2: rgba(var(--callout-color), 0.1);
+  --c2: color-mix(in srgb, var(--callout-color) 10%, transparent);
 
   --_g: #0000, #0004 5%,
     var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%, var(--c1) 36% 44%,
@@ -649,7 +649,7 @@
   background-size: var(--s) calc(2*var(--s));
 
   .callout-title-inner {
-    background-color: rgba(var(--callout-color), 0.5);
+    background-color: color-mix(in srgb, var(--callout-color) 50%, transparent);
     padding: 2px 8px;
     border-radius: 3px;
   }
