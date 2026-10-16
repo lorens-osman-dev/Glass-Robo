@@ -1,0 +1,33 @@
+/*
+ * Glass Robo 4.0.3: editor heading navigation and input font correction.
+ * Save this file in your vault's .obsidian/snippets folder and enable it under
+ * Settings > Appearance > CSS snippets. See FIXES.md for details and limits.
+ */
+
+/* CodeMirror cannot measure vertical margins on editor lines. The original
+ * 15px + 10px margins and 5px + 5px padding become 17.5px + 17.5px padding.
+ * Reading mode and horizontal padding keep their existing styles.
+ */
+:is(.cross-style-headers, .lodi-style-headers, .voidraizer-style-headers,
+    .dots-style-headers, .neat-style-headers)
+  .is-live-preview .HyperMD-header.cm-line:is(
+    .HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3,
+    .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6) {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
+}
+
+/* --font-normal is the weight 400; --font-ui-small is a CSS font size. */
+.textarea,
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input.document-search-input,
+input.document-replace-input,
+input.prompt-input {
+  font-size: var(--font-ui-small);
+}

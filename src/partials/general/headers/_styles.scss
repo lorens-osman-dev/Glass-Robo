@@ -85,12 +85,14 @@
 .cross-style-headers {
   @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, border-top: 1px solid, border-bottom: 1px solid, text-align:center, padding: 5px 0),
     (left:10px, width: 1px, height: 150%),
-    (right:10px, width: 1px, height: 150%));
+    (right:10px, width: 1px, height: 150%),
+    $livePreviewProps: (margin-top: 0 !important, margin-bottom: 0 !important, padding: 17.5px 0));
 }
 
 .lodi-style-headers {
   @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, padding:5px, text-align:center, border-radius:5px, line-height: unset), (left:0, width: 5px, height: 100%, border-top-left-radius: 5px, border-bottom-left-radius: 5px),
-    (right:0, width: 5px, height: 100%, border-top-right-radius: 5px, border-bottom-right-radius: 5px), (margin-bottom:10px));
+    (right:0, width: 5px, height: 100%, border-top-right-radius: 5px, border-bottom-right-radius: 5px), (margin-bottom:10px),
+    $livePreviewProps: (margin-top: 0 !important, margin-bottom: 0 !important, padding: 17.5px 5px));
 
   @include h-con(1, (background-color:rgba(var(--h1-new-color), 0.1)),
     (background-color: rgba(var(--h1-new-color), 0.8)),
@@ -115,7 +117,8 @@
 }
 
 .voidraizer-style-headers {
-  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0));
+  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0),
+    $livePreviewProps: (margin-top: 0 !important, margin-bottom: 0 !important, padding: 17.5px 0));
   // @include all-headers-con((text-align:center, padding: 5px 0));
   @include h(1,
     (background-color:rgba(var(--h1-new-color), 0.1),
@@ -279,7 +282,8 @@
 }
 
 .dots-style-headers {
-  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0));
+  @include all-headers-con((margin-top:15px !important, margin-bottom:10px !important, text-align:center, padding: 5px 0),
+    $livePreviewProps: (margin-top: 0 !important, margin-bottom: 0 !important, padding: 17.5px 0));
   // @include all-headers-con((text-align:center, padding: 5px 0));
   @include h(1,
     (padding: 10px 20px,
@@ -419,7 +423,8 @@
       height: 100%,
       border-bottom-left-radius: 30px,
       border-bottom-right-radius: 30px,
-    ));
+    ),
+    $livePreviewProps: (margin-top: 0 !important, margin-bottom: 0 !important, padding: 17.5px 5px));
 
   @include h-con(1, (background-color:rgba(var(--h1-new-color), 0.1)),
     (background-color: rgba(var(--h2-new-color), 0.3)));

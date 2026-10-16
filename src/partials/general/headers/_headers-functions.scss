@@ -1,4 +1,4 @@
-@mixin all-headers-con($properties, $beforeProps: null, $afterProps: null, $rtlProps: null) {
+@mixin all-headers-con($properties, $beforeProps: null, $afterProps: null, $rtlProps: null, $livePreviewProps: null) {
 
   .is-live-preview .HyperMD-header-1,
   .markdown-rendered h1,
@@ -61,6 +61,22 @@
     .HyperMD-header.HyperMD-header-5.cm-line[dir="rtl"],
     .HyperMD-header.HyperMD-header-6.cm-line[dir="rtl"] {
       @each $property, $value in $rtlProps {
+        #{$property}: $value;
+      }
+    }
+  }
+
+  // CodeMirror measures line boxes without vertical margins. Use padding for
+  // editor spacing so clicks, selections and vertical cursor movement agree
+  // with the rendered text. Keep reading-mode margins separate.
+  @if $livePreviewProps !=null {
+    .is-live-preview .HyperMD-header.HyperMD-header-1.cm-line,
+    .is-live-preview .HyperMD-header.HyperMD-header-2.cm-line,
+    .is-live-preview .HyperMD-header.HyperMD-header-3.cm-line,
+    .is-live-preview .HyperMD-header.HyperMD-header-4.cm-line,
+    .is-live-preview .HyperMD-header.HyperMD-header-5.cm-line,
+    .is-live-preview .HyperMD-header.HyperMD-header-6.cm-line {
+      @each $property, $value in $livePreviewProps {
         #{$property}: $value;
       }
     }
