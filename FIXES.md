@@ -23,7 +23,7 @@ References: [original issue #6](https://github.com/lorens-osman-dev/Glass-Robo/i
 
 The theme sets input `font-size` to `var(--font-normal)`. Obsidian defines that variable as the unitless **font weight 400**. It is invalid as a font size, so the browser falls back to an inherited size. The corrected rule uses `--font-ui-small`, Obsidian's normal input size.
 
-With Obsidian 1.13.7's actual application CSS in Chromium, the original rule inherited 15px and the corrected rule produced 13px. The giant gray rendering from [issue #20](https://github.com/lorens-osman-dev/Glass-Robo/issues/20) did **not** reproduce in this environment. This corrects a definite font-size error, but a fix for that exact rendering symptom still needs confirmation in the affected Obsidian installation.
+With Obsidian 1.13.7's actual application CSS in Chromium, the original rule inherited 15px and the corrected rule produced 13px. The giant gray rendering from [issue #20](https://github.com/lorens-osman-dev/Glass-Robo/issues/20) did **not** reproduce in that browser harness. Subsequent manual testing of the CSS snippet in native Obsidian **1.14.4** confirmed that the reported search display issue is resolved.
 
 ## Validation
 
@@ -31,4 +31,4 @@ The original issue's note was reproduced with a real CodeMirror 6 editor and the
 
 An expanded comparison used Obsidian 1.13.7's application CSS with CodeMirror 6.43.14: nine heading styles × two editor widths × two text directions. All **36 patched cases** passed coordinate mapping, physical mouse clicks, Up/Down navigation, and drag selection below wrapped H1–H6 headings, including scrolling. The original theme failed in all **20 cases** covering the five affected styles. Reading-mode heading margins, padding, colors, and border radii matched the original in every style. The standalone snippet also matched the rebuilt theme in the original-note checks across all nine styles.
 
-Validation uses an isolated CodeMirror browser harness; native Obsidian and the user's complete plugin/snippet configuration were not run. The SCSS compiled successfully with the repository's locked Sass 1.80.7 and Vite 5.4.11 versions.
+Automated validation used an isolated CodeMirror browser harness. The contributor separately tested the CSS snippet in native Obsidian **1.14.4** and confirmed that both the navigation and search display issues are resolved. The contributor's complete local plugin/snippet configuration was not independently reproduced. The SCSS compiled successfully with the repository's locked Sass 1.80.7 and Vite 5.4.11 versions.
