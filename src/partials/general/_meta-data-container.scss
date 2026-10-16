@@ -80,8 +80,8 @@ input[type='number'],
 input.document-search-input,
 input.document-replace-input,
 input.prompt-input {
-  font-size: var(--font-normal);
-  /* THIS FIXES THE ANNOYINGLY BIGGER KEY FONT */
+  // --font-normal is a unitless font weight, not a font size.
+  font-size: var(--font-ui-small);
 }
 
 .metadata-property-icon {
