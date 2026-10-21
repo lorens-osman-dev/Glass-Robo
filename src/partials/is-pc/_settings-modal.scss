@@ -8,28 +8,37 @@
     }
 
     .modal-content.vertical-tabs-container {
+      position: relative;
+      isolation: isolate;
       background-color: rgba(255, 0, 0, 0);
       backdrop-filter: blur(20px);
+
+      .vertical-tab-header {
+        background: transparent;
+      }
+
+      &::before {
+        content: " ";
+        position: absolute;
+        width: 70%;
+        height: 40%;
+        top: 50%;
+        left: 50%;
+        z-index: -1;
+        pointer-events: none;
+        background-color: red;
+
+        transform: translate(-50%, -50%);
+        filter: blur(50px);
+        opacity: var(--settings-background-opacity);
+        background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
+        animation: settings-modal-glow-rotate 60s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+
+      }
     }
 
-    .modal-content.vertical-tabs-container::before {
-      content: " ";
-      position: absolute;
-      width: 70%;
-      height: 40%;
-      top: 50%;
-      left: 50%;
-      z-index: -100;
-      background-color: red;
 
-      transform: translate(-50%, -50%);
-      filter: blur(50px);
-      opacity: var(--settings-background-opacity);
-      background-image: linear-gradient(#4ddc9e, #5b37eb, #f1307e);
-      animation: rotate 60s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
-      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
-
-    }
   }
 }
 
@@ -42,12 +51,12 @@ body:not(.native-scrollbars) .modal-close-button {
   }
 }
 
-@keyframes rotate {
+@keyframes settings-modal-glow-rotate {
   0% {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
